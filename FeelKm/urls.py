@@ -22,7 +22,7 @@ urlpatterns = patterns('',
     #url(r'^',include(router.urls)),
     #url(r'^events/$','api.views.event_list'),
     #url(r'^search/$','api.views.search'),
-    url(r'^admin/', include(admin.site.urls)),
+    #url(r'^admin/', include(Fell)),
     # websearch
     url(r'^search/','websearch.views.SearchWeb'),
 
