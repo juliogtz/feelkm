@@ -1,6 +1,5 @@
 from django.conf.urls import patterns, include, url
 from django.conf import settings
-from django.conf.urls.static import static
 
 from django.contrib import admin
 admin.autodiscover()
@@ -12,8 +11,7 @@ admin.autodiscover()
 #router.register(r'usrs',api.views.UserViewSet)
 #router.register(r'groups',api.views.GroupViewSet)
 
-from api import *
-from websearch import views
+
 
 urlpatterns = patterns('',
     # Examples:
