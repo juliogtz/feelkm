@@ -32,7 +32,7 @@ INSTALLED_APPS = (
 
 )
 
-ADMIN_MEDIA_PREFIX = '/static/admin/'
+ADMIN_MEDIA_PREFIX = '/statics/'
 
 PASSWORD_HASHERS = (
     'django.contrib.auth.hashers.PBKDF2PasswordHasher',
