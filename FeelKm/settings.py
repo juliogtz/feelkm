@@ -12,6 +12,9 @@ CONTENT_TYPES = ['application/pdf', 'image/jpeg', 'image/png']  # .pdf, .jpeg an
 SECRET_KEY = '+ms(lk3*#5#s_lfsi(q*vz@*#mkfc1n&m)losu@yn%yy_vl4r!'
 
 
+
+
+
 ALLOWED_HOSTS = ['*']
 
 
@@ -26,8 +29,8 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'south',
     'api',
-)
 
+)
 
 PASSWORD_HASHERS = (
     'django.contrib.auth.hashers.PBKDF2PasswordHasher',
@@ -74,7 +77,7 @@ ROOT_URLCONF = 'FeelKm.urls'
 
 
 
-DATABASES = {'default': dj_database_url.config(default='postgres://lviqbnyffylarx:mSwShplq7isnfSHjhARNoIz45q@ec2-54-243-48-227.compute-1.amazonaws.com:5432/d5rn6km9c8lnvn')}
+DATABASES = {'default': dj_database_url.config(default='postgres://budrqqganzqqrf:xoMpyKadDBREDARPDM9K9aMzRn@ec2-54-243-51-102.compute-1.amazonaws.com:5432/d1pdtcj06rpdtv')}
 #DATABASES['default'] = dj_database_url.config()
 
 # Honor the 'X-Forwarded-Proto' header for request.is_secure()
@@ -111,19 +114,15 @@ STATIC_URL = 'statics/'
 #    os.path.join(BASE_DIR, 'static'),
 #)
 
-
 STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
-#   'django.contrib.staticfiles.finders.DefaultStorageFinder',
+#    'django.contrib.staticfiles.finders.DefaultStorageFinder',
 )
-
-
 
 TEMPLATE_DIRS = (
     os.path.join(BASE_DIR,  'templates'),
 )
-
 
 DEBUG = True
 TEMPLATE_DEBUG = True
