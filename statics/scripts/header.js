@@ -51,11 +51,11 @@ $(function() {
 
     $('#btn-register-facebook-3').hover(function() {
 
-        $(this).attr('src', '/static/imgs/btn-login-hover-facebook.png');
+        $(this).attr('src', '/{{ STATIC_URL }}imgs/btn-login-hover-facebook.png');
 
     }, function() {
 
-      $(this).attr('src', '/static/imgs/btn-login-facebook.png');
+      $(this).attr('src', '/{{ STATIC_URL }}imgs/btn-login-facebook.png');
     });
 
 
@@ -65,11 +65,11 @@ $(function() {
 
       $('#btn-login-normal-img').hover(function() {
 
-        $(this).attr('src', '/static/imgs/btn-login-hover.png');
+        $(this).attr('src', '/{{ STATIC_URL }}imgs/btn-login-hover.png');
 
     }, function() {
 
-      $(this).attr('src', '/static/imgs/btn-login.png');
+      $(this).attr('src', '/{{ STATIC_URL }}imgs/btn-login.png');
 
     });
 
@@ -79,21 +79,21 @@ $(function() {
 
     $('#btn-register-facebook').hover(function() {
 
-      $(this).attr('src', '/static/imgs/btn-register-facebook-hover.png');
+      $(this).attr('src', '/{{ STATIC_URL }}imgs/btn-register-facebook-hover.png');
 
     }, function() {
 
-      $(this).attr('src', '/static/imgs/btn-register-facebook.png');
+      $(this).attr('src', '/{{ STATIC_URL }}imgs/btn-register-facebook.png');
     });
 
 
     $('#btn-register-facebook-2').hover(function() {
 
-      $(this).attr('src', '/static/imgs/btn-register-facebook-hover.png');
+      $(this).attr('src', '/{{ STATIC_URL }}imgs/btn-register-facebook-hover.png');
 
     }, function() {
 
-      $(this).attr('src', '/static/imgs/btn-register-facebook.png');
+      $(this).attr('src', '/{{ STATIC_URL }}imgs/btn-register-facebook.png');
 
     });
 
@@ -101,7 +101,7 @@ $(function() {
 
     $( "#btn-register-facebook" ).click(function() {
 
-         $(this).attr('src', '/static/imgs/btn-register-facebook-on.png');
+         $(this).attr('src', '/{{ STATIC_URL }}imgs/btn-register-facebook-on.png');
 
 
 
@@ -113,7 +113,7 @@ $(function() {
 
    $( "#sub-title-register-link" ).click(function() {
 
-         $(this).attr('src', '/static/imgs/btn-register-facebook-on.png');
+         $(this).attr('src', '/{{ STATIC_URL }}imgs/btn-register-facebook-on.png');
 
          $( "#box-register" ).fadeOut( "fast", function(){
 
@@ -131,11 +131,11 @@ $(function() {
 
       $('#btn-register-normal-img').hover(function() {
 
-      $(this).attr('src', '/static/imgs/btn-register-hover.png');
+      $(this).attr('src', '/{{ STATIC_URL }}imgs/btn-register-hover.png');
 
     }, function() {
 
-      $(this).attr('src', '/static/imgs/btn-register.png');
+      $(this).attr('src', '/{{ STATIC_URL }}imgs/btn-register.png');
     });
 
 
@@ -279,7 +279,7 @@ function getCookie(name) {
 
 
 
-         //$(this).attr('src', '/static/imgs/btn-register-on.png');
+         //$(this).attr('src', '/{{ STATIC_URL }}imgs/btn-register-on.png');
 
         /* Remove Class validation */
 
@@ -440,7 +440,7 @@ function getCookie(name) {
 
      $( "#btn-login-normal-img" ).click(function() {
 
-         //$(this).attr('src', '/static/imgs/btn-login-on.png');
+         //$(this).attr('src', '/{{ STATIC_URL }}imgs/btn-login-on.png');
 
           $("#box-login-form").fadeOut("fast");
           $("#box-login-form-wait").fadeIn( "fast");
@@ -560,7 +560,7 @@ function getCookie(name) {
 
     $( "#btn-recovery-password" ).click(function() {
 
-         //$(this).attr('src', '/static/imgs/btn-register-on.png');
+         //$(this).attr('src', '/{{ STATIC_URL }}imgs/btn-register-on.png');
 
           $("#box-recovery-password").fadeOut("fast");
           $("#box-recovery-form-wait").fadeIn( "fast");
@@ -676,7 +676,7 @@ function getCookie(name) {
 
      $("#btn-register-facebook-3").click(function(){
 
-       $(this).attr('src', '/static/imgs/btn-register-facebook-on.png');
+       $(this).attr('src', '/{{ STATIC_URL }}imgs/btn-register-facebook-on.png');
 
        $("#box-register").fadeOut("fast");
        $("#box-register-form").fadeOut("fast");
