@@ -77,7 +77,7 @@ ROOT_URLCONF = 'FeelKm.urls'
 
 
 
-DATABASES = {'default': dj_database_url.config(default='postgres://budrqqganzqqrf:xoMpyKadDBREDARPDM9K9aMzRn@ec2-54-243-51-102.compute-1.amazonaws.com:5432/d1pdtcj06rpdtv')}
+DATABASES = {'default': dj_database_url.config(default='postgres://lviqbnyffylarx:mSwShplq7isnfSHjhARNoIz45q@ec2-54-243-48-227.compute-1.amazonaws.com:5432/d5rn6km9c8lnvn')}
 #DATABASES['default'] = dj_database_url.config()
 
 # Honor the 'X-Forwarded-Proto' header for request.is_secure()
