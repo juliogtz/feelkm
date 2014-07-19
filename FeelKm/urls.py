@@ -29,6 +29,7 @@ urlpatterns = patterns('',
 
     #url(r'^(?P<path>.*)$', 'django.views.static.serve',{'document_root': settings.STATIC_ROOT}),
     (r'^statics/(?P<path>.*)$', 'django.views.static.serve',{'document_root': settings.STATIC_ROOT}),
+    (r'^statics/admin/(?P<path>.*)$', 'django.views.static.serve',{'document_root': settings.STATIC_ROOT}),
     #url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework'))
 
     # Autocomplete Search URL
