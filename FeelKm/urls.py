@@ -5,6 +5,7 @@ from django.conf.urls.static import static
 from django.contrib import admin
 admin.autodiscover()
 
+
 #from rest_framework import routers
 #from rest_framework.urlpatterns import format_suffix_patterns
 #router = routers.DefaultRouter()
