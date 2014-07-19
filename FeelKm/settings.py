@@ -1,5 +1,4 @@
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
-from django.db.backends.postgresql_psycopg2.base import *
 import dj_database_url
 
 #BASE_DIR = os.path.dirname(os.path.dirname(__file__))
@@ -10,9 +9,6 @@ CONTENT_TYPES = ['application/pdf', 'image/jpeg', 'image/png']  # .pdf, .jpeg an
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = '+ms(lk3*#5#s_lfsi(q*vz@*#mkfc1n&m)losu@yn%yy_vl4r!'
-
-
-
 
 
 ALLOWED_HOSTS = ['*']
@@ -127,5 +123,5 @@ TEMPLATE_DIRS = (
 )
 
 DEBUG = True
-#TEMPLATE_DEBUG = True
+TEMPLATE_DEBUG = True
 
