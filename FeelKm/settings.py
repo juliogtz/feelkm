@@ -12,9 +12,6 @@ CONTENT_TYPES = ['application/pdf', 'image/jpeg', 'image/png']  # .pdf, .jpeg an
 SECRET_KEY = '+ms(lk3*#5#s_lfsi(q*vz@*#mkfc1n&m)losu@yn%yy_vl4r!'
 
 
-
-
-
 ALLOWED_HOSTS = ['*']
 
 
@@ -29,8 +26,8 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'south',
     'api',
-
 )
+
 
 PASSWORD_HASHERS = (
     'django.contrib.auth.hashers.PBKDF2PasswordHasher',
@@ -114,15 +111,19 @@ STATIC_URL = 'statics/'
 #    os.path.join(BASE_DIR, 'static'),
 #)
 
+
 STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
 #    'django.contrib.staticfiles.finders.DefaultStorageFinder',
 )
 
+
+
 TEMPLATE_DIRS = (
     os.path.join(BASE_DIR,  'templates'),
 )
+
 
 DEBUG = True
 TEMPLATE_DEBUG = True
