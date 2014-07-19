@@ -1,0 +1,62 @@
+<div class="logo left"><a href="/"> <img src="/{{ STATIC_URL }}imgs/logo-feelkm.png" width="74" height="19" border="0"></a></div>
+	<div class="inputSearchH left">
+        <form method="post" id="search-form-top" name="search-form-top">{% csrf_token %}
+        <input type="text" class="inputSearchHi" placeHolder="Carreras, ciudades, etc" id="inputSearchHi" >
+        </form>
+    </div>
+	<div class="linkMarathon left"><a href="/search/?q=Maraton" class="linkE">Maratones</a></div>
+	<div class="linkHalf left"><a href="/search/?q=Medio%20Maraton" class="linkE">Medio Marat&oacute;n</a></div>
+	<div class="link10k left"><a href="/search/?q=10k" class="linkE">10k</a></div>
+	<div class="link5k left"><a href="/search/?q=5k" class="linkE">5k</a></div>
+	<!-- Login / Register Links -->
+
+
+    {% if request.user.is_authenticated %}
+
+            <div class="txt-header-name-user left"><a href="javascript:void(0)" id="txt-header-name-user" class="txt-header-name-use-link">{{ request.user.first_name }}</a></div>
+
+            {% if DATALOGIN.firtsFacebookPic == ""  %}
+            <div class="left img-profile-header-no"><a href="javascript:void(0)"><img id="img-profile-header-no-div"  src="/{{ STATIC_URL }}imgs/perfil-b.png" width="34" height="34" class="img-profile-header-no-image"></a></div>
+            {% else %}
+            <div class="left img-profile-header-yes-d"><a href="javascript:void(0)" id="img-profile-header-yes-d"><img src="{{ DATALOGIN.firtsFacebookPic }}" class="img-profile-header-yes"></a></div>
+            {% endif %}
+            <div class="clear"></div>
+            <div class="menu-top-header-options" id="menu-top-header-options">
+
+                <div class="box-menu-profile">
+
+                    <div class="left txt-box-menu-left"><a href="/km/{{ request.user.username  }}/" class="txt-box-menu-left-link">Perfil</a></div>
+                    <div class="left img-box-menu-right-di"><a href="/km/{{ request.user.username  }}/" class="img-box-menu-right"><img src="/{{ STATIC_URL }}imgs/nombre.png" class="img-box-menu-right-img" border="0"></a></div>
+                    <div class="clear"></div>
+
+                </div>
+
+                <div class="line-box-menu-profile"></div>
+
+                <div class="box-menu-profile">
+
+                    <div class="left txt-box-menu-left"><a href="/logout/" class="txt-box-menu-left-link">Cerrar Sesi&oacute;n</a></div>
+                    <div class="left img-box-menu-right-di-2"><a href="/logout/" class="img-box-menu-right"><img src="/{{ STATIC_URL }}imgs/cerrar-sesion.png" class="img-box-menu-right-img-2" border="0"></a></div>
+                    <div class="clear"></div>
+
+                </div>
+
+
+
+            </div>
+
+
+    {% else %}
+
+
+
+    <div class="left linkRegister" ><a href="javascript:void(0)" class="linkELR" id="link-register">Registrarte</a></div>
+	<div class="left linkLogin"><a href="javascript:void(0)" class="linkELR" id="link-login">Iniciar sesi&oacute;n</a></div>
+    <div class="clear"></div>
+
+
+
+    {% endif %}
+
+
+

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>FeelKm</title>
+<link rel="stylesheet" href="/{{ STATIC_URL }}css/header.css" type="text/css" />
+<link rel="stylesheet" href="/{{ STATIC_URL }}css/style_result.css" type="text/css" />
+{% include "Scripts/scripts.html" %}
+<script type="text/javascript">
+
+$(function() {
+
+      $('form').each(function() {
+
+        $(this).find('input').keypress(function(e) {
+            // Enter pressed?
+            if(e.which == 10 || e.which == 13) {
+
+                if(this.form.id=="search-form-top"){
+
+                  this.form.action="/search/?q="+$("#inputSearchHi").val()+"";
+
+                }
+
+
+
+                if(this.form.id=="search-form"){
+
+                  this.form.action="/search/?q="+$("#q").val()+"";
+                }
+
+
+                this.form.submit();
+
+
+            }
+        });
+
+
+    });
+
+});
+
+{% include "Scripts/secript_search_header.html" %}
+
+
+
+</script>
+
+</head>
+<body>
+<div class="header-header">
+<header>
+
+    {% include "Home/header.html" %}
+
+</header>
+</div>
+
+<div class="content_results">
+
+
+	<div class="resultsGlobal left">
+		
+		<div class="results">
+			
+			<div class="numTitleTxt">Se encontraron {{ count }} resultados utilizando <span class="numTitleTxt_N">{{ query }}</span></div>
+
+			<div class="lineR"></div>
+
+			<div id="items">
+                {% load dictionary_extras %}
+
+
+                {% for arg in data %}
+
+
+
+				<div id="item_1" class="item-full">
+					<div id="item_1_img" class="left">
+						<a href=""><a href="/{{ arg.country | strip }}/{{ arg.year_event }}/{{ arg.month_event | replacedigit }}/{{ arg.day_event | replacedigit }}/running/{{arg.name_event | replacestr }}/{{ arg.id }}/">
+
+
+
+                            <img src="/{{ STATIC_URL }}imgs/carrera-a.png" width="200" height="130">
+
+                        </a>
+
+				    </div>
+
+				<div id="item_1_content" class="left leftTxtItem">
+					<div class="TitleItem"><a  class="TitleItem_Link" href="/{{ arg.country | strip }}/{{ arg.year_event }}/{{ arg.month_event | replacedigit}}/{{ arg.day_event | replacedigit }}/running/{{arg.name_event | replacestr }}/{{ arg.id }}/">{{ arg.name_event | truncatechars:50 }}</a></div>
+
+                    <div class="PlaceItem"><a  class="PlaceItem-link" href="/search/?q={{ arg.city }}">{{ arg.city }}</a> <a class="PlaceItem-link" href="/search/?q={{ arg.region }}"> {{ arg.region }}</a>, <a class="PlaceItem-link" href="/search/?q={{ arg.country }}"> {{ arg.country }}</a></div>
+					<div class="dateItem">
+						<div class="left"> <img src="/{{ STATIC_URL }}imgs/fecha.png" width="17" height="15"></div>
+						<div class="left dateItemTxt">{{ arg.date_event }}</div>
+						<div class="clear"></div>
+				</div>
+					<div class="Points_Item">
+
+                        <div class="FirtsFull left"></div>
+						<div class="NextFull left"></div>
+						<div class="NextFull left"></div>
+						<div class="NextNoFull left"></div>
+						<div class="NextNoFull left"></div>
+
+						<div class="NumberOPItem left">{{ cont_arg|access:forloop.counter0 }} Opiniones</div>
+						<div class="clear"></div>
+					</div>
+					<div class="CommentItem">
+						"El mejor evento de running en GDL"
+					</div>
+				</div>
+
+				<div class="clear"></div>
+
+			</div>
+
+			<div class="lineR_R"></div>
+
+
+                {% endfor %}
+
+
+
+				
+
+			</div>
+
+		</div>
+
+        <div class="Footer-Pagination">
+
+        {% if data.has_previous %}
+
+            <a  class="Footer-Pagination-link" href="?q={{ query }}&page={{ data.previous_page_number }}">Anterior</a>
+
+        {% endif %}
+
+        <span class="current">
+
+            P&aacute;gina {{ data.number }} of {{ data.paginator.num_pages }}.
+
+        </span>
+
+        {% if data.has_next %}
+
+            <a  class="Footer-Pagination-link" href="?q={{ query }}&page={{ data.next_page_number }}"> Siguiente</a>
+
+        {% endif %}
+
+        </div>
+
+		<!--<div class="Footer_Result">Otros corredores tambi&eacute;n vieron</div>-->
+
+	</div>
+
+	<div class="ads left">
+		<div><img src="/{{ STATIC_URL }}imgs/ad1.png" width="300" height="301" class="imgad"></div>
+		
+		<div class="ecommerceAds">
+
+			<div class="TitleEcommerce">
+				<div class="left imgRunner"><img src="/{{ STATIC_URL }}imgs/runner.png" width="22" height="24"></div>
+				<div class="left titleCommer">EQU&Iacute;PATE</div>
+				<div class="clear"></div>
+			</div>
+
+			<div class="content_commerce">
+				
+				<div class="items_commerce">
+
+					<div id="item_commerce_1" class="Item-Top">
+						<div class="left img_commerce">
+							<img src="/{{ STATIC_URL }}imgs/iwat.png" width="106" height="64">
+						</div>
+						<div class="left item_right">
+							<div class="Title-Commerce-Item">TomTom</div>
+							<div class="SubTitle-Commerce-Item">Runner Cardio</div>
+							<div class="Btn-Item-Commerce"><div class="Txt-Button">Comprar</div></div>
+						</div>
+						<div class="clear"></div>
+						<div class="Line-Commerce-Item"></div>
+					</div>
+
+					<div id="item_commerce_2" class="Item-Top">
+						<div class="left img_commerce">
+							<img src="/{{ STATIC_URL }}imgs/iwat.png" width="106" height="64">
+						</div>
+						<div class="left item_right">
+							<div class="Title-Commerce-Item">TomTom</div>
+							<div class="SubTitle-Commerce-Item">Runner Cardio</div>
+							<div class="Btn-Item-Commerce"><div class="Txt-Button">Comprar</div></div>
+						</div>
+						<div class="clear"></div>
+						<div class="Line-Commerce-Item"></div>
+					</div>
+					
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+	<div class="clear"></div>
+</div>
+
+</body>
+</html>

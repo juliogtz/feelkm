@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>FeelKm</title>
+<link rel="stylesheet" href="/{{ STATIC_URL }}css/header.css" type="text/css" />
+<link rel="stylesheet" href="/{{ STATIC_URL }}css/style_info.css" type="text/css" />
+{% include "Scripts/scripts.html" %}
+<script type="text/javascript">
+
+
+$(function() {
+
+      $('form').each(function() {
+
+        $(this).find('input').keypress(function(e) {
+            // Enter pressed?
+            if(e.which == 10 || e.which == 13) {
+
+                if(this.form.id=="search-form-top"){
+
+                  this.form.action="/search/?q="+$("#inputSearchHi").val()+"";
+
+                }
+
+
+                if(this.form.id=="search-form"){
+
+                  this.form.action="/search/?q="+$("#q").val()+"";
+                }
+
+
+                this.form.submit();
+
+
+            }
+        });
+
+
+    });
+
+});
+
+{% include "Scripts/secript_search_header.html" %}
+
+
+
+</script>
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+</head>
+<body>
+<div id="fb-root"></div>
+
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&appId=222474031234173&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div class="header-header">
+<header>
+
+{% include "Home/header.html" %}
+
+</header>
+</div>
+
+
+
+<div class="content_info">
+    {% load dictionary_extras %}
+    {% for arg in data %}
+	<div class="infoGlobal left">
+
+	<div class="face-like">
+        <div class="left"><a href="https://twitter.com/share" class="twitter-share-button" data-lang="en">Tweet</a></div>
+        <div class="left share-f-left"><div class="fb-like" data-href="https://www.facebook.com/FeelKm" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div></div>
+        <div class="left share-f-right"><div class="fb-share-button" data-href="{{request.get_full_path| urlencode}}" data-type="button_count"></div></div>
+        <div class="clear"></div>
+	</div>
+
+	<div class="title-event">
+	{{ arg.name_event }}
+	</div>
+
+	<div class="title-place">
+		{{ arg.city }}, {{ arg.region }} {{ arg.country }}
+	</div>
+
+	<div class="Points-Right">
+				<div class="Points_Item">
+						<div class="FirtsFull left"></div>
+						<div class="NextFull left"></div>
+						<div class="NextFull left"></div>
+						<div class="NextNoFull left"></div>
+						<div class="NextNoFull left"></div>
+						<div class="NumberOPItem left">17 Opiniones</div>
+						<div class="clear"></div>
+					</div>
+
+	</div>
+
+    <div class="btns-tool-event">
+        <div class="left btn-add-favorite">
+            <div class="left txt-btn-event-tool">Agregar a Favoritos</div>
+            <div class="left icon-comme-tool"><img src="/{{ STATIC_URL }}imgs/favoritos.png" width="14" height="12"></div>
+            <div class="clear" ></div>
+        </div>
+        <div class="left btn-share-pic">
+            <div class="left txt-btn-event-tool">Compartir Foto</div>
+            <div class="left icon-comme-tool"><img src="/{{ STATIC_URL }}imgs/foto.png" width="16" height="13"></div>
+            <div class="clear" ></div>
+        </div>
+        <div class="left btn-pay">
+            <div class="left txt-btn-event-tool">Inscripci&oacute;n</div>
+            <div class="left icon-comme-tool"><img src="/{{ STATIC_URL }}imgs/inscripcion.png" width="14" height="14"></div>
+            <div class="clear" ></div>
+        </div>
+        <div class="left btn-new-comment">
+            <div class="left txt-btn-event-tool-add"><a href="/{{ arg.country | strip }}/{{ arg.year_event }}/{{ arg.month_event }}/{{ arg.day_event }}/running/{{arg.name_event | replacestr }}/{{ arg.id }}/New-Comment/" class="txt-btn-event-tool-add-link">Escribir Comentario</a></div>
+            <div class="left icon-comme-tool"><img src="/{{ STATIC_URL }}imgs/escribir-comentario.png" width="12" height="12"></div>
+            <div class="clear" ></div>
+        </div>
+        <div class="clear"></div>
+    </div>
+
+
+	<!--<div class="box-info">
+		<div class="title-box">
+			<div class="box-into">
+				<div class="txt-fa left"><a href="" class="link-decoration">Agregar a Favoritos</a></div>
+				<div class="icon-fav left"><img src="/{{ STATIC_URL }}imgs/favorite-icon.png" width="14" height="12"></div>
+				<div class="clear"></div>
+			</div>
+
+		</div>
+
+	</div>-->
+
+		<div class="box-content">
+			<div class="box-content-info">
+				<div class="pics-content left"><img src="/{{ STATIC_URL }}imgs/pic-x 2.png" class="img-box-info"></div>
+				<div class="items-content left">
+
+					<div class="item-box-left">
+						<div class="item-box-left-txt left">Pr&oacute;ximo Evento</div>
+						<div class="item-box-right-txt left">27 de octubre 2014</div>
+						<div class="clear"></div>
+						<div class="line-b-box"></div>
+					</div>
+
+					<div class="item-box-left top-item-box">
+						<div class="item-box-left-txt left">Lugar</div>
+						<div class="item-box-right-txt left">Centro Hist&oacute;rico</div>
+						<div class="clear"></div>
+						<div class="line-b-box"></div>
+					</div>
+
+					<div class="item-box-left top-item-box">
+						<div class="item-box-left-txt left">Distancia</div>
+						<div class="item-box-right-txt left">42km</div>
+						<div class="clear"></div>
+						<div class="line-b-box"></div>
+					</div>
+
+					<div class="item-box-left top-item-box">
+						<div class="item-box-left-txt left">P&aacute;gina Web</div>
+						<div class="item-box-right-txt left">maratongdl.org</div>
+						<div class="clear"></div>
+						<div class="line-b-box"></div>
+					</div>
+
+					<div class="item-box-left top-item-box">
+						<div class="item-box-left-txt left">Social</div>
+						<div class="item-box-right-txt left">Facebook , Twitter.</div>
+						<div class="clear"></div>
+						<!--<div class="line-b-box"></div>-->
+					</div>
+
+
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+
+		<div class="box-info-comments">
+			<div class="title-box">
+				<div class="box-into-comments">
+				    <div class="txt-num-comments"><strong>17</strong> Opiniones de corredores</div>
+
+				</div>
+
+			</div>
+
+	    </div>
+	    <div class="box-content-comments">
+	    	<div class="left box-left-calif">
+	    		<div class="num-calif">5</div>
+	    		<div class="txt-calif">Excelente</div>
+	    		<div class="line-calif">
+	    			<div class="line-calif-p" style="width:5px;"></div>
+	    		</div>
+	    	</div>
+
+	    	<div class="left box-left-calif-m">
+	    		<div class="num-calif">4</div>
+	    		<div class="txt-calif">Bueno</div>
+	    		<div class="line-calif">
+	    			<div class="line-calif-p" style="width:5px;"></div>
+	    		</div>
+	    	</div>
+
+	    	<div class="left box-left-calif-m">
+	    		<div class="num-calif">3</div>
+	    		<div class="txt-calif">Regular</div>
+	    		<div class="line-calif">
+	    			<div class="line-calif-p" style="width:5px;"></div>
+	    		</div>
+	    	</div>
+
+	    	<div class="left box-left-calif-m">
+	    		<div class="num-calif">2</div>
+	    		<div class="txt-calif">Malo</div>
+	    		<div class="line-calif">
+	    			<div class="line-calif-p" style="width:5px;"></div>
+	    		</div>
+	    	</div>
+
+	    	<div class="left box-left-calif-m">
+	    		<div class="num-calif">1</div>
+	    		<div class="txt-calif">Pesimo</div>
+	    		<div class="line-calif">
+	    			<div class="line-calif-p" style="width:5px;"></div>
+	    		</div>
+	    	</div>
+
+	    	<div class="clear"></div>
+
+	    	<div class="line-comments-top"></div>
+
+	    	<div class="items-comments-collection">
+
+	    		<div class="item-comment">
+
+	    			<div class="left">
+	    				<img src="/{{ STATIC_URL }}imgs/mno.jpg" width="60" height="60" class="img-profile-comment">
+	    			</div>
+	    			<div class="txt-titles-comment left">
+	    				<div class="txt-name-comment">Manuel Navarro</div>
+	    				<div class="txt-place-comment">Guadalajara, Jalisco</div>
+	    				<div class="txt-title-comment">Excelente Evento deportivo</div>
+	    			</div>
+	    			<div class="left">
+	    				<div class="txt-date-comment">6 de Junio 2014</div>
+	    				<div class="txt-calif-comment">
+		    				<div class="FirtsFull-C left"></div>
+							<div class="NextFull-C left"></div>
+							<div class="NextFull-C left"></div>
+							<div class="NextNoFull-C left"></div>
+							<div class="NextNoFull-C left"></div>
+							<div class="clear"></div>
+	    				</div>
+	    			</div>
+	    			<div class="clear"></div>
+
+	    			<div class="txt-comment-txt">
+	    				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dolor purus, tempus ut tortor vel, malesuada tincidunt sem. Sed egestas laoreet nisl ut egestas. Morbi ante turpis, auctor et metus non, porta lobortis mi. Nulla facilisi. Cras faucibus velit ac augue scelerisque egestas. Morbi nulla velit, rutrum vel volutpat accumsan, vulputate vel odio. Nunc vitae massa odio. Mauris in magna et nunc ullamcorper feugiat vel a mauris.
+	    			</div>
+
+	    			<div class="line-comment-b"></div>
+	    			<p></p>
+
+	    		</div>
+
+	    	</div>
+
+	    </div>
+
+
+	</div>
+    {% endfor %}
+
+	<div class="ads left">
+		<div><img src="/{{ STATIC_URL }}imgs/ad1.png" width="300" height="301" class="imgad"></div>
+
+		<div class="ecommerceAds">
+
+			<div class="TitleEcommerce">
+				<div class="left imgRunner"><img src="/{{ STATIC_URL }}imgs/runner.png" width="22" height="24"></div>
+				<div class="left titleCommer">EQU&Iacute;PATE</div>
+				<div class="clear"></div>
+			</div>
+
+			<div class="content_commerce">
+
+				<div class="items_commerce">
+
+					<div id="item_commerce_1" class="Item-Top">
+						<div class="left img_commerce">
+							<img src="/{{ STATIC_URL }}imgs/iwat.png" width="106" height="64">
+						</div>
+						<div class="left item_right">
+							<div class="Title-Commerce-Item">TomTom</div>
+							<div class="SubTitle-Commerce-Item">Runner Cardio</div>
+							<div class="Btn-Item-Commerce"><div class="Txt-Button">Comprar</div></div>
+						</div>
+						<div class="clear"></div>
+						<div class="Line-Commerce-Item"></div>
+					</div>
+
+					<div id="item_commerce_2" class="Item-Top">
+						<div class="left img_commerce">
+							<img src="/{{ STATIC_URL }}imgs/iwat.png" width="106" height="64">
+						</div>
+						<div class="left item_right">
+							<div class="Title-Commerce-Item">TomTom</div>
+							<div class="SubTitle-Commerce-Item">Runner Cardio</div>
+							<div class="Btn-Item-Commerce"><div class="Txt-Button">Comprar</div></div>
+						</div>
+						<div class="clear"></div>
+						<div class="Line-Commerce-Item"></div>
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+	<div class="clear"></div>
+</div>
+
+</body>
+</html>

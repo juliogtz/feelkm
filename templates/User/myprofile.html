@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>FeelKm</title>
+<link rel="stylesheet" href="/{{ STATIC_URL }}css/header.css" type="text/css" />
+<link rel="stylesheet" href="/{{ STATIC_URL }}/css/myprofile.css" type="text/css" />
+{% include "Scripts/scripts.html" %}
+<script type="text/javascript">
+
+$(function() {
+
+      $('form').each(function() {
+
+        $(this).find('input').keypress(function(e) {
+            // Enter pressed?
+            if(e.which == 10 || e.which == 13) {
+
+                if(this.form.id=="search-form-top"){
+
+                  this.form.action="/search/?q="+$("#inputSearchHi").val()+"";
+
+                }
+
+
+                if(this.form.id=="search-form"){
+
+                  this.form.action="/search/?q="+$("#q").val()+"";
+                }
+
+
+                this.form.submit();
+
+
+            }
+        });
+
+
+    });
+
+});
+
+{% include "Scripts/secript_search_header.html" %}
+
+
+
+</script>
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+</head>
+<body>
+<div id="fb-root"></div>
+
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&appId=222474031234173&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div class="header-header">
+<header>
+
+{% include "Home/header.html" %}
+
+</header>
+</div>
+
+
+
+<div class="content_info">
+
+<div class="header-profile">
+
+    <div class="img-profile-circle left"></div>
+    <div class="left txt-data-profile-header">
+        <div class="txt-name-profile">Manuel Navarro</div>
+        <div class="txt-name-place">Guadalajara, Jalisco</div>
+    </div>
+    <div class="clear"></div>
+
+    <div class="left member-section-from">
+        <div class="left"><img src="/{{ STATIC_URL }}imgs/joined.png" border="0" width="16" height="16"></div>
+        <div class="left txt-btnleft-hea-pro">Miembro desde Junio, 2014.</div>
+        <div class="clear"></div>
+    </div>
+    <div class="left edit-pro-section-from">
+         <div class="left"><img src="/{{ STATIC_URL }}imgs/editar.png" border="0" width="16" height="16"></div>
+        <div class="left txt-btnleft-hea-pro">Editar Perfil</div>
+        <div class="clear"></div>
+    </div>
+
+    <div class="left close-pro-section-from">
+        <div class="left"><img src="/{{ STATIC_URL }}imgs/cerrar-sesion.png" border="0" width="16" height="16"></div>
+        <div class="left txt-btnleft-hea-pro">Cerrar sesi&oacute;n</div>
+        <div class="clear"></div>
+
+    </div>
+    <div class="clear"></div>
+
+</div>
+
+    {% load dictionary_extras %}
+    {% for arg in data %}
+	<div class="infoGlobal left">
+
+      	<div class="box-info-profile-left">
+			<div class="title-box">
+
+				<div class="box-into-txt-prof">
+
+				    <div class="left"><img src="/{{ STATIC_URL }}imgs/favoritos.png" width="14" height="12"></div>
+                    <div class="left txt-title-profile-box">2 eventos favoritos</div>
+                    <div class="clear"></div>
+
+				</div>
+
+			</div>
+
+            <div class="box-content-profile-sec box-content-profile-sec-favorites">
+
+            </div>
+
+	    </div>
+
+           	<div class="box-info-profile-left">
+			<div class="title-box">
+
+				<div class="box-into-txt-prof">
+
+				    <div class="left"><img src="/{{ STATIC_URL }}imgs/fotos.png" width="16" height="13"></div>
+                    <div class="left txt-title-profile-box">22 fotos</div>
+                    <div class="clear"></div>
+
+				</div>
+
+			</div>
+
+            <div class="box-content-profile-sec box-content-profile-sec-favorites">
+
+            </div>
+
+	    </div>
+
+           	<div class="box-info-profile-left">
+			<div class="title-box">
+
+				<div class="box-into-txt-prof">
+
+				    <div class="left"><img src="/{{ STATIC_URL }}imgs/comentarios.png" width="16" height="16"></div>
+                    <div class="left txt-title-profile-box">5 comentarios</div>
+                    <div class="clear"></div>
+
+				</div>
+
+			</div>
+
+            <div class="box-content-profile-sec box-content-profile-sec-favorites">
+
+            </div>
+
+	    </div>
+
+
+	</div>
+    {% endfor %}
+
+	<div class="ads left">
+		<div><img src="/{{ STATIC_URL }}imgs/ad1.png" width="300" height="301" class="imgad"></div>
+
+		<div class="ecommerceAds">
+
+			<div class="TitleEcommerce">
+				<div class="left imgRunner"><img src="/{{ STATIC_URL }}imgs/runner.png" width="22" height="24"></div>
+				<div class="left titleCommer">EQU&Iacute;PATE</div>
+				<div class="clear"></div>
+			</div>
+
+			<div class="content_commerce">
+
+				<div class="items_commerce">
+
+					<div id="item_commerce_1" class="Item-Top">
+						<div class="left img_commerce">
+							<img src="/{{ STATIC_URL }}imgs/iwat.png" width="106" height="64">
+						</div>
+						<div class="left item_right">
+							<div class="Title-Commerce-Item">TomTom</div>
+							<div class="SubTitle-Commerce-Item">Runner Cardio</div>
+							<div class="Btn-Item-Commerce"><div class="Txt-Button">Comprar</div></div>
+						</div>
+						<div class="clear"></div>
+						<div class="Line-Commerce-Item"></div>
+					</div>
+
+					<div id="item_commerce_2" class="Item-Top">
+						<div class="left img_commerce">
+							<img src="/{{ STATIC_URL }}imgs/iwat.png" width="106" height="64">
+						</div>
+						<div class="left item_right">
+							<div class="Title-Commerce-Item">TomTom</div>
+							<div class="SubTitle-Commerce-Item">Runner Cardio</div>
+							<div class="Btn-Item-Commerce"><div class="Txt-Button">Comprar</div></div>
+						</div>
+						<div class="clear"></div>
+						<div class="Line-Commerce-Item"></div>
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+	<div class="clear"></div>
+</div>
+
+</body>
+</html>

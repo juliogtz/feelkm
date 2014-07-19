@@ -1,0 +1,2425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>FeelKm</title>
+<link rel="stylesheet" href="/{{ STATIC_URL }}css/header.css" type="text/css" />
+<link rel="stylesheet" href="/{{ STATIC_URL }}css/new_comment.css" type="text/css" />
+{% include "Scripts/scripts.html" %}
+<script type="text/javascript">
+var STATUS_FILE_1="0";
+var STATUS_FILE_2="0";
+var STATUS_FILE_3="0";
+
+
+$(function() {
+
+
+
+      $('form').each(function() {
+
+        $(this).find('input').keypress(function(e) {
+            // Enter pressed?
+            if(e.which == 10 || e.which == 13) {
+
+                if(this.form.id=="search-form-top"){
+
+                  this.form.action="/search/?q="+$("#inputSearchHi").val()+"";
+
+                }
+
+
+
+                if(this.form.id=="search-form"){
+
+                  this.form.action="/search/?q="+$("#q").val()+"";
+                }
+
+
+                this.form.submit();
+
+
+            }
+        });
+
+
+    });
+
+    /* Operations calificacion */
+
+     $('#calif_1').hover(function() {
+
+
+         document.getElementById("calif_general").value=1;
+
+
+
+         $('#calif_1').removeClass("FirtsNoFull");
+         $('#calif_1').addClass("FirtsFull");
+
+         $('#calif_2').removeClass("NextFull");
+         $('#calif_2').addClass("NextNoFull");
+
+         $('#calif_3').removeClass("NextFull");
+         $('#calif_3').addClass("NextNoFull");
+
+         $('#calif_4').removeClass("NextFull");
+         $('#calif_4').addClass("NextNoFull");
+
+         $('#calif_5').removeClass("NextFull");
+         $('#calif_5').addClass("NextNoFull");
+
+         $("#txt-calif-c" ).html("Pesimo");
+
+     });
+
+
+     $('#calif_2').hover(function() {
+
+         document.getElementById("calif_general").value=2;
+
+         $('#calif_1').removeClass("FirtsNoFull");
+         $('#calif_1').addClass("FirtsFull");
+
+         $('#calif_2').removeClass("NextNoFull");
+         $('#calif_2').addClass("NextFull");
+
+         $('#calif_3').removeClass("NextFull");
+         $('#calif_3').addClass("NextNoFull");
+
+         $('#calif_4').removeClass("NextFull");
+         $('#calif_4').addClass("NextNoFull");
+
+         $('#calif_5').removeClass("NextFull");
+         $('#calif_5').addClass("NextNoFull");
+
+          $("#txt-calif-c" ).html("Malo");
+
+     });
+
+
+      $('#calif_3').hover(function() {
+
+          document.getElementById("calif_general").value=3;
+
+         $('#calif_1').removeClass("FirtsNoFull");
+         $('#calif_1').addClass("FirtsFull");
+
+         $('#calif_2').removeClass("NextNoFull");
+         $('#calif_2').addClass("NextFull");
+
+         $('#calif_3').removeClass("NextNoFull");
+         $('#calif_3').addClass("NextFull");
+
+         $('#calif_4').removeClass("NextFull");
+         $('#calif_4').addClass("NextNoFull");
+
+         $('#calif_5').removeClass("NextFull");
+         $('#calif_5').addClass("NextNoFull");
+
+           $("#txt-calif-c" ).html("Regular");
+
+     });
+
+
+     $('#calif_4').hover(function() {
+
+         document.getElementById("calif_general").value=4;
+
+         $('#calif_1').removeClass("FirtsNoFull");
+         $('#calif_1').addClass("FirtsFull");
+
+         $('#calif_2').removeClass("NextNoFull");
+         $('#calif_2').addClass("NextFull");
+
+         $('#calif_3').removeClass("NextNoFull");
+         $('#calif_3').addClass("NextFull");
+
+         $('#calif_4').removeClass("NextNoFull");
+         $('#calif_4').addClass("NextFull");
+
+         $('#calif_5').removeClass("NextFull");
+         $('#calif_5').addClass("NextNoFull");
+
+
+          $("#txt-calif-c" ).html("Bueno");
+
+     });
+
+
+      $('#calif_5').hover(function() {
+
+          document.getElementById("calif_general").value=5;
+
+         $('#calif_1').removeClass("FirtsNoFull");
+         $('#calif_1').addClass("FirtsFull");
+
+         $('#calif_2').removeClass("NextNoFull");
+         $('#calif_2').addClass("NextFull");
+
+         $('#calif_3').removeClass("NextNoFull");
+         $('#calif_3').addClass("NextFull");
+
+         $('#calif_4').removeClass("NextNoFull");
+         $('#calif_4').addClass("NextFull");
+
+         $('#calif_5').removeClass("NextNoFull");
+         $('#calif_5').addClass("NextFull");
+
+           $("#txt-calif-c" ).html("Excelente");
+
+     });
+
+
+    /*  ------------------ Calificaciones por concepto --------------------- */
+
+    /* Calificación Hidratación */
+
+       $('#calif_hidratacion_1').hover(function() {
+
+          document.getElementById("calif_hidratacion").value=1;
+
+         $('#calif_hidratacion_1').removeClass("calif-btn-style-without");
+         $('#calif_hidratacion_1').addClass("calif-btn-style-with");
+
+         $('#calif_hidratacion_2').removeClass("calif-btn-style-with");
+         $('#calif_hidratacion_2').addClass("calif-btn-style-without");
+
+         $('#calif_hidratacion_3').removeClass("calif-btn-style-with");
+         $('#calif_hidratacion_3').addClass("calif-btn-style-without");
+
+         $('#calif_hidratacion_4').removeClass("calif-btn-style-with");
+         $('#calif_hidratacion_4').addClass("calif-btn-style-without");
+
+         $('#calif_hidratacion_5').removeClass("calif-btn-style-with");
+         $('#calif_hidratacion_5').addClass("calif-btn-style-without");
+
+
+
+     });
+
+       $('#calif_hidratacion_2').hover(function() {
+
+         document.getElementById("calif_hidratacion").value=2;
+
+         $('#calif_hidratacion_1').removeClass("calif-btn-style-without");
+         $('#calif_hidratacion_1').addClass("calif-btn-style-with");
+
+         $('#calif_hidratacion_2').removeClass("calif-btn-style-without");
+         $('#calif_hidratacion_2').addClass("calif-btn-style-with");
+
+         $('#calif_hidratacion_3').removeClass("calif-btn-style-with");
+         $('#calif_hidratacion_3').addClass("calif-btn-style-without");
+
+         $('#calif_hidratacion_4').removeClass("calif-btn-style-with");
+         $('#calif_hidratacion_4').addClass("calif-btn-style-without");
+
+         $('#calif_hidratacion_5').removeClass("calif-btn-style-with");
+         $('#calif_hidratacion_5').addClass("calif-btn-style-without");
+
+
+     });
+
+
+       $('#calif_hidratacion_3').hover(function() {
+
+         document.getElementById("calif_hidratacion").value=3;
+
+         $('#calif_hidratacion_1').removeClass("calif-btn-style-without");
+         $('#calif_hidratacion_1').addClass("calif-btn-style-with");
+
+         $('#calif_hidratacion_2').removeClass("calif-btn-style-without");
+         $('#calif_hidratacion_2').addClass("calif-btn-style-with");
+
+         $('#calif_hidratacion_3').removeClass("calif-btn-style-without");
+         $('#calif_hidratacion_3').addClass("calif-btn-style-with");
+
+         $('#calif_hidratacion_4').removeClass("calif-btn-style-with");
+         $('#calif_hidratacion_4').addClass("calif-btn-style-without");
+
+         $('#calif_hidratacion_5').removeClass("calif-btn-style-with");
+         $('#calif_hidratacion_5').addClass("calif-btn-style-without");
+
+
+     });
+
+
+          $('#calif_hidratacion_4').hover(function() {
+
+         document.getElementById("calif_hidratacion").value=4;
+
+         $('#calif_hidratacion_1').removeClass("calif-btn-style-without");
+         $('#calif_hidratacion_1').addClass("calif-btn-style-with");
+
+         $('#calif_hidratacion_2').removeClass("calif-btn-style-without");
+         $('#calif_hidratacion_2').addClass("calif-btn-style-with");
+
+         $('#calif_hidratacion_3').removeClass("calif-btn-style-without");
+         $('#calif_hidratacion_3').addClass("calif-btn-style-with");
+
+         $('#calif_hidratacion_4').removeClass("calif-btn-style-without");
+         $('#calif_hidratacion_4').addClass("calif-btn-style-with");
+
+         $('#calif_hidratacion_5').removeClass("calif-btn-style-with");
+         $('#calif_hidratacion_5').addClass("calif-btn-style-without");
+
+
+     });
+
+     $('#calif_hidratacion_5').hover(function() {
+
+         document.getElementById("calif_hidratacion").value=5;
+
+         $('#calif_hidratacion_1').removeClass("calif-btn-style-without");
+         $('#calif_hidratacion_1').addClass("calif-btn-style-with");
+
+         $('#calif_hidratacion_2').removeClass("calif-btn-style-without");
+         $('#calif_hidratacion_2').addClass("calif-btn-style-with");
+
+         $('#calif_hidratacion_3').removeClass("calif-btn-style-without");
+         $('#calif_hidratacion_3').addClass("calif-btn-style-with");
+
+         $('#calif_hidratacion_4').removeClass("calif-btn-style-without");
+         $('#calif_hidratacion_4').addClass("calif-btn-style-with");
+
+         $('#calif_hidratacion_5').removeClass("calif-btn-style-without");
+         $('#calif_hidratacion_5').addClass("calif-btn-style-with");
+
+
+     });
+
+
+       /* Calificación Organización */
+
+       $('#calif_organizacion_1').hover(function() {
+
+          document.getElementById("calif_organizacion").value=1;
+
+         $('#calif_organizacion_1').removeClass("calif-btn-style-without");
+         $('#calif_organizacion_1').addClass("calif-btn-style-with");
+
+         $('#calif_organizacion_2').removeClass("calif-btn-style-with");
+         $('#calif_organizacion_2').addClass("calif-btn-style-without");
+
+         $('#calif_organizacion_3').removeClass("calif-btn-style-with");
+         $('#calif_organizacion_3').addClass("calif-btn-style-without");
+
+         $('#calif_organizacion_4').removeClass("calif-btn-style-with");
+         $('#calif_organizacion_4').addClass("calif-btn-style-without");
+
+         $('#calif_organizacion_5').removeClass("calif-btn-style-with");
+         $('#calif_organizacion_5').addClass("calif-btn-style-without");
+
+
+     });
+
+       $('#calif_organizacion_2').hover(function() {
+
+         document.getElementById("calif_organizacion").value=2;
+
+         $('#calif_organizacion_1').removeClass("calif-btn-style-without");
+         $('#calif_organizacion_1').addClass("calif-btn-style-with");
+
+         $('#calif_organizacion_2').removeClass("calif-btn-style-without");
+         $('#calif_organizacion_2').addClass("calif-btn-style-with");
+
+         $('#calif_organizacion_3').removeClass("calif-btn-style-with");
+         $('#calif_organizacion_3').addClass("calif-btn-style-without");
+
+         $('#calif_organizacion_4').removeClass("calif-btn-style-with");
+         $('#calif_organizacion_4').addClass("calif-btn-style-without");
+
+         $('#calif_organizacion_5').removeClass("calif-btn-style-with");
+         $('#calif_organizacion_5').addClass("calif-btn-style-without");
+
+
+     });
+
+
+       $('#calif_organizacion_3').hover(function() {
+
+         document.getElementById("calif_organizacion").value=3;
+
+         $('#calif_organizacion_1').removeClass("calif-btn-style-without");
+         $('#calif_organizacion_1').addClass("calif-btn-style-with");
+
+         $('#calif_hidratacion_2').removeClass("calif-btn-style-without");
+         $('#calif_hidratacion_2').addClass("calif-btn-style-with");
+
+         $('#calif_organizacion_3').removeClass("calif-btn-style-without");
+         $('#calif_organizacion_3').addClass("calif-btn-style-with");
+
+         $('#calif_organizacion_4').removeClass("calif-btn-style-with");
+         $('#calif_organizacion_4').addClass("calif-btn-style-without");
+
+         $('#calif_organizacion_5').removeClass("calif-btn-style-with");
+         $('#calif_organizacion_5').addClass("calif-btn-style-without");
+
+
+     });
+
+
+      $('#calif_organizacion_4').hover(function() {
+
+         document.getElementById("calif_organizacion").value=4;
+
+         $('#calif_organizacion_1').removeClass("calif-btn-style-without");
+         $('#calif_organizacion_1').addClass("calif-btn-style-with");
+
+         $('#calif_organizacion_2').removeClass("calif-btn-style-without");
+         $('#calif_organizacion_2').addClass("calif-btn-style-with");
+
+         $('#calif_organizacion_3').removeClass("calif-btn-style-without");
+         $('#calif_organizacion_3').addClass("calif-btn-style-with");
+
+         $('#calif_organizacion_4').removeClass("calif-btn-style-without");
+         $('#calif_organizacion_4').addClass("calif-btn-style-with");
+
+         $('#calif_organizacion_5').removeClass("calif-btn-style-with");
+         $('#calif_organizacion_5').addClass("calif-btn-style-without");
+
+
+     });
+
+     $('#calif_organizacion_5').hover(function() {
+
+         document.getElementById("calif_organizacion").value=5;
+
+         $('#calif_organizacion_1').removeClass("calif-btn-style-without");
+         $('#calif_organizacion_1').addClass("calif-btn-style-with");
+
+         $('#calif_organizacion_2').removeClass("calif-btn-style-without");
+         $('#calif_organizacion_2').addClass("calif-btn-style-with");
+
+         $('#calif_organizacion_3').removeClass("calif-btn-style-without");
+         $('#calif_organizacion_3').addClass("calif-btn-style-with");
+
+         $('#calif_organizacion_4').removeClass("calif-btn-style-without");
+         $('#calif_organizacion_4').addClass("calif-btn-style-with");
+
+         $('#calif_organizacion_5').removeClass("calif-btn-style-without");
+         $('#calif_organizacion_5').addClass("calif-btn-style-with");
+
+
+     });
+
+
+      /* Calificación Ruta*/
+
+       $('#calif_ruta_1').hover(function() {
+
+          document.getElementById("calif_ruta").value=1;
+
+         $('#calif_ruta_1').removeClass("calif-btn-style-without");
+         $('#calif_ruta_1').addClass("calif-btn-style-with");
+
+         $('#calif_ruta_2').removeClass("calif-btn-style-with");
+         $('#calif_ruta_2').addClass("calif-btn-style-without");
+
+         $('#calif_ruta_3').removeClass("calif-btn-style-with");
+         $('#calif_ruta_3').addClass("calif-btn-style-without");
+
+         $('#calif_ruta_4').removeClass("calif-btn-style-with");
+         $('#calif_ruta_4').addClass("calif-btn-style-without");
+
+         $('#calif_ruta_5').removeClass("calif-btn-style-with");
+         $('#calif_ruta_5').addClass("calif-btn-style-without");
+
+
+     });
+
+       $('#calif_ruta_2').hover(function() {
+
+         document.getElementById("calif_ruta").value=2;
+
+         $('#calif_ruta_1').removeClass("calif-btn-style-without");
+         $('#calif_ruta_1').addClass("calif-btn-style-with");
+
+         $('#calif_ruta_2').removeClass("calif-btn-style-without");
+         $('#calif_ruta_2').addClass("calif-btn-style-with");
+
+         $('#calif_ruta_3').removeClass("calif-btn-style-with");
+         $('#calif_ruta_3').addClass("calif-btn-style-without");
+
+         $('#calif_ruta_4').removeClass("calif-btn-style-with");
+         $('#calif_ruta_4').addClass("calif-btn-style-without");
+
+         $('#calif_ruta_5').removeClass("calif-btn-style-with");
+         $('#calif_ruta_5').addClass("calif-btn-style-without");
+
+
+     });
+
+
+       $('#calif_ruta_3').hover(function() {
+
+         document.getElementById("calif_ruta").value=3;
+
+         $('#calif_ruta_1').removeClass("calif-btn-style-without");
+         $('#calif_ruta_1').addClass("calif-btn-style-with");
+
+         $('#calif_ruta_2').removeClass("calif-btn-style-without");
+         $('#calif_ruta_2').addClass("calif-btn-style-with");
+
+         $('#calif_ruta_3').removeClass("calif-btn-style-without");
+         $('#calif_ruta_3').addClass("calif-btn-style-with");
+
+         $('#calif_ruta_4').removeClass("calif-btn-style-with");
+         $('#calif_ruta_4').addClass("calif-btn-style-without");
+
+         $('#calif_ruta_5').removeClass("calif-btn-style-with");
+         $('#calif_ruta_5').addClass("calif-btn-style-without");
+
+
+     });
+
+
+      $('#calif_ruta_4').hover(function() {
+
+         document.getElementById("calif_ruta").value=4;
+
+         $('#calif_ruta_1').removeClass("calif-btn-style-without");
+         $('#calif_ruta_1').addClass("calif-btn-style-with");
+
+         $('#calif_ruta_2').removeClass("calif-btn-style-without");
+         $('#calif_ruta_2').addClass("calif-btn-style-with");
+
+         $('#calif_ruta_3').removeClass("calif-btn-style-without");
+         $('#calif_ruta_3').addClass("calif-btn-style-with");
+
+         $('#calif_ruta_4').removeClass("calif-btn-style-without");
+         $('#calif_ruta_4').addClass("calif-btn-style-with");
+
+         $('#calif_ruta_5').removeClass("calif-btn-style-with");
+         $('#calif_ruta_5').addClass("calif-btn-style-without");
+
+
+     });
+
+     $('#calif_ruta_5').hover(function() {
+
+         document.getElementById("calif_ruta").value=5;
+
+         $('#calif_ruta_1').removeClass("calif-btn-style-without");
+         $('#calif_ruta_1').addClass("calif-btn-style-with");
+
+         $('#calif_ruta_2').removeClass("calif-btn-style-without");
+         $('#calif_ruta_2').addClass("calif-btn-style-with");
+
+         $('#calif_ruta_3').removeClass("calif-btn-style-without");
+         $('#calif_ruta_3').addClass("calif-btn-style-with");
+
+         $('#calif_ruta_4').removeClass("calif-btn-style-without");
+         $('#calif_ruta_4').addClass("calif-btn-style-with");
+
+         $('#calif_ruta_5').removeClass("calif-btn-style-without");
+         $('#calif_ruta_5').addClass("calif-btn-style-with");
+
+
+     });
+
+
+      /* Calificación Parking*/
+
+       $('#calif_parking_1').hover(function() {
+
+          document.getElementById("calif_parking").value=1;
+
+         $('#calif_parking_1').removeClass("calif-btn-style-without");
+         $('#calif_parking_1').addClass("calif-btn-style-with");
+
+         $('#calif_parking_2').removeClass("calif-btn-style-with");
+         $('#calif_parking_2').addClass("calif-btn-style-without");
+
+         $('#calif_parking_3').removeClass("calif-btn-style-with");
+         $('#calif_parking_3').addClass("calif-btn-style-without");
+
+         $('#calif_parking_4').removeClass("calif-btn-style-with");
+         $('#calif_parking_4').addClass("calif-btn-style-without");
+
+         $('#calif_parking_5').removeClass("calif-btn-style-with");
+         $('#calif_parking_5').addClass("calif-btn-style-without");
+
+
+     });
+
+       $('#calif_parking_2').hover(function() {
+
+         document.getElementById("calif_parking").value=2;
+
+         $('#calif_parking_1').removeClass("calif-btn-style-without");
+         $('#calif_parking_1').addClass("calif-btn-style-with");
+
+         $('#calif_parking_2').removeClass("calif-btn-style-without");
+         $('#calif_parking_2').addClass("calif-btn-style-with");
+
+         $('#calif_parking_3').removeClass("calif-btn-style-with");
+         $('#calif_parking_3').addClass("calif-btn-style-without");
+
+         $('#calif_parking_4').removeClass("calif-btn-style-with");
+         $('#calif_parking_4').addClass("calif-btn-style-without");
+
+         $('#calif_parking_5').removeClass("calif-btn-style-with");
+         $('#calif_parking_5').addClass("calif-btn-style-without");
+
+
+     });
+
+
+       $('#calif_parking_3').hover(function() {
+
+         document.getElementById("calif_parking").value=3;
+
+         $('#calif_parking_1').removeClass("calif-btn-style-without");
+         $('#calif_parking_1').addClass("calif-btn-style-with");
+
+         $('#calif_parking_2').removeClass("calif-btn-style-without");
+         $('#calif_parking_2').addClass("calif-btn-style-with");
+
+         $('#calif_parking_3').removeClass("calif-btn-style-without");
+         $('#calif_parking_3').addClass("calif-btn-style-with");
+
+         $('#calif_parking_4').removeClass("calif-btn-style-with");
+         $('#calif_parking_4').addClass("calif-btn-style-without");
+
+         $('#calif_parking_5').removeClass("calif-btn-style-with");
+         $('#calif_parking_5').addClass("calif-btn-style-without");
+
+
+     });
+
+
+      $('#calif_parking_4').hover(function() {
+
+         document.getElementById("calif_parking").value=4;
+
+         $('#calif_parking_1').removeClass("calif-btn-style-without");
+         $('#calif_parking_1').addClass("calif-btn-style-with");
+
+         $('#calif_parking_2').removeClass("calif-btn-style-without");
+         $('#calif_parking_2').addClass("calif-btn-style-with");
+
+         $('#calif_parking_3').removeClass("calif-btn-style-without");
+         $('#calif_parking_3').addClass("calif-btn-style-with");
+
+         $('#calif_parking_4').removeClass("calif-btn-style-without");
+         $('#calif_parking_4').addClass("calif-btn-style-with");
+
+         $('#calif_parking_5').removeClass("calif-btn-style-with");
+         $('#calif_parking_5').addClass("calif-btn-style-without");
+
+
+     });
+
+     $('#calif_parking_5').hover(function() {
+
+         document.getElementById("calif_parking").value=5;
+
+         $('#calif_parking_1').removeClass("calif-btn-style-without");
+         $('#calif_parking_1').addClass("calif-btn-style-with");
+
+         $('#calif_parking_2').removeClass("calif-btn-style-without");
+         $('#calif_parking_2').addClass("calif-btn-style-with");
+
+         $('#calif_parking_3').removeClass("calif-btn-style-without");
+         $('#calif_parking_3').addClass("calif-btn-style-with");
+
+         $('#calif_parking_4').removeClass("calif-btn-style-without");
+         $('#calif_parking_4').addClass("calif-btn-style-with");
+
+         $('#calif_parking_5').removeClass("calif-btn-style-without");
+         $('#calif_parking_5').addClass("calif-btn-style-with");
+
+
+     });
+
+
+    /* Calificación ambiente*/
+
+       $('#calif_ambiente_1').hover(function() {
+
+          document.getElementById("calif_ambiente").value=1;
+
+         $('#calif_ambiente_1').removeClass("calif-btn-style-without");
+         $('#calif_ambiente_1').addClass("calif-btn-style-with");
+
+         $('#calif_ambiente_2').removeClass("calif-btn-style-with");
+         $('#calif_ambiente_2').addClass("calif-btn-style-without");
+
+         $('#calif_ambiente_3').removeClass("calif-btn-style-with");
+         $('#calif_ambiente_3').addClass("calif-btn-style-without");
+
+         $('#calif_ambiente_4').removeClass("calif-btn-style-with");
+         $('#calif_ambiente_4').addClass("calif-btn-style-without");
+
+         $('#calif_ambiente_5').removeClass("calif-btn-style-with");
+         $('#calif_ambiente_5').addClass("calif-btn-style-without");
+
+
+     });
+
+       $('#calif_ambiente_2').hover(function() {
+
+         document.getElementById("calif_ambiente").value=2;
+
+         $('#calif_ambiente_1').removeClass("calif-btn-style-without");
+         $('#calif_ambiente_1').addClass("calif-btn-style-with");
+
+         $('#calif_ambiente_2').removeClass("calif-btn-style-without");
+         $('#calif_ambiente_2').addClass("calif-btn-style-with");
+
+         $('#calif_ambiente_3').removeClass("calif-btn-style-with");
+         $('#calif_ambiente_3').addClass("calif-btn-style-without");
+
+         $('#calif_ambiente_4').removeClass("calif-btn-style-with");
+         $('#calif_ambiente_4').addClass("calif-btn-style-without");
+
+         $('#calif_ambiente_5').removeClass("calif-btn-style-with");
+         $('#calif_ambiente_5').addClass("calif-btn-style-without");
+
+
+     });
+
+
+       $('#calif_ambiente_3').hover(function() {
+
+         document.getElementById("calif_ambiente").value=3;
+
+         $('#calif_ambiente_1').removeClass("calif-btn-style-without");
+         $('#calif_ambiente_1').addClass("calif-btn-style-with");
+
+         $('#calif_ambiente_2').removeClass("calif-btn-style-without");
+         $('#calif_ambiente_2').addClass("calif-btn-style-with");
+
+         $('#calif_ambiente_3').removeClass("calif-btn-style-without");
+         $('#calif_ambiente_3').addClass("calif-btn-style-with");
+
+         $('#calif_ambiente_4').removeClass("calif-btn-style-with");
+         $('#calif_ambiente_4').addClass("calif-btn-style-without");
+
+         $('#calif_ambiente_5').removeClass("calif-btn-style-with");
+         $('#calif_ambiente_5').addClass("calif-btn-style-without");
+
+
+     });
+
+
+      $('#calif_ambiente_4').hover(function() {
+
+         document.getElementById("calif_ambiente").value=4;
+
+         $('#calif_ambiente_1').removeClass("calif-btn-style-without");
+         $('#calif_ambiente_1').addClass("calif-btn-style-with");
+
+         $('#calif_ambiente_2').removeClass("calif-btn-style-without");
+         $('#calif_ambiente_2').addClass("calif-btn-style-with");
+
+         $('#calif_ambiente_3').removeClass("calif-btn-style-without");
+         $('#calif_ambiente_3').addClass("calif-btn-style-with");
+
+         $('#calif_ambiente_4').removeClass("calif-btn-style-without");
+         $('#calif_ambiente_4').addClass("calif-btn-style-with");
+
+         $('#calif_ambiente_5').removeClass("calif-btn-style-with");
+         $('#calif_ambiente_5').addClass("calif-btn-style-without");
+
+
+     });
+
+     $('#calif_ambiente_5').hover(function() {
+
+         document.getElementById("calif_ambiente").value=5;
+
+         $('#calif_ambiente_1').removeClass("calif-btn-style-without");
+         $('#calif_ambiente_1').addClass("calif-btn-style-with");
+
+         $('#calif_ambiente_2').removeClass("calif-btn-style-without");
+         $('#calif_ambiente_2').addClass("calif-btn-style-with");
+
+         $('#calif_ambiente_3').removeClass("calif-btn-style-without");
+         $('#calif_ambiente_3').addClass("calif-btn-style-with");
+
+         $('#calif_ambiente_4').removeClass("calif-btn-style-without");
+         $('#calif_ambiente_4').addClass("calif-btn-style-with");
+
+         $('#calif_ambiente_5').removeClass("calif-btn-style-without");
+         $('#calif_ambiente_5').addClass("calif-btn-style-with");
+
+
+     });
+
+
+        /* Calificación Musica*/
+
+       $('#calif_music_1').hover(function() {
+
+          document.getElementById("calif_music").value=1;
+
+         $('#calif_music_1').removeClass("calif-btn-style-without");
+         $('#calif_music_1').addClass("calif-btn-style-with");
+
+         $('#calif_music_2').removeClass("calif-btn-style-with");
+         $('#calif_music_2').addClass("calif-btn-style-without");
+
+         $('#calif_music_3').removeClass("calif-btn-style-with");
+         $('#calif_music_3').addClass("calif-btn-style-without");
+
+         $('#calif_music__4').removeClass("calif-btn-style-with");
+         $('#calif_music_4').addClass("calif-btn-style-without");
+
+         $('#calif_music_5').removeClass("calif-btn-style-with");
+         $('#calif_music_5').addClass("calif-btn-style-without");
+
+
+     });
+
+       $('#calif_music_2').hover(function() {
+
+         document.getElementById("calif_music").value=2;
+
+         $('#calif_music_1').removeClass("calif-btn-style-without");
+         $('#calif_music_1').addClass("calif-btn-style-with");
+
+         $('#calif_music_2').removeClass("calif-btn-style-without");
+         $('#calif_music_2').addClass("calif-btn-style-with");
+
+         $('#calif_music_3').removeClass("calif-btn-style-with");
+         $('#calif_music_3').addClass("calif-btn-style-without");
+
+         $('#calif_music_4').removeClass("calif-btn-style-with");
+         $('#calif_music_4').addClass("calif-btn-style-without");
+
+         $('#calif_music_5').removeClass("calif-btn-style-with");
+         $('#calif_music_5').addClass("calif-btn-style-without");
+
+
+     });
+
+
+       $('#calif_music_3').hover(function() {
+
+         document.getElementById("calif_music").value=3;
+
+         $('#calif_music_1').removeClass("calif-btn-style-without");
+         $('#calif_music_1').addClass("calif-btn-style-with");
+
+         $('#calif_music_2').removeClass("calif-btn-style-without");
+         $('#calif_music_2').addClass("calif-btn-style-with");
+
+         $('#calif_music_3').removeClass("calif-btn-style-without");
+         $('#calif_music_3').addClass("calif-btn-style-with");
+
+         $('#calif_music_4').removeClass("calif-btn-style-with");
+         $('#calif_music_4').addClass("calif-btn-style-without");
+
+         $('#calif_music_5').removeClass("calif-btn-style-with");
+         $('#calif_music_5').addClass("calif-btn-style-without");
+
+
+     });
+
+
+      $('#calif_music_4').hover(function() {
+
+         document.getElementById("calif_music").value=4;
+
+         $('#calif_music_1').removeClass("calif-btn-style-without");
+         $('#calif_music_1').addClass("calif-btn-style-with");
+
+         $('#calif_music_2').removeClass("calif-btn-style-without");
+         $('#calif_music_2').addClass("calif-btn-style-with");
+
+         $('#calif_music_3').removeClass("calif-btn-style-without");
+         $('#calif_music_3').addClass("calif-btn-style-with");
+
+         $('#calif_music_4').removeClass("calif-btn-style-without");
+         $('#calif_music_4').addClass("calif-btn-style-with");
+
+         $('#calif_music_5').removeClass("calif-btn-style-with");
+         $('#calif_music_5').addClass("calif-btn-style-without");
+
+
+     });
+
+     $('#calif_music_5').hover(function() {
+
+         document.getElementById("calif_music").value=5;
+
+         $('#calif_music_1').removeClass("calif-btn-style-without");
+         $('#calif_music_1').addClass("calif-btn-style-with");
+
+         $('#calif_music_2').removeClass("calif-btn-style-without");
+         $('#calif_music_2').addClass("calif-btn-style-with");
+
+         $('#calif_music_3').removeClass("calif-btn-style-without");
+         $('#calif_music_3').addClass("calif-btn-style-with");
+
+         $('#calif_music_4').removeClass("calif-btn-style-without");
+         $('#calif_music_4').addClass("calif-btn-style-with");
+
+         $('#calif_music_5').removeClass("calif-btn-style-without");
+         $('#calif_music_5').addClass("calif-btn-style-with");
+
+
+     });
+
+
+
+     /* Calificación Medalla */
+
+       $('#calif_medalla_1').hover(function() {
+
+          document.getElementById("calif_medalla").value=1;
+
+         $('#calif_medalla_1').removeClass("calif-btn-style-without");
+         $('#calif_medalla_1').addClass("calif-btn-style-with");
+
+         $('#calif_medalla_2').removeClass("calif-btn-style-with");
+         $('#calif_medalla_2').addClass("calif-btn-style-without");
+
+         $('#calif_medalla_3').removeClass("calif-btn-style-with");
+         $('#calif_medalla_3').addClass("calif-btn-style-without");
+
+         $('#calif_medalla_4').removeClass("calif-btn-style-with");
+         $('#calif_medalla_4').addClass("calif-btn-style-without");
+
+         $('#calif_medalla_5').removeClass("calif-btn-style-with");
+         $('#calif_medalla_5').addClass("calif-btn-style-without");
+
+
+     });
+
+       $('#calif_medalla_2').hover(function() {
+
+         document.getElementById("calif_medalla").value=2;
+
+         $('#calif_medalla_1').removeClass("calif-btn-style-without");
+         $('#calif_medalla_1').addClass("calif-btn-style-with");
+
+         $('#calif_medalla_2').removeClass("calif-btn-style-without");
+         $('#calif_medalla_2').addClass("calif-btn-style-with");
+
+         $('#calif_medalla_3').removeClass("calif-btn-style-with");
+         $('#calif_medalla_3').addClass("calif-btn-style-without");
+
+         $('#calif_medalla_4').removeClass("calif-btn-style-with");
+         $('#calif_medalla_4').addClass("calif-btn-style-without");
+
+         $('#calif_medalla_5').removeClass("calif-btn-style-with");
+         $('#calif_medalla_5').addClass("calif-btn-style-without");
+
+
+     });
+
+
+       $('#calif_medalla_3').hover(function() {
+
+         document.getElementById("calif_medalla").value=3;
+
+         $('#calif_medalla_1').removeClass("calif-btn-style-without");
+         $('#calif_medalla_1').addClass("calif-btn-style-with");
+
+         $('#calif_medalla_2').removeClass("calif-btn-style-without");
+         $('#calif_medalla_2').addClass("calif-btn-style-with");
+
+         $('#calif_medalla_3').removeClass("calif-btn-style-without");
+         $('#calif_medalla_3').addClass("calif-btn-style-with");
+
+         $('#calif_medalla_4').removeClass("calif-btn-style-with");
+         $('#calif_medalla_4').addClass("calif-btn-style-without");
+
+         $('#calif_medalla_5').removeClass("calif-btn-style-with");
+         $('#calif_medalla_5').addClass("calif-btn-style-without");
+
+
+     });
+
+
+      $('#calif_medalla_4').hover(function() {
+
+         document.getElementById("calif_medalla").value=4;
+
+         $('#calif_medalla_1').removeClass("calif-btn-style-without");
+         $('#calif_medalla_1').addClass("calif-btn-style-with");
+
+         $('#calif_medalla_2').removeClass("calif-btn-style-without");
+         $('#calif_medalla_2').addClass("calif-btn-style-with");
+
+         $('#calif_medalla_3').removeClass("calif-btn-style-without");
+         $('#calif_medalla_3').addClass("calif-btn-style-with");
+
+         $('#calif_medalla_4').removeClass("calif-btn-style-without");
+         $('#calif_medalla_4').addClass("calif-btn-style-with");
+
+         $('#calif_medalla_5').removeClass("calif-btn-style-with");
+         $('#calif_medalla_5').addClass("calif-btn-style-without");
+
+
+     });
+
+     $('#calif_medalla_5').hover(function() {
+
+         document.getElementById("calif_medalla").value=5;
+
+         $('#calif_medalla_1').removeClass("calif-btn-style-without");
+         $('#calif_medalla_1').addClass("calif-btn-style-with");
+
+         $('#calif_medalla_2').removeClass("calif-btn-style-without");
+         $('#calif_medalla_2').addClass("calif-btn-style-with");
+
+         $('#calif_medalla_3').removeClass("calif-btn-style-without");
+         $('#calif_medalla_3').addClass("calif-btn-style-with");
+
+         $('#calif_medalla_4').removeClass("calif-btn-style-without");
+         $('#calif_medalla_4').addClass("calif-btn-style-with");
+
+         $('#calif_medalla_5').removeClass("calif-btn-style-without");
+         $('#calif_medalla_5').addClass("calif-btn-style-with");
+
+
+     });
+
+
+       /* Calificación Salida */
+
+       $('#calif_salida_1').hover(function() {
+
+          document.getElementById("calif_salida").value=1;
+
+         $('#calif_salida_1').removeClass("calif-btn-style-without");
+         $('#calif_salida_1').addClass("calif-btn-style-with");
+
+         $('#calif_salida_2').removeClass("calif-btn-style-with");
+         $('#calif_salida_2').addClass("calif-btn-style-without");
+
+         $('#calif_salida_3').removeClass("calif-btn-style-with");
+         $('#calif_salida_3').addClass("calif-btn-style-without");
+
+         $('#calif_salida_4').removeClass("calif-btn-style-with");
+         $('#calif_salida_4').addClass("calif-btn-style-without");
+
+         $('#calif_salida_5').removeClass("calif-btn-style-with");
+         $('#calif_salida_5').addClass("calif-btn-style-without");
+
+
+     });
+
+       $('#calif_salida_2').hover(function() {
+
+         document.getElementById("calif_salida").value=2;
+
+         $('#calif_salida_1').removeClass("calif-btn-style-without");
+         $('#calif_salida_1').addClass("calif-btn-style-with");
+
+         $('#calif_salida_2').removeClass("calif-btn-style-without");
+         $('#calif_salida_2').addClass("calif-btn-style-with");
+
+         $('#calif_salida_3').removeClass("calif-btn-style-with");
+         $('#calif_salida_3').addClass("calif-btn-style-without");
+
+         $('#calif_salida_4').removeClass("calif-btn-style-with");
+         $('#calif_salida_4').addClass("calif-btn-style-without");
+
+         $('#calif_salida_5').removeClass("calif-btn-style-with");
+         $('#calif_salida_5').addClass("calif-btn-style-without");
+
+
+     });
+
+
+       $('#calif_salida_3').hover(function() {
+
+         document.getElementById("calif_salida").value=3;
+
+         $('#calif_salida_1').removeClass("calif-btn-style-without");
+         $('#calif_salida_1').addClass("calif-btn-style-with");
+
+         $('#calif_salida_2').removeClass("calif-btn-style-without");
+         $('#calif_salida_2').addClass("calif-btn-style-with");
+
+         $('#calif_salida_3').removeClass("calif-btn-style-without");
+         $('#calif_salida_3').addClass("calif-btn-style-with");
+
+         $('#calif_salida_4').removeClass("calif-btn-style-with");
+         $('#calif_salida_4').addClass("calif-btn-style-without");
+
+         $('#calif_salida_5').removeClass("calif-btn-style-with");
+         $('#calif_salida_5').addClass("calif-btn-style-without");
+
+
+     });
+
+
+      $('#calif_salida_4').hover(function() {
+
+         document.getElementById("calif_salida").value=4;
+
+         $('#calif_salida_1').removeClass("calif-btn-style-without");
+         $('#calif_salida_1').addClass("calif-btn-style-with");
+
+         $('#calif_salida_2').removeClass("calif-btn-style-without");
+         $('#calif_salida_2').addClass("calif-btn-style-with");
+
+         $('#calif_salida_3').removeClass("calif-btn-style-without");
+         $('#calif_salida_3').addClass("calif-btn-style-with");
+
+         $('#calif_salida_4').removeClass("calif-btn-style-without");
+         $('#calif_salida_4').addClass("calif-btn-style-with");
+
+         $('#calif_salida_5').removeClass("calif-btn-style-with");
+         $('#calif_salida_5').addClass("calif-btn-style-without");
+
+
+     });
+
+     $('#calif_salida_5').hover(function() {
+
+         document.getElementById("calif_salida").value=5;
+
+         $('#calif_salida_1').removeClass("calif-btn-style-without");
+         $('#calif_salida_1').addClass("calif-btn-style-with");
+
+         $('#calif_salida_2').removeClass("calif-btn-style-without");
+         $('#calif_salida_2').addClass("calif-btn-style-with");
+
+         $('#calif_salida_3').removeClass("calif-btn-style-without");
+         $('#calif_salida_3').addClass("calif-btn-style-with");
+
+         $('#calif_salida_4').removeClass("calif-btn-style-without");
+         $('#calif_salida_4').addClass("calif-btn-style-with");
+
+         $('#calif_salida_5').removeClass("calif-btn-style-without");
+         $('#calif_salida_5').addClass("calif-btn-style-with");
+
+
+     });
+
+
+     /* Calificación Meta */
+
+       $('#calif_meta_1').hover(function() {
+
+          document.getElementById("calif_meta").value=1;
+
+         $('#calif_meta_1').removeClass("calif-btn-style-without");
+         $('#calif_meta_1').addClass("calif-btn-style-with");
+
+         $('#calif_meta_2').removeClass("calif-btn-style-with");
+         $('#calif_meta_2').addClass("calif-btn-style-without");
+
+         $('#calif_meta_3').removeClass("calif-btn-style-with");
+         $('#calif_meta_3').addClass("calif-btn-style-without");
+
+         $('#calif_meta_4').removeClass("calif-btn-style-with");
+         $('#calif_meta_4').addClass("calif-btn-style-without");
+
+         $('#calif_meta_5').removeClass("calif-btn-style-with");
+         $('#calif_meta_5').addClass("calif-btn-style-without");
+
+
+     });
+
+       $('#calif_meta_2').hover(function() {
+
+         document.getElementById("calif_meta").value=2;
+
+         $('#calif_meta_1').removeClass("calif-btn-style-without");
+         $('#calif_meta_1').addClass("calif-btn-style-with");
+
+         $('#calif_meta_2').removeClass("calif-btn-style-without");
+         $('#calif_meta_2').addClass("calif-btn-style-with");
+
+         $('#calif_meta_3').removeClass("calif-btn-style-with");
+         $('#calif_meta_3').addClass("calif-btn-style-without");
+
+         $('#calif_meta_4').removeClass("calif-btn-style-with");
+         $('#calif_meta_4').addClass("calif-btn-style-without");
+
+         $('#calif_meta_5').removeClass("calif-btn-style-with");
+         $('#calif_meta_5').addClass("calif-btn-style-without");
+
+
+     });
+
+
+       $('#calif_meta_3').hover(function() {
+
+         document.getElementById("calif_meta").value=3;
+
+         $('#calif_meta_1').removeClass("calif-btn-style-without");
+         $('#calif_meta_1').addClass("calif-btn-style-with");
+
+         $('#calif_meta_2').removeClass("calif-btn-style-without");
+         $('#calif_meta_2').addClass("calif-btn-style-with");
+
+         $('#calif_meta_3').removeClass("calif-btn-style-without");
+         $('#calif_meta_3').addClass("calif-btn-style-with");
+
+         $('#calif_meta_4').removeClass("calif-btn-style-with");
+         $('#calif_meta_4').addClass("calif-btn-style-without");
+
+         $('#calif_meta_5').removeClass("calif-btn-style-with");
+         $('#calif_meta_5').addClass("calif-btn-style-without");
+
+
+     });
+
+
+      $('#calif_meta_4').hover(function() {
+
+         document.getElementById("calif_meta").value=4;
+
+         $('#calif_meta_1').removeClass("calif-btn-style-without");
+         $('#calif_meta_1').addClass("calif-btn-style-with");
+
+         $('#calif_meta_2').removeClass("calif-btn-style-without");
+         $('#calif_meta_2').addClass("calif-btn-style-with");
+
+         $('#calif_meta_3').removeClass("calif-btn-style-without");
+         $('#calif_meta_3').addClass("calif-btn-style-with");
+
+         $('#calif_meta_4').removeClass("calif-btn-style-without");
+         $('#calif_meta_4').addClass("calif-btn-style-with");
+
+         $('#calif_meta_5').removeClass("calif-btn-style-with");
+         $('#calif_meta_5').addClass("calif-btn-style-without");
+
+
+     });
+
+     $('#calif_meta_5').hover(function() {
+
+         document.getElementById("calif_meta").value=5;
+
+         $('#calif_meta_1').removeClass("calif-btn-style-without");
+         $('#calif_meta_1').addClass("calif-btn-style-with");
+
+         $('#calif_meta_2').removeClass("calif-btn-style-without");
+         $('#calif_meta_2').addClass("calif-btn-style-with");
+
+         $('#calif_meta_3').removeClass("calif-btn-style-without");
+         $('#calif_meta_3').addClass("calif-btn-style-with");
+
+         $('#calif_meta_4').removeClass("calif-btn-style-without");
+         $('#calif_meta_4').addClass("calif-btn-style-with");
+
+         $('#calif_meta_5').removeClass("calif-btn-style-without");
+         $('#calif_meta_5').addClass("calif-btn-style-with");
+
+
+     });
+
+
+      /* Calificación Seguridad */
+
+       $('#calif_seguridad_1').hover(function() {
+
+          document.getElementById("calif_seguridad").value=1;
+
+         $('#calif_seguridad_1').removeClass("calif-btn-style-without");
+         $('#calif_seguridad_1').addClass("calif-btn-style-with");
+
+         $('#calif_seguridad_2').removeClass("calif-btn-style-with");
+         $('#calif_seguridad_2').addClass("calif-btn-style-without");
+
+         $('#calif_seguridad_3').removeClass("calif-btn-style-with");
+         $('#calif_seguridad_3').addClass("calif-btn-style-without");
+
+         $('#calif_seguridad_4').removeClass("calif-btn-style-with");
+         $('#calif_seguridad_4').addClass("calif-btn-style-without");
+
+         $('#calif_seguridad_5').removeClass("calif-btn-style-with");
+         $('#calif_seguridad_5').addClass("calif-btn-style-without");
+
+
+     });
+
+       $('#calif_seguridad_2').hover(function() {
+
+         document.getElementById("calif_seguridad").value=2;
+
+         $('#calif_seguridad_1').removeClass("calif-btn-style-without");
+         $('#calif_seguridad_1').addClass("calif-btn-style-with");
+
+         $('#calif_seguridad_2').removeClass("calif-btn-style-without");
+         $('#calif_seguridad_2').addClass("calif-btn-style-with");
+
+         $('#calif_seguridad_3').removeClass("calif-btn-style-with");
+         $('#calif_seguridad_3').addClass("calif-btn-style-without");
+
+         $('#calif_seguridad_4').removeClass("calif-btn-style-with");
+         $('#calif_seguridad_4').addClass("calif-btn-style-without");
+
+         $('#calif_seguridad_5').removeClass("calif-btn-style-with");
+         $('#calif_seguridad_5').addClass("calif-btn-style-without");
+
+
+     });
+
+
+       $('#calif_seguridad_3').hover(function() {
+
+         document.getElementById("calif_seguridad").value=3;
+
+         $('#calif_seguridad_1').removeClass("calif-btn-style-without");
+         $('#calif_seguridad_1').addClass("calif-btn-style-with");
+
+         $('#calif_seguridad_2').removeClass("calif-btn-style-without");
+         $('#calif_seguridad_2').addClass("calif-btn-style-with");
+
+         $('#calif_seguridad_3').removeClass("calif-btn-style-without");
+         $('#calif_seguridad_3').addClass("calif-btn-style-with");
+
+         $('#calif_seguridad_4').removeClass("calif-btn-style-with");
+         $('#calif_seguridad_4').addClass("calif-btn-style-without");
+
+         $('#calif_seguridad_5').removeClass("calif-btn-style-with");
+         $('#calif_seguridad_5').addClass("calif-btn-style-without");
+
+
+     });
+
+
+      $('#calif_seguridad_4').hover(function() {
+
+         document.getElementById("calif_seguridad").value=4;
+
+         $('#calif_seguridad_1').removeClass("calif-btn-style-without");
+         $('#calif_seguridad_1').addClass("calif-btn-style-with");
+
+         $('#calif_seguridad_2').removeClass("calif-btn-style-without");
+         $('#calif_seguridad_2').addClass("calif-btn-style-with");
+
+         $('#calif_seguridad_3').removeClass("calif-btn-style-without");
+         $('#calif_seguridad_3').addClass("calif-btn-style-with");
+
+         $('#calif_seguridad_4').removeClass("calif-btn-style-without");
+         $('#calif_seguridad_4').addClass("calif-btn-style-with");
+
+         $('#calif_seguridad_5').removeClass("calif-btn-style-with");
+         $('#calif_seguridad_5').addClass("calif-btn-style-without");
+
+
+     });
+
+     $('#calif_seguridad_5').hover(function() {
+
+         document.getElementById("calif_seguridad").value=5;
+
+         $('#calif_seguridad_1').removeClass("calif-btn-style-without");
+         $('#calif_seguridad_1').addClass("calif-btn-style-with");
+
+         $('#calif_seguridad_2').removeClass("calif-btn-style-without");
+         $('#calif_seguridad_2').addClass("calif-btn-style-with");
+
+         $('#calif_seguridad_3').removeClass("calif-btn-style-without");
+         $('#calif_seguridad_3').addClass("calif-btn-style-with");
+
+         $('#calif_seguridad_4').removeClass("calif-btn-style-without");
+         $('#calif_seguridad_4').addClass("calif-btn-style-with");
+
+         $('#calif_seguridad_5').removeClass("calif-btn-style-without");
+         $('#calif_seguridad_5').addClass("calif-btn-style-with");
+
+
+     });
+
+
+
+    /* Calificación WC */
+
+       $('#calif_wc_1').hover(function() {
+
+          document.getElementById("calif_wc").value=1;
+
+         $('#calif_wc_1').removeClass("calif-btn-style-without");
+         $('#calif_wc_1').addClass("calif-btn-style-with");
+
+         $('#calif_wc_2').removeClass("calif-btn-style-with");
+         $('#calif_wc_2').addClass("calif-btn-style-without");
+
+         $('#calif_wc_3').removeClass("calif-btn-style-with");
+         $('#calif_wc_3').addClass("calif-btn-style-without");
+
+         $('#calif_wc_4').removeClass("calif-btn-style-with");
+         $('#calif_wc_4').addClass("calif-btn-style-without");
+
+         $('#calif_wc_5').removeClass("calif-btn-style-with");
+         $('#calif_wc_5').addClass("calif-btn-style-without");
+
+
+     });
+
+       $('#calif_wc_2').hover(function() {
+
+         document.getElementById("calif_wc").value=2;
+
+         $('#calif_wc_1').removeClass("calif-btn-style-without");
+         $('#calif_wc_1').addClass("calif-btn-style-with");
+
+         $('#calif_wc_2').removeClass("calif-btn-style-without");
+         $('#calif_wc_2').addClass("calif-btn-style-with");
+
+         $('#calif_wc_3').removeClass("calif-btn-style-with");
+         $('#calif_wc_3').addClass("calif-btn-style-without");
+
+         $('#calif_wc_4').removeClass("calif-btn-style-with");
+         $('#calif_wc_4').addClass("calif-btn-style-without");
+
+         $('#calif_wc_5').removeClass("calif-btn-style-with");
+         $('#calif_wc_5').addClass("calif-btn-style-without");
+
+
+     });
+
+
+       $('#calif_wc_3').hover(function() {
+
+         document.getElementById("calif_wc").value=3;
+
+         $('#calif_wc_1').removeClass("calif-btn-style-without");
+         $('#calif_wc_1').addClass("calif-btn-style-with");
+
+         $('#calif_wc_2').removeClass("calif-btn-style-without");
+         $('#calif_wc_2').addClass("calif-btn-style-with");
+
+         $('#calif_wc_3').removeClass("calif-btn-style-without");
+         $('#calif_wc_3').addClass("calif-btn-style-with");
+
+         $('#calif_wc_4').removeClass("calif-btn-style-with");
+         $('#calif_wc_4').addClass("calif-btn-style-without");
+
+         $('#calif_wc_5').removeClass("calif-btn-style-with");
+         $('#calif_wc_5').addClass("calif-btn-style-without");
+
+
+     });
+
+
+      $('#calif_wc_4').hover(function() {
+
+         document.getElementById("calif_wc").value=4;
+
+         $('#calif_wc1').removeClass("calif-btn-style-without");
+         $('#calif_wc1').addClass("calif-btn-style-with");
+
+         $('#calif_wc_2').removeClass("calif-btn-style-without");
+         $('#calif_wc_2').addClass("calif-btn-style-with");
+
+         $('#calif_wc_3').removeClass("calif-btn-style-without");
+         $('#calif_wc_3').addClass("calif-btn-style-with");
+
+         $('#calif_wc_4').removeClass("calif-btn-style-without");
+         $('#calif_wc_4').addClass("calif-btn-style-with");
+
+         $('#calif_wc_5').removeClass("calif-btn-style-with");
+         $('#calif_wc_5').addClass("calif-btn-style-without");
+
+
+     });
+
+     $('#calif_wc_5').hover(function() {
+
+         document.getElementById("calif_wc").value=5;
+
+         $('#calif_wc_1').removeClass("calif-btn-style-without");
+         $('#calif_wc_1').addClass("calif-btn-style-with");
+
+         $('#calif_wc_2').removeClass("calif-btn-style-without");
+         $('#calif_wc_2').addClass("calif-btn-style-with");
+
+         $('#calif_wc_3').removeClass("calif-btn-style-without");
+         $('#calif_wc_3').addClass("calif-btn-style-with");
+
+         $('#calif_wc_4').removeClass("calif-btn-style-without");
+         $('#calif_wc_4').addClass("calif-btn-style-with");
+
+         $('#calif_wc_5').removeClass("calif-btn-style-without");
+         $('#calif_wc_5').addClass("calif-btn-style-with");
+
+
+     });
+
+
+
+
+
+
+
+
+$("#input-you-run-check").click(function() {
+        if($("#input-you-run-check").is(':checked')) {
+            //alert("Está activado");
+
+            $("#box-calif-run-check").fadeIn();
+
+
+        } else {
+            //alert("No está activado");
+            $("#box-calif-run-check").fadeOut();
+        }
+    });
+
+
+$("#btn-link-send-form").click(function() {
+
+
+    SaveComment();
+
+
+});
+
+
+
+
+/* -----------  Image 1 - Add Pic  ------------ 1 */
+
+
+$('#adFile_1_div').click(function(event) {
+  $('#file1').click();
+});
+
+
+
+$('#adFile_1_imageLink').click(function(event) {
+  $('#file1').click();
+});
+
+
+/* -----------  Image 1 - Remove Pic  ------------ 1 */
+$('#ReFile_1_imageLink').click(function(event) {
+    $("#removePic_1").fadeOut("fast",function(){
+        $("#addPic_1").fadeIn("slow");
+    });
+
+     STATUS_FILE_1="0";
+});
+
+
+$('#ReFile_1_div').click(function(event) {
+    $("#removePic_1").fadeOut("fast",function(){
+        $("#addPic_1").fadeIn("slow");
+    });
+
+     STATUS_FILE_1="0";
+});
+
+
+$('#file1').change(function(click) {
+
+
+    $("#addPic_1").fadeOut(function(){
+        $("#removePic_1").fadeIn();
+
+    });
+
+    readURL(this, "imgPicFile-ad-f_1");
+    STATUS_FILE_1="1";
+
+});
+
+/* -----------  Image 2 - Add Pic  ------------ 1 */
+
+
+$('#adFile_2_div').click(function(event) {
+  $('#file2').click();
+});
+
+
+
+$('#adFile_2_imageLink').click(function(event) {
+  $('#file2').click();
+});
+
+
+/* -----------  Image 1 - Remove Pic  ------------ 1 */
+$('#ReFile_2_imageLink').click(function(event) {
+    $("#removePic_2").fadeOut("fast",function(){
+        $("#addPic_2").fadeIn("slow");
+    });
+
+     STATUS_FILE_2=0;
+});
+
+
+$('#ReFile_2_div').click(function(event) {
+    $("#removePic_2").fadeOut("fast",function(){
+        $("#addPic_2").fadeIn("slow");
+    });
+
+     STATUS_FILE_2=0;
+});
+
+
+$('#file2').change(function(click) {
+
+    $("#addPic_2").fadeOut(function(){
+        $("#removePic_2").fadeIn();
+
+    });
+
+    readURL(this, "imgPicFile-ad-f_2");
+    STATUS_FILE_2=1;
+
+});
+
+
+/* -----------  Image 3 - Add Pic  ------------ 1 */
+
+$('#adFile_3_div').click(function(event) {
+  $('#file3').click();
+});
+
+
+
+$('#adFile_3_imageLink').click(function(event) {
+  $('#file3').click();
+});
+
+
+/* -----------  Image 1 - Remove Pic  ------------ 1 */
+$('#ReFile_3_imageLink').click(function(event) {
+    $("#removePic_3").fadeOut("fast",function(){
+        $("#addPic_3").fadeIn("slow");
+    });
+
+     STATUS_FILE_3=0;
+});
+
+
+$('#ReFile_3_div').click(function(event) {
+    $("#removePic_3").fadeOut("fast",function(){
+        $("#addPic_3").fadeIn("slow");
+    });
+
+     STATUS_FILE_3=0;
+});
+
+
+$('#file3').change(function(click) {
+
+
+
+    $("#addPic_3").fadeOut(function(){
+        $("#removePic_3").fadeIn();
+
+    });
+
+    readURL(this, "imgPicFile-ad-f_3");
+    STATUS_FILE_3=1;
+
+});
+
+});
+
+function readURL(input, divimg) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                $('#'+divimg).attr('src', e.target.result);
+            }
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+
+function getCookie(name) {
+            var cookieValue = null;
+            if (document.cookie && document.cookie != '') {
+                var cookies = document.cookie.split(';');
+                for (var i = 0; i < cookies.length; i++) {
+                    var cookie = jQuery.trim(cookies[i]);
+                    // Does this cookie string begin with the name we want?
+                    if (cookie.substring(0, name.length + 1) == (name + '=')) {
+                        cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                        break;
+                    }
+                }
+            }
+            return cookieValue;
+        }
+
+
+ function csrfSafeMethod(method) {
+                            // these HTTP methods do not require CSRF protection
+                            return (/^(GET|HEAD|OPTIONS|TRACE)$/.test(method));
+                        }
+
+
+
+
+
+
+
+function SaveComment()
+{
+
+ $("#input-text-title-comment").removeClass("input-text-color-alert");
+
+ $("#input-text-comments-comment").removeClass("input-text-color-alert");
+
+
+var parti=0;
+var acept=0;
+
+if($("#input-you-run-check").is(':checked')){
+
+
+                    $("#box-alert-bottom-msg").addClass("box-alert-bottom-msg-h")
+                    $("#txt-send-su-newme").fadeOut();
+                    $("#loader-alert-cmess").fadeIn();
+                    $("#txt-alert-box-cmess").fadeOut();
+
+    parti=1;
+}
+ else{
+    parti=0;
+}
+
+
+if($("#input-acept-check").is(':checked')){
+acept=1;
+}
+else
+{
+acept=0;
+}
+
+   var csrftoken = getCookie('csrftoken');
+
+
+    $.ajaxSetup({
+                             beforeSend: function(xhr, settings) {
+
+                                if (!csrfSafeMethod(settings.type) && !this.crossDomain) {
+                                    xhr.setRequestHeader("X-CSRFToken", csrftoken);
+                                }
+                            }
+
+                        });
+
+
+
+            $.ajax({
+             type: "POST",
+             url: "/create-comment/",
+
+             error:function(){
+
+                    $("#box-alert-bottom-msg").addClass("box-alert-bottom-msg-h")
+                    $("#txt-send-su-newme").fadeOut("fast",function(){
+                         $("#loader-alert-cmess").fadeOut("fast",function(){
+                             $("#txt-alert-box-cmess").fadeIn();
+                             $("#txt-alert-box-cmess" ).html("* Problemas de conexión, intente más tarde.");
+                         });
+                    });
+
+
+             },
+
+             statusCode: {
+                        404: function() {
+
+                    $("#txt-send-su-newme").fadeOut("fast",function(){
+
+                        $("#loader-alert-cmess").fadeOut("fast",function(){
+                            $("#txt-alert-box-cmess").fadeIn();
+                            $("#txt-alert-box-cmess" ).html("* Error 404, vuelta intentar más tarde.");
+                        });
+                        $("#box-alert-bottom-msg").addClass("box-alert-bottom-msg-h")
+
+                    });
+
+              }
+             },
+
+             data: {
+
+                    id_event: $("#id_event").val(),
+                    title_comment: $("#input-text-title-comment").val(),
+                    comments:$("#input-text-comments-comment").val(),
+                    accept: acept,
+                    particiate: parti,
+                    year_run:$("#input-select-year").val(),
+                    calif_general:$("#calif_general").val(),
+                    calif_hidratacion:$("#calif_hidratacion").val(),
+                    calif_ruta:$("#calif_ruta").val(),
+                    calif_parking:$("#calif_parking").val(),
+                    calif_ambiente:$("#calif_ambiente").val(),
+                    calif_music:$("#calif_music").val(),
+                    calif_medalla:$("#calif_medalla").val(),
+                    calif_salida:$("#calif_salida").val(),
+                    calif_meta:$("#calif_meta").val(),
+                    calif_seguridad:$("#calif_seguridad").val(),
+                    calif_wc:$("#calif_wc").val(),
+                    STATUS_FILE_1: STATUS_FILE_1,
+                    STATUS_FILE_2: STATUS_FILE_2,
+                    STATUS_FILE_3:STATUS_FILE_3
+             }
+
+         }) .done(function( msg ) {
+
+
+                alert(msg);
+
+                if(msg=="-1")
+                {
+                    $("#txt-send-su-newme").fadeOut("fast",function(){
+                        $("#loader-alert-cmess").fadeOut("fast",function(e){
+                            $("#box-alert-bottom-msg").addClass("box-alert-bottom-msg-h");
+                            $("#txt-alert-box-cmess").fadeIn("fast",function(){
+                                $("#txt-alert-box-cmess" ).html("* No se permiten campos en blanco");
+                            });
+                        });
+                    });
+
+                   if(document.getElementById("input-text-title-comment").value==""){
+
+
+
+                       $("#input-text-title-comment").addClass("input-text-color-alert");
+
+                   }
+
+                   if(document.getElementById("input-text-comments-comment").value==""){
+
+
+
+                        $("#input-text-comments-comment").addClass("input-text-color-alert");
+                   }
+
+
+                }
+
+
+                 if(msg=="-2")
+                 {
+
+                     $("#txt-send-su-newme").fadeOut("fast",function(){
+                         $("#loader-alert-cmess").fadeOut("fast",function(){
+                              $("#box-alert-bottom-msg").addClass("box-alert-bottom-msg-h")
+                               $("#txt-alert-box-cmess").fadeIn("fast",function(){
+                                   $("#txt-alert-box-cmess").html("* El Título debe tener maximo 50 caracteres.");
+                                   $("#input-text-title-comment").addClass("input-text-color-alert");
+                               });
+
+                         });
+                     });
+
+                 }
+
+
+
+
+                 if(msg=="-3")
+                 {
+
+                     $("#txt-send-su-newme").fadeOut("fast",function(){
+
+                         $("#loader-alert-cmess").fadeOut("fast",function(){
+
+                             $("#box-alert-bottom-msg").addClass("box-alert-bottom-msg-h");
+
+                             $("#txt-alert-box-cmess").fadeIn("fast",function(){
+
+
+                                  $("#txt-alert-box-cmess").html("* Máximo 450 caracteres en el campo de comentarios.");
+
+
+                                    $("#input-text-comments-comment").addClass("input-text-color-alert");
+
+                             });
+
+                         });
+
+
+                     });
+
+
+
+
+                 }
+
+
+                if(msg=="-4")
+                 {
+
+                     $("#txt-send-su-newme").fadeOut("fast",function(){
+
+
+                         $("#loader-alert-cmess").fadeOut("fast",function(){
+
+                              $("#box-alert-bottom-msg").addClass("box-alert-bottom-msg-h");
+
+                               $("#txt-alert-box-cmess").fadeIn("fast",function(){
+
+                                    $("#txt-alert-box-cmess").html("* Es obligatorio compartir una calificación general");
+
+                               });
+
+
+                         });
+
+
+                     });
+
+
+
+
+
+
+                 }
+
+
+
+                if(msg=="-5")
+                 {
+
+                     $("#txt-send-su-newme").fadeOut("fast",function(){
+                       $("#loader-alert-cmess").fadeOut("fast",function(){
+                           $("#box-alert-bottom-msg").addClass("box-alert-bottom-msg-h");
+                           $("#txt-alert-box-cmess").fadeIn("fast",function(){
+                                $("#txt-alert-box-cmess").html("* Seleccione el año en el que participo en el evento");
+                           });
+
+                       });
+
+                     });
+
+
+
+
+                 }
+
+
+
+                if(msg=="-6")
+                 {
+
+                     $("#txt-send-su-newme").fadeOut("fast",function(){
+                         $("#loader-alert-cmess").fadeOut("fast",function(){
+                             $("#box-alert-bottom-msg").addClass("box-alert-bottom-msg-h");
+                             $("#txt-alert-box-cmess").fadeIn("fast",function(){
+                              $("#txt-alert-box-cmess").html("* Califique a lo menos un circulo por detalle del evento");
+
+                             });
+
+                         });
+
+                     });
+
+
+
+                 }
+
+
+
+                if(msg=="-7")
+                 {
+
+                     $("#txt-send-su-newme").fadeOut("fast",function(){
+
+                         $("#loader-alert-cmess").fadeOut("fast",function(){
+
+                             $("#box-alert-bottom-msg").addClass("box-alert-bottom-msg-h");
+
+                              $("#txt-alert-box-cmess").fadeIn("fast",function(){
+                                  $("#txt-alert-box-cmess").html("* Acepte los terminos y certifique.");
+                              });
+
+
+                         });
+
+
+                     });
+
+
+
+                 }
+
+
+
+                  if(msg=="1")
+                 {
+
+                     $("#txt-send-su-newme").fadeIn("fast",function(){
+                        $("#txt-alert-box-cmess").fadeOut();
+
+                         $("#loader-alert-cmess").fadeOut("fast",function(){
+                             $("#box-alert-bottom-msg").addClass("box-alert-bottom-msg-h");
+
+
+                         });
+                     });
+
+
+
+
+                     if(STATUS_FILE_1!="0" || STATUS_FILE_2!="0" || STATUS_FILE_3!="0")
+                     {
+                       document.getElementById("form_send").submit();
+
+                     }
+                     else
+                     {
+                        var current = document.URL;
+                        current = current.split("/New-Comment/");
+
+                        window.location.href = current[0];
+
+                     }
+
+
+
+                 }
+
+         });
+
+
+}
+
+{% include "Scripts/secript_search_header.html" %}
+
+
+
+
+</script>
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+</head>
+<body>
+<div id="fb-root"></div>
+
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&appId=222474031234173&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div class="header-header">
+<header>
+
+{% include "Home/header.html" %}
+
+</header>
+</div>
+
+
+
+<div class="content_info">
+
+   <div class="left left-form-new-comment">
+
+
+
+            <div class="header-form-new-c">
+                <div class="left"><img src="/{{ STATIC_URL }}imgs/carrera-a.png" width="101" height="65" border="0"></div>
+                <div class="left txt-title-new-c"><div class="txt-title-new-c-top">{{ data.name_event }}</div><div class="txt-title-new-c-b">{{ data.city }}, {{ data.country }}</div></div>
+                <div class="clear"></div>
+            </div>
+
+            <div class="line-aux-form-n-c"></div>
+
+
+
+            <div class="txt-title-fields-form txt-title-fields-form-s">* T&iacute;tulo de tu comentario</div>
+            <div class="input-text-ml"><input type="text" class="input-title-comment input-text-content" name="input-text-title-comment" id="input-text-title-comment"></div>
+            <div class="txt-title-fields-form txt-title-fields-form-s">* Comentarios</div>
+            <div class="input-text-ml"><textarea class="input-title-comment-cc input-text-content-cc" name="input-text-comments-comment" id="input-text-comments-comment"></textarea></div>
+
+            <div class="left btn-select-ac"><input type="checkbox"  value="1" name="input-you-run-check" id="input-you-run-check"></div>
+            <div class="left txt-ace-c">He participado en este evento</div>
+            <div class="clear"></div>
+
+         <div class="box-calif-run-check" id="box-calif-run-check">
+
+            <div class="txt-title-new-cc">Califaci&oacute;n General</div>
+
+            <div class="Points_Item">
+					<div class="FirtsNoFull left" id="calif_1"></div>
+					<div class="NextNoFull left" id="calif_2"></div>
+					<div class="NextNoFull left" id="calif_3"></div>
+					<div class="NextNoFull left" id="calif_4"></div>
+					<div class="NextNoFull left" id="calif_5"></div>
+                    <div class="pico-icon left"><img src="/{{ STATIC_URL }}imgs/pico.png" width="4" height="9"></div>
+					<div class="calif-select left">
+                        <div class="txt-calif-c" id="txt-calif-c"></div>
+					</div>
+					<div class="clear"></div>
+			</div>
+
+            <div class="txt-title-fields-form txt-title-fields-form-s">¿En qu&eacute; a&ntilde;o participo?</div>
+            <div class="select-input-year">
+                <select class="select-input-year-item" name="input-select-year" id="input-select-year">
+                    <option value="0">Selecciona uno</option>
+                    <option value="2000">2000</option>
+                    <option value="2001">2001</option>
+                    <option value="2002">2002</option>
+                    <option value="2003">2003</option>
+                    <option value="2004">2004</option>
+                    <option value="2005">2005</option>
+                    <option value="2006">2006</option>
+                    <option value="2007">2007</option>
+                    <option value="2008">2008</option>
+                    <option value="2009">2009</option>
+                    <option value="2010">2010</option>
+                    <option value="2011">2011</option>
+                    <option value="2012">2012</option>
+                    <option value="2013">2013</option>
+                    <option value="2014">2014</option>
+                    <option value="2015">2015</option>
+                </select>
+            </div>
+            <div class="line-aux-form-n-c"></div>
+            <div class="txt-title-fields-form txt-title-fields-form-s">Te gustar&iacute;a compartir tus fotos <span class="txt-title-fields-form-optional">(Opcional)</span></div>
+
+            <form method="post" enctype="multipart/form-data" action="/send-form-new-comment/" id="form_send" name=form_send">{% csrf_token %}
+            <div class="select-pic-form left">
+
+                <div class="addPic" id="addPic_1">
+                    <div class="img-select-form-icon">
+                        <a href="javascript:void(0)" id="adFile_1_imageLink" class="txt-link-add-pic-link"><img src="/{{ STATIC_URL }}imgs/agregar-foto.png" width="24" height="20"></a>
+                    </div>
+                    <div class="txt-link-add-pic"><a href="javascript:void(0)" id="adFile_1_div" class="txt-link-add-pic-link">Agregar Foto</a></div>
+                    <div class="fileDiv">
+                        <input type="file" id="file1" name="file1">
+                    </div>
+                </div>
+
+
+                <div class="removePic" id="removePic_1">
+                    <div class="imgPicFile-ad"><img  id="imgPicFile-ad-f_1" src="" class="imgPicFile-adFile"></div>
+                    <div class="alfaPic-ad">
+                        <div class="img-select-form-icon">
+                             <a href="javascript:void(0)" class="txt-link-del-pic_link" id="ReFile_1_imageLink"><img src="/{{ STATIC_URL }}imgs/eliminar-foto.png" width="27" height="20"></a>
+                        </div>
+                        <div class="txt-link-del-pic"><a href="javascript:void(0)" class="txt-link-del-pic_link" id="ReFile_1_div">Eliminar Foto</a></div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+             <div class="select-pic-form left mpic">
+
+                <div class="addPic" id="addPic_2">
+                    <div class="img-select-form-icon">
+                        <a href="javascript:void(0)" id="adFile_2_imageLink" class="txt-link-add-pic-link"><img src="/{{ STATIC_URL }}imgs/agregar-foto.png" width="24" height="20"></a>
+                    </div>
+                    <div class="txt-link-add-pic"><a href="javascript:void(0)" id="adFile_2_div" class="txt-link-add-pic-link">Agregar Foto</a></div>
+                    <div class="fileDiv">
+                        <input type="file" id="file2" name="file2">
+                    </div>
+                </div>
+
+
+                <div class="removePic" id="removePic_2">
+                    <div class="imgPicFile-ad"><img  id="imgPicFile-ad-f_2" src="" class="imgPicFile-adFile"></div>
+                    <div class="alfaPic-ad">
+                        <div class="img-select-form-icon">
+                             <a href="javascript:void(0)" class="txt-link-del-pic_link" id="ReFile_2_imageLink"><img src="/{{ STATIC_URL }}imgs/eliminar-foto.png" width="27" height="20"></a>
+                        </div>
+                        <div class="txt-link-del-pic"><a href="javascript:void(0)" class="txt-link-del-pic_link" id="ReFile_2_div">Eliminar Foto</a></div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <div class="select-pic-form left mpic">
+
+                <div class="addPic" id="addPic_3">
+                    <div class="img-select-form-icon">
+                        <a href="javascript:void(0)" id="adFile_3_imageLink" class="txt-link-add-pic-link"><img src="/{{ STATIC_URL }}imgs/agregar-foto.png" width="24" height="20"></a>
+                    </div>
+                    <div class="txt-link-add-pic"><a href="javascript:void(0)" id="adFile_3_div" class="txt-link-add-pic-link">Agregar Foto</a></div>
+                    <div class="fileDiv">
+                        <input type="file" id="file3" name="file3">
+                    </div>
+                </div>
+
+
+                <div class="removePic" id="removePic_3">
+                    <div class="imgPicFile-ad"><img  id="imgPicFile-ad-f_3" src="" class="imgPicFile-adFile"></div>
+                    <div class="alfaPic-ad">
+                        <div class="img-select-form-icon">
+                             <a href="javascript:void(0)" class="txt-link-del-pic_link" id="ReFile_3_imageLink"><img src="/{{ STATIC_URL }}imgs/eliminar-foto.png" width="27" height="20"></a>
+                        </div>
+                        <div class="txt-link-del-pic"><a href="javascript:void(0)" class="txt-link-del-pic_link" id="ReFile_3_div">Eliminar Foto</a></div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="clear"></div>
+            </form>
+
+
+            <div class="line-aux-form-n-c"></div>
+            <div class="txt-title-types-calif">¿Te gustar&iacute;a dar m&aacute;s detalles? <span class="txt-title-fields-form-optional"></span></div>
+            <div class="items-calif-btns">
+
+                <div class="item-calif-btn">
+
+                    <div class="left options-calif">
+                        <div class="left left-input-calif-l calif-btn-style-without" id="calif_hidratacion_1"></div>
+                        <div class="left left-input-calif-l calif-btn-style-without" id="calif_hidratacion_2"></div>
+                        <div class="left left-input-calif-l calif-btn-style-without" id="calif_hidratacion_3"></div>
+                        <div class="left left-input-calif-l calif-btn-style-without" id="calif_hidratacion_4"></div>
+                        <div class="left left-input-calif-l calif-btn-style-without" id="calif_hidratacion_5"></div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="txt-title-btn-c left">Hidrataci&oacute;n</div>
+                    <div class="clear"></div>
+
+
+                    <div class="left options-calif">
+                        <div class="left left-input-calif-l calif-btn-style-without"    id="calif_organizacion_1"></div>
+                        <div class="left left-input-calif-l calif-btn-style-without" id="calif_organizacion_2"></div>
+                        <div class="left left-input-calif-l calif-btn-style-without" id="calif_organizacion_3"></div>
+                        <div class="left left-input-calif-l calif-btn-style-without" id="calif_organizacion_4"></div>
+                        <div class="left left-input-calif-l calif-btn-style-without" id="calif_organizacion_5"></div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="txt-title-btn-c left">Organizaci&oacute;n</div>
+                    <div class="clear"></div>
+
+
+
+                    <div class="left options-calif">
+                        <div class="left left-input-calif-l calif-btn-style-without" id="calif_ruta_1"></div>
+                        <div class="left left-input-calif-l calif-btn-style-without" id="calif_ruta_2"></div>
+                        <div class="left left-input-calif-l calif-btn-style-without" id="calif_ruta_3"></div>
+                        <div class="left left-input-calif-l calif-btn-style-without" id="calif_ruta_4"></div>
+                        <div class="left left-input-calif-l calif-btn-style-without" id="calif_ruta_5"></div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="txt-title-btn-c left">Ruta</div>
+                    <div class="clear"></div>
+
+
+
+                    <div class="left options-calif">
+                        <div class="left left-input-calif-l calif-btn-style-without" id="calif_parking_1"></div>
+                        <div class="left left-input-calif-l calif-btn-style-without" id="calif_parking_2"></div>
+                        <div class="left left-input-calif-l calif-btn-style-without" id="calif_parking_3"></div>
+                        <div class="left left-input-calif-l calif-btn-style-without" id="calif_parking_4"></div>
+                        <div class="left left-input-calif-l calif-btn-style-without" id="calif_parking_5"></div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="txt-title-btn-c left">Estacionamiento</div>
+                    <div class="clear"></div>
+
+
+
+                    <div class="left options-calif">
+                        <div class="left left-input-calif-l calif-btn-style-without" id="calif_ambiente_1"></div>
+                        <div class="left left-input-calif-l calif-btn-style-without" id="calif_ambiente_2"></div>
+                        <div class="left left-input-calif-l calif-btn-style-without" id="calif_ambiente_3"></div>
+                        <div class="left left-input-calif-l calif-btn-style-without" id="calif_ambiente_4"></div>
+                        <div class="left left-input-calif-l calif-btn-style-without" id="calif_ambiente_5"></div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="txt-title-btn-c left">Ambiente</div>
+                    <div class="clear"></div>
+
+
+
+                    <div class="left options-calif">
+                        <div class="left left-input-calif-l calif-btn-style-without" id="calif_music_1"></div>
+                        <div class="left left-input-calif-l calif-btn-style-without" id="calif_music_2"></div>
+                        <div class="left left-input-calif-l calif-btn-style-without" id="calif_music_3"></div>
+                        <div class="left left-input-calif-l calif-btn-style-without" id="calif_music_4"></div>
+                        <div class="left left-input-calif-l calif-btn-style-without" id="calif_music_5"></div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="txt-title-btn-c left">Musica</div>
+                    <div class="clear"></div>
+
+
+
+                    <div class="left options-calif">
+                        <div class="left left-input-calif-l calif-btn-style-without" id="calif_medalla_1"></div>
+                        <div class="left left-input-calif-l calif-btn-style-without" id="calif_medalla_2"></div>
+                        <div class="left left-input-calif-l calif-btn-style-without" id="calif_medalla_3"></div>
+                        <div class="left left-input-calif-l calif-btn-style-without" id="calif_medalla_4"></div>
+                        <div class="left left-input-calif-l calif-btn-style-without" id="calif_medalla_5"></div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="txt-title-btn-c left">Medalla</div>
+                    <div class="clear"></div>
+
+
+
+                    <div class="left options-calif">
+                        <div class="left left-input-calif-l calif-btn-style-without" id="calif_salida_1"></div>
+                        <div class="left left-input-calif-l calif-btn-style-without" id="calif_salida_2"></div>
+                        <div class="left left-input-calif-l calif-btn-style-without" id="calif_salida_3"></div>
+                        <div class="left left-input-calif-l calif-btn-style-without" id="calif_salida_4"></div>
+                        <div class="left left-input-calif-l calif-btn-style-without" id="calif_salida_5"></div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="txt-title-btn-c left">Salida</div>
+                    <div class="clear"></div>
+
+
+
+
+                    <div class="left options-calif">
+                        <div class="left left-input-calif-l calif-btn-style-without" id="calif_meta_1"></div>
+                        <div class="left left-input-calif-l calif-btn-style-without" id="calif_meta_2"></div>
+                        <div class="left left-input-calif-l calif-btn-style-without" id="calif_meta_3"></div>
+                        <div class="left left-input-calif-l calif-btn-style-without" id="calif_meta_4"></div>
+                        <div class="left left-input-calif-l calif-btn-style-without" id="calif_meta_5"></div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="txt-title-btn-c left">Meta</div>
+                    <div class="clear"></div>
+
+
+
+                    <div class="left options-calif">
+                        <div class="left left-input-calif-l calif-btn-style-without" id="calif_seguridad_1"></div>
+                        <div class="left left-input-calif-l calif-btn-style-without" id="calif_seguridad_2"></div>
+                        <div class="left left-input-calif-l calif-btn-style-without" id="calif_seguridad_3"></div>
+                        <div class="left left-input-calif-l calif-btn-style-without" id="calif_seguridad_4"></div>
+                        <div class="left left-input-calif-l calif-btn-style-without" id="calif_seguridad_5"></div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="txt-title-btn-c left">Seguridad</div>
+                    <div class="clear"></div>
+
+
+
+                    <div class="left options-calif">
+                        <div class="left left-input-calif-l calif-btn-style-without" id="calif_wc_1"></div>
+                        <div class="left left-input-calif-l calif-btn-style-without" id="calif_wc_2"></div>
+                        <div class="left left-input-calif-l calif-btn-style-without" id="calif_wc_3"></div>
+                        <div class="left left-input-calif-l calif-btn-style-without" id="calif_wc_4"></div>
+                        <div class="left left-input-calif-l calif-btn-style-without" id="calif_wc_5"></div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="txt-title-btn-c left">WC</div>
+                    <div class="clear"></div>
+
+
+                </div>
+
+            </div>
+            <div class="line-aux-form-n-c"></div>
+            <div class="left btn-select-ac"><input type="checkbox"  value="1" name="input-acept-check" id="input-acept-check"></div>
+            <div class="left txt-ace-c">Certifico que esta opinión está basada en mi propia experiencia, que refleja mi opinión sincera<br>
+de este evento, que no tengo ninguna relación, ya sea personal o empresarial, con esta<br>
+institución y que dicha institución no me ha ofrecido incentivo o pago alguno por escribirla.</div>
+
+            <!-- Inputs hide values -->
+
+            <input type="hidden" value="0" name="calif_general" id="calif_general">
+            <input type="hidden" value="0" name="calif_hidratacion" id="calif_hidratacion">
+            <input type="hidden" value="0" name="calif_organizacion" id="calif_organizacion">
+             <input type="hidden" value="0" name="calif_ruta" id="calif_ruta">
+            <input type="hidden" value="0" name="calif_parking" id="calif_parking">
+            <input type="hidden" value="0" name="calif_ambiente" id="calif_ambiente">
+            <input type="hidden" value="0" name="calif_music" id="calif_music">
+            <input type="hidden" value="0" name="calif_medalla" id="calif_medalla">
+            <input type="hidden" value="0" name="calif_salida" id="calif_salida">
+            <input type="hidden" value="0" name="calif_meta" id="calif_meta">
+            <input type="hidden" value="0" name="calif_seguridad" id="calif_seguridad">
+            <input type="hidden" value="0" name="calif_wc" id="calif_wc">
+            <input type="hidden" value="{{ id }}" name="id_event" id="id_event">
+
+
+            <!-- Inputs hides values End -->
+            <div class="clear"></div>
+            </div>
+            <div class="btn-send-comment"><div class="btn-send-comment-txt"><a href="#box-alert-bottom-msg" id="btn-link-send-form" class="btn-send-comment-txt-link">Enviar</a></div></div>
+            <div class="separet-btn-send"></div>
+
+           <div class="box-alert-bottom-msg" id="box-alert-bottom-msg">
+
+                   <div class="txt-alert-box-cmess" id="txt-alert-box-cmess">
+
+                   </div>
+
+                   <div class="loader-alert-cmess" id="loader-alert-cmess">
+
+                         <div class="spinner2">
+                              <div class="bounce11"></div>
+                              <div class="bounce22"></div>
+                              <div class="bounce33"></div>
+                        </div>
+
+                   </div>
+
+                   <div class="txt-send-su-newme" id="txt-send-su-newme">
+                        <div class="left"><img src="/{{ STATIC_URL }}imgs/enviado-formulario.png" width="20" height="20"></div>
+                        <div class="left txt-enviado-btnimg">Enviado</div>
+                        <div class="clear"></div>
+                   </div>
+
+           </div>
+
+   </div>
+
+	<div class="ads left">
+		<div><img src="/{{ STATIC_URL }}imgs/ad1.png" width="300" height="301" class="imgad"></div>
+
+		<div class="ecommerceAds">
+
+			<div class="TitleEcommerce">
+
+                <div class="left imgRunner"><img src="/{{ STATIC_URL }}imgs/runner.png" width="22" height="24"></div>
+				<div class="left titleCommer">EQU&Iacute;PATE</div>
+				<div class="clear"></div>
+
+			</div>
+
+			<div class="content_commerce">
+
+				<div class="items_commerce">
+
+					<div id="item_commerce_1" class="Item-Top">
+						<div class="left img_commerce">
+							<img src="/{{ STATIC_URL }}imgs/iwat.png" width="106" height="64">
+						</div>
+						<div class="left item_right">
+							<div class="Title-Commerce-Item">TomTom</div>
+							<div class="SubTitle-Commerce-Item">Runner Cardio</div>
+							<div class="Btn-Item-Commerce"><div class="Txt-Button">Comprar</div></div>
+						</div>
+						<div class="clear"></div>
+						<div class="Line-Commerce-Item"></div>
+					</div>
+
+					<div id="item_commerce_2" class="Item-Top">
+						<div class="left img_commerce">
+							<img src="/{{ STATIC_URL }}imgs/iwat.png" width="106" height="64">
+						</div>
+						<div class="left item_right">
+							<div class="Title-Commerce-Item">TomTom</div>
+							<div class="SubTitle-Commerce-Item">Runner Cardio</div>
+							<div class="Btn-Item-Commerce"><div class="Txt-Button">Comprar</div></div>
+						</div>
+						<div class="clear"></div>
+						<div class="Line-Commerce-Item"></div>
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+	<div class="clear"></div>
+</div>
+
+</body>
+</html>

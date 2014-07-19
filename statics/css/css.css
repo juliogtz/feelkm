@@ -1,0 +1,67 @@
+/*
+* Css File FeelKm.
+* Author: Jc Gtz.
+* Description: General File CSS.
+* Last update: July 2014.
+*
+*/
+
+body{
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+/* Aux Styles */
+.left{
+	float: left;
+}
+
+.clear{
+	clear: both;
+}
+
+/*
+
+ Header Section
+
+ */
+.autocomplete-suggestion {
+    /*padding: 2px 10px; */
+    padding-left: 15px;
+    padding-top: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    height: 35px;
+    font-size: 13px;
+    color: #616161;
+
+
+}
+
+.autocomplete-selected { background: #f1f1f1; font-size: 13px; height: 35px;   color: #616161;
+
+ padding-left: 15px;
+    padding-top: 15px;
+}
+.autocomplete-suggestions strong { font-weight: normal; color: #616161; font-size: 13px; }
+
+header
+{
+width: 1128px;
+height: 57px;
+margin: 0 auto;
+}
+
+
+.logo{
+width: 97px;
+	height: 25px;
+	margin-left: 0px;
+	margin-top: 19px;
+}
+
+.inputSearchH{
+	margin-left: 8px;
+	margin-top: 11px;
+}

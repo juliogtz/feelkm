@@ -1,0 +1,161 @@
+<div class="box-access" id="box-access">
+
+    <div id="box-register" class="box-register">
+
+        <div class="box-register-title">Bienvenido a FeelKm</div>
+
+        <div class="box-btn-register-feacebook"><img src="/{{ STATIC_URL }}imgs/btn-register-facebook.png" class="btn-register-facebook" id="btn-register-facebook"></div>
+        <div class="line-register-s"></div>
+        <div class="sub-title-register"><a href ="javascript:void(0)" class="sub-title-register-link" id="sub-title-register-link">Reg&iacute;stro con Correo Electr&oacute;nico</a></div>
+        <div class="footer-txt-register">¿Ya eres miembro de Feelkm? <a href="javascript:void(0)" id="link-open-login-from-register" class="footer-txt-register-link">Iniciar Sesi&oacute;n</a></div>
+
+    </div>
+
+    <div class="box-register-form-wait" id="box-register-form-wait">
+            <div class="spinner spinner-register-form">
+              <div class="bounce1"></div>
+              <div class="bounce2"></div>
+              <div class="bounce3"></div>
+            </div>
+    </div>
+
+    <div id="box-register-form" class="box-register-form">
+        <form>{% csrf_token %}
+
+        <div class="box-register-title">Bienvenido a FeelKm</div>
+
+
+       <div class="box-btn-register-feacebook" id="btn-register-facebook-form-r"><img src="/{{ STATIC_URL }}imgs/btn-register-facebook.png" class="btn-register-facebook" id="btn-register-facebook-2"></div>
+
+        <div class="line-register-s" id="line-form-register-aux"></div>
+
+        <div class="form-register-full">
+
+
+            <div class="input-form-register">
+                <input type="text" class="input-form-register-field" placeholder="Usuario" name="user_user"  id="user_user" value="">
+            </div>
+
+             <div class="input-form-register">
+                <input type="text" class="input-form-register-field" placeholder="Nombre" name="name_user" id="name_user" value="">
+            </div>
+
+              <div class="input-form-register">
+                <input type="text" class="input-form-register-field" placeholder="Apellidos" name="last_user" id="last_user" value="">
+            </div>
+
+              <div class="input-form-register">
+                <input type="text" class="input-form-register-field-mail" placeholder="Correo Electr&oacute;nico" name="email_user" id="email_user" value="">
+            </div>
+
+
+             <div class="input-form-register">
+                <input type="password" class="input-form-register-field-password" placeholder="Contraseña" name="password_user" id="password_user" value="">
+            </div>
+
+             <div class="box-alert-top">
+                 <div class="txt-alert-box" id="txt-alert-box"></div>
+            </div>
+
+
+        </div>
+
+        <div class="btn-register-normal"><img  id="btn-register-normal-img" src="/{{ STATIC_URL }}imgs/btn-register.png"></div>
+
+        <div class="form-register-footer">¿Ya eres miembro de Feelkm? <a href="javascript:void(0)" class="form-register-footer-link" id="form-register-footer-link"> Iniciar Sesi&oacute;n</a></div>
+
+        <input type="hidden" name="id_facebook" id="id_facebook" value="">
+        <input type="hidden" name="email_facebook" id="email_facebook" value="">
+        <input type="hidden" name="firtsFacebookPic" id="firtsFacebookPic" value="">
+
+        </form>
+    </div>
+
+    <div class="box-login-form-wait" id="box-login-form-wait">
+            <div class="spinner spinner-login-form">
+              <div class="bounce1"></div>
+              <div class="bounce2"></div>
+              <div class="bounce3"></div>
+            </div>
+    </div>
+
+    <div class="box-login-form" id="box-login-form">
+
+        <div class="box-register-title">Bienvenido a FeelKm</div>
+        <div class="box-btn-register-feacebook"><img src="/{{ STATIC_URL }}imgs/btn-login-facebook.png" class="btn-register-facebook" id="btn-register-facebook-3"></div>
+        <div class="line-register-s"></div>
+
+        <div class="form-register-full">
+
+             <div class="input-form-register">
+                <input type="text" class="input-form-register-field" placeholder="Usuario" name="user_user_login" id="user_user_login">
+            </div>
+
+
+
+             <div class="input-form-register">
+                <input type="password" class="input-form-register-field-password" placeholder="Contraseña" name="password_user_login" id="password_user_login">
+            </div>
+
+            <div class="left txt-stay-login">
+                <input type="checkbox" value="1"> Recordar
+            </div>
+
+            <div class="left recovery-password">
+            <a href="javascript:void(0)" class="recovery-password-link" id="recovery-password-link" >Recuperar Contrase&ntilde;a</a>
+            </div>
+
+
+
+            <div class="clear"></div>
+
+            <div class="box-alert-top">
+                 <div class="txt-alert-box" id="txt-alert-box-login"></div>
+            </div>
+
+            <div class="btn-iniciar-normal"><img  id="btn-login-normal-img" src="/{{ STATIC_URL }}imgs/btn-login.png"></div>
+            <div class="footer-txt-login">¿Aun no eres parte de FeelKm? <a href="javascript:void(0)" class="footer-txt-login-link" id="footer-txt-login-link">Reg&iacute;strate</a></div>
+
+
+        </div>
+    </div>
+
+     <div class="box-recovery-form-wait" id="box-recovery-form-wait">
+            <div class="spinner spinner-recovery-form">
+              <div class="bounce1"></div>
+              <div class="bounce2"></div>
+              <div class="bounce3"></div>
+            </div>
+    </div>
+
+      <div class="box-recovery-form-wait-su" id="box-recovery-form-wait-su">
+
+          <div class="img-recovery-send"><img src="/{{ STATIC_URL }}imgs/enviado.png" width="32" height="32"></div>
+          <div class="txt-send-reovery">Enviado</div>
+          <div class="txt-send-reovery-again">Volver a <a  class="txt-send-reovery-link" id="txt-send-reovery-link" href="javascript:void(0)">Iniciar sesi&oacute;n</a></div>
+
+      </div>
+
+    <div class="box-recovery-password" id="box-recovery-password">
+
+        <div class="box-register-title">Recuperar Contrase&ntilde;a</div>
+
+        <div class="form-register-full">
+
+
+             <div class="input-form-register">
+                <input type="text" class="input-form-register-field-mail" placeholder="Correo Electr&oacute;nico" name="email_user_recovery" id="email_user_recovery">
+            </div>
+
+           <div class="box-alert-top">
+                 <div class="txt-alert-box" id="txt-alert-box-recovery"></div>
+            </div>
+
+            <div class="btn-iniciar-normal"><a href="javascript:void(0)" ><img  id="btn-recovery-password" src="/{{ STATIC_URL }}imgs/btn-send.png"></a></div>
+
+        </div>
+
+
+    </div>
+
+</div>

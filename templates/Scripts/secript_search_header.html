@@ -1,0 +1,17 @@
+
+var options, a;
+
+jQuery(function(){
+	options = { serviceUrl:'/auto-complete/' };
+	a = $('#inputSearchHi').autocomplete(options);
+});
+
+
+function GoSearch()
+{
+    document.getElementById("search-form").action="/search/?q="+$("#q").val()+"";
+    $("#search-form").submit();
+
+
+
+}
