@@ -25,6 +25,8 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'south',
     'api',
+    'websearch',
+    'usrs'
 
 )
 
