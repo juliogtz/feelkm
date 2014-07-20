@@ -1957,16 +1957,19 @@ acept=0;
 
 
 
+                    var current = document.URL;
+                    current = current.split("/New-Comment/");
 
                      if(STATUS_FILE_1!="0" || STATUS_FILE_2!="0" || STATUS_FILE_3!="0")
                      {
+
+                       document.getElementById("urlevent").value=current[0];
                        document.getElementById("form_send").submit();
 
                      }
                      else
                      {
-                        var current = document.URL;
-                        current = current.split("/New-Comment/");
+
 
                         window.location.href = current[0];
 
@@ -2080,6 +2083,7 @@ acept=0;
 
             <form method="post" enctype="multipart/form-data" action="/send-form-new-comment/" id="form_send" name=form_send">{% csrf_token %}
                 <input type="hidden" value="{{ id }}" name="id_event_" id="id_event_">
+                <input type="hidden" value="" name="urlevent" id="urlevent">
             <div class="select-pic-form left">
 
                 <div class="addPic" id="addPic_1">

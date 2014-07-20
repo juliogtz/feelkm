@@ -223,6 +223,7 @@ def CreateCommentSend(request):
                      id_event = request.POST["id_event_"]
                      id_event_instance = events.objects.get(id=id_event)
                      today = date.today()
+                     urlevent=request.POST["urlevent"]
 
                      name=""
                      type=""
@@ -238,11 +239,9 @@ def CreateCommentSend(request):
                             try:
                                 img = Image.open(request.FILES[filename])
                                 photos.objects.create(id_event=id_event_instance,id_user_admin=id_user_instance,pic_event=request.FILES[filename],pic_url="",date=today,title="",subtitle="",width=str(img.size.width),height="",status=1)
-                                HttpResponseRedirect("/")
+                                HttpResponseRedirect(urlevent)
                             except:
-                                HttpResponseRedirect("/")
-
-
+                                HttpResponseRedirect(urlevent)
 
                  else:
                      return HttpResponseRedirect("/")
