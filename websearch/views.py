@@ -178,6 +178,7 @@ def CreateComment(request):
                             else:
                                 if(particiate=="0"):
                                 #Save comment, this person never been run this event.
+                                    comments_events.objects.create(id_event=id_event, id_user_admin=usr_usr, title_comment=title_comment, comment=comments, cer=accept, participado=particiate, year_run=year_run, calif=calif_general, hidr=calif_hidratacion, route=calif_ruta, parking=calif_parking, enviroment=calif_ambiente, music=calif_music, medl=calif_medalla, salida=calif_salida, meta=calif_meta, seguridad=calif_seguridad, toilets=calif_wc)
                                     return HttpResponse("1")
                                 else:
                                     if(calif_general=="0"):
@@ -195,7 +196,7 @@ def CreateComment(request):
                                                     #Validate pics if the user upload
                                                     #Crear comentario
                                                     creatc=comments_events.objects.create(id_event=id_event, id_user_admin=usr_usr, title_comment=title_comment, comment=comments, cer=accept, participado=particiate, year_run=year_run, calif=calif_general, hidr=calif_hidratacion, route=calif_ruta, parking=calif_parking, enviroment=calif_ambiente, music=calif_music, medl=calif_medalla, salida=calif_salida, meta=calif_meta, seguridad=calif_seguridad, toilets=calif_wc)
-                                                    return HttpResponse(str(creatc))
+                                                    return HttpResponse("1")
 
 
                  else:
