@@ -46,9 +46,11 @@
       <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/websearch/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3877551" vertical-offset="3216" max-vertical-offset="3645">
-              <caret line="224" column="45" selection-start-line="224" selection-start-column="45" selection-end-line="224" selection-end-column="45" />
-              <folding />
+            <state vertical-scroll-proportion="0.5408163" vertical-offset="3171" max-vertical-offset="3630">
+              <caret line="222" column="41" selection-start-line="222" selection-start-column="41" selection-end-line="222" selection-end-column="41" />
+              <folding>
+                <element signature="e#0#54#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -413,7 +415,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="2254" max-vertical-offset="3600">
           <caret line="156" column="71" selection-start-line="156" selection-start-column="71" selection-end-line="156" selection-end-column="71" />
-          <folding />
+          <folding>
+            <element signature="e#0#54#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -759,9 +763,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/websearch/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3877551" vertical-offset="3216" max-vertical-offset="3645">
-          <caret line="224" column="45" selection-start-line="224" selection-start-column="45" selection-end-line="224" selection-end-column="45" />
-          <folding />
+        <state vertical-scroll-proportion="0.5408163" vertical-offset="3171" max-vertical-offset="3630">
+          <caret line="222" column="41" selection-start-line="222" selection-start-column="41" selection-end-line="222" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#54#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

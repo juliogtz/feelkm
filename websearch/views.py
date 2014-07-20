@@ -1,17 +1,12 @@
 from django.shortcuts import get_object_or_404, render
 from django.http import HttpResponseRedirect, HttpResponse
-from django.core.urlresolvers import reverse
-#from rest_framework.decorators import api_view
-#from rest_framework.response import Response
-#from api.serializers import SinippetSerializer
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.db.models import Q
-from django.contrib.auth import authenticate, login, logout
-from django.contrib.auth.hashers import *
 from api.models import users, comments_events, photos, events
 from django.contrib.auth.models import User, Permission, check_password, is_password_usable
 from django.views.decorators.csrf import csrf_protect, csrf_exempt
 from datetime import *
+from PIL import Image
 
 # Create your views here.
 
@@ -225,8 +220,10 @@ def CreateCommentSend(request):
                  if request.method == 'POST':
 
                      file1=request.FILES['file1']
+                     fe=Image.open(file1)
 
-                     return HttpResponse(str(file1.name)+" - "+str(file1.size)+" - "+str(file1.image.width)+" - "+str(file1.image.height)+" - "+str(file1.content_type))
+
+                     return HttpResponse(str(file1.name)+" - "+str(file1.size)+" - "+str(fe.image.width)+" - "+str(fe.image.height)+" - "+str(file1.content_type))
 
 
                  else:
