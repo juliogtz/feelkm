@@ -11,7 +11,7 @@ from django.contrib.auth.hashers import *
 from api.models import users, comments_events, photos, events
 from django.contrib.auth.models import User, Permission, check_password, is_password_usable
 from django.views.decorators.csrf import csrf_protect, csrf_exempt
-
+from datetime import *
 
 # Create your views here.
 
@@ -169,6 +169,9 @@ def CreateComment(request):
                     STATUS_FILE_2=request.POST['STATUS_FILE_2']
                     STATUS_FILE_3=request.POST['STATUS_FILE_3']
 
+                    # Make date:
+                    today = date.today()
+
                     if(title_comment=="" or comments==""):
                         return HttpResponse("-1")
                     else:
@@ -182,7 +185,7 @@ def CreateComment(request):
                             else:
                                 if(particiate=="0"):
                                 #Save comment, this person never been run this event.
-                                    comments_events.objects.create(id_event=id_event_instance, id_user_admin=id_user_instance, title_comment=title_comment, comment=comments, cer=accept, participado=particiate, year_run=year_run, calif=calif_general, hidr=calif_hidratacion, route=calif_ruta, parking=calif_parking, enviroment=calif_ambiente, music=calif_music, medl=calif_medalla, salida=calif_salida, meta=calif_meta, seguridad=calif_seguridad, toilets=calif_wc, org=calif_organizacion)
+                                    comments_events.objects.create(id_event=id_event_instance, id_user_admin=id_user_instance, title_comment=title_comment, comment=comments, cer=accept, participado=particiate, year_run=year_run, calif=calif_general, hidr=calif_hidratacion, route=calif_ruta, parking=calif_parking, enviroment=calif_ambiente, music=calif_music, medl=calif_medalla, salida=calif_salida, meta=calif_meta, seguridad=calif_seguridad, toilets=calif_wc, org=calif_organizacion, status=1, date=today)
                                     return HttpResponse("1")
                                 else:
                                     if(calif_general=="0"):
@@ -199,7 +202,7 @@ def CreateComment(request):
                                                 else:
                                                     #Validate pics if the user upload
                                                     #Crear comentario
-                                                    creatc=comments_events.objects.create(id_event=id_event_instance, id_user_admin=id_user_instance, title_comment=title_comment, comment=comments, cer=accept, participado=particiate, year_run=year_run, calif=calif_general, hidr=calif_hidratacion, route=calif_ruta, parking=calif_parking, enviroment=calif_ambiente, music=calif_music, medl=calif_medalla, salida=calif_salida, meta=calif_meta, seguridad=calif_seguridad, toilets=calif_wc, org=calif_organizacion)
+                                                    creatc=comments_events.objects.create(id_event=id_event_instance, id_user_admin=id_user_instance, title_comment=title_comment, comment=comments, cer=accept, participado=particiate, year_run=year_run, calif=calif_general, hidr=calif_hidratacion, route=calif_ruta, parking=calif_parking, enviroment=calif_ambiente, music=calif_music, medl=calif_medalla, salida=calif_salida, meta=calif_meta, seguridad=calif_seguridad, toilets=calif_wc, org=calif_organizacion, status=1, date=today)
                                                     return HttpResponse("1")
 
 
