@@ -220,10 +220,11 @@ def CreateCommentSend(request):
                  if request.method == 'POST':
                      strf=""
 
-                     for files in request.FILES:
-                         strf+=files.name+", "
+                     for filename in request.FILES.iteritems():
+                        name=name+" "+request.FILES[filename].name+", "
 
-                     return HttpResponse(strf)
+
+                     return HttpResponse(str(name))
 
                      #return HttpResponse(str(file1.name)+" - "+str(file1.size)+" - "+str(fe.image.width)+" - "+str(fe.image.height)+" - "+str(file1.content_type))
 
