@@ -234,7 +234,7 @@ def CreateCommentSend(request):
                         #size = size +str(request.FILES[filename].size)+" -"
                         type =str(request.FILES[filename].content_type)
                         type=type.split("/")
-                        if type[1] is "jpeg" or type[1] is "jpg" or type[1] is "png":
+                        if (type[1]=="jpeg" or type[1]=="jpg" or type[1]=="png"):
                             #Save image:
                             try:
                                 photos.objects.create(id_event=id_event_instance, id_user_admin=id_user_instance, pic_event=request.FILES[filename], pic_url="", date=today, title="", subtitle="", width="", height="", status=1)
