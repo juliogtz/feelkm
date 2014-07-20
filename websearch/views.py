@@ -160,8 +160,8 @@ def CreateComment(request):
                     calif_medalla=request.POST['calif_medalla']
                     calif_salida=request.POST['calif_salida']
                     calif_meta=request.POST['calif_meta']
-                    calif_seguridad=request.POST['calif_meta']
-                    calif_wc=request.POST['calif_meta']
+                    calif_seguridad=request.POST['calif_seguridad']
+                    calif_wc=request.POST['calif_wc']
                     STATUS_FILE_1=request.POST['STATUS_FILE_1']
                     STATUS_FILE_2=request.POST['STATUS_FILE_2']
                     STATUS_FILE_3=request.POST['STATUS_FILE_3']
@@ -197,8 +197,10 @@ def CreateComment(request):
                                                     #Crear comentario
                                                     if(STATUS_FILE_1=="1" or STATUS_FILE_2=="1" or STATUS_FILE_3=="1"):
 
-                                                        create_comment=comments_events.objects.create()
+                                                        comments_events.objects.create(id_event=id_event, id_user_admin=usr_usr, title_comment=title_comment, comment=comments, cer=accept, participado=particiate, year_run=year_run, calif=calif_general, hidr=calif_hidratacion, route=calif_ruta, parking=calif_parking, enviroment=calif_ambiente, music=calif_music, medl=calif_medalla, salida=calif_salida, meta=calif_meta, seguridad=calif_seguridad, toilets=calif_wc)
 
+                                                         #create_valid=User.objects.create(username = usr_usr.lower(), email = email_user.lower() , password = make_password(request.POST['password_user'], None, 'pbkdf2_sha256'), first_name = request.POST['name_user'], last_name = request.POST['last_user'])
+                                                         #getUserCreate = User.objects.get(username=usr_usr.lower())
 
                                                         return HttpResponse("1") # Crear comentario"""
 
