@@ -8,7 +8,7 @@ from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.db.models import Q
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.hashers import *
-from api.models import users, comments_events, photos
+from api.models import users, comments_events, photos, events
 from django.views.decorators.csrf import csrf_protect, csrf_exempt
 
 
