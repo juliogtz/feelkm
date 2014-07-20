@@ -28,6 +28,7 @@ urlpatterns = patterns('',
     #url(r'^(?P<path>.*)$', 'django.views.static.serve',{'document_root': settings.STATIC_ROOT}),
     (r'^statics/(?P<path>.*)$', 'django.views.static.serve',{'document_root': settings.STATIC_ROOT}),
     (r'^admin/statics/(?P<path>.*)$', 'django.views.static.serve',{'document_root': settings.STATIC_ROOT}),
+    url(r'^media/pic_events/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.MEDIA_ROOT}),
     #url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework'))
 
     # Autocomplete Search URL

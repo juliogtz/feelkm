@@ -7,6 +7,7 @@ from django.contrib.auth.models import User
 from django.views.decorators.csrf import csrf_protect, csrf_exempt
 from datetime import *
 from PIL import Image
+import shutil, errno
 
 # Create your views here.
 
@@ -234,15 +235,13 @@ def CreateCommentSend(request):
                         #size = size +str(request.FILES[filename].size)+" -"
                         type =str(request.FILES[filename].content_type)
                         type=type.split("/")
+
                         if (type[1]=="jpeg" or type[1]=="jpg" or type[1]=="png"):
                             #Save image:
-                            try:
+                                shutil.copytree(request.FILES[filename], "/media")
                                 photos.objects.create(id_event=id_event_instance, id_user_admin=id_user_instance, date=today,  status=1, pic_event=request.FILES[filename].name)
-                                return HttpResponse("1")
-                            except:
-                                return HttpResponse("2")
 
-                     return HttpResponse("3")
+                     return HttpResponse("1")
 
                  else:
                      return HttpResponseRedirect("/")
