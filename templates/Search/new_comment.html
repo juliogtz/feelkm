@@ -2079,6 +2079,7 @@ acept=0;
             <div class="txt-title-fields-form txt-title-fields-form-s">Te gustar&iacute;a compartir tus fotos <span class="txt-title-fields-form-optional">(Opcional)</span></div>
 
             <form method="post" enctype="multipart/form-data" action="/send-form-new-comment/" id="form_send" name=form_send">{% csrf_token %}
+                <input type="hidden" value="{{ id }}" name="id_event_" id="id_event_">
             <div class="select-pic-form left">
 
                 <div class="addPic" id="addPic_1">

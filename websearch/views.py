@@ -218,18 +218,30 @@ def CreateCommentSend(request):
     if request.user.is_active:
         if request.user.is_authenticated:
                  if request.method == 'POST':
+                     usr_usr=request.user.id
+                     id_user_instance = User.objects.get(id=usr_usr)
+                     id_event = request.POST["id_event_"]
+                     id_event_instance = events.objects.get(id=id_event)
+                     today = date.today()
+
                      name=""
                      type=""
                      size=""
                      for filename, file in request.FILES.iteritems():
-                        name =name+ request.FILES[filename].name+" - "
-                        type = type+request.FILES[filename].content_type+" -"
-                        size = size +str(request.FILES[filename].size)+" -"
+                        #name =name+ request.FILES[filename].name+" - "
+                        #type = type+request.FILES[filename].content_type+" -"
+                        #size = size +str(request.FILES[filename].size)+" -"
+                        type = type+request.FILES[filename].content_type
+                        type=type.split("/")
+                        if type[1] is "jpeg" or type[1] is "jpg" or type[1] is "png":
+                            #Save image:
+                            try:
+                                img = Image.open(request.FILES[filename])
+                                photos.objects.create(id_event=id_event_instance,id_user_admin=id_user_instance,pic_event=request.FILES[filename],pic_url="",date=today,title="",subtitle="",width=str(img.size.width),height="",status=1)
+                                HttpResponseRedirect("/")
+                            except:
+                                HttpResponseRedirect("/")
 
-
-                     return HttpResponse(str(name)+"<br>"+str(type)+"<br>"+str(size))
-
-                     #return HttpResponse(str(file1.name)+" - "+str(file1.size)+" - "+str(fe.image.width)+" - "+str(fe.image.height)+" - "+str(file1.content_type))
 
 
                  else:
