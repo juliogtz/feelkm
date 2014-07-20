@@ -3,13 +3,12 @@ from django.http import HttpResponseRedirect, HttpResponse
 from django.core.urlresolvers import reverse
 #from rest_framework.decorators import api_view
 #from rest_framework.response import Response
-from api.models import events, comments_events
 #from api.serializers import SinippetSerializer
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.db.models import Q
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.hashers import *
-from api.models import users
+from api.models import users, comments_events, photos
 from django.views.decorators.csrf import csrf_protect, csrf_exempt
 
 
