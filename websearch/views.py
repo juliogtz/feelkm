@@ -219,8 +219,9 @@ def CreateCommentSend(request):
         if request.user.is_authenticated:
                  if request.method == 'POST':
                      strf=""
-                     for file in request.FILES:
-                         strf+=file.name+", "
+
+                     for files in request.FILES:
+                         strf+=files.name+", "
 
                      return HttpResponse(strf)
 
