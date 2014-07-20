@@ -218,7 +218,7 @@ def CreateCommentSend(request):
     if request.user.is_active:
         if request.user.is_authenticated:
                  if request.method == 'POST':
-
+                     name=""
                      for filename, file in request.FILES.iteritems():
                         name =name+ request.FILES[filename].name
 
