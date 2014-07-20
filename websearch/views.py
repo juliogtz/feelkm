@@ -238,15 +238,14 @@ def CreateCommentSend(request):
 
                         if (type[1]=="jpeg" or type[1]=="jpg" or type[1]=="png"):
                             #Save image:
+                            fil=request.FILES[filename]
+                            destination = open("/media/"+request.FILES[filename].name, 'wb')
+                            for chunk in fil.chunks():
+                                destination.write(chunk)
+                                destination.close()
 
 
-
-                                img = request.FILES[filename]
-                                img.thumbnail( (200,200), Image.ANTIALIAS)
-                                shutil.copytree(img, "/media")
-
-
-                                photos.objects.create(id_event=id_event_instance, id_user_admin=id_user_instance, date=today,  status=1, pic_event=request.FILES[filename].name)
+                            photos.objects.create(id_event=id_event_instance, id_user_admin=id_user_instance, date=today,  status=1, pic_event=request.FILES[filename].name)
 
                      return HttpResponse("1")
 
