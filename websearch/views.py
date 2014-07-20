@@ -223,7 +223,11 @@ def CreateCommentSend(request):
     if request.user.is_active:
         if request.user.is_authenticated:
                  if request.method == 'POST':
-                     return HttpResponse("hola")
+
+                     file1=request.FILES['file1']
+                     
+                     return HttpResponse(str(file1.name))
+
                  else:
                      return HttpResponseRedirect("/")
 
