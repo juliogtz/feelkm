@@ -225,8 +225,9 @@ def CreateCommentSend(request):
                  if request.method == 'POST':
 
                      file1=request.FILES['file1']
-                     
-                     return HttpResponse(str(file1.name))
+
+                     return HttpResponse(str(file1.name)+" - "+str(file1.size)+" - "+str(file1.width)+" - "+str(file1.height)+" - "+str(file1.content_type))
+
 
                  else:
                      return HttpResponseRedirect("/")
