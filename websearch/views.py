@@ -224,7 +224,7 @@ def CreateCommentSend(request):
                      for filename, file in request.FILES.iteritems():
                         name =name+ request.FILES[filename].name+" - "
                         type = type+request.FILES[filename].content_type+" -"
-                        size = size +request.FILES[filename].size+" -"
+                        size = size +str(request.FILES[filename].size)+" -"
 
 
                      return HttpResponse(str(name)+"<br>"+str(type)+"<br>"+str(size))
