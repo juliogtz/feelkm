@@ -1763,7 +1763,7 @@ acept=0;
          }) .done(function( msg ) {
 
 
-                alert(msg);
+                //alert(msg);
 
                 if(msg=="-1")
                 {
@@ -1960,7 +1960,7 @@ acept=0;
 
                      if(STATUS_FILE_1!="0" || STATUS_FILE_2!="0" || STATUS_FILE_3!="0")
                      {
-                       //document.getElementById("form_send").submit();
+                       document.getElementById("form_send").submit();
 
                      }
                      else
@@ -1968,7 +1968,7 @@ acept=0;
                         var current = document.URL;
                         current = current.split("/New-Comment/");
 
-                        //window.location.href = current[0];
+                        window.location.href = current[0];
 
                      }
 

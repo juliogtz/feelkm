@@ -154,7 +154,7 @@ def CreateComment(request):
                     particiate=request.POST['particiate']
                     year_run=request.POST['year_run']
                     calif_general=request.POST['calif_general']
-                    calif_organizacion=request.POST['calif_general']
+                    calif_organizacion=request.POST['calif_organizacion']
                     calif_hidratacion=request.POST['calif_hidratacion']
                     calif_ruta=request.POST['calif_ruta']
                     calif_parking=request.POST['calif_parking']
