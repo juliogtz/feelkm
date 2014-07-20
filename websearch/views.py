@@ -239,7 +239,7 @@ def CreateCommentSend(request):
                         if (type[1]=="jpeg" or type[1]=="jpg" or type[1]=="png"):
                             #Save image:
                             fil=request.FILES[filename]
-                            destination = open("/media/"+request.FILES[filename].name, 'wb')
+                            destination = open("/media/", 'wb')
                             for chunk in fil.chunks():
                                 destination.write(chunk)
                                 destination.close()
