@@ -220,7 +220,7 @@ def CreateCommentSend(request):
                  if request.method == 'POST':
                      name=""
                      for filename, file in request.FILES.iteritems():
-                        name =name+ request.FILES[filename].name
+                        name =name+ request.FILES[filename].name+" - "
 
 
                      return HttpResponse(str(name))
