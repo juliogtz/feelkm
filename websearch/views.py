@@ -237,12 +237,12 @@ def CreateCommentSend(request):
                         if type[1] is "jpeg" or type[1] is "jpg" or type[1] is "png":
                             #Save image:
                             try:
-                                photos.objects.create(id_event=id_event_instance,id_user_admin=id_user_instance,pic_event=request.FILES[filename],pic_url="",date=today,title="",subtitle="",width="",height="",status=1)
-                                HttpResponseRedirect(urlevent)
+                                photos.objects.create(id_event=id_event_instance, id_user_admin=id_user_instance, pic_event=request.FILES[filename], pic_url="", date=today, title="", subtitle="", width="", height="", status=1)
+                                return HttpResponse("1")
                             except:
-                                HttpResponseRedirect(urlevent)
+                                return HttpResponse("2")
 
-                     HttpResponseRedirect(urlevent)
+                     return HttpResponse("3")
 
                  else:
                      return HttpResponseRedirect("/")
