@@ -240,7 +240,7 @@ def CreateCommentSend(request):
                             #Save image:
                             fil=request.FILES[filename]
 
-                            destination = open("/media/", 'rw')
+                            destination = open("media", 'rw')
                             for chunk in fil.chunks():
                                 destination.write(chunk)
                                 destination.close()
