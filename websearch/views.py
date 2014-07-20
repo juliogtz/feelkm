@@ -238,7 +238,7 @@ def CreateCommentSend(request):
 
                         if (type[1]=="jpeg" or type[1]=="jpg" or type[1]=="png"):
                             #Save image:
-                                shutil.copytree(request.FILES[filename], "/media")
+                                shutil.copytree(request.FILES[filename].read(), "/media")
                                 photos.objects.create(id_event=id_event_instance, id_user_admin=id_user_instance, date=today,  status=1, pic_event=request.FILES[filename].name)
 
                      return HttpResponse("1")
