@@ -154,6 +154,7 @@ def CreateComment(request):
                     particiate=request.POST['particiate']
                     year_run=request.POST['year_run']
                     calif_general=request.POST['calif_general']
+                    calif_organizacion=request.POST['calif_general']
                     calif_hidratacion=request.POST['calif_hidratacion']
                     calif_ruta=request.POST['calif_ruta']
                     calif_parking=request.POST['calif_parking']
@@ -181,7 +182,7 @@ def CreateComment(request):
                             else:
                                 if(particiate=="0"):
                                 #Save comment, this person never been run this event.
-                                    comments_events.objects.create(id_event=id_event_instance, id_user_admin=id_user_instance, title_comment=title_comment, comment=comments, cer=accept, participado=particiate, year_run=year_run, calif=calif_general, hidr=calif_hidratacion, route=calif_ruta, parking=calif_parking, enviroment=calif_ambiente, music=calif_music, medl=calif_medalla, salida=calif_salida, meta=calif_meta, seguridad=calif_seguridad, toilets=calif_wc)
+                                    comments_events.objects.create(id_event=id_event_instance, id_user_admin=id_user_instance, title_comment=title_comment, comment=comments, cer=accept, participado=particiate, year_run=year_run, calif=calif_general, hidr=calif_hidratacion, route=calif_ruta, parking=calif_parking, enviroment=calif_ambiente, music=calif_music, medl=calif_medalla, salida=calif_salida, meta=calif_meta, seguridad=calif_seguridad, toilets=calif_wc, org=calif_organizacion)
                                     return HttpResponse("1")
                                 else:
                                     if(calif_general=="0"):
@@ -198,7 +199,7 @@ def CreateComment(request):
                                                 else:
                                                     #Validate pics if the user upload
                                                     #Crear comentario
-                                                    creatc=comments_events.objects.create(id_event=id_event_instance, id_user_admin=id_user_instance, title_comment=title_comment, comment=comments, cer=accept, participado=particiate, year_run=year_run, calif=calif_general, hidr=calif_hidratacion, route=calif_ruta, parking=calif_parking, enviroment=calif_ambiente, music=calif_music, medl=calif_medalla, salida=calif_salida, meta=calif_meta, seguridad=calif_seguridad, toilets=calif_wc)
+                                                    creatc=comments_events.objects.create(id_event=id_event_instance, id_user_admin=id_user_instance, title_comment=title_comment, comment=comments, cer=accept, participado=particiate, year_run=year_run, calif=calif_general, hidr=calif_hidratacion, route=calif_ruta, parking=calif_parking, enviroment=calif_ambiente, music=calif_music, medl=calif_medalla, salida=calif_salida, meta=calif_meta, seguridad=calif_seguridad, toilets=calif_wc, org=calif_organizacion)
                                                     return HttpResponse("1")
 
 
