@@ -218,12 +218,13 @@ def CreateCommentSend(request):
     if request.user.is_active:
         if request.user.is_authenticated:
                  if request.method == 'POST':
+                     strf=""
+                     for file in request.FILES:
+                         strf+=file.name+", "
 
-                     file1=request.FILES['file1']
-                     fe=Image.open(file1)
+                     return HttpResponse(strf)
 
-
-                     return HttpResponse(str(file1.name)+" - "+str(file1.size)+" - "+str(fe.image.width)+" - "+str(fe.image.height)+" - "+str(file1.content_type))
+                     #return HttpResponse(str(file1.name)+" - "+str(file1.size)+" - "+str(fe.image.width)+" - "+str(fe.image.height)+" - "+str(file1.content_type))
 
 
                  else:
