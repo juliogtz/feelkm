@@ -141,7 +141,6 @@ def NewCommentEvent(request, id, month, day, year):
 
 @csrf_exempt
 def CreateComment(request):
-
     if request.user.is_active:
         if request.user.is_authenticated:
                  if request.method == 'POST':
@@ -202,6 +201,7 @@ def CreateComment(request):
 
 
                                                         return HttpResponse("1") # Crear comentario"""
+
                                                     else:
                                                         return HttpResponse("1") # Crear comentario"""
 
