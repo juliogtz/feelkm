@@ -232,7 +232,7 @@ def CreateCommentSend(request):
                         #name =name+ request.FILES[filename].name+" - "
                         #type = type+request.FILES[filename].content_type+" -"
                         #size = size +str(request.FILES[filename].size)+" -"
-                        type = type+request.FILES[filename].content_type
+                        type =str(request.FILES[filename].content_type)
                         type=type.split("/")
                         if type[1] is "jpeg" or type[1] is "jpg" or type[1] is "png":
                             #Save image:
