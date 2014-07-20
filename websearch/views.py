@@ -3,7 +3,7 @@ from django.http import HttpResponseRedirect, HttpResponse
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.db.models import Q
 from api.models import users, comments_events, photos, events
-from django.contrib.auth.models import User, Permission, check_password, is_password_usable
+from django.contrib.auth.models import User
 from django.views.decorators.csrf import csrf_protect, csrf_exempt
 from datetime import *
 from PIL import Image
@@ -213,7 +213,7 @@ def CreateComment(request):
         return HttpResponseRedirect("/")
 
 
-@csrf_exempt
+@csrf_protect
 def CreateCommentSend(request):
     if request.user.is_active:
         if request.user.is_authenticated:
@@ -237,7 +237,7 @@ def CreateCommentSend(request):
                         if (type[1]=="jpeg" or type[1]=="jpg" or type[1]=="png"):
                             #Save image:
                             try:
-                                photos.objects.create(id_event=id_event_instance, id_user_admin=id_user_instance, pic_url="", date=today, title="", subtitle="", width="", height="", status=1)
+                                photos.objects.create(id_event=id_event_instance, id_user_admin=id_user_instance, date=today,  status=1)
                                 return HttpResponse("1")
                             except:
                                 return HttpResponse("2")
