@@ -226,7 +226,7 @@ def CreateCommentSend(request):
 
                      file1=request.FILES['file1']
 
-                     return HttpResponse(str(file1.name)+" - "+str(file1.size)+" - "+str(file1.width)+" - "+str(file1.height)+" - "+str(file1.content_type))
+                     return HttpResponse(str(file1.name)+" - "+str(file1.size)+" - "+str(file1.image.width)+" - "+str(file1.image.height)+" - "+str(file1.content_type))
 
 
                  else:
