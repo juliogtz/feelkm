@@ -1,11 +1,10 @@
 from django import forms
 from django.forms import ModelForm
+from api.models import photos
 
-class UploadPics(forms.Form):
-    file1 = forms.ImageField()
-    file2 = forms.ImageField()
-    file3 = forms.ImageField()
-    id_event_ = forms.HiddenInput()
-    urlevent = forms.HiddenInput()
+class UploadPics(ModelForm):
+    class Meta:
+       model = photos
+       fields = ['file1','file2','file3']
 
 
