@@ -229,7 +229,7 @@ def CreateCommentSend(request):
                      urlevent=request.POST["urlevent"]
 
                      file1=request.FILES['file1']
-                     filepath = 'media/somefile.txt'
+                     filepath = '/media/somefile.txt'
                      dir = os.path.dirname(filepath)
                      if not os.path.exists(dir):
                         os.makedirs(dir)
