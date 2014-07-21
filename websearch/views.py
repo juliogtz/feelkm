@@ -6,6 +6,7 @@ from api.models import users, comments_events, photos, events
 from django.contrib.auth.models import User
 from django.views.decorators.csrf import csrf_protect, csrf_exempt
 from datetime import *
+from api.forms import UploadPics
 from PIL import Image
 import shutil, errno
 
@@ -226,23 +227,13 @@ def CreateCommentSend(request):
                      today = date.today()
                      urlevent=request.POST["urlevent"]
 
-                     name=""
-                     type=""
-                     size=""
-                     for filename, file in request.FILES.iteritems():
-                        #name =name+ request.FILES[filename].name+" - "
-                        #type = type+request.FILES[filename].content_type+" -"
-                        #size = size +str(request.FILES[filename].size)+" -"
-                        type =str(request.FILES[filename].content_type)
-                        type=type.split("/")
-
-                        if (type[1]=="jpeg" or type[1]=="jpg" or type[1]=="png"):
-                            #Save image:
-                            fil=request.FILES[filename]
+                     form = UploadPics(request.FILES and request.POST or None)
 
 
+                     if form.is_valid():
 
-                            photos.objects.create(id_event=id_event_instance, id_user_admin=id_user_instance, date=today,  status=1, pic_event=request.FILES[filename].name)
+                        form.save()
+
 
 
                      return HttpResponse("1")
