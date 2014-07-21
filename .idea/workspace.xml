@@ -26,8 +26,8 @@
       <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/websearch/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.37969926" vertical-offset="3349" max-vertical-offset="3825">
-              <caret line="230" column="55" selection-start-line="230" selection-start-column="55" selection-end-line="230" selection-end-column="55" />
+            <state vertical-scroll-proportion="0.39473686" vertical-offset="3390" max-vertical-offset="3780">
+              <caret line="233" column="45" selection-start-line="233" selection-start-column="45" selection-end-line="233" selection-end-column="45" />
               <folding>
                 <element signature="e#0#54#0" expanded="true" />
               </folding>
@@ -50,8 +50,8 @@
       <file leaf-file-name="new_comment.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/Search/new_comment.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.5" vertical-offset="31165" max-vertical-offset="36540">
-              <caret line="2086" column="46" selection-start-line="2086" selection-start-column="46" selection-end-line="2086" selection-end-column="46" />
+            <state vertical-scroll-proportion="-1.6" vertical-offset="31330" max-vertical-offset="36540">
+              <caret line="2094" column="52" selection-start-line="2094" selection-start-column="47" selection-end-line="2094" selection-end-column="52" />
               <folding />
             </state>
           </provider>
@@ -785,14 +785,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/Search/new_comment.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.5" vertical-offset="31165" max-vertical-offset="36540">
-          <caret line="2086" column="46" selection-start-line="2086" selection-start-column="46" selection-end-line="2086" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="760" max-vertical-offset="1695">
@@ -811,10 +803,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/Search/new_comment.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.6" vertical-offset="31330" max-vertical-offset="36540">
+          <caret line="2094" column="52" selection-start-line="2094" selection-start-column="47" selection-end-line="2094" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/websearch/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37969926" vertical-offset="3349" max-vertical-offset="3825">
-          <caret line="230" column="55" selection-start-line="230" selection-start-column="55" selection-end-line="230" selection-end-column="55" />
+        <state vertical-scroll-proportion="0.39473686" vertical-offset="3390" max-vertical-offset="3780">
+          <caret line="233" column="45" selection-start-line="233" selection-start-column="45" selection-end-line="233" selection-end-column="45" />
           <folding>
             <element signature="e#0#54#0" expanded="true" />
           </folding>

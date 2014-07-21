@@ -227,17 +227,14 @@ def CreateCommentSend(request):
                      today = date.today()
                      urlevent=request.POST["urlevent"]
 
-                     try:
-                        form = UploadPics(request.FILES or None)
-                        if form.is_valid():
-                            form.save()
-                            return HttpResponse("1")
+                     file1=request.FILES['file1']
+                     filepath = '/media/somefile.txt'
+                     with open(filepath, 'wb+') as dest:
+                        for chunk in file1.chunks():
+                            dest.write(chunk)
 
-                     except ValueError:
+                     return HttpResponse("1")
 
-                        return HttpResponse("2")
-
-                     return HttpResponse("3")
 
                  else:
                      return HttpResponseRedirect("/")
