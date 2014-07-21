@@ -227,15 +227,17 @@ def CreateCommentSend(request):
                      today = date.today()
                      urlevent=request.POST["urlevent"]
 
-                     form = UploadPics(request.FILES and request.POST or None)
+                     try:
+                        form = UploadPics(request.FILES and request.POST or None)
+                        if form.is_valid():
+                            form.save()
+                            return HttpResponse("1")
+
+                     except ValueError as e:
+
+                        return HttpResponse("2 "+str(e.errno)+ str(e.strerror))
 
 
-                     if form.is_valid():
-
-                        form.save()
-
-
-                     return HttpResponse("1")
 
                  else:
                      return HttpResponseRedirect("/")
