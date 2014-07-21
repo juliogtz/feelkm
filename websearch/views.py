@@ -228,14 +228,14 @@ def CreateCommentSend(request):
                      urlevent=request.POST["urlevent"]
 
                      try:
-                        form = UploadPics(request.FILES and request.POST or None)
+                        form = UploadPics(request.FILES or None)
                         if form.is_valid():
                             form.save()
                             return HttpResponse("1")
 
-                     except ValueError as e:
+                     except ValueError:
 
-                        return HttpResponse("2 "+str(e.errno)+ str(e.strerror))
+                        return HttpResponse("2")
 
                      return HttpResponse("3")
 
