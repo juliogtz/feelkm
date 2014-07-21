@@ -229,11 +229,11 @@ def CreateCommentSend(request):
                      urlevent=request.POST["urlevent"]
 
                      file1=request.FILES['file1']
-                     filepath = '/media/somefile.txt'
+                     filepath = '/statics/somefile.txt'
                      dir = os.path.dirname(filepath)
                      if not os.path.exists(dir):
                         os.makedirs(dir)
-                     with open(filepath, 'wb+') as dest:
+                     with open(filepath, 'w') as dest:
                         for chunk in file1.chunks():
                             dest.write(chunk)
 
