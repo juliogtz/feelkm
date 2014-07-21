@@ -235,7 +235,6 @@ def CreateCommentSend(request):
                         form.save()
 
 
-
                      return HttpResponse("1")
 
                  else:
