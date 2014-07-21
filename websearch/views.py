@@ -237,7 +237,7 @@ def CreateCommentSend(request):
 
                         return HttpResponse("2 "+str(e.errno)+ str(e.strerror))
 
-
+                     return HttpResponse("3")
 
                  else:
                      return HttpResponseRedirect("/")
