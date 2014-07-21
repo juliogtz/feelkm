@@ -23,12 +23,16 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'storages',
     'south',
     'api',
     'websearch',
     'usrs'
 
 )
+
+STATICFILES_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
+
 
 ADMIN_MEDIA_PREFIX = '/statics/'
 
