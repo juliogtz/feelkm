@@ -9,6 +9,7 @@ from datetime import *
 from api.forms import UploadPics
 from PIL import Image
 import shutil, errno
+import os
 
 # Create your views here.
 
@@ -228,7 +229,10 @@ def CreateCommentSend(request):
                      urlevent=request.POST["urlevent"]
 
                      file1=request.FILES['file1']
-                     filepath = '/media/somefile.txt'
+                     filepath = 'media/somefile.txt'
+                     dir = os.path.dirname(filepath)
+                     if not os.path.exists(dir):
+                        os.makedirs(dir)
                      with open(filepath, 'wb+') as dest:
                         for chunk in file1.chunks():
                             dest.write(chunk)
