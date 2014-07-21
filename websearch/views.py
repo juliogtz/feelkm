@@ -240,13 +240,10 @@ def CreateCommentSend(request):
                             #Save image:
                             fil=request.FILES[filename]
 
-                            destination = open('/media', 'w')
-                            for chunk in fil.chunks():
-                                destination.write(chunk)
-                                destination.close()
 
 
                             photos.objects.create(id_event=id_event_instance, id_user_admin=id_user_instance, date=today,  status=1, pic_event=request.FILES[filename].name)
+
 
                      return HttpResponse("1")
 

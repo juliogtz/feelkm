@@ -61,7 +61,9 @@ class users(models.Model):
 class photos(models.Model):
     id_event = models.ForeignKey(events)
     id_user_admin = models.ForeignKey(User)
-    pic_event = models.ImageField(upload_to='/media/pics_events/')
+    pic_event_1 = models.ImageField(upload_to='/media')
+    pic_event_2 = models.ImageField(upload_to='/media')
+    pic_event_3 = models.ImageField(upload_to='/media')
     pic_url = models.TextField(blank=True)
     date = models.DateField(blank=True)
     title = models.TextField(blank=True)
