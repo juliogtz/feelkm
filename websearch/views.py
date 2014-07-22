@@ -233,7 +233,9 @@ def CreateCommentSend(request):
                      today = date.today()
                      urlevent=request.POST["urlevent"]
 
-                     cloudinary.uploader.upload(
+
+
+                     x=cloudinary.uploader.upload(
                       request.FILES['file1'],
                       public_id = request.FILES['file1'].name,
                       crop = 'limit',
@@ -250,7 +252,7 @@ def CreateCommentSend(request):
                       )
 
 
-                     return HttpResponse("1")
+                     return HttpResponse(str(x))
 
 
                  else:
