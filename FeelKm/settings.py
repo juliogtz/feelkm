@@ -23,6 +23,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'storages'
     'south',
     'api',
     'websearch',
@@ -30,6 +31,11 @@ INSTALLED_APPS = (
 
 )
 
+
+AWS_STORAGE_BUCKET_NAME = os.environ['AWS_STORAGE_BUCKET_NAME']
+STATICFILES_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
+S3_URL = 'http://%s.s3.amazonaws.com/' % AWS_STORAGE_BUCKET_NAME
+STATIC_URL = S3_URL
 
 
 ADMIN_MEDIA_PREFIX = '/statics/'
@@ -113,7 +119,7 @@ import os
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 #BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 STATIC_ROOT = 'statics'
-STATIC_URL = 'statics/'
+#STATIC_URL = 'statics/'
 
 #STATICFILES_DIRS = (
 #    os.path.join(BASE_DIR, 'static'),
