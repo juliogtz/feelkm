@@ -240,7 +240,7 @@ def CreateCommentSend(request):
                            file_txt=file_txt.split(".")
                            if(file_txt[1]=="jpeg"  or file_txt[1]=="jpg" or file_txt[1]=="png" or file_txt[1]=="gif"):
 
-                                try:
+                                #try:
                                     json=cloudinary.uploader.upload(
                                           request.request.FILES[filename],
                                           public_id = file_txt[0],
@@ -259,8 +259,8 @@ def CreateCommentSend(request):
 
                                     photos.objects.create(id_event=id_event_instance, id_user_admin=id_user_instance, file=file_txt[0], title=file_txt[0], date=today, status=1, json = json)
 
-                                except:
-                                    print "hey!"
+                                #except:
+                                 #   print "hey!"
 
                      #return HttpResponseRedirect(str(urlevent))
                      return HttpResponse("0")
