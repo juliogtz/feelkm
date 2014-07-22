@@ -260,12 +260,13 @@ def CreateCommentSend(request):
                                     photos.objects.create(id_event=id_event_instance, id_user_admin=id_user_instance, file=file_txt[0], title=file_txt[0], date=today, status=1, json = json)
 
                                 except:
-                                    HttpResponseRedirect(str(urlevent))
+                                    print "hey!"
 
-                     return HttpResponseRedirect(str(urlevent))
-
+                     #return HttpResponseRedirect(str(urlevent))
+                     return HttpResponse("0")
                  else:
-                     return HttpResponseRedirect("/")
+                     #return HttpResponseRedirect("/")
+                     return HttpResponse("2")
 
         else:
 
