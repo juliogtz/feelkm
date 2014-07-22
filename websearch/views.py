@@ -234,26 +234,35 @@ def CreateCommentSend(request):
                      urlevent=request.POST["urlevent"]
 
 
+                     for filename, file in request.FILES.iteritems():
 
-                     x=cloudinary.uploader.upload(
-                      request.FILES['file1'],
-                      public_id = request.FILES['file1'].name,
-                      crop = 'limit',
-                      #width = 2000,
-                      #height = 2000,
-                      eager = [
-                        { 'width': 200, 'height': 200,
-                          'crop': 'thumb', 'gravity': 'face',
-                          'radius': 20, 'effect': 'sepia' },
-                        { 'width': 100, 'height': 150,
-                          'crop': 'fit', 'format': 'png' }
-                      ],
-                      tags = ['special', 'for_homepage']
-                      )
+                           file_txt=request.FILES[filename].name
+                           file_txt=file_txt.split(".")
+                           if(file_txt[1]=="jpeg"  or file_txt[1]=="jpg" or file_txt[1]=="png" or file_txt[1]=="gif"):
 
+                                try:
+                                    json=cloudinary.uploader.upload(
+                                          request.request.FILES[filename],
+                                          public_id = file_txt[0],
+                                          crop = 'limit',
+                                          #width = 2000,
+                                          #height = 2000,
+                                          eager = [
+                                            { 'width': 200, 'height': 200,
+                                              'crop': 'thumb', 'gravity': 'face',
+                                              'radius': 20, 'effect': 'sepia' },
+                                            { 'width': 100, 'height': 150,
+                                              'crop': 'fit', 'format': 'png' }
+                                          ],
+                                          tags = ['']
+                                          )
 
-                     return HttpResponse(str(x))
+                                    photos.objects.create(id_event=id_event_instance, id_user_admin=id_user_instance, file=file_txt[0], title=file_txt[0], date=today, status=1, json = json)
 
+                                except:
+                                    HttpResponseRedirect(str(urlevent))
+
+                     return HttpResponseRedirect(str(urlevent))
 
                  else:
                      return HttpResponseRedirect("/")

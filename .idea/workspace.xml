@@ -26,11 +26,21 @@
       <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/websearch/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3723404" vertical-offset="3705" max-vertical-offset="4065">
-              <caret line="254" column="48" selection-start-line="254" selection-start-column="48" selection-end-line="254" selection-end-column="48" />
+            <state vertical-scroll-proportion="0.68085104" vertical-offset="3738" max-vertical-offset="4200">
+              <caret line="262" column="71" selection-start-line="262" selection-start-column="71" selection-end-line="262" selection-end-column="71" />
               <folding>
                 <element signature="e#0#54#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="805" max-vertical-offset="1680">
+              <caret line="69" column="12" selection-start-line="69" selection-start-column="12" selection-end-line="69" selection-end-column="12" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -68,10 +78,10 @@
         <option value="$PROJECT_DIR$/usrs/views.py" />
         <option value="$PROJECT_DIR$/templates/Search/new_comment.html" />
         <option value="$PROJECT_DIR$/FeelKm/urls.py" />
-        <option value="$PROJECT_DIR$/api/models.py" />
         <option value="$PROJECT_DIR$/api/forms.py" />
         <option value="$PROJECT_DIR$/storages/backends/s3boto.py" />
         <option value="$PROJECT_DIR$/FeelKm/settings.py" />
+        <option value="$PROJECT_DIR$/api/models.py" />
         <option value="$PROJECT_DIR$/websearch/views.py" />
       </list>
     </option>
@@ -138,6 +148,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="statics" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FeelKm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FeelKm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -697,13 +721,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="760" max-vertical-offset="1695">
-          <caret line="63" column="48" selection-start-line="63" selection-start-column="48" selection-end-line="63" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/forms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.24429968" vertical-offset="0" max-vertical-offset="307">
@@ -727,10 +744,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/api/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="805" max-vertical-offset="1680">
+          <caret line="69" column="12" selection-start-line="69" selection-start-column="12" selection-end-line="69" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/websearch/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3723404" vertical-offset="3705" max-vertical-offset="4065">
-          <caret line="254" column="48" selection-start-line="254" selection-start-column="48" selection-end-line="254" selection-end-column="48" />
+        <state vertical-scroll-proportion="0.68085104" vertical-offset="3738" max-vertical-offset="4200">
+          <caret line="262" column="71" selection-start-line="262" selection-start-column="71" selection-end-line="262" selection-end-column="71" />
           <folding>
             <element signature="e#0#54#0" expanded="true" />
           </folding>

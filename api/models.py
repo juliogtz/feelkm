@@ -61,16 +61,15 @@ class users(models.Model):
 class photos(models.Model):
     id_event = models.ForeignKey(events)
     id_user_admin = models.ForeignKey(User)
-    file1 = models.ImageField(upload_to='/media')
-    file2 = models.ImageField(upload_to='/media')
-    file3 = models.ImageField(upload_to='/media')
+    file = models.TextField(blank=True)
     pic_url = models.TextField(blank=True)
     date = models.DateField(blank=True)
     title = models.TextField(blank=True)
     subtitle = models.TextField(blank=True)
     width = models.IntegerField(blank=True)
     height = models.IntegerField(blank=True)
-    status=models.IntegerField(blank=True)
+    status = models.IntegerField(blank=True)
+    json = models.TextField(blank=True)
 
 
 class comments_events(models.Model):
