@@ -250,7 +250,7 @@ def CreateCommentSend(request):
                       )
 
 
-                     return HttpResponse(str(path))
+                     return HttpResponse("1")
 
 
                  else:
