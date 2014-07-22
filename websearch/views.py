@@ -6,13 +6,15 @@ from api.models import users, comments_events, photos, events
 from django.contrib.auth.models import User
 from django.views.decorators.csrf import csrf_protect, csrf_exempt
 from datetime import *
-from api.forms import UploadPics
-from PIL import Image
-import shutil, errno
-import os
-from django.core.files.storage import default_storage as storage
-from django.core.files.base import ContentFile
+import cloudinary
+import cloudinary.uploader
+import cloudinary.api
 
+cloudinary.config(
+  cloud_name = "htyoqtggc",
+  api_key = "961935933259211",
+  api_secret = "COwH0OL6qwHv5fhjD0ey2TjSdTo"
+)
 
 # Create your views here.
 
@@ -231,19 +233,21 @@ def CreateCommentSend(request):
                      today = date.today()
                      urlevent=request.POST["urlevent"]
 
-
-
-                     """file1=request.FILES['file1']
-                     filepath = '/statics/somefile.txt'
-                     dir = os.path.dirname(filepath)
-                     if not os.path.exists(dir):
-                        os.makedirs(dir)
-                     with open(filepath, 'w') as dest:
-                        for chunk in file1.chunks():
-                            dest.write(chunk)"""
-
-                     file = request.FILES['file1']
-                     path = storage.save(request.FILES['file1'].name, ContentFile(file.read()))
+                     cloudinary.uploader.upload(
+                      request.FILES['file1'],
+                      public_id = request.FILES['file1'].name,
+                      crop = 'limit',
+                      #width = 2000,
+                      #height = 2000,
+                      eager = [
+                        { 'width': 200, 'height': 200,
+                          'crop': 'thumb', 'gravity': 'face',
+                          'radius': 20, 'effect': 'sepia' },
+                        { 'width': 100, 'height': 150,
+                          'crop': 'fit', 'format': 'png' }
+                      ],
+                      tags = ['special', 'for_homepage']
+                      )
 
 
                      return HttpResponse(str(path))
