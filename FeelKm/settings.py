@@ -28,10 +28,7 @@ INSTALLED_APPS = (
     'websearch',
     'usrs',
     'boto',
-    'storage'
-
-
-
+    'storage',
 )
 
 #DEFAULT_FILE_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
