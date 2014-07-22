@@ -242,7 +242,7 @@ def CreateCommentSend(request):
 
                                 #try:
                                     json=cloudinary.uploader.upload(
-                                          request.request.FILES[filename],
+                                          request.FILES[filename],
                                           public_id = file_txt[0],
                                           crop = 'limit',
                                           #width = 2000,
