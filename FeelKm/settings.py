@@ -27,11 +27,9 @@ INSTALLED_APPS = (
     'api',
     'websearch',
     'usrs',
+    'cloudinary'
 
 )
-
-
-
 
 
 ADMIN_MEDIA_PREFIX = '/statics/'
