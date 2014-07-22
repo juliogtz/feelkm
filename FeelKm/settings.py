@@ -26,7 +26,11 @@ INSTALLED_APPS = (
     'south',
     'api',
     'websearch',
-    'usrs'
+    'usrs',
+    'boto',
+    'storage'
+
+
 
 )
 
