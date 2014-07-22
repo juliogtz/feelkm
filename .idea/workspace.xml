@@ -38,8 +38,8 @@
       <file leaf-file-name="settings.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/FeelKm/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.70567375" vertical-offset="251" max-vertical-offset="2235">
-              <caret line="30" column="14" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
+            <state vertical-scroll-proportion="0.4929078" vertical-offset="296" max-vertical-offset="2220">
+              <caret line="29" column="14" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -741,8 +741,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/FeelKm/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.70567375" vertical-offset="251" max-vertical-offset="2235">
-          <caret line="30" column="14" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
+        <state vertical-scroll-proportion="0.4929078" vertical-offset="296" max-vertical-offset="2220">
+          <caret line="29" column="14" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
           <folding />
         </state>
       </provider>
