@@ -30,9 +30,10 @@ INSTALLED_APPS = (
 
 )
 
-DEFAULT_FILE_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
+#DEFAULT_FILE_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
+DEFAULT_FILE_STORAGE = 'storages.backends.s3boto'
 AWS_S3_SECURE_URLS = False      # use http instead of https
-AWS_QUERYSTRING_AUTH = True     # don't add complex authentication-related query parameters for requests
+AWS_QUERYSTRING_AUTH = False     # don't add complex authentication-related query parameters for requests
 AWS_S3_ACCESS_KEY_ID = 'AKIAJMIPQKECN7ZJRM5A'     # enter your access key id
 AWS_S3_SECRET_ACCESS_KEY = 'AWSSecretKey=TO+Yp1r44Voo+g1wv0zueCQi/bAeQbl2WXq3SyXw' # enter your secret access key
 AWS_STORAGE_BUCKET_NAME = 'feelkm-assets'
