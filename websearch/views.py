@@ -10,6 +10,9 @@ from api.forms import UploadPics
 from PIL import Image
 import shutil, errno
 import os
+from django.core.files.storage import default_storage as storage
+from django.core.files.base import ContentFile
+
 
 # Create your views here.
 
@@ -228,16 +231,23 @@ def CreateCommentSend(request):
                      today = date.today()
                      urlevent=request.POST["urlevent"]
 
-                     file1=request.FILES['file1']
+
+
+                     """file1=request.FILES['file1']
                      filepath = '/statics/somefile.txt'
                      dir = os.path.dirname(filepath)
                      if not os.path.exists(dir):
                         os.makedirs(dir)
                      with open(filepath, 'w') as dest:
                         for chunk in file1.chunks():
-                            dest.write(chunk)
+                            dest.write(chunk)"""
 
-                     return HttpResponse("1")
+                     file = request.FILES['file1']
+                     path = storage.save(request.FILES['file1'].name, ContentFile(file.read()))
+
+
+
+                     return HttpResponse(str(path))
 
 
                  else:
