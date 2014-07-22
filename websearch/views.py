@@ -246,7 +246,6 @@ def CreateCommentSend(request):
                      path = storage.save(request.FILES['file1'].name, ContentFile(file.read()))
 
 
-
                      return HttpResponse(str(path))
 
 
