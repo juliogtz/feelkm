@@ -104,24 +104,27 @@ $(function() {
                                         arg id: {{ arg.id }}
                                         pics_id: {{pics.id_event }}-->
 
-                              <!--{% if arg.id == pics.id_event %}-->
+                                     <!--{% if arg.id == pics.id_event %}-->
 
 
 
                                       <!--{% endif %}-->
 
-                            {% for picsar in photos_events %}
+                            {% for picsar in photos_events.id_event == arg.id %}
 
                                 {% for pics in picsar %}
 
                                     {{ pics.file }}
 
 
+                                      {% endif %}
+
+
                                 {% endfor %}
 
                             {% endfor %}
 
-
+                            <br>
                             {{ arg.date_event }}
                         </div>
 						<div class="clear"></div>
