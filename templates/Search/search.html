@@ -77,7 +77,12 @@ $(function() {
 
 
 
-                {{  photos_events }}
+                {%  for key photos key in photos_events %}
+
+                        {{ key }}
+
+
+                {% endfor %}
 
 
 
