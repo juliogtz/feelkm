@@ -75,9 +75,9 @@ $(function() {
 
                 {% for arg in data %}
 
-                {%  for key, photos in photos_events %}
+                {%  for key,value in photos_events.items %}
 
-                        {{ key }} : {{ photos }}
+                        {{ key }} : {{ value }}
 
 
                 {% endfor %}
