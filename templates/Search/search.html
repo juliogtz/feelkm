@@ -98,7 +98,13 @@ $(function() {
 						<div class="left dateItemTxt">
 
 
-                            {{ photos_events }}
+
+
+                            {% for o in photos_events %}
+
+                            {{ o }}
+
+                            {% endfor %}
 
                             {{ arg.date_event }}</div>
 						<div class="clear"></div>

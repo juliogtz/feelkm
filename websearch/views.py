@@ -64,8 +64,8 @@ def SearchWeb(request):
             print count_c
 
         photos_events = []
-        for data_events in events_list:
-            pics = photos.objects.filter(id_event=data_events.id)
+        for data_pic in events_list:
+            pics = photos.objects.filter(id_event=data_pic.id)
             photos_events.append(pics)
 
 
