@@ -75,27 +75,9 @@ $(function() {
 
                 {% for arg in data %}
 
-
-
                 {%  for key,photos in photos_events %}
 
-                        {{ photos_events }}
-
-                          {{ key }}
-                        <br>
-                        {{ arg.id }}
-
-                        <p></p>
-                        {{ photos }}
-
-                        {% if key == arg.id|intToStr  %}
-
-
-                            {{ photos }}
-
-
-                        {% endif  %}
-
+                       {{ photos }}
 
                 {% endfor %}
 
