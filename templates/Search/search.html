@@ -75,6 +75,8 @@ $(function() {
 
                 {% for arg in data %}
 
+                {{ photos_events }}
+
 
 
 				<div id="item_1" class="item-full">
@@ -96,7 +98,9 @@ $(function() {
 					<div class="dateItem">
 						<div class="left"> <img src="/{{ STATIC_URL }}imgs/fecha.png" width="17" height="15"></div>
 						<div class="left dateItemTxt">
+
                             {{ arg.date_event }}
+
                         </div>
 						<div class="clear"></div>
 				</div>
@@ -107,7 +111,6 @@ $(function() {
 						<div class="NextFull left"></div>
 						<div class="NextNoFull left"></div>
 						<div class="NextNoFull left"></div>
-
 						<div class="NumberOPItem left">{{ cont_arg|access:forloop.counter0 }} Opiniones</div>
 						<div class="clear"></div>
 					</div>
