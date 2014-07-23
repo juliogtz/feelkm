@@ -10,6 +10,7 @@ import cloudinary
 import cloudinary.uploader
 import cloudinary.api
 
+
 cloudinary.config(
   cloud_name = "htyoqtggc",
   api_key = "961935933259211",
@@ -62,6 +63,13 @@ def SearchWeb(request):
             Cont_Arg.append(count_c)
             print count_c
 
+        photos_events = []
+        for data_events in events_list:
+            pics = photos_events.objects.filter(id_event=data_events.id)
+            photos_events.append(pics)
+
+
+
 
         if request.user.is_active:
             if request.user.is_authenticated:
@@ -76,6 +84,7 @@ def SearchWeb(request):
         return render(request, 'Search/search.html', {
                 'poll': 1,
                 'data': events_list,
+                'photos_events':photos_events,
                 'error_message': "You didn't select a choice.",
                 'query': query,
                 'count': count,
