@@ -79,11 +79,17 @@ $(function() {
 
                 {%  for key , photos  in photos_events %}
 
-                        {% if key == arg.id %}
+                        {{ key }}
+                        <br>
+                        {{ arg.id }}
+
+                        <p></p>
+
+                        <!--{% if key == arg.id %}
 
                             {{ photos }}
 
-                        {% endif  %}
+                        {% endif  %}-->
 
 
                 {% endfor %}
