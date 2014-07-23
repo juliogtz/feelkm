@@ -95,7 +95,11 @@ $(function() {
                     <div class="PlaceItem"><a  class="PlaceItem-link" href="/search/?q={{ arg.city }}">{{ arg.city }}</a> <a class="PlaceItem-link" href="/search/?q={{ arg.region }}"> {{ arg.region }}</a>, <a class="PlaceItem-link" href="/search/?q={{ arg.country }}"> {{ arg.country }}</a></div>
 					<div class="dateItem">
 						<div class="left"> <img src="/{{ STATIC_URL }}imgs/fecha.png" width="17" height="15"></div>
-						<div class="left dateItemTxt">{{ arg.date_event }}</div>
+						<div class="left dateItemTxt">
+
+                            {{arg.comments_events}}
+
+                            {{ arg.date_event }}</div>
 						<div class="clear"></div>
 				</div>
 					<div class="Points_Item">
