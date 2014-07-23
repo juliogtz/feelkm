@@ -65,10 +65,8 @@ def SearchWeb(request):
 
         photos_events = []
         for data_events in events_list:
-            pics = photos_events.objects.filter(id_event=data_events.id)
+            pics = photos.objects.filter(id_event=data_events.id)
             photos_events.append(pics)
-
-
 
 
         if request.user.is_active:
