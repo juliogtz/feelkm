@@ -75,12 +75,32 @@ $(function() {
 
                 {% for arg in data %}
 
-                {%  for key,photos in photos_events %}
+                {%  for photos in photos_events %}
 
                        {{ photos }}
 
                 {% endfor %}
 
+
+                <!--
+
+                 {{ key }}
+                        <br>
+                        {{ arg.id }}
+
+                        <p></p>
+                        {{ photos }}
+
+                        {% if key == arg.id|intToStr  %}
+
+
+                            {{ photos }}
+
+
+                        {% endif  %}
+
+
+-->
 
 
 				<div id="item_1" class="item-full">
