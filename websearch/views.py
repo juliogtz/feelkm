@@ -39,7 +39,7 @@ def LandingWeb(request):
 def SearchWeb(request):
 
         query= request.GET.get('q','')
-        snippets= events.objects.get( Q(name_event__icontains=query) | Q(city__icontains=query) | Q(region__icontains=query) | Q(country__icontains=query) | Q(description__icontains=query) | Q(distan_txt__icontains=query) | Q(distan_txt__icontains=query) | Q(short_desc__icontains=query) | Q(region_l__icontains=query)).order_by('-date_event')
+        snippets= events.objects.filter( Q(name_event__icontains=query) | Q(city__icontains=query) | Q(region__icontains=query) | Q(country__icontains=query) | Q(description__icontains=query) | Q(distan_txt__icontains=query) | Q(distan_txt__icontains=query) | Q(short_desc__icontains=query) | Q(region_l__icontains=query)).order_by('-date_event')
         count = snippets.count()
         paginator = Paginator(snippets, 10) # Show 10 events per page
 
