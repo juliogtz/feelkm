@@ -37,3 +37,8 @@ def replacedigit(n):
         n="0"+n
 
     return n
+
+@register.filter(name='intToStr')
+@stringfilter
+def int_to_string(value):
+    return str(value)
