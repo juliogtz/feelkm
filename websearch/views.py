@@ -262,11 +262,11 @@ def CreateCommentSend(request):
                                 #except:
                                  #   print "hey!"
 
-                     #return HttpResponseRedirect(str(urlevent))
-                     return HttpResponse("0")
+                     return HttpResponseRedirect(str(urlevent))
+                     #return HttpResponse("0")
                  else:
-                     #return HttpResponseRedirect("/")
-                     return HttpResponse("2")
+                     return HttpResponseRedirect("/")
+                     #return HttpResponse("2")
 
         else:
 
