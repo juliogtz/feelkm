@@ -100,9 +100,13 @@ $(function() {
 
 
 
-                            {% for o in photos_events %}
+                            {% for picsar in photos_events %}
 
-                            {{ o.file }}
+                                {% for pics in picsar %}
+
+                                    {{ pics }}
+
+                                {% endfor %}
 
                             {% endfor %}
 
