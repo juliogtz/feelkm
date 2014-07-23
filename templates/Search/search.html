@@ -104,11 +104,14 @@ $(function() {
 
                                 {% for pics in picsar %}
 
-                                     {% if arg.id == pics.id_event %}
+                                     <!--{% if arg.id == pics.id_event %}-->
 
                                         {{ pics.file }}
+                                        -----------------
+                                        arg id: {{ arg.id }}
+                                        pics_id: {{pics.id_event }}
 
-                                      {% endif %}
+                                      <!--{% endif %}-->
 
                                 {% endfor %}
 
