@@ -98,20 +98,24 @@ $(function() {
 						<div class="left dateItemTxt">
 
 
+            <!--
+              {{ pics.file }}
+                                        -----------------
+                                        arg id: {{ arg.id }}
+                                        pics_id: {{pics.id_event }}-->
 
+                              <!--{% if arg.id == pics.id_event %}-->
+
+
+
+                                      <!--{% endif %}-->
 
                             {% for picsar in photos_events %}
 
                                 {% for pics in picsar %}
 
-                                     <!--{% if arg.id == pics.id_event %}-->
+                                    {{ pics.file }}
 
-                                        {{ pics.file }}
-                                        -----------------
-                                        arg id: {{ arg.id }}
-                                        pics_id: {{pics.id_event }}
-
-                                      <!--{% endif %}-->
 
                                 {% endfor %}
 
