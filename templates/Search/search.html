@@ -77,9 +77,11 @@ $(function() {
 
 
 
-                {%  for key , photos  in photos_events %}
+                {%  for key,photos in photos_events %}
 
-                        {{ key }}
+                        {{ photos }}
+
+                          {{ key }}
                         <br>
                         {{ arg.id }}
 
