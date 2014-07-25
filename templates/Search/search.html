@@ -76,7 +76,11 @@ $(function() {
                 {% for arg in data, pics in  photos_events %}
 
 
-                        {{ pics }}
+                       {% for pics in photos_events %}
+
+                            {{ pics }}
+
+                       {% endfor %}
 
 
                 <!--
