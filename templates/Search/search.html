@@ -79,7 +79,13 @@ $(function() {
 
 
 
-                      {{ photos }}
+                       {% for pics in photos %}
+
+                            {{ pics }}
+                            <p></p>
+
+                       {% endfor %}
+
 
 
 
