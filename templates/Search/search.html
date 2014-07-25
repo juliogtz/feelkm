@@ -80,12 +80,15 @@ $(function() {
 
 
                       {{ photos }}
+                      num: {{ photos|access:forloop.counter0 }}
                        <p></p>
+
+
 
 
                        {% for pics in photos %}
 
-                            {{ pics.id_event_id }}
+                            {{ pics.id_event_ }}
 
                              <br>
 
