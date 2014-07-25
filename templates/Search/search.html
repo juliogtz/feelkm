@@ -73,12 +73,13 @@ $(function() {
                 {% load dictionary_extras %}
 
 
-                {% for arg in data, pics in  photos_events %}
+                 {% for arg in data %}
 
 
                        {% for pics in photos_events %}
 
                             {{ pics }}
+
 
                        {% endfor %}
 
