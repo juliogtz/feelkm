@@ -87,7 +87,12 @@ $(function() {
 
                                     {% for pd in pics %}
 
-                                        {{ pd }}
+                                        {% for ps in pd %}
+
+                                        {{ ps }}
+
+                                        {% endfor   %}
+
 
                                     {% endfor   %}
 
