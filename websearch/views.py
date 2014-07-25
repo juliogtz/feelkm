@@ -69,7 +69,7 @@ def SearchWeb(request):
 
         for data_pic in events_list:
             pics = photos.objects.filter(id_event=data_pic.id)
-            events_list.append={'photos':pics}
+            events_list.append({'photos':pics})
 
 
 
