@@ -85,7 +85,11 @@ $(function() {
 
                                     {{ p }}
 
-                                    {{ pics  }}
+                                    {% for picsa in pics %}
+
+                                        {{ picsa }}
+
+                                    {% endfor %}
 
                                 {% endif %}
 
