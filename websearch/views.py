@@ -44,9 +44,7 @@ def SearchWeb(request):
         count = snippets.count()
         #Pics:
 
-        for data_pic in snippets:
-            pics = photos.objects.filter(id_event=data_pic.id)
-            snippets['photos']=pics
+
 
         paginator = Paginator(snippets, 10) # Show 10 events per page
 
@@ -68,6 +66,10 @@ def SearchWeb(request):
             count_c = com.count()
             Cont_Arg.append(count_c)
             print count_c
+
+        for data_pic in events_list:
+            pics = photos.objects.filter(id_event=data_pic.id)
+            events_list.append={'photos':pics}
 
 
 
