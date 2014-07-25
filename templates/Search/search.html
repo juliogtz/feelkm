@@ -80,16 +80,18 @@ $(function() {
 
 
                       {{ photos }}
+                       <p></p>
+
 
                        {% for pics in photos %}
 
-                            {{ pics }}
+                            {{ pics.id_event }}
                              <br>
 
                        {%  endfor %}
 
                     <p></p>
-                    <p></p>
+
 
 
 
