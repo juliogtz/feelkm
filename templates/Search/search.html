@@ -75,33 +75,8 @@ $(function() {
 
                 {% for arg in data %}
 
-                {%  for photos in photos_events %}
 
-
-
-                      {{ photos }}
-                      num: {{ photos|access:forloop.counter0 }}
-                       <p></p>
-
-
-
-
-                       {% for pics in photos %}
-
-                            {{ pics.id_event_ }}
-
-                             <br>
-
-                       {%  endfor %}
-
-                    <p></p>
-
-
-
-
-
-
-                {% endfor %}
+                    {{ arg.photos }}
 
 
                 <!--

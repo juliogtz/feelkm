@@ -26,8 +26,8 @@
       <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/websearch/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="780" max-vertical-offset="4185">
-              <caret line="69" column="37" selection-start-line="69" selection-start-column="37" selection-end-line="69" selection-end-column="37" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="660" max-vertical-offset="4185">
+              <caret line="69" column="38" selection-start-line="69" selection-start-column="38" selection-end-line="69" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -36,8 +36,8 @@
       <file leaf-file-name="search.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/Search/search.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5602606" vertical-offset="1058" max-vertical-offset="4005">
-              <caret line="82" column="36" selection-start-line="82" selection-start-column="36" selection-end-line="82" selection-end-column="36" />
+            <state vertical-scroll-proportion="0.4136808" vertical-offset="1043" max-vertical-offset="3630">
+              <caret line="78" column="34" selection-start-line="78" selection-start-column="34" selection-end-line="78" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -757,14 +757,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/websearch/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="780" max-vertical-offset="4185">
-          <caret line="69" column="37" selection-start-line="69" selection-start-column="37" selection-end-line="69" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="795" max-vertical-offset="1680">
@@ -773,10 +765,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/websearch/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="660" max-vertical-offset="4185">
+          <caret line="69" column="38" selection-start-line="69" selection-start-column="38" selection-end-line="69" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/Search/search.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5602606" vertical-offset="1058" max-vertical-offset="4005">
-          <caret line="82" column="36" selection-start-line="82" selection-start-column="36" selection-end-line="82" selection-end-column="36" />
+        <state vertical-scroll-proportion="0.4136808" vertical-offset="1043" max-vertical-offset="3630">
+          <caret line="78" column="34" selection-start-line="78" selection-start-column="34" selection-end-line="78" selection-end-column="34" />
           <folding />
         </state>
       </provider>
