@@ -78,7 +78,15 @@ $(function() {
                 {%  for photos in photos_events %}
 
 
-                        {{ photos }}
+
+                       {% for pics in photos %}
+
+                            {{ pics }}
+                            <p></p>
+
+                       {% endfor %}
+
+
 
 
 
