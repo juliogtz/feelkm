@@ -81,7 +81,11 @@ $(function() {
 
                             {% for p in pics%}
 
-                                {{ p }}
+                                {% if p == arg.id %}
+
+                                    {{  p }}
+
+                                {% endif %}
 
                             {% endfor %}
 
