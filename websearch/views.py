@@ -42,10 +42,6 @@ def SearchWeb(request):
         query= request.GET.get('q','')
         snippets= events.objects.filter( Q(name_event__icontains=query) | Q(city__icontains=query) | Q(region__icontains=query) | Q(country__icontains=query) | Q(description__icontains=query) | Q(distan_txt__icontains=query) | Q(distan_txt__icontains=query) | Q(short_desc__icontains=query) | Q(region_l__icontains=query)).order_by('-date_event')
         count = snippets.count()
-        #Pics:
-
-
-
         paginator = Paginator(snippets, 10) # Show 10 events per page
 
         #Get the number of comments:
@@ -70,7 +66,7 @@ def SearchWeb(request):
         photos_events=[]
         for data_pic in events_list:
             pics = photos.objects.filter(id_event=data_pic.id)
-            photos_events[data_pic.id]=pics
+            photos_events[""+str(data_pic.id)+""]=pics
 
 
         if request.user.is_active:
