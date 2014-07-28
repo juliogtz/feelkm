@@ -78,6 +78,6 @@ register.tag('set', set_var)
 
 
 @register.filter(name='shuffle')
-@stringfilter
 def shuffle(arg):
     return arg[random.randrange(len(arg))]
+
