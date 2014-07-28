@@ -37,7 +37,7 @@
         <entry file="file://$PROJECT_DIR$/templates/Search/search.html">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.7003058" vertical-offset="1331" max-vertical-offset="4110">
-              <caret line="104" column="66" selection-start-line="104" selection-start-column="66" selection-end-line="104" selection-end-column="66" />
+              <caret line="104" column="61" selection-start-line="104" selection-start-column="61" selection-end-line="104" selection-end-column="61" />
               <folding />
             </state>
           </provider>
@@ -46,8 +46,8 @@
       <file leaf-file-name="dictionary_extras.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/websearch/templatetags/dictionary_extras.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.884615" vertical-offset="954" max-vertical-offset="1305">
-              <caret line="79" column="23" selection-start-line="79" selection-start-column="23" selection-end-line="79" selection-end-column="30" />
+            <state vertical-scroll-proportion="-9.461538" vertical-offset="954" max-vertical-offset="1320">
+              <caret line="80" column="13" selection-start-line="80" selection-start-column="13" selection-end-line="80" selection-end-column="13" />
               <folding>
                 <element signature="e#0#27#0" expanded="true" />
               </folding>
@@ -92,8 +92,8 @@
         <option value="$PROJECT_DIR$/FeelKm/settings.py" />
         <option value="$PROJECT_DIR$/api/models.py" />
         <option value="$PROJECT_DIR$/websearch/views.py" />
-        <option value="$PROJECT_DIR$/websearch/templatetags/dictionary_extras.py" />
         <option value="$PROJECT_DIR$/templates/Search/search.html" />
+        <option value="$PROJECT_DIR$/websearch/templatetags/dictionary_extras.py" />
       </list>
     </option>
   </component>
@@ -771,8 +771,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/websearch/templatetags/dictionary_extras.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.884615" vertical-offset="954" max-vertical-offset="1305">
-          <caret line="79" column="23" selection-start-line="79" selection-start-column="23" selection-end-line="79" selection-end-column="30" />
+        <state vertical-scroll-proportion="-9.461538" vertical-offset="954" max-vertical-offset="1320">
+          <caret line="80" column="13" selection-start-line="80" selection-start-column="13" selection-end-line="80" selection-end-column="13" />
           <folding>
             <element signature="e#0#27#0" expanded="true" />
           </folding>
@@ -782,7 +782,7 @@
     <entry file="file://$PROJECT_DIR$/templates/Search/search.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7003058" vertical-offset="1331" max-vertical-offset="4110">
-          <caret line="104" column="66" selection-start-line="104" selection-start-column="66" selection-end-line="104" selection-end-column="66" />
+          <caret line="104" column="61" selection-start-line="104" selection-start-column="61" selection-end-line="104" selection-end-column="61" />
           <folding />
         </state>
       </provider>
