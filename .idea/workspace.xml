@@ -36,8 +36,8 @@
       <file leaf-file-name="search.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/Search/search.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2776204" vertical-offset="1207" max-vertical-offset="3720">
-              <caret line="87" column="45" selection-start-line="87" selection-start-column="45" selection-end-line="87" selection-end-column="45" />
+            <state vertical-scroll-proportion="0.49008498" vertical-offset="1177" max-vertical-offset="3765">
+              <caret line="90" column="40" selection-start-line="90" selection-start-column="40" selection-end-line="90" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -777,8 +777,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/Search/search.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2776204" vertical-offset="1207" max-vertical-offset="3720">
-          <caret line="87" column="45" selection-start-line="87" selection-start-column="45" selection-end-line="87" selection-end-column="45" />
+        <state vertical-scroll-proportion="0.49008498" vertical-offset="1177" max-vertical-offset="3765">
+          <caret line="90" column="40" selection-start-line="90" selection-start-column="40" selection-end-line="90" selection-end-column="40" />
           <folding />
         </state>
       </provider>
