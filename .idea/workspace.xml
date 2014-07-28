@@ -23,10 +23,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/websearch/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.115385" vertical-offset="1008" max-vertical-offset="4605">
+            <state vertical-scroll-proportion="0.52991456" vertical-offset="1059" max-vertical-offset="4605">
               <caret line="83" column="46" selection-start-line="83" selection-start-column="46" selection-end-line="83" selection-end-column="46" />
               <folding>
                 <element signature="e#0#54#0" expanded="true" />
@@ -35,11 +35,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="search.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="search.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/Search/search.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5504587" vertical-offset="2010" max-vertical-offset="3930">
-              <caret line="146" column="0" selection-start-line="146" selection-start-column="0" selection-end-line="146" selection-end-column="0" />
+            <state vertical-scroll-proportion="-3.3" vertical-offset="2010" max-vertical-offset="3930">
+              <caret line="145" column="23" selection-start-line="145" selection-start-column="23" selection-end-line="145" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -94,8 +94,8 @@
         <option value="$PROJECT_DIR$/FeelKm/settings.py" />
         <option value="$PROJECT_DIR$/api/models.py" />
         <option value="$PROJECT_DIR$/websearch/templatetags/dictionary_extras.py" />
-        <option value="$PROJECT_DIR$/websearch/views.py" />
         <option value="$PROJECT_DIR$/templates/Search/search.html" />
+        <option value="$PROJECT_DIR$/websearch/views.py" />
       </list>
     </option>
   </component>
@@ -773,21 +773,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/Search/search.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.3" vertical-offset="2010" max-vertical-offset="3930">
+          <caret line="145" column="23" selection-start-line="145" selection-start-column="23" selection-end-line="145" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/websearch/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.115385" vertical-offset="1008" max-vertical-offset="4605">
+        <state vertical-scroll-proportion="0.52991456" vertical-offset="1059" max-vertical-offset="4605">
           <caret line="83" column="46" selection-start-line="83" selection-start-column="46" selection-end-line="83" selection-end-column="46" />
           <folding>
             <element signature="e#0#54#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/Search/search.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5504587" vertical-offset="2010" max-vertical-offset="3930">
-          <caret line="146" column="0" selection-start-line="146" selection-start-column="0" selection-end-line="146" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>

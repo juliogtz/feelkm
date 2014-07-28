@@ -81,7 +81,7 @@ def SearchWeb(request):
             else:
                 calif_avg=0
 
-            calif_args.append({int(data_pic): calif_avg})
+            calif_args.append({int(data_pic.id): calif_avg})
 
 
 
