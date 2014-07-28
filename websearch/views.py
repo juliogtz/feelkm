@@ -56,19 +56,33 @@ def SearchWeb(request):
             # If page is out of range (e.g. 9999), deliver last page of results.
             events_list = paginator.page(paginator.num_pages)
 
-        Cont_Arg = []
-        for data_events in events_list:
-            com = comments_events.objects.filter(id_event=data_events.id)
-            count_c = com.count()
-            Cont_Arg.append(count_c)
-            print count_c
-
         photos_events=[]
         photos_events_arg=[]
+        Cont_Arg=[]
+        calif_args = []
         for data_pic in events_list:
             pics = photos.objects.filter(id_event=data_pic.id)
             photos_events.append({data_pic.id:pics})
             photos_events_arg.append({int(data_pic.id):pics})
+
+            # Comments:
+            com = comments_events.objects.filter(id_event=data_pic.id)
+            count_c = com.count()
+            Cont_Arg.append(count_c)
+
+            # Califs
+            calif_sum=0
+            calif_avg=0
+            for califs in com:
+                calif_sum=calif_sum+califs.calif
+
+            if(len(com)>0):
+                calif_avg = calif_sum / len(com)
+            else:
+                calif_avg=0
+
+            calif_args.append({int(data_pic): calif_avg})
+
 
 
         if request.user.is_active:
@@ -86,6 +100,7 @@ def SearchWeb(request):
                 'data': events_list,
                 'photos_events':photos_events,
                 'photos_events_arg':photos_events_arg,
+                'calif_args':calif_args,
                 'error_message': "You didn't select a choice.",
                 'query': query,
                 'count': count,
