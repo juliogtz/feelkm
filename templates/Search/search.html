@@ -72,19 +72,13 @@ $(function() {
 
 			<div id="items">
                 {% load dictionary_extras %}
-
-
-
-
-
-
-
+                {% for arg in data %}
 
 				<div id="item_1" class="item-full">
 					<div id="item_1_img" class="left">
 						<a href="/{{ arg.country | strip }}/{{ arg.year_event }}/{{ arg.month_event | replacedigit }}/{{ arg.day_event | replacedigit }}/running/{{arg.name_event | replacestr }}/{{ arg.id }}/">
 
-                      {% for arg in data %}
+
 
 
                        {% for pics in photos_events %}
@@ -103,16 +97,6 @@ $(function() {
 
 
                                         {% if value %}
-
-
-                                            {% for pids in value %}
-
-                                                <!--{{ pids }}-->
-
-
-
-                                            {% endfor %}
-
 
                                             <!--El random: {{ value | shuffle }}-->
 
