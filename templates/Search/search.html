@@ -1,3 +1,4 @@
+{% load cloudinary %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -113,7 +114,9 @@ $(function() {
                                             {% endfor %}
 
 
-                                            El random: {{ value | shuffle }}
+                                            <!--El random: {{ value | shuffle }}-->
+
+                                            {% cloudinary "2.jpg" width=200 height=130 crop="fill" %}
 
 
 
