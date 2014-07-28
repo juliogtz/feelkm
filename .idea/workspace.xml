@@ -37,7 +37,7 @@
         <entry file="file://$PROJECT_DIR$/templates/Search/search.html">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.49008498" vertical-offset="1192" max-vertical-offset="3765">
-              <caret line="91" column="45" selection-start-line="91" selection-start-column="45" selection-end-line="91" selection-end-column="45" />
+              <caret line="91" column="50" selection-start-line="91" selection-start-column="50" selection-end-line="91" selection-end-column="50" />
               <folding />
             </state>
           </provider>
@@ -721,7 +721,7 @@
     <entry file="file://$PROJECT_DIR$/templates/Search/search.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.49008498" vertical-offset="1192" max-vertical-offset="3765">
-          <caret line="91" column="45" selection-start-line="91" selection-start-column="45" selection-end-line="91" selection-end-column="45" />
+          <caret line="91" column="50" selection-start-line="91" selection-start-column="50" selection-end-line="91" selection-end-column="50" />
           <folding />
         </state>
       </provider>
