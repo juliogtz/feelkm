@@ -100,8 +100,8 @@ $(function() {
 
                                             <!--El random: {{ value | shuffle }}-->
 
-                                            {% cloudinary "{{ value | shuffle }}.jpg" width=200 height=130 %}
 
+                                         <img src="http://res.cloudinary.com/htyoqtggc/image/upload/h_130,w_200/{{ value | shuffle }}.jpg" width="200" height="130">
 
 
 
