@@ -42,3 +42,9 @@ def replacedigit(n):
 @stringfilter
 def int_to_string(value):
     return str(value)
+
+
+@register.filter(name='StrToInt')
+@stringfilter
+def string_to_int(value):
+    return int(value)
