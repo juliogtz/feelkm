@@ -89,7 +89,15 @@ $(function() {
                                     {{ pics }}
                                 <br>
 
-                                    {% for key,value in pics.items %}{{ value }}{% endfor %}
+                                    {% for key,value in pics.items %}
+
+                                        {% for pids in value %}
+
+                                            {{ pids }}
+
+                                        {% endfor %}
+
+                                    {% endfor %}
 
 
                                 {% endif %}
