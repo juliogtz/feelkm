@@ -73,7 +73,17 @@ $(function() {
                 {% load dictionary_extras %}
 
 
-                 {% for arg in data %}
+
+
+
+
+
+
+				<div id="item_1" class="item-full">
+					<div id="item_1_img" class="left">
+						<a href="/{{ arg.country | strip }}/{{ arg.year_event }}/{{ arg.month_event | replacedigit }}/{{ arg.day_event | replacedigit }}/running/{{arg.name_event | replacestr }}/{{ arg.id }}/">
+
+                      {% for arg in data %}
 
 
                        {% for pics in photos_events %}
@@ -98,17 +108,22 @@ $(function() {
 
                                                 {{ pids }}
 
-                                                 <br>
+
 
                                             {% endfor %}
 
-                                            <br><br>
+
                                             El random: {{ value | shuffle }}
+
+                                            {% cloudinary "3.jpg" width=200 height=130 crop="fill" %}
 
 
                                         {% else %}
 
-                                        Get images for web
+
+
+                                         <img src="/{{ STATIC_URL }}imgs/carrera-a.png" width="200" height="130">
+
 
                                         {% endif %}
 
@@ -122,17 +137,6 @@ $(function() {
 
                   {% endfor %}
 
-
-
-
-
-				<div id="item_1" class="item-full">
-					<div id="item_1_img" class="left">
-						<a href=""><a href="/{{ arg.country | strip }}/{{ arg.year_event }}/{{ arg.month_event | replacedigit }}/{{ arg.day_event | replacedigit }}/running/{{arg.name_event | replacestr }}/{{ arg.id }}/">
-
-
-
-                            <img src="/{{ STATIC_URL }}imgs/carrera-a.png" width="200" height="130">
 
                         </a>
 
