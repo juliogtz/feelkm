@@ -1,6 +1,7 @@
 from django import template
 from django.template.defaultfilters import stringfilter
 import math
+import random
 
 register = template.Library()
 
@@ -74,3 +75,9 @@ def set_var(parser, token):
     return SetVarNode(parts[1], parts[3])
 
 register.tag('set', set_var)
+
+
+@register.filter(name='shuffle')
+@stringfilter
+def shuffle(arg):
+    return random.shuffle([i for i in arg[:]])
