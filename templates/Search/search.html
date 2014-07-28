@@ -83,13 +83,14 @@ $(function() {
 
                                 {% if p == arg.id %}
 
-                                    {{ p }}
-                                    <br>
+                                    <!-- Iter pics -->
 
-                                    {{ pics }}
-                                <br>
+
 
                                     {% for key,value in pics.items %}
+
+                                        tamano de list: {{ value | length }}
+                                        <br>
 
                                         {% for pids in value %}
 
