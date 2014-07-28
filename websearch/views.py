@@ -70,7 +70,6 @@ def SearchWeb(request):
             photos_events.append({data_pic.id:pics})
 
 
-
         if request.user.is_active:
             if request.user.is_authenticated:
                 DATALOGIN_ID=request.user.id
