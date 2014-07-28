@@ -87,9 +87,9 @@ $(function() {
                                     <br>
 
                                     {{ pics }}
+                                <br>
 
-                                    <br>
-                                    {{ photos_events_arg.arg.id }}
+                                    {% for key,value in pics.items %}{{ value }}{% endfor %}
 
 
                                 {% endif %}
