@@ -91,7 +91,7 @@ $(function() {
 
 
 
-                                        {% if value|length  >= 0 %}
+                                        {% if value %}
 
 
                                             {% for pids in value %}
@@ -102,7 +102,12 @@ $(function() {
                                             {% endfor %}
 
 
+                                        {% else %}
+
+                                        Get images for web
+
                                         {% endif %}
+
 
 
 
