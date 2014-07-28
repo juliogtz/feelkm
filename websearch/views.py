@@ -68,6 +68,7 @@ def SearchWeb(request):
         for data_pic in events_list:
             pics = photos.objects.filter(id_event=data_pic.id)
             photos_events.append({data_pic.id:pics})
+            photos_events_arg.append(pics)
 
 
         if request.user.is_active:
@@ -84,6 +85,7 @@ def SearchWeb(request):
                 'poll': 1,
                 'data': events_list,
                 'photos_events':photos_events,
+                'photos_events_arg':photos_events_arg,
                 'error_message': "You didn't select a choice.",
                 'query': query,
                 'count': count,

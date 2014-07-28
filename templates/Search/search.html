@@ -89,13 +89,11 @@ $(function() {
 
                                     <br>
 
-                                    {% for picsx in pics.arg.id  %}
+                                    {% for pics_s in photos_events_arg %}
 
-                                       {{  picsx.file  }}
+                                        {{ pics_s.title}}
 
-                                        <br>
-
-                                    {% endfor %}
+                                    {% end for %}
 
 
                                 {% endif %}
