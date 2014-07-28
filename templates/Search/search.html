@@ -89,7 +89,11 @@ $(function() {
 
                                     <br>
 
-                                    {{ pics.p | StrToInt }}
+                                    {% for picsx in pics.p %}
+
+                                        print picsx
+
+                                    {% endfor %}
 
 
                                 {% endif %}
