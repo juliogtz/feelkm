@@ -97,13 +97,14 @@ $(function() {
                                             {% for pids in value %}
 
                                                 {{ pids }}
+
                                                  <br>
 
                                             {% endfor %}
 
                                             <br><br>
-                                            El random: {{ objPic = value | shuffle }}
-                                            {{ objPic }}
+                                            El random: {{ value | shuffle | file  }}
+
 
 
 
