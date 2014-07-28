@@ -79,5 +79,6 @@ register.tag('set', set_var)
 
 @register.filter(name='shuffle')
 def shuffle(arg):
-    return arg[random.randrange(len(arg))]
+    file = arg[random.randrange(len(arg))]
+    return file.file
 
