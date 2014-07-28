@@ -26,8 +26,8 @@
       <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/websearch/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="750" max-vertical-offset="4215">
-              <caret line="79" column="13" selection-start-line="79" selection-start-column="13" selection-end-line="79" selection-end-column="13" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="930" max-vertical-offset="4230">
+              <caret line="94" column="17" selection-start-line="94" selection-start-column="17" selection-end-line="94" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -36,8 +36,8 @@
       <file leaf-file-name="search.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/Search/search.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.79204893" vertical-offset="1301" max-vertical-offset="4110">
-              <caret line="104" column="67" selection-start-line="104" selection-start-column="67" selection-end-line="104" selection-end-column="67" />
+            <state vertical-scroll-proportion="0.79204893" vertical-offset="1316" max-vertical-offset="4140">
+              <caret line="105" column="56" selection-start-line="105" selection-start-column="56" selection-end-line="105" selection-end-column="56" />
               <folding />
             </state>
           </provider>
@@ -91,8 +91,8 @@
         <option value="$PROJECT_DIR$/storages/backends/s3boto.py" />
         <option value="$PROJECT_DIR$/FeelKm/settings.py" />
         <option value="$PROJECT_DIR$/api/models.py" />
-        <option value="$PROJECT_DIR$/websearch/views.py" />
         <option value="$PROJECT_DIR$/websearch/templatetags/dictionary_extras.py" />
+        <option value="$PROJECT_DIR$/websearch/views.py" />
         <option value="$PROJECT_DIR$/templates/Search/search.html" />
       </list>
     </option>
@@ -763,8 +763,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/websearch/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="750" max-vertical-offset="4215">
-          <caret line="79" column="13" selection-start-line="79" selection-start-column="13" selection-end-line="79" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="930" max-vertical-offset="4230">
+          <caret line="94" column="17" selection-start-line="94" selection-start-column="17" selection-end-line="94" selection-end-column="23" />
           <folding />
         </state>
       </provider>
@@ -781,8 +781,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/Search/search.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.79204893" vertical-offset="1301" max-vertical-offset="4110">
-          <caret line="104" column="67" selection-start-line="104" selection-start-column="67" selection-end-line="104" selection-end-column="67" />
+        <state vertical-scroll-proportion="0.79204893" vertical-offset="1316" max-vertical-offset="4140">
+          <caret line="105" column="56" selection-start-line="105" selection-start-column="56" selection-end-line="105" selection-end-column="56" />
           <folding />
         </state>
       </provider>

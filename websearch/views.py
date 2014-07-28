@@ -92,6 +92,7 @@ def SearchWeb(request):
                 'cont_arg':Cont_Arg,
                 'countem':0,
                 "DATALOGIN":DATALOGIN,
+                "objPic":object
 
             })
 
