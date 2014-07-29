@@ -301,3 +301,8 @@ def CreateCommentSend(request):
     else:
 
         return HttpResponseRedirect("/")
+
+
+def return_image(request, id):
+
+   return HttpResponse(id)

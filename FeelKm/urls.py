@@ -63,6 +63,12 @@ urlpatterns = patterns('',
     #Privacy and Legal Information
     url(r'^privacy/$','usrs.views.Privacy'),
 
+    #Return Image by id of event
+    url(r'img/(?P<id>\d+)/$','websearch.views.return_image'),
+
+
+
+
 
 )
 
