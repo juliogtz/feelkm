@@ -318,13 +318,20 @@ def return_image(request, id):
 
         record_search = bing[random.randrange(len(bing))]
         rg=record_search['Thumbnail']
+        try:
 
-        image_data = urllib.urlopen(rg['MediaUrl'], "rb").read()
+            image_data = urllib.urlopen(rg['MediaUrl'], "rb").read()
+            return HttpResponse(image_data, mimetype="image/png")
 
-        return HttpResponse(image_data, mimetype="image/png")
+        except:
+            image_data = open("statics/imgs/carrera-a.png", "rb").read()
+            #image_data = open(os.path.join(settings.STATIC_ROOT, 'carrera-a.png', 'rb').read()
+            return HttpResponse(image_data, mimetype="image/png")
+
     else:
 
         image_data = open("statics/imgs/carrera-a.png", "rb").read()
+        #image_data = open(os.path.join(settings.STATIC_ROOT, 'carrera-a.png', 'rb').read()
         return HttpResponse(image_data, mimetype="image/png")
 
 
