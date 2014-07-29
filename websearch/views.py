@@ -314,7 +314,6 @@ def return_image(request, id):
     record_search = bing[random.randrange(len(bing))]
     rg=record_search['Thumbnail']
 
-
     image_data = urllib.urlopen(rg['MediaUrl'], "rb").read()
 
     return HttpResponse(len(bing))
