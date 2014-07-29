@@ -9,8 +9,7 @@ from datetime import *
 import cloudinary
 import cloudinary.uploader
 import cloudinary.api
-from FeelKm.Bing import bing_search
-
+from FeelKm.Bing.bing_search import bing_search
 
 cloudinary.config(
   cloud_name = "htyoqtggc",
