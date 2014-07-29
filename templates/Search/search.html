@@ -148,12 +148,22 @@ $(function() {
 
                             {% for co_ca in comments_calif %}
 
-                                {{ co_ca }}
+                                {% if co_ca == arg.id %}
+
+                                    <!-- Iter pics -->
+
+                                    {% for key,value in comments_calif.items %}
+
+                                            {{ value }}
+
+                                    {% enfor %}
+
+                                {% endif %}
 
                             {% endfor %}
 
 
-                            <br>
+
 
                     {% endfor %}
 
