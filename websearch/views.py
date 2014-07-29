@@ -312,15 +312,19 @@ def return_image(request, id):
     name_event=data.name_event
     name_event=name_event.replace("'",' ')
     name_event=name_event.replace("-",' ')
-    name_event=name_event.replace("u'\2019'",' ')
     name_event=name_event.replace('    ',' ')
     name_event=name_event.replace('   ',' ')
     name_event=name_event.replace('  ',' ')
     name_event=name_event.strip()
 
     #return HttpResponse(''+name_event+''+'%20running%20race+')
+    try:
+        bing = bing_search(''+name_event+''+' running race', 'Image')
+    except:
+        image_data = open("statics/imgs/carrera-a.png", "rb").read()
+        #image_data = open(os.path.join(settings.STATIC_ROOT, 'carrera-a.png', 'rb').read()
+        return HttpResponse(image_data, mimetype="image/png")
 
-    bing = bing_search(''+name_event+''+' running race', 'Image')
 
     if (len(bing)>0):
 
