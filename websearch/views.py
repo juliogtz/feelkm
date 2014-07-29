@@ -317,10 +317,13 @@ def return_image(request, id):
     name_event=name_event.replace('    ','+')
     name_event=name_event.strip()
 
-    bing = bing_search('+name_event+'+'running+race+', 'Image')
+    return HttpResponse(''+name_event+''+'running+race+')
 
 
-    if (len(bing)>0):
+ #bing = bing_search(''+name_event+''+'running+race+', 'Image')
+
+
+   """ if (len(bing)>0):
 
         record_search = bing[random.randrange(len(bing))]
         rg=record_search['Thumbnail']
@@ -338,6 +341,4 @@ def return_image(request, id):
 
         image_data = open("statics/imgs/carrera-a.png", "rb").read()
         #image_data = open(os.path.join(settings.STATIC_ROOT, 'carrera-a.png', 'rb').read()
-        return HttpResponse(image_data, mimetype="image/png")
-
-
+        return HttpResponse(image_data, mimetype="image/png")"""
