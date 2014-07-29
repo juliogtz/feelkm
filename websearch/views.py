@@ -324,7 +324,7 @@ def return_image(request, id):
         return HttpResponse(image_data, mimetype="image/png")
     else:
 
-        image_data = open("/statics/imgs/carrera-a.png", "rb").read()
+        image_data = open("../statics/imgs/carrera-a.png", "rb").read()
         return HttpResponse(image_data, mimetype="image/png")
 
 
