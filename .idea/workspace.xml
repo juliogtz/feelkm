@@ -23,11 +23,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/websearch/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7863248" vertical-offset="4554" max-vertical-offset="5220">
-              <caret line="322" column="42" selection-start-line="322" selection-start-column="42" selection-end-line="322" selection-end-column="42" />
+            <state vertical-scroll-proportion="1.5" vertical-offset="4869" max-vertical-offset="5220">
+              <caret line="322" column="49" selection-start-line="322" selection-start-column="49" selection-end-line="322" selection-end-column="49" />
               <folding>
                 <element signature="e#0#54#0" expanded="true" />
               </folding>
@@ -35,11 +35,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="search.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="search.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/Search/search.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.08" vertical-offset="1016" max-vertical-offset="5040">
-              <caret line="78" column="51" selection-start-line="78" selection-start-column="51" selection-end-line="78" selection-end-column="56" />
+            <state vertical-scroll-proportion="0.7461774" vertical-offset="1406" max-vertical-offset="5040">
+              <caret line="110" column="68" selection-start-line="110" selection-start-column="68" selection-end-line="110" selection-end-column="68" />
               <folding />
             </state>
           </provider>
@@ -96,7 +96,6 @@
         <option value="$PROJECT_DIR$/api/models.py" />
         <option value="$PROJECT_DIR$/websearch/templatetags/dictionary_extras.py" />
         <option value="$PROJECT_DIR$/statics/css/style_result.css" />
-        <option value="$PROJECT_DIR$/templates/Search/search.html" />
         <option value="$PROJECT_DIR$/FeelKm/urls.py" />
         <option value="$PROJECT_DIR$/FeelKm/pybing/bing.py" />
         <option value="$PROJECT_DIR$/FeelKm/pybing/resultset.py" />
@@ -106,6 +105,7 @@
         <option value="$PROJECT_DIR$/FeelKm/pybing/query/query.py" />
         <option value="$PROJECT_DIR$/FeelKm/Bing/bing_search.py" />
         <option value="$PROJECT_DIR$/websearch/views.py" />
+        <option value="$PROJECT_DIR$/templates/Search/search.html" />
       </list>
     </option>
   </component>
@@ -774,14 +774,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/Search/search.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.08" vertical-offset="1016" max-vertical-offset="5040">
-          <caret line="78" column="51" selection-start-line="78" selection-start-column="51" selection-end-line="78" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/FeelKm/Bing/bing_search.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="420">
@@ -794,11 +786,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/websearch/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7863248" vertical-offset="4554" max-vertical-offset="5220">
-          <caret line="322" column="42" selection-start-line="322" selection-start-column="42" selection-end-line="322" selection-end-column="42" />
+        <state vertical-scroll-proportion="1.5" vertical-offset="4869" max-vertical-offset="5220">
+          <caret line="322" column="49" selection-start-line="322" selection-start-column="49" selection-end-line="322" selection-end-column="49" />
           <folding>
             <element signature="e#0#54#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/Search/search.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7461774" vertical-offset="1406" max-vertical-offset="5040">
+          <caret line="110" column="68" selection-start-line="110" selection-start-column="68" selection-end-line="110" selection-end-column="68" />
+          <folding />
         </state>
       </provider>
     </entry>
