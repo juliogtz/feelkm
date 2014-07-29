@@ -324,4 +324,4 @@ def return_image(request, id):
     #u'How to transmit arguments from c++ to python '
 
 
-    return HttpResponse(response)
+    return HttpResponse(response['SearchResponse'])
