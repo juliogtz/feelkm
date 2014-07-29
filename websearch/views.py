@@ -320,7 +320,7 @@ def return_image(request, id):
 
     #return HttpResponse(''+name_event+''+'%20running%20race+')
 
-    bing = bing_search(''+name_event+''+'%20running%20race+', 'Image')
+    bing = bing_search(''+name_event+''+'%20running%20race', 'Image')
 
     if (len(bing)>0):
 
