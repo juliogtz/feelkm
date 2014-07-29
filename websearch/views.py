@@ -311,4 +311,7 @@ def return_image(request, id):
     reg=""
     record_search = bing[random.randrange(len(bing))]
     rg=record_search['Thumbnail']
-    return HttpResponse(rg['MediaUrl'])
+    rg['MediaUrl']
+
+
+    HttpResponse(rg['MediaUrl'], mimetype="image/png")
