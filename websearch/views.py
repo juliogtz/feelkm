@@ -320,10 +320,10 @@ def return_image(request, id):
     return HttpResponse(''+name_event+''+'running+race+')
 
 
- #bing = bing_search(''+name_event+''+'running+race+', 'Image')
+#bing = bing_search(''+name_event+''+'running+race+', 'Image')
 
 
-   """ if (len(bing)>0):
+""" if (len(bing)>0):
 
         record_search = bing[random.randrange(len(bing))]
         rg=record_search['Thumbnail']
