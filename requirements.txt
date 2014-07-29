@@ -8,6 +8,8 @@ dj-static==0.0.6
 django-storages==1.1.8
 django-toolbelt==0.0.1
 gunicorn==19.0.0
+httplib2==0.9
 psycopg2==2.5.3
+pybing==0.12
 static3==0.5.1
 wsgiref==0.1.2
