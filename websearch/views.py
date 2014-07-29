@@ -9,7 +9,7 @@ from datetime import *
 import cloudinary
 import cloudinary.uploader
 import cloudinary.api
-from pybing import Bing
+from FeelKm.pybing import Bing
 
 
 cloudinary.config(
