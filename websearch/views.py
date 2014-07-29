@@ -309,7 +309,7 @@ def return_image(request, id):
     bing = bing_search('New york marathon running', 'Image')
     reg=""
     for res_bing in bing:
-        reg=reg+"<br>"+str(res_bing)
+        reg=reg+"<p><p>"+str(res_bing)
 
 
     return HttpResponse(reg)
