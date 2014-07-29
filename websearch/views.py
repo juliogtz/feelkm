@@ -310,4 +310,4 @@ def return_image(request, id):
     bing = bing_search('New york marathon running', 'Image')
     reg=""
     record_search = bing[random.randrange(len(bing))]
-    return HttpResponse(record_search['MediaUrl'])
+    return HttpResponse(record_search)
