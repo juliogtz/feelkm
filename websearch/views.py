@@ -311,7 +311,6 @@ def return_image(request, id):
     data = events.objects.get(id=id)
     name_event=data.name_event
     name_event=name_event.replace("'",' ')
-    name_event=name_event.replace('\xe2',' ')
     name_event=name_event.replace("-",' ')
     name_event=name_event.replace('    ',' ')
     name_event=name_event.replace('   ',' ')
