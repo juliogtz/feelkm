@@ -20,4 +20,4 @@ def bing_search(query, search_type):
     json_result = json.loads(response_data)
     result_list = json_result['d']['results']
     print result_list
-    return result_list
+    return response_data
