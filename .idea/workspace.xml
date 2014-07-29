@@ -23,11 +23,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/websearch/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.307693" vertical-offset="4404" max-vertical-offset="4755">
-              <caret line="308" column="25" selection-start-line="308" selection-start-column="25" selection-end-line="308" selection-end-column="25" />
+            <state vertical-scroll-proportion="0.4871795" vertical-offset="4404" max-vertical-offset="4785">
+              <caret line="305" column="21" selection-start-line="305" selection-start-column="21" selection-end-line="305" selection-end-column="21" />
               <folding>
                 <element signature="e#0#54#0" expanded="true" />
               </folding>
@@ -35,11 +35,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bing_search.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="bing_search.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FeelKm/Bing/bing_search.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.83554375" vertical-offset="15" max-vertical-offset="420">
-              <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="420">
+              <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -92,8 +92,8 @@
         <option value="$PROJECT_DIR$/FeelKm/pybing/__init__.py" />
         <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/FeelKm/pybing/query/query.py" />
-        <option value="$PROJECT_DIR$/websearch/views.py" />
         <option value="$PROJECT_DIR$/FeelKm/Bing/bing_search.py" />
+        <option value="$PROJECT_DIR$/websearch/views.py" />
       </list>
     </option>
   </component>
@@ -708,22 +708,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/websearch/views.py">
+    <entry file="file://$PROJECT_DIR$/FeelKm/Bing/bing_search.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.307693" vertical-offset="4404" max-vertical-offset="4755">
-          <caret line="308" column="25" selection-start-line="308" selection-start-column="25" selection-end-line="308" selection-end-column="25" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="420">
+          <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
           <folding>
-            <element signature="e#0#54#0" expanded="true" />
+            <element signature="e#0#13#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FeelKm/Bing/bing_search.py">
+    <entry file="file://$PROJECT_DIR$/websearch/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.83554375" vertical-offset="15" max-vertical-offset="420">
-          <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+        <state vertical-scroll-proportion="0.4871795" vertical-offset="4404" max-vertical-offset="4785">
+          <caret line="305" column="21" selection-start-line="305" selection-start-column="21" selection-end-line="305" selection-end-column="21" />
           <folding>
-            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#0#54#0" expanded="true" />
           </folding>
         </state>
       </provider>
