@@ -10,6 +10,7 @@ import cloudinary
 import cloudinary.uploader
 import cloudinary.api
 from FeelKm.Bing.bing_search import bing_search
+import random
 
 cloudinary.config(
   cloud_name = "htyoqtggc",
@@ -308,8 +309,5 @@ def return_image(request, id):
     data = events.objects.get(id=id)
     bing = bing_search('New york marathon running', 'Image')
     reg=""
-    for res_bing in bing:
-        reg=reg+"<p><p>"+str(res_bing)
-
-
-    return HttpResponse(reg)
+    record_search = bing[random.randrange(len(bing))]
+    return HttpResponse(record_search)
