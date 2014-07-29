@@ -312,6 +312,7 @@ def return_image(request, id):
     name_event=data.name_event
     name_event=name_event.replace("'",' ')
     name_event=name_event.replace("-",' ')
+    name_event=name_event.replace("u'\2019'",' ')
     name_event=name_event.replace('    ',' ')
     name_event=name_event.replace('   ',' ')
     name_event=name_event.replace('  ',' ')
