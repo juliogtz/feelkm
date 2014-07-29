@@ -9,7 +9,7 @@ from datetime import *
 import cloudinary
 import cloudinary.uploader
 import cloudinary.api
-from FeelKm.pybing import Bing
+from FeelKm.Bing import bing_search
 
 
 cloudinary.config(
@@ -307,21 +307,7 @@ def CreateCommentSend(request):
 def return_image(request, id):
 
     data = events.objects.get(id=id)
-
-    bing = Bing('OTmL1/vLGicHmR+3Lz3mdl/txlAd1oyhm0aDaUkUrPE')
-    response = bing.search_web('python bing')
-    #print response['SearchResponse']['Web']['Total']
-    print response
-    #1060000
-    #results = response['SearchResponse']['Web']['Results']
-    #print len(results)
-    #10
-    #for result in results[:3]:
-    #    print repr(result['Title'])
-
-    #u'Python Wrapper on Bing API \u2014 The Uswaretech Blog - Django Web ... '
-    #u'PyUnit - the standard unit testing framework for Python'
-    #u'How to transmit arguments from c++ to python '
+    bing = bing_search('New york marathon', 'Image')
 
 
-    return HttpResponse(response['SearchResponse'])
+    return HttpResponse(bing)
