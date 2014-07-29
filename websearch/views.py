@@ -317,4 +317,6 @@ def return_image(request, id):
 
     image_data = urllib.urlopen(rg['MediaUrl'], "rb").read()
 
-    return HttpResponse(image_data, mimetype="image/png")
+    return HttpResponse(len(bing))
+
+    #return HttpResponse(image_data, mimetype="image/png")
