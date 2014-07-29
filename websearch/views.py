@@ -11,6 +11,8 @@ import cloudinary.uploader
 import cloudinary.api
 from FeelKm.Bing.bing_search import bing_search
 import random
+import urllib
+
 
 cloudinary.config(
   cloud_name = "htyoqtggc",
@@ -311,7 +313,11 @@ def return_image(request, id):
     reg=""
     record_search = bing[random.randrange(len(bing))]
     rg=record_search['Thumbnail']
-    rg['MediaUrl']
 
 
-    HttpResponse(rg['MediaUrl'], mimetype="image/png")
+
+
+    img=urllib.urlopen((rg['MediaUrl']).read())
+
+
+    HttpResponse(img, mimetype="image/jpg")
