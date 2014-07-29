@@ -83,7 +83,7 @@ def SearchWeb(request):
             else:
                 calif_avg=0
 
-            calif_args.append({int(data_pic.id): [calif_avg, last_comment]})
+            calif_args.append({int(data_pic.id): [calif_avg, last_comment, count_c ]})
 
 
         if request.user.is_active:
