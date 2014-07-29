@@ -309,11 +309,8 @@ def CreateCommentSend(request):
 def return_image(request, id):
 
     data = events.objects.get(id=id)
-    #sdfsdfsdfsdfsdfxxx23sdfsdfsdfsdfsdfxxx23sdfsdfsdfsdfsdfxxx23sdfsdfsdfsdfsdfxxx23sdfsdfsdfsdfsdfxxx23
     name_event=data.name_event
-    name_event=str(name_event)
     name_event=name_event.replace("'",'+')
-    name_event=name_event.replace('"','+')
     name_event=name_event.replace(' ','+')
     name_event=name_event.replace('  ','+')
     name_event=name_event.replace('   ','+')
