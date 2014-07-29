@@ -307,4 +307,4 @@ def return_image(request, id):
 
    data = events.objects.filter(id=id)
 
-   return HttpResponse(data.name_event)
+   return HttpResponse(data)
