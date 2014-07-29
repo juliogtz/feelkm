@@ -309,7 +309,9 @@ def CreateCommentSend(request):
 def return_image(request, id):
 
     data = events.objects.get(id=id)
-    bing = bing_search('New york marathon running', 'Image')
+    #sdfsdfsdfsdfsdfxxx23sdfsdfsdfsdfsdfxxx23sdfsdfsdfsdfsdfxxx23sdfsdfsdfsdfsdfxxx23sdfsdfsdfsdfsdfxxx23
+
+    bing = bing_search('sdfsdfsdfsdfsdfxxx23sdfsdfsdfsdfsdfxxx23sdfsdfsdfsdfsdfxxx23sdfsdfsdfsdfsdfxxx23sdfsdfsdfsdfsdfxxx23', 'Image')
 
 
     if (len(bing)>0):
