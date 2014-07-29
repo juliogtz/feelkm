@@ -317,7 +317,7 @@ def return_image(request, id):
     name_event=name_event.replace('    ','+')
     name_event=name_event.strip()
 
-    bing = bing_search(""+str(name_event)+"+running+race", 'Image')
+    bing = bing_search('+name_event+'+'running+race+', 'Image')
 
 
     if (len(bing)>0):
