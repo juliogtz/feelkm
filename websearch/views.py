@@ -315,9 +315,6 @@ def return_image(request, id):
     rg=record_search['Thumbnail']
 
 
+    image_data = open(rg['MediaUrl'], "rb").read()
 
-
-    img=urllib.urlopen((rg['MediaUrl']).read())
-
-
-    HttpResponse(img, mimetype="image/jpg")
+    return HttpResponse(image_data, mimetype="image/png")
