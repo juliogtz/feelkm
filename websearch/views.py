@@ -310,14 +310,19 @@ def return_image(request, id):
 
     data = events.objects.get(id=id)
     bing = bing_search('New york marathon running', 'Image')
-    reg=""
-    record_search = bing[random.randrange(len(bing))]
-    rg=record_search['Thumbnail']
 
-    image_data = urllib.urlopen(rg['MediaUrl'], "rb").read()
 
-    return HttpResponse(len(bing))
+    if (len(bing)>0):
 
-    #statics/imgs/carrera-a.png
+        record_search = bing[random.randrange(len(bing))]
+        rg=record_search['Thumbnail']
 
-    #return HttpResponse(image_data, mimetype="image/png")
+        image_data = urllib.urlopen(rg['MediaUrl'], "rb").read()
+
+        return HttpResponse(image_data, mimetype="image/png")
+    else:
+
+        image_data = open("/statics/imgs/carrera-a.png", "rb").read()
+        return HttpResponse(image_data, mimetype="image/png")
+
+
