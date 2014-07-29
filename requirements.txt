@@ -10,6 +10,6 @@ django-toolbelt==0.0.1
 gunicorn==19.0.0
 httplib2==0.9
 psycopg2==2.5.3
-pybing==0.12
+pybing==0.11
 static3==0.5.1
 wsgiref==0.1.2
