@@ -307,9 +307,9 @@ def return_image(request, id):
 
     data = events.objects.get(id=id)
     bing = bing_search('New york marathon running', 'Image')
+    reg=""
+    for res_bing in bing:
+        reg=reg+"<br>"+res_bing.MediaUrl
 
 
-
-
-
-    return HttpResponse(bing)
+    return HttpResponse(reg)
