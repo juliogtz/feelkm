@@ -320,10 +320,13 @@ def return_image(request, id):
     #return HttpResponse(''+name_event+''+'%20running%20race+')
     try:
         bing = bing_search(''+name_event+''+' running race', 'Image')
+    except ValueError:
+         bing = bing_search(''+data.city+' '+data.region+' '+' running race', 'Image')
     except:
-        image_data = open("statics/imgs/carrera-a.png", "rb").read()
-        #image_data = open(os.path.join(settings.STATIC_ROOT, 'carrera-a.png', 'rb').read()
-        return HttpResponse(image_data, mimetype="image/png")
+
+         image_data = open("statics/imgs/carrera-a.png", "rb").read()
+         #image_data = open(os.path.join(settings.STATIC_ROOT, 'carrera-a.png', 'rb').read()
+         return HttpResponse(image_data, mimetype="image/png")
 
 
     if (len(bing)>0):
