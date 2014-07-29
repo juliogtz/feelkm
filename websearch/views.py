@@ -305,4 +305,6 @@ def CreateCommentSend(request):
 
 def return_image(request, id):
 
-   return HttpResponse(id)
+   data = events.objects.filter(id=id)
+
+   return HttpResponse(data.name_event)
