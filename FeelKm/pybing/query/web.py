@@ -10,8 +10,8 @@
 This module holds the Bing WebQuery class used to do web searches against Bing.
 """
 
-from pybing import constants
-from pybing.query import BingQuery, Pagable
+from FeelKm.pybing import constants
+from FeelKm.pybing.query import BingQuery, Pagable
 
 class WebQuery(BingQuery, Pagable):
     SOURCE_TYPE = constants.WEB_SOURCE_TYPE

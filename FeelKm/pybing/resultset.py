@@ -10,8 +10,8 @@
 This module holds the logic for dealing with a set of results from a query.
 """
 
-from pybing import constants
-from pybing.query import BingQuery, Pagable
+from . import constants
+from .query import BingQuery, Pagable
 
 class BingResultSet(object):
     """

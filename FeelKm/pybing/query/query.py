@@ -17,8 +17,8 @@ import copy, urllib, httplib2
 try: import json
 except ImportError: import simplejson as json
 
-from pybing import constants
-from pybing.query.mixin import QueryMixin
+from FeelKm.pybing import constants
+from FeelKm.pybing.query.mixin import QueryMixin
 
 class BingQuery(QueryMixin):
     SOURCE_TYPE = None

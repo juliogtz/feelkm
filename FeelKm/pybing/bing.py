@@ -21,7 +21,7 @@ try:
 except ImportError:
     import simplejson as json
 
-from pybing import constants
+from . import constants
 
 class Bing(object):
     def __init__(self, app_id):
