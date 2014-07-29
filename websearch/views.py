@@ -310,13 +310,14 @@ def return_image(request, id):
 
     bing = Bing('OTmL1/vLGicHmR+3Lz3mdl/txlAd1oyhm0aDaUkUrPE')
     response = bing.search_web('python bing')
-    print response['SearchResponse']['Web']['Total']
+    #print response['SearchResponse']['Web']['Total']
+    print response
     #1060000
-    results = response['SearchResponse']['Web']['Results']
-    print len(results)
+    #results = response['SearchResponse']['Web']['Results']
+    #print len(results)
     #10
-    for result in results[:3]:
-        print repr(result['Title'])
+    #for result in results[:3]:
+    #    print repr(result['Title'])
 
     #u'Python Wrapper on Bing API \u2014 The Uswaretech Blog - Django Web ... '
     #u'PyUnit - the standard unit testing framework for Python'
