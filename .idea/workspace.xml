@@ -26,8 +26,8 @@
       <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/websearch/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5726496" vertical-offset="4794" max-vertical-offset="5145">
-              <caret line="333" column="29" selection-start-line="333" selection-start-column="29" selection-end-line="333" selection-end-column="29" />
+            <state vertical-scroll-proportion="0.42987806" vertical-offset="4599" max-vertical-offset="5145">
+              <caret line="316" column="21" selection-start-line="316" selection-start-column="21" selection-end-line="316" selection-end-column="21" />
               <folding>
                 <element signature="e#0#54#0" expanded="true" />
               </folding>
@@ -53,6 +53,16 @@
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="1680">
+              <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="14" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -197,6 +207,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="templatetags" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FeelKm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FeelKm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -678,14 +702,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1680">
-          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/Search/search.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.9166667" vertical-offset="3035" max-vertical-offset="5040">
@@ -752,10 +768,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/api/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1680">
+          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/websearch/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5726496" vertical-offset="4794" max-vertical-offset="5145">
-          <caret line="333" column="29" selection-start-line="333" selection-start-column="29" selection-end-line="333" selection-end-column="29" />
+        <state vertical-scroll-proportion="0.42987806" vertical-offset="4599" max-vertical-offset="5145">
+          <caret line="316" column="21" selection-start-line="316" selection-start-column="21" selection-end-line="316" selection-end-column="21" />
           <folding>
             <element signature="e#0#54#0" expanded="true" />
           </folding>

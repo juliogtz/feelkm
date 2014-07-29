@@ -311,7 +311,7 @@ def return_image(request, id):
     data = events.objects.get(id=id)
     #sdfsdfsdfsdfsdfxxx23sdfsdfsdfsdfsdfxxx23sdfsdfsdfsdfsdfxxx23sdfsdfsdfsdfsdfxxx23sdfsdfsdfsdfsdfxxx23
 
-    bing = bing_search('sdfsdfsdfsdfsdfxxx23sdfsdfsdfsdfsdfxxx23sdfsdfsdfsdfsdfxxx23sdfsdfsdfsdfsdfxxx23sdfsdfsdfsdfsdfxxx23', 'Image')
+    bing = bing_search(data.name_event+" running race", 'Image')
 
 
     if (len(bing)>0):
