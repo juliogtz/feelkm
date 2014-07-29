@@ -319,6 +319,6 @@ def return_image(request, id):
 
     return HttpResponse(len(bing))
 
-    statics/imgs/carrera-a.png
+    #statics/imgs/carrera-a.png
 
     #return HttpResponse(image_data, mimetype="image/png")
