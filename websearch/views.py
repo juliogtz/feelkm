@@ -73,16 +73,17 @@ def SearchWeb(request):
             # Califs
             calif_sum=0
             calif_avg=0
+            last_comment=""
             for califs in com:
                 calif_sum=calif_sum+califs.calif
+                last_comment= califs.title_comment
 
             if(len(com)>0):
                 calif_avg = calif_sum / len(com)
             else:
                 calif_avg=0
 
-            calif_args.append({int(data_pic.id): calif_avg})
-
+            calif_args.append({int(data_pic.id): [calif_avg, last_comment]})
 
 
         if request.user.is_active:
