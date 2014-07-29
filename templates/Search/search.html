@@ -154,9 +154,72 @@ $(function() {
 
                                     {% for key,value in comments_calif.items %}
 
-                                            {{ value.0 }}
+
                                             <br>
-                                            {{ value.1 }}
+
+
+
+                                                    	<div class="Points_Item">
+
+
+                                                            {% if  value.0 == 0 %}
+                                                            <div class="FirstNoFull left"></div>
+                                                            <div class="NextNoFull left"></div>
+                                                            <div class="NextNoFull left"></div>
+                                                            <div class="NextNoFull left"></div>
+                                                            <div class="NextNoFull left"></div>
+                                                            {% endif %}
+
+                                                            {% if  value.0 == 1 %}
+                                                            <div class="FirtsFull left"></div>
+                                                            <div class="NextNoFull left"></div>
+                                                            <div class="NextNoFull left"></div>
+                                                            <div class="NextNoFull left"></div>
+                                                            <div class="NextNoFull left"></div>
+                                                            {% endif %}
+
+
+                                                            {% if  value.0 == 2 %}
+                                                            <div class="FirtsFull left"></div>
+                                                            <div class="NextFull left"></div>
+                                                            <div class="NextNoFull left"></div>
+                                                            <div class="NextNoFull left"></div>
+                                                            <div class="NextNoFull left"></div>
+                                                            {% endif %}
+
+                                                            {% if  value.0 == 3 %}
+                                                            <div class="FirtsFull left"></div>
+                                                            <div class="NextFull left"></div>
+                                                            <div class="NextFull left"></div>
+                                                            <div class="NextNoFull left"></div>
+                                                            <div class="NextNoFull left"></div>
+                                                            {% endif %}
+
+                                                            {% if  value.0 == 4 %}
+                                                            <div class="FirtsFull left"></div>
+                                                            <div class="NextFull left"></div>
+                                                            <div class="NextFull left"></div>
+                                                            <div class="NextFull left"></div>
+                                                            <div class="NextNoFull left"></div>
+                                                            {% endif %}
+
+                                                            {% if  value.0 == 5 %}
+                                                            <div class="FirtsFull left"></div>
+                                                            <div class="NextFull left"></div>
+                                                            <div class="NextFull left"></div>
+                                                            <div class="NextFull left"></div>
+                                                            <div class="NextFull left"></div>
+                                                            {% endif %}
+
+                                                            <div class="NumberOPItem left">{{ cont_arg|access:forloop.counter0 }} Opiniones</div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                        <div class="CommentItem">
+                                                            "{{ value.1 }}"
+                                                        </div>
+
+
+                                                        </div>
 
                                     {% endfor %}
 
@@ -165,23 +228,6 @@ $(function() {
                             {% endfor %}
 
                     {% endfor %}
-
-					<div class="Points_Item">
-
-                        <div class="FirtsFull left"></div>
-						<div class="NextFull left"></div>
-						<div class="NextFull left"></div>
-						<div class="NextNoFull left"></div>
-						<div class="NextNoFull left"></div>
-						<div class="NumberOPItem left">{{ cont_arg|access:forloop.counter0 }} Opiniones</div>
-						<div class="clear"></div>
-					</div>
-					<div class="CommentItem">
-						"El mejor evento de running en GDL"
-					</div>
-
-
-				</div>
 
 				<div class="clear"></div>
 
