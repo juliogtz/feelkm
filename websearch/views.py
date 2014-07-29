@@ -312,19 +312,17 @@ def return_image(request, id):
     name_event=data.name_event
     name_event=name_event.replace("'",'%20')
     name_event=name_event.replace("-",'%20')
-    name_event=name_event.replace(' ','%20')
-    name_event=name_event.replace('  ','%20')
-    name_event=name_event.replace('   ','%20')
     name_event=name_event.replace('    ','%20')
+    name_event=name_event.replace('   ','%20')
+    name_event=name_event.replace('  ','%20')
+    name_event=name_event.replace(' ','%20')
     name_event=name_event.strip()
 
-    return HttpResponse(''+name_event+''+'%20running%20race+')
+    #return HttpResponse(''+name_event+''+'%20running%20race+')
 
+    bing = bing_search(''+name_event+''+'%20running%20race+', 'Image')
 
-#bing = bing_search(''+name_event+''+'running+race+', 'Image')
-
-
-""" if (len(bing)>0):
+    if (len(bing)>0):
 
         record_search = bing[random.randrange(len(bing))]
         rg=record_search['Thumbnail']
@@ -342,4 +340,4 @@ def return_image(request, id):
 
         image_data = open("statics/imgs/carrera-a.png", "rb").read()
         #image_data = open(os.path.join(settings.STATIC_ROOT, 'carrera-a.png', 'rb').read()
-        return HttpResponse(image_data, mimetype="image/png")"""
+        return HttpResponse(image_data, mimetype="image/png")
