@@ -2,7 +2,7 @@ from django.shortcuts import get_object_or_404, render
 from django.http import HttpResponseRedirect, HttpResponse
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.db.models import Q
-from api.models import users, comments_events, photos, events
+from api.models import users, comments_events, photos, events, events_favorites
 from django.contrib.auth.models import User
 from django.views.decorators.csrf import csrf_protect, csrf_exempt
 from datetime import *
@@ -132,17 +132,21 @@ def SepecificEvent(request, id, year, month, day):
         calif_avg=0
 
     # Data Login:
+    number_favorites = 0
     if request.user.is_active:
             if request.user.is_authenticated:
                 DATALOGIN_ID=request.user.id
                 DATALOGIN = users.objects.get(id_user_admin_id=DATALOGIN_ID)
+                # Favorites User Events:
+                favorites = events_favorites.objects.filter(id_user_admin=request.user.id)
+                number_favorites = favorites.count()
             else:
                  DATALOGIN="0"
     else:
             DATALOGIN="0"
 
-
     return render(request, 'Search/event.html', {
+
                 'poll': 1,
                 'id':id,
                 'year':year,
@@ -153,6 +157,7 @@ def SepecificEvent(request, id, year, month, day):
                 'calif_avg':calif_avg,
                 'comments':com,
                 'number_comments':number_comments,
+                'number_favorites':number_favorites,
 
             })
 

@@ -52,6 +52,16 @@ $(function() {
 
     });
 
+     $( "#add_favorites_logout" ).click(function() {
+
+        //alert("hola");
+
+        $( "#box-access" ).fadeIn( "slow" );
+
+        $( "#box-login-form" ).fadeIn( "slow" );
+
+    });
+
 
 
 
@@ -173,9 +183,40 @@ $(function() {
 
     <div class="btns-tool-event">
         <div class="left btn-add-favorite">
-            <div class="left txt-btn-event-tool">Agregar a Favoritos</div>
+
+
+            {% if request.user.is_authenticated %}
+
+
+                {% if number_favorites > 0 %}
+
+                <div class="left txt-btn-event-tool"><a href="javascript:void(0)" class="txt-btn-event-tool_link" id="remove_favorites">Quitar de Favoritos</a></div>
+                <div class="left icon-comme-tool"><img src="/{{ STATIC_URL }}imgs/favoritos.png" width="14" height="12"></div>
+
+
+                <div class="left txt-btn-event-tool display_no"><a href="javascript:void(0)" class="txt-btn-event-tool_link" id="add_favorites">Agregar a Favoritos</a></div>
+                <div class="left icon-comme-tool display_no"><img src="/{{ STATIC_URL }}imgs/favoritos.png" width="14" height="12"></div>
+
+                {% else %}
+
+                <div class="left txt-btn-event-tool"><a href="javascript:void(0)" class="txt-btn-event-tool_link" id="add_favorites">Agregar a Favoritos</a></div>
+                <div class="left icon-comme-tool"><img src="/{{ STATIC_URL }}imgs/favoritos.png" width="14" height="12"></div>
+
+                <div class="left txt-btn-event-tool display_no"><a href="javascript:void(0)" class="txt-btn-event-tool_link" id="remove_favorites">Quitar de Favoritos</a></div>
+                <div class="left icon-comme-tool display_no"><img src="/{{ STATIC_URL }}imgs/favoritos.png" width="14" height="12"></div>
+
+                {% endif %}
+
+
+            {% else %}
+
+            <div class="left txt-btn-event-tool"><a href="javascript:void(0)" class="txt-btn-event-tool_link" id="add_favorites_logout">Agregar a Favoritos</a></div>
             <div class="left icon-comme-tool"><img src="/{{ STATIC_URL }}imgs/favoritos.png" width="14" height="12"></div>
-            <div class="clear" ></div>
+
+            {% endif %}
+            <div class="clear"></div>
+
+
         </div>
         <div class="left btn-share-pic">
             <div class="left txt-btn-event-tool">Compartir Foto</div>

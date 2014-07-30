@@ -873,6 +873,15 @@ src: url("../fonts/Roboto-Bold.ttf");
     margin-left: 20px;
 }
 
+.txt-btn-event-tool_link
+{
+    font-family: Helvetica;
+    color: #797c7f;
+    font-size: 13px;
+    font-weight: bold;
+
+}
+
 .txt-btn-event-tool-add{
 
     font-family: Helvetica;
@@ -935,5 +944,8 @@ src: url("../fonts/Roboto-Bold.ttf");
 }
 
 
+.display_no{
+    display: none;
+}
 
 
