@@ -118,9 +118,20 @@ def SearchWeb(request):
 
 def SepecificEvent(request, id, year, month, day):
 
+    data = events.objects.get(id=id)
+    com = comments_events.objects.filter(id_event=id)
+    # Califs
+    calif_sum=0
+    calif_avg=0
+    number_comments=com.count()
+    for califs in com:
+        calif_sum=calif_sum+califs.calif
+    if(len(com)>0):
+        calif_avg = calif_sum / len(com)
+    else:
+        calif_avg=0
 
-    data = events.objects.filter(id=id)
-
+    # Data Login:
     if request.user.is_active:
             if request.user.is_authenticated:
                 DATALOGIN_ID=request.user.id
@@ -130,6 +141,7 @@ def SepecificEvent(request, id, year, month, day):
     else:
             DATALOGIN="0"
 
+
     return render(request, 'Search/event.html', {
                 'poll': 1,
                 'id':id,
@@ -137,16 +149,16 @@ def SepecificEvent(request, id, year, month, day):
                 'month':month,
                 'day':day,
                 'data':data,
-                'DATALOGIN':DATALOGIN
+                'DATALOGIN':DATALOGIN,
+                'calif_avg':calif_avg,
+                'comments':com,
+                'number_comments':number_comments,
 
             })
 
 
 
 def NewCommentEvent(request, id, month, day, year):
-
-
-
     if request.user.is_active:
             if request.user.is_authenticated:
                 DATALOGIN_ID=request.user.id

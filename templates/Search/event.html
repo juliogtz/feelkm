@@ -109,13 +109,63 @@ $(function() {
 	</div>
 
 	<div class="Points-Right">
+
 				<div class="Points_Item">
-						<div class="FirtsFull left"></div>
-						<div class="NextFull left"></div>
-						<div class="NextFull left"></div>
-						<div class="NextNoFull left"></div>
-						<div class="NextNoFull left"></div>
-						<div class="NumberOPItem left">17 Opiniones</div>
+
+
+                        {% if calif_avg == 0 %}
+                        <div class="FirtsNoFull left"></div>
+						<div class="NextNoFull  left"></div>
+						<div class="NextNoFull  left"></div>
+						<div class="NextNoFull  left"></div>
+						<div class="NextNoFull  left"></div>
+                        {% endif %}
+
+
+                        {% if calif_avg == 1 %}
+                        <div class="FirtsFull left"></div>
+						<div class="NextNoFull  left"></div>
+						<div class="NextNoFull  left"></div>
+						<div class="NextNoFull  left"></div>
+						<div class="NextNoFull  left"></div>
+                        {% endif %}
+
+
+                        {% if calif_avg == 2 %}
+                        <div class="FirtsFull left"></div>
+						<div class="NextFull  left"></div>
+						<div class="NextNoFull  left"></div>
+						<div class="NextNoFull  left"></div>
+						<div class="NextNoFull  left"></div>
+                        {% endif %}
+
+                        {% if calif_avg == 3 %}
+                        <div class="FirtsFull left"></div>
+						<div class="NextFull  left"></div>
+						<div class="NextFull  left"></div>
+						<div class="NextNoFull  left"></div>
+						<div class="NextNoFull  left"></div>
+                        {% endif %}
+
+                        {% if calif_avg == 4 %}
+                        <div class="FirtsFull left"></div>
+						<div class="NextFull  left"></div>
+						<div class="NextFull  left"></div>
+						<div class="NextFull  left"></div>
+						<div class="NextNoFull  left"></div>
+                        {% endif %}
+
+
+                        {% if calif_avg == 5 %}
+                        <div class="FirtsFull left"></div>
+						<div class="NextFull  left"></div>
+						<div class="NextFull  left"></div>
+						<div class="NextFull  left"></div>
+						<div class="NextFull  left"></div>
+                        {% endif %}
+
+
+						<div class="NumberOPItem left">{{ number_comments }} Opiniones </div>
 						<div class="clear"></div>
 					</div>
 
