@@ -385,7 +385,7 @@ def favorites(request):
 
                         return HttpResponse("1")
                     except:
-                        return HttpResponse("0")
+                        return HttpResponse("-1")
 
 
 
@@ -399,13 +399,13 @@ def favorites(request):
 
                         return HttpResponse("1")
                     except:
-                        return HttpResponse("0")
+                        return HttpResponse("-2")
 
 
             else:
-                return HttpResponse("0")
+                return HttpResponse("-3")
         else:
-            return HttpResponse("0")
+            return HttpResponse("-4")
     else:
         return HttpResponseRedirect("/")
 
