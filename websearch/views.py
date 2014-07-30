@@ -138,7 +138,7 @@ def SepecificEvent(request, id, year, month, day):
                 DATALOGIN_ID=request.user.id
                 DATALOGIN = users.objects.get(id_user_admin_id=DATALOGIN_ID)
                 # Favorites User Events:
-                favorites = events_favorites.objects.filter(id_user_admin=request.user.id)
+                favorites = events_favorites.objects.filter(id_user_admin=request.user.id, id_event=id)
                 number_favorites = favorites.count()
             else:
                  DATALOGIN="0"

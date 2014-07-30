@@ -68,6 +68,47 @@ $(function() {
 
 });
 
+
+var STATUS_FAVORITE={{ number_favorite }}
+function favorite(id){
+
+
+  $.ajax({
+             type: "POST", url: "/favorites/",
+             success:function(){
+
+
+
+             },
+
+             error:function(){
+
+
+
+             },
+
+             statusCode: {
+                        404: function() {
+
+              }
+             },
+
+
+             data: {
+                    user_user: $("#user_user").val(),
+
+
+                    }
+
+         }) .done(function( msg ) {
+
+
+         });
+
+
+
+}
+
 {% include "Scripts/secript_search_header.html" %}
 
 
@@ -184,9 +225,7 @@ $(function() {
     <div class="btns-tool-event">
         <div class="left btn-add-favorite">
 
-
             {% if request.user.is_authenticated %}
-
 
                 {% if number_favorites > 0 %}
 

@@ -879,7 +879,7 @@ src: url("../fonts/Roboto-Bold.ttf");
     color: #797c7f;
     font-size: 13px;
     font-weight: bold;
-
+    text-decoration: none;
 }
 
 .txt-btn-event-tool-add{
