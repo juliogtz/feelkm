@@ -365,3 +365,20 @@ def return_image(request, id):
         image_data = open("statics/imgs/carrera-a.png", "rb").read()
         #image_data = open(os.path.join(settings.STATIC_ROOT, 'carrera-a.png', 'rb').read()
         return HttpResponse(image_data, mimetype="image/png")
+
+
+def favorites(request):
+
+    if request.method == 'POST':
+        if request.user.is_active:
+            if request.user.is_authenticated:
+                return HttpResponse("1")
+
+            else:
+                return HttpResponse("0")
+        else:
+            return HttpResponse("0")
+    else:
+        return HttpResponseRedirect("/")
+
+

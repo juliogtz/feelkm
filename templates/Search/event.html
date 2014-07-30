@@ -69,20 +69,18 @@ $(function() {
 });
 
 
-var STATUS_FAVORITE={{ number_favorite }}
+var STATUS_FAVORITE={{ number_favorites }}
 function favorite(id){
 
 
-  $.ajax({
+         $.ajax({
              type: "POST", url: "/favorites/",
              success:function(){
-
 
 
              },
 
              error:function(){
-
 
 
              },
