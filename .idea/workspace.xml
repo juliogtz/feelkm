@@ -23,10 +23,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/websearch/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.76038337" vertical-offset="5387" max-vertical-offset="5895">
+            <state vertical-scroll-proportion="-9.153846" vertical-offset="5387" max-vertical-offset="5895">
               <caret line="375" column="0" selection-start-line="375" selection-start-column="0" selection-end-line="375" selection-end-column="0" />
               <folding>
                 <element signature="e#0#54#0" expanded="true" />
@@ -35,11 +35,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="event.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="event.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/Search/event.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.875" vertical-offset="1635" max-vertical-offset="7710">
-              <caret line="112" column="24" selection-start-line="112" selection-start-column="24" selection-end-line="112" selection-end-column="27" />
+            <state vertical-scroll-proportion="0.43598616" vertical-offset="684" max-vertical-offset="7710">
+              <caret line="54" column="19" selection-start-line="54" selection-start-column="19" selection-end-line="54" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -133,8 +133,8 @@
         <option value="$PROJECT_DIR$/FeelKm/settings.py" />
         <option value="$PROJECT_DIR$/statics/css/style_info.css" />
         <option value="$PROJECT_DIR$/FeelKm/urls.py" />
-        <option value="$PROJECT_DIR$/templates/Search/event.html" />
         <option value="$PROJECT_DIR$/websearch/views.py" />
+        <option value="$PROJECT_DIR$/templates/Search/event.html" />
       </list>
     </option>
   </component>
@@ -827,21 +827,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/Search/event.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.875" vertical-offset="1635" max-vertical-offset="7710">
-          <caret line="112" column="24" selection-start-line="112" selection-start-column="24" selection-end-line="112" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/websearch/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.76038337" vertical-offset="5387" max-vertical-offset="5895">
+        <state vertical-scroll-proportion="-9.153846" vertical-offset="5387" max-vertical-offset="5895">
           <caret line="375" column="0" selection-start-line="375" selection-start-column="0" selection-end-line="375" selection-end-column="0" />
           <folding>
             <element signature="e#0#54#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/Search/event.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.43598616" vertical-offset="684" max-vertical-offset="7710">
+          <caret line="54" column="19" selection-start-line="54" selection-start-column="19" selection-end-line="54" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
