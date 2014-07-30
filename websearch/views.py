@@ -119,6 +119,7 @@ def SearchWeb(request):
 def SepecificEvent(request, id, year, month, day):
 
     data = events.objects.filter(id=id)
+    data2 = events.objects.get(id=id)
     com = comments_events.objects.filter(id_event=id)
     # Califs
     calif_sum=0
@@ -156,6 +157,7 @@ def SepecificEvent(request, id, year, month, day):
                 'DATALOGIN':DATALOGIN,
                 'calif_avg':calif_avg,
                 'comments':com,
+                'data2':data2,
                 'number_comments':number_comments,
                 'number_favorites':number_favorites,
 
