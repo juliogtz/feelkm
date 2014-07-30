@@ -372,7 +372,10 @@ def favorites(request):
     if request.method == 'POST':
         if request.user.is_active:
             if request.user.is_authenticated:
-                return HttpResponse("1")
+
+
+                return HttpResponse(request.POST['stf'])
+
 
             else:
                 return HttpResponse("0")

@@ -8,8 +8,6 @@
 {% include "Scripts/scripts.html" %}
 <script src="/{{ STATIC_URL }}scripts/header.js"></script>
 <script type="text/javascript">
-
-
 $(function() {
 
       $('form').each(function() {
@@ -64,13 +62,27 @@ $(function() {
 
 
 
+$("#add_favorites").click(function() {
+
+function favorite(1);
+
+});
+
+$("#remove_favorites").click(function() {
+
+function favorite(0);
+
+});
+
 
 
 });
 
 
-var STATUS_FAVORITE={{ number_favorites }}
-function favorite(id){
+
+
+
+function favorite(stf){
 
 
          $.ajax({
@@ -78,29 +90,34 @@ function favorite(id){
              success:function(){
 
 
+
+
              },
 
              error:function(){
 
+                alert("Error, vuelva a intentarlo");
 
              },
 
              statusCode: {
                         404: function() {
 
+                        alert("Error, vuelva a intentarlo");
+
               }
              },
 
 
              data: {
-                    user_user: $("#user_user").val(),
+                    stf:stf
 
 
                     }
 
          }) .done(function( msg ) {
 
-
+                alert(msg);
          });
 
 
