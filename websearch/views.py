@@ -118,7 +118,7 @@ def SearchWeb(request):
 
 def SepecificEvent(request, id, year, month, day):
 
-    data = events.objects.get(id=id)
+    data = events.objects.filter(id=id)
     com = comments_events.objects.filter(id_event=id)
     # Califs
     calif_sum=0
