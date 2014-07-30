@@ -948,4 +948,8 @@ src: url("../fonts/Roboto-Bold.ttf");
     display: none;
 }
 
+.display_yes{
+    display: normal;
+}
+
 

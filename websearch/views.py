@@ -372,9 +372,32 @@ def favorites(request):
     if request.method == 'POST':
         if request.user.is_active:
             if request.user.is_authenticated:
+                favorite_request = request.POST['stf']
+
+                if(str(favorite_request)=="1"):
+                    # Add Favorite this event
+
+                    try:
+                        today = date.today()
+                        events_favorites.objects.create(id_event=request.POST['id_event'], id_user_admin=request.user.id, date=today)
+
+                        return HttpResponse("1")
+                    except:
+                        return HttpResponse("0")
 
 
-                return HttpResponse(request.POST['stf'])
+
+                if(str(favorite_request)=="0"):
+                    # Remove Favorite this event
+
+                    try:
+
+                        favorite=events_favorites.objects.get(id_event=request.POST['id_event'], id_user_admin=request.user.id)
+                        favorite.delete()
+
+                        return HttpResponse("1")
+                    except:
+                        return HttpResponse("0")
 
 
             else:

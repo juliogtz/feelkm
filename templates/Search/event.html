@@ -7,7 +7,9 @@
 <link rel="stylesheet" href="/{{ STATIC_URL }}css/style_info.css" type="text/css" />
 {% include "Scripts/scripts.html" %}
 <script src="/{{ STATIC_URL }}scripts/header.js"></script>
+
 <script type="text/javascript">
+
 $(function() {
 
       $('form').each(function() {
@@ -52,7 +54,7 @@ $(function() {
 
      $("#add_favorites_logout" ).click(function() {
 
-        alert("hola");
+        //alert("hola");
 
         $( "#box-access" ).fadeIn( "slow" );
 
@@ -143,14 +145,61 @@ function favorite(stf){
 
 
              data: {
-                    stf:stf
-
+                    stf:stf,
+                    id_event:data.id,
 
                     }
 
          }) .done(function( msg ) {
 
-                alert(msg);
+                if(stf==1)
+                {
+                    //
+
+
+
+                    if(msg=="1"){
+
+
+
+
+
+                    $("#add_favorites_div").addClass("display_no");
+                    $("#add_favorites_div_2").addClass("display_no");
+
+                    $("#remove_favorites_div").removeClass("display_yes");
+                    $("#remove_favorites_div_2").removeClass("display_yes");
+
+
+
+                    }else{
+
+                    alert("Problemas de conexión, intentar más tarde.");
+
+                    }
+
+
+                }else{
+
+                /* Remove Favorite */
+
+                if(msg=="1"){
+
+                    $("#add_favorites_div").addClass("display_yes");
+                    $("#add_favorites_div_2").addClass("display_yes");
+
+                    $("#remove_favorites_div").removeClass("display_no");
+                    $("#remove_favorites_div_2").removeClass("display_no");
+
+                }else{
+
+                 alert("Problemas de conexión, intentar más tarde.");
+
+                }
+
+                }
+
+
          });
 
 
@@ -277,20 +326,23 @@ function favorite(stf){
 
                 {% if number_favorites > 0 %}
 
-                <div class="left txt-btn-event-tool"><a href="javascript:void(0)" class="txt-btn-event-tool_link" id="remove_favorites">Quitar de Favoritos</a></div>
-                <div class="left icon-comme-tool"><img src="/{{ STATIC_URL }}imgs/favoritos.png" width="14" height="12"></div>
 
 
-                <div class="left txt-btn-event-tool display_no"><a href="javascript:void(0)" class="txt-btn-event-tool_link" id="add_favorites">Agregar a Favoritos</a></div>
-                <div class="left icon-comme-tool display_no"><img src="/{{ STATIC_URL }}imgs/favoritos.png" width="14" height="12"></div>
+
+                <div class="left txt-btn-event-tool" id="remove_favorites_div"><a href="javascript:void(0)" class="txt-btn-event-tool_link" id="remove_favorites">Quitar de Favoritos</a></div>
+                <div class="left icon-comme-tool" id="remove_favorites_div_2"><img src="/{{ STATIC_URL }}imgs/favoritos.png" width="14" height="12"></div>
+
+
+                <div class="left txt-btn-event-tool display_no" id="add_favorites_div"><a href="javascript:void(0)" class="txt-btn-event-tool_link" id="add_favorites">Agregar a Favoritos</a></div>
+                <div class="left icon-comme-tool display_no" id="add_favorites_div_2"><img src="/{{ STATIC_URL }}imgs/favoritos.png" width="14" height="12"></div>
 
                 {% else %}
 
-                <div class="left txt-btn-event-tool"><a href="javascript:void(0)" class="txt-btn-event-tool_link" id="add_favorites">Agregar a Favoritos</a></div>
-                <div class="left icon-comme-tool"><img src="/{{ STATIC_URL }}imgs/favoritos.png" width="14" height="12"></div>
+                <div class="left txt-btn-event-tool" id="add_favorites_div"><a href="javascript:void(0)" class="txt-btn-event-tool_link" id="add_favorites">Agregar a Favoritos</a></div>
+                <div class="left icon-comme-tool" id="add_favorites_div_2"><img src="/{{ STATIC_URL }}imgs/favoritos.png" width="14" height="12"></div>
 
-                <div class="left txt-btn-event-tool display_no"><a href="javascript:void(0)" class="txt-btn-event-tool_link" id="remove_favorites">Quitar de Favoritos</a></div>
-                <div class="left icon-comme-tool display_no"><img src="/{{ STATIC_URL }}imgs/favoritos.png" width="14" height="12"></div>
+                <div class="left txt-btn-event-tool display_no" id="remove_favorites_div"><a href="javascript:void(0)" class="txt-btn-event-tool_link" id="remove_favorites">Quitar de Favoritos</a></div>
+                <div class="left icon-comme-tool display_no" id="remove_favorites_div_2"><img src="/{{ STATIC_URL }}imgs/favoritos.png" width="14" height="12"></div>
 
                 {% endif %}
 
