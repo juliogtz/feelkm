@@ -381,7 +381,7 @@ def favorites(request):
 
                     try:
                         today = date.today()
-                        events_favorites.objects.create(id_event=request.POST['id_event'], id_user_admin=request.user.id, date=today)
+                        events_favorites.objects.create(id_event=int(request.POST['id_event']), id_user_admin=request.user.id, date=today)
 
                         return HttpResponse("1")
                     except:
@@ -394,7 +394,7 @@ def favorites(request):
 
                     try:
 
-                        favorite=events_favorites.objects.get(id_event=request.POST['id_event'], id_user_admin=request.user.id)
+                        favorite=events_favorites.objects.get(id_event=int(request.POST['id_event']), id_user_admin=request.user.id)
                         favorite.delete()
 
                         return HttpResponse("1")
