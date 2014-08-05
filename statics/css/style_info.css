@@ -882,6 +882,16 @@ src: url("../fonts/Roboto-Bold.ttf");
     text-decoration: none;
 }
 
+
+.txt-btn-add-pic
+{
+    font-family: Helvetica;
+    color: #797c7f;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
 .txt-btn-event-tool-add{
 
     font-family: Helvetica;

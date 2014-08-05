@@ -381,10 +381,10 @@ function favorite(stf){
 
             {% if request.user.is_authenticated %}
 
-                <div class="left txt-btn-event-tool"><a href="/{{ arg.country | strip }}/{{ arg.year_event }}/{{ arg.month_event }}/{{ arg.day_event }}/running/{{arg.name_event | replacestr }}/{{ arg.id }}/New-Comment/" class="txt-btn-event-tool-add-link">Compartir Foto</a></div>
+                <div class="left txt-btn-event-tool"><a href="/{{ arg.country | strip }}/{{ arg.year_event }}/{{ arg.month_event }}/{{ arg.day_event }}/running/{{arg.name_event | replacestr }}/{{ arg.id }}/New-Comment/" class="txt-btn-add-pic">Compartir Foto</a></div>
                 {% else %}
 
-                <div class="left txt-btn-event-tool"><a href="javascript:void(0)" class="txt-btn-event-tool-add-link" id="addComment-pic-no-login">Compartir Foto</a></div>
+                <div class="left txt-btn-event-tool"><a href="javascript:void(0)" class="txt-btn-add-pic" id="addComment-pic-no-login">Compartir Foto</a></div>
                 {% endif %}
 
             <div class="left icon-comme-tool"><img src="/{{ STATIC_URL }}imgs/foto.png" width="16" height="13"></div>
