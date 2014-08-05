@@ -167,6 +167,10 @@ function favorite(stf){
 
                     if(msg=="1"){
 
+                    alert("chango");
+
+
+
                     $("#add_favorites_div").removeClass("display_yes");
                     $("#add_favorites_div_2").removeClass("display_yes");
 
@@ -174,6 +178,8 @@ function favorite(stf){
                     $("#add_favorites_div_2").addClass("display_no");
 
 
+                    $("#remove_favorites_div").removeClass("display_no");
+                    $("#remove_favorites_div_2").removeClass("display_no");
 
                     $("#remove_favorites_div").addClass("display_yes");
                     $("#remove_favorites_div_2").addClass("display_yes");
@@ -347,6 +353,8 @@ function favorite(stf){
                 <div class="left icon-comme-tool display_no" id="remove_favorites_div_2"><img src="/{{ STATIC_URL }}imgs/favoritos.png" width="14" height="12"></div>
 
                 {% endif %}
+
+
 
 
             {% else %}
