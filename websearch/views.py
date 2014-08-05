@@ -153,6 +153,23 @@ def SepecificEvent(request, id, year, month, day):
     else:
             DATALOGIN="0"
 
+
+    # Numbers of califs:
+    calif_1 = comments_events.objects.filter(calif=1)
+    calif_1_count= calif_1.count()
+
+    calif_2 = comments_events.objects.filter(calif=2)
+    calif_2_count= calif_2.count()
+
+    calif_3 = comments_events.objects.filter(calif=3)
+    calif_3_count= calif_3.count()
+
+    calif_4 = comments_events.objects.filter(calif=4)
+    calif_4_count= calif_4.count()
+
+    calif_5 = comments_events.objects.filter(calif=5)
+    calif_5_count= calif_5.count()
+
     return render(request, 'Search/event.html', {
 
                 'poll': 1,
@@ -168,6 +185,11 @@ def SepecificEvent(request, id, year, month, day):
                 'number_comments':number_comments,
                 'number_favorites':number_favorites,
                 'photos_events':photos_events,
+                'calif_1_count':calif_1_count,
+                'calif_2_count':calif_2_count,
+                'calif_3_count':calif_3_count,
+                'calif_4_count':calif_4_count,
+                'calif_5_count':calif_5_count,
 
             })
 
