@@ -275,7 +275,7 @@ function favorite(stf){
 	<div class="title-place">
 		{{ arg.city }}, {{ arg.region }} {{ arg.country }}
         <br>
-        {{ arg.web }}
+
 
 	</div>
 
@@ -394,7 +394,8 @@ function favorite(stf){
             <div class="clear" ></div>
         </div>
         <div class="left btn-pay">
-            <div class="left txt-btn-event-tool">Inscripci&oacute;n</div>
+
+            <div class="left txt-btn-event-tool"><a href="{{ arg.web }}" class="txt-btn-event-tool-add-link" target="_blank">Inscripci&oacute;n</a></div>
             <div class="left icon-comme-tool"><img src="/{{ STATIC_URL }}imgs/inscripcion.png" width="14" height="14"></div>
             <div class="clear" ></div>
         </div>
