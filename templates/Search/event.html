@@ -169,8 +169,11 @@ function favorite(stf){
                     $("#add_favorites_div").addClass("display_no");
                     $("#add_favorites_div_2").addClass("display_no");
 
-                    $("#remove_favorites_div").removeClass("display_yes");
-                    $("#remove_favorites_div_2").removeClass("display_yes");
+                    $("#add_favorites_div").removeClass("display_yes");
+                    $("#add_favorites_div_2").removeClass("display_yes");
+
+                    $("#remove_favorites_div").addClass("display_yes");
+                    $("#remove_favorites_div_2").addClass("display_yes");
 
 
                     }
@@ -182,12 +185,16 @@ function favorite(stf){
 
                 if(msg=="1"){
 
+                    $("#add_favorites_div").removeClass("display_no");
+                    $("#add_favorites_div_2").removeClass("display_no");
+
                     $("#add_favorites_div").addClass("display_yes");
                     $("#add_favorites_div_2").addClass("display_yes");
 
-                    $("#remove_favorites_div").removeClass("display_no");
-                    $("#remove_favorites_div_2").removeClass("display_no");
 
+
+                    $("#remove_favorites_div").addClass("display_no");
+                    $("#remove_favorites_div_2").addClass("display_no");
 
                 }
 
@@ -319,8 +326,6 @@ function favorite(stf){
             {% if request.user.is_authenticated %}
 
                 {% if number_favorites > 0 %}
-
-
 
 
                 <div class="left txt-btn-event-tool" id="remove_favorites_div"><a href="javascript:void(0)" class="txt-btn-event-tool_link" id="remove_favorites">Quitar de Favoritos</a></div>
