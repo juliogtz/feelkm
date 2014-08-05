@@ -376,12 +376,16 @@ def favorites(request):
             if request.user.is_authenticated:
                 favorite_request = request.POST['stf']
 
+                id_event = events.objects.get(id=int(request.POST['id_event']))
+                id_user_instance = User.objects.get(id=request.user.id)
+
                 if(str(favorite_request)=="1"):
                     # Add Favorite this event
 
                     try:
                         today = date.today()
-                        events_favorites.objects.create(id_event=int(request.POST['id_event']), id_user_admin=request.user.id, date=today)
+
+                        events_favorites.objects.create(id_event=id_event, id_user_admin=id_user_instance, date=today)
 
                         return HttpResponse("1")
                     except:
@@ -394,7 +398,7 @@ def favorites(request):
 
                     try:
 
-                        favorite=events_favorites.objects.get(id_event=int(request.POST['id_event']), id_user_admin=request.user.id)
+                        favorite=events_favorites.objects.get(id_event=id_event, id_user_admin=id_user_instance)
                         favorite.delete()
 
                         return HttpResponse("1")
