@@ -639,6 +639,17 @@ margin: 0 auto;
 
 }
 
+.item-box-right-txt_link{
+
+	font-family: Helvetica;
+	font-size: 13px;
+	font-weight: lighter;
+	color: #4c4d4e;
+    text-decoration: none;
+
+
+}
+
 .items-content
 {
 

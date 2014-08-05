@@ -274,7 +274,6 @@ function favorite(stf){
 
 	<div class="title-place">
 		{{ arg.city }}, {{ arg.region }} {{ arg.country }}
-        <br>
 
 
 	</div>
@@ -436,28 +435,28 @@ function favorite(stf){
 
 					<div class="item-box-left">
 						<div class="item-box-left-txt left">Pr&oacute;ximo Evento</div>
-						<div class="item-box-right-txt left">27 de octubre 2014</div>
+						<div class="item-box-right-txt left">{{ arg.date_event }}</div>
 						<div class="clear"></div>
 						<div class="line-b-box"></div>
 					</div>
 
 					<div class="item-box-left top-item-box">
 						<div class="item-box-left-txt left">Lugar</div>
-						<div class="item-box-right-txt left">Centro Hist&oacute;rico</div>
+						<div class="item-box-right-txt left">{{ arg.city }}</div>
 						<div class="clear"></div>
 						<div class="line-b-box"></div>
 					</div>
 
 					<div class="item-box-left top-item-box">
 						<div class="item-box-left-txt left">Distancia</div>
-						<div class="item-box-right-txt left">42km</div>
+						<div class="item-box-right-txt left">{{ arg.distan_txt }}</div>
 						<div class="clear"></div>
 						<div class="line-b-box"></div>
 					</div>
 
 					<div class="item-box-left top-item-box">
 						<div class="item-box-left-txt left">P&aacute;gina Web</div>
-						<div class="item-box-right-txt left">maratongdl.org</div>
+						<div class="item-box-right-txt_link left"><a href="{{ arg.web }}" target="_blank">Visitar</a></div>
 						<div class="clear"></div>
 						<div class="line-b-box"></div>
 					</div>
@@ -478,7 +477,7 @@ function favorite(stf){
 		<div class="box-info-comments">
 			<div class="title-box">
 				<div class="box-into-comments">
-				    <div class="txt-num-comments"><strong>17</strong> Opiniones de corredores</div>
+				    <div class="txt-num-comments"><strong>{{ number_comments }}</strong> Opiniones de corredores</div>
 
 				</div>
 
