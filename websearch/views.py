@@ -121,6 +121,13 @@ def SepecificEvent(request, id, year, month, day):
     data = events.objects.filter(id=id)
     data2 = events.objects.get(id=id)
     com = comments_events.objects.filter(id_event=id)
+
+    #Pics event:
+    photos_events=[]
+    pics = photos.objects.filter(id_event=data.id)
+    photos_events.append({data.id:pics})
+
+
     # Califs
     calif_sum=0
     calif_avg=0
@@ -160,6 +167,7 @@ def SepecificEvent(request, id, year, month, day):
                 'data2':data2,
                 'number_comments':number_comments,
                 'number_favorites':number_favorites,
+                'photos_events':photos_events,
 
             })
 

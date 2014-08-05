@@ -430,7 +430,53 @@ function favorite(stf){
 
 		<div class="box-content">
 			<div class="box-content-info">
-				<div class="pics-content left"><img src="/{{ STATIC_URL }}imgs/pic-x 2.png" class="img-box-info"></div>
+				<div class="pics-content left">
+
+                    {% for pics in photos_events %}
+
+
+                            {% for p in pics%}
+
+                                {% if p == arg.id %}
+
+                                    <!-- Iter pics -->
+
+
+
+                                    {% for key,value in pics.items %}
+
+
+
+                                        {% if value %}
+
+                                            <!--El random: {{ value | shuffle }}-->
+
+
+                                         <img src="http://res.cloudinary.com/htyoqtggc/image/upload/h_130,w_200/{{ value | shuffle }}.jpg"  class="img-box-info">
+
+
+
+                                        {% else %}
+
+
+                                         <img src="/img/{{ arg.id }}/" class="img-box-info">
+
+
+                                        {% endif %}
+
+
+                                    {% endfor %}
+
+
+                                {% endif %}
+
+                            {% endfor %}
+
+                  {% endfor %}
+
+
+
+                </div>
 				<div class="items-content left">
 
 					<div class="item-box-left">
@@ -441,8 +487,8 @@ function favorite(stf){
 					</div>
 
 					<div class="item-box-left top-item-box">
-						<div class="item-box-left-txt left">{{ arg.city }}, {{ arg.region }} {{ arg.country }}</div>
-						<div class="item-box-right-txt left">{{ arg.city }}</div>
+						<div class="item-box-left-txt left">Lugar</div>
+						<div class="item-box-right-txt left">{{ arg.city }}, {{ arg.region }} {{ arg.country }}</div>
 						<div class="clear"></div>
 						<div class="line-b-box"></div>
 					</div>
