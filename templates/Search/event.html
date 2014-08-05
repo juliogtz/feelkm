@@ -160,17 +160,20 @@ function favorite(stf){
 
                 alert(msg);
 
+                alert(stf);
+
                 if(stf==1)
                 {
 
                     if(msg=="1"){
 
+                    $("#add_favorites_div").removeClass("display_yes");
+                    $("#add_favorites_div_2").removeClass("display_yes");
 
                     $("#add_favorites_div").addClass("display_no");
                     $("#add_favorites_div_2").addClass("display_no");
 
-                    $("#add_favorites_div").removeClass("display_yes");
-                    $("#add_favorites_div_2").removeClass("display_yes");
+
 
                     $("#remove_favorites_div").addClass("display_yes");
                     $("#remove_favorites_div_2").addClass("display_yes");
