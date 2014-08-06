@@ -122,7 +122,7 @@ def SepecificEvent(request, id, year, month, day):
     data = events.objects.filter(id=id)
     data2 = events.objects.get(id=id)
     com = comments_events.objects.filter(id_event=id)
-    com2 = comments_events.objects.get(id_event=data2)
+    com2 = comments_events.objects.filter(id_event=data2)
 
     #Pics event:
     photos_events=[]
