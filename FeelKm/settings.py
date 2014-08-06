@@ -128,6 +128,6 @@ TEMPLATE_DIRS = (
     os.path.join(BASE_DIR,  'templates'),
 )
 
-DEBUG = True
+DEBUG = False
 TEMPLATE_DEBUG = True
 

@@ -165,7 +165,6 @@ def SepecificEvent(request, id, year, month, day):
     else:
         calif_1_count_p=0
 
-
     calif_2 = comments_events.objects.filter(calif=2, id_event=id)
     calif_2_count= calif_2.count()
     if(number_comments>0):
@@ -191,10 +190,8 @@ def SepecificEvent(request, id, year, month, day):
         calif_4_count_p=(70.0*calif_4_count_p)/100
         calif_4_count_p=int(calif_4_count_p)
 
-
     else:
         calif_4_count_p=0
-
 
     calif_5 = comments_events.objects.filter(calif=5, id_event=id)
     calif_5_count= calif_5.count()
