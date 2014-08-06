@@ -27,7 +27,7 @@
         <entry file="file://$PROJECT_DIR$/websearch/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.7751479" vertical-offset="1793" max-vertical-offset="7470">
-              <caret line="137" column="80" selection-start-line="137" selection-start-column="80" selection-end-line="137" selection-end-column="80" />
+              <caret line="137" column="64" selection-start-line="137" selection-start-column="64" selection-end-line="137" selection-end-column="64" />
               <folding>
                 <element signature="e#0#54#0" expanded="true" />
               </folding>
@@ -795,7 +795,7 @@
     <entry file="file://$PROJECT_DIR$/websearch/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7751479" vertical-offset="1793" max-vertical-offset="7470">
-          <caret line="137" column="80" selection-start-line="137" selection-start-column="80" selection-end-line="137" selection-end-column="80" />
+          <caret line="137" column="64" selection-start-line="137" selection-start-column="64" selection-end-line="137" selection-end-column="64" />
           <folding>
             <element signature="e#0#54#0" expanded="true" />
           </folding>
