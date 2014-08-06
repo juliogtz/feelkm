@@ -38,8 +38,8 @@
       <file leaf-file-name="event.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/Search/event.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6178344" vertical-offset="8971" max-vertical-offset="10695">
-              <caret line="611" column="107" selection-start-line="611" selection-start-column="107" selection-end-line="611" selection-end-column="107" />
+            <state vertical-scroll-proportion="0.2834395" vertical-offset="8971" max-vertical-offset="10695">
+              <caret line="604" column="106" selection-start-line="604" selection-start-column="106" selection-end-line="604" selection-end-column="106" />
               <folding />
             </state>
           </provider>
@@ -815,14 +815,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/Home/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.875" vertical-offset="177" max-vertical-offset="1020">
-          <caret line="18" column="123" selection-start-line="18" selection-start-column="123" selection-end-line="18" selection-end-column="157" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="598" max-vertical-offset="1740">
@@ -841,10 +833,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/Home/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.875" vertical-offset="177" max-vertical-offset="1020">
+          <caret line="18" column="123" selection-start-line="18" selection-start-column="123" selection-end-line="18" selection-end-column="157" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/Search/event.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6178344" vertical-offset="8971" max-vertical-offset="10695">
-          <caret line="611" column="107" selection-start-line="611" selection-start-column="107" selection-end-line="611" selection-end-column="107" />
+        <state vertical-scroll-proportion="0.2834395" vertical-offset="8971" max-vertical-offset="10695">
+          <caret line="604" column="106" selection-start-line="604" selection-start-column="106" selection-end-line="604" selection-end-column="106" />
           <folding />
         </state>
       </provider>
