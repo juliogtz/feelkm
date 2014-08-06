@@ -184,9 +184,9 @@ def SepecificEvent(request, id, year, month, day):
     calif_4_count= calif_4.count()
     if(number_comments>0):
         calif_4_count_p=(calif_4_count/number_comments)*100
-        calif_4_count_p=(70*calif_4_count_p)/100
+        calif_4_count_pix=(70*calif_4_count_p)/100
     else:
-        calif_4_count_p=20
+        calif_4_count_pix=0
 
 
     calif_5 = comments_events.objects.filter(calif=5, id_event=id)
@@ -221,7 +221,7 @@ def SepecificEvent(request, id, year, month, day):
                 'calif_1_count_p':calif_1_count_p,
                 'calif_2_count_p':calif_2_count_p,
                 'calif_3_count_p':calif_3_count_p,
-                'calif_4_count_p':calif_4_count_p,
+                'calif_4_count_pix':calif_4_count_pix,
                 'calif_5_count_p':calif_5_count_p,
             })
 
