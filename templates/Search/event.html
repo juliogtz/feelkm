@@ -587,7 +587,7 @@ function favorite(stf){
 
 	    			<div class="left">
 
-                    {% if comment.id_facebook %}
+                    {% if comment.id_facebook != "" or comment.id_facebook != None  %}
                     <img src="https://graph.facebook.com/{{ comment.id_facebook }}/picture?width=200&height=200" width="60" height="60" class="img-profile-comment">
                     {% else %}
 
@@ -602,9 +602,15 @@ function favorite(stf){
 	    			<div class="txt-titles-comment left">
 	    				<div class="txt-name-comment">{{ comment.first_name }} {{ comment.last_name }}</div>
 	    				<div class="txt-place-comment">
-                            {% if comment.city == None %}
+                            {% if comment.city  != None or comment.city  != ""%}
 
-                            {{ comment.city }}, {{ comment.region }}
+                            {{ comment.city }},
+
+                            {% endif %}
+
+                            {% if comment.region != None or comment.region != "" %}
+
+                             {{ comment.region }}
 
                             {% endif %}
 
