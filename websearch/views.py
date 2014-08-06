@@ -159,8 +159,9 @@ def SepecificEvent(request, id, year, month, day):
     calif_1 = comments_events.objects.filter(calif=1, id_event=id)
     calif_1_count= calif_1.count()
     if(number_comments>0):
-        calif_1_count_p=calif_1_count/number_comments*100
-        calif_1_count_p=70*calif_1_count_p/100
+        calif_1_count_p=(float(calif_1_count)/float(number_comments))*100
+        calif_1_count_p=(70.0*calif_1_count_p)/100
+        calif_1_count_p=int(calif_1_count_p)
     else:
         calif_1_count_p=0
 
@@ -168,16 +169,18 @@ def SepecificEvent(request, id, year, month, day):
     calif_2 = comments_events.objects.filter(calif=2, id_event=id)
     calif_2_count= calif_2.count()
     if(number_comments>0):
-        calif_2_count_p=calif_2_count/number_comments*100
-        calif_2_count_p=70*calif_2_count_p/100
+        calif_2_count_p=(float(calif_2_count)/float(number_comments))*100
+        calif_2_count_p=(70.0*calif_2_count_p)/100
+        calif_2_count_p=int(calif_2_count_p)
     else:
         calif_2_count_p=0
 
     calif_3 = comments_events.objects.filter(calif=3, id_event=id)
     calif_3_count= calif_3.count()
     if(number_comments>0):
-        calif_3_count_p=calif_3_count/number_comments*100
-        calif_3_count_p=70*calif_3_count_p/100
+        calif_3_count_p=(float(calif_3_count)/float(number_comments))*100
+        calif_3_count_p=(70.0*calif_3_count_p)/100
+        calif_3_count_p=int(calif_3_count_p)
     else:
         calif_3_count_p=0
 
@@ -196,8 +199,9 @@ def SepecificEvent(request, id, year, month, day):
     calif_5 = comments_events.objects.filter(calif=5, id_event=id)
     calif_5_count= calif_5.count()
     if(number_comments>0):
-        calif_5_count_p=calif_5_count/number_comments*100
-        calif_5_count_p=70*calif_5_count_p/100
+        calif_5_count_p=(float(calif_5_count)/float(number_comments))*100
+        calif_5_count_p=(70.0*calif_5_count_p)/100
+        calif_5_count_p=int(calif_5_count_p)
 
     else:
         calif_5_count_p=0
