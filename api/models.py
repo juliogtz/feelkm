@@ -39,7 +39,7 @@ class users(models.Model):
     email = models.TextField(blank=True)
     user = models.CharField(max_length=150, blank=True)
     password = models.TextField(blank=True)
-    picture = models.BinaryField()
+    picture = models.TextField(blank=True)
     name = models.CharField(max_length=150, blank=True)
     last_name = models.CharField(max_length=200, blank=True)
     date_register = models.DateField(blank=True)
@@ -55,6 +55,10 @@ class users(models.Model):
     locale_facebook=models.CharField(max_length=50, blank=True)
     firtsFacebookPic=models.TextField(blank=True)
     auxData=models.TextField(blank=True)
+    pic_url=models.TextField(blank=True)
+    city=models.TextField(blank=True)
+    region=models.TextField(blank=True)
+    country=models.TextField(blank=True)
 
 
 

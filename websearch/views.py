@@ -128,6 +128,14 @@ def SepecificEvent(request, id, year, month, day):
     pics = photos.objects.filter(id_event=data2.id)
     photos_events.append({data2.id:pics})
 
+    comments_arg=[]
+
+    for co in com:
+        usr_of= User.objects.get(id=com.id_user_admin)
+        usr_aux= users.objects.get(id_user_admin=com.id_user_admin)
+        comments_arg.append({'id_facebook':usr_aux.id_facebook, 'pic_url':usr_aux.pic_url, 'city':usr_aux.city, 'region':usr_aux.region, 'country':usr_aux.country, 'first_name':usr_of.first_name, 'last_name':usr_of.last_name, 'comment':co })
+
+
 
     # Califs
     calif_sum=0
@@ -228,6 +236,7 @@ def SepecificEvent(request, id, year, month, day):
                 'calif_3_count_p':calif_3_count_p,
                 'calif_4_count_p':calif_4_count_p,
                 'calif_5_count_p':calif_5_count_p,
+                'comments_arg':comments_arg,
             })
 
 
