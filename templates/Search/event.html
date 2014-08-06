@@ -581,15 +581,18 @@ function favorite(stf){
 
                 {% for comment in comments_arg %}
 
-                    {{ comment }}
+
 
 	    		<div class="item-comment">
 
 	    			<div class="left">
-	    				<img src="/{{ STATIC_URL }}imgs/mno.jpg" width="60" height="60" class="img-profile-comment">
-	    			</div>
+                        <!--https://graph.facebook.com/535886628/picture?width=200&height=200-->
+
+                        <img src="/{{ STATIC_URL }}imgs/perfil-b.png" width="60" height="60" class="img-profile-comment">
+
+                    </div>
 	    			<div class="txt-titles-comment left">
-	    				<div class="txt-name-comment">Manuel Navarro</div>
+	    				<div class="txt-name-comment">{{ comment.first_name }} {{ comment.last_name }}</div>
 	    				<div class="txt-place-comment">Guadalajara, Jalisco</div>
 	    				<div class="txt-title-comment">Excelente Evento deportivo</div>
 	    			</div>
