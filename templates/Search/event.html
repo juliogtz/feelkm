@@ -602,19 +602,22 @@ function favorite(stf){
 	    			<div class="txt-titles-comment left">
 	    				<div class="txt-name-comment">{{ comment.first_name }} {{ comment.last_name }}</div>
 	    				<div class="txt-place-comment">
-                            {% if comment.city  != None or comment.city  != ""%}
+                            {% if comment.city  != None or comment.city  != "" or comment.city  != "None" %}
 
                             {{ comment.city }},
 
                             {% endif %}
 
-                            {% if comment.region != None or comment.region != "" %}
+
+                            {% if comment.region != None or comment.region != "" or comment.region != "None" %}
 
                              {{ comment.region }}
 
                             {% endif %}
 
                         </div>
+
+
 	    				<div class="txt-title-comment">Excelente Evento deportivo</div>
 	    			</div>
 	    			<div class="left">
@@ -633,6 +636,8 @@ function favorite(stf){
 	    			<div class="txt-comment-txt">
 	    				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dolor purus, tempus ut tortor vel, malesuada tincidunt sem. Sed egestas laoreet nisl ut egestas. Morbi ante turpis, auctor et metus non, porta lobortis mi. Nulla facilisi. Cras faucibus velit ac augue scelerisque egestas. Morbi nulla velit, rutrum vel volutpat accumsan, vulputate vel odio. Nunc vitae massa odio. Mauris in magna et nunc ullamcorper feugiat vel a mauris.
 	    			</div>
+
+
 
 	    			<div class="line-comment-b"></div>
 	    			<p></p>
