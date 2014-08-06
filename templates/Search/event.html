@@ -587,15 +587,19 @@ function favorite(stf){
 
 	    			<div class="left">
 
-                    {% if comment.id_facebook != "" or comment.id_facebook != None  %}
-                    <img src="https://graph.facebook.com/{{ comment.id_facebook }}/picture?width=200&height=200" width="60" height="60" class="img-profile-comment">
-                    {% else %}
+                    {% if comment.id_facebook == "" or comment.id_facebook == None  %}
 
-                        {% if comment.pic_url != "" or comment.pic_url != None  %}
+                         {% if comment.pic_url == "" or comment.pic_url == None  %}
                         <img src="/{{ STATIC_URL }}imgs/perfil-b.png" width="60" height="60" class="img-profile-comment">
                         {% else %}
                         <img src="/{{ STATIC_URL }}imgs/perfil-b.png" width="60" height="60" class="img-profile-comment">
                         {% endif %}
+
+                    {% else %}
+
+
+                        <img src="https://graph.facebook.com/{{ comment.id_facebook }}/picture?width=200&height=200" width="60" height="60" class="img-profile-comment">
+
 
                     {% endif %}
                     </div>
