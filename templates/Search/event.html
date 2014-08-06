@@ -601,7 +601,14 @@ function favorite(stf){
                     </div>
 	    			<div class="txt-titles-comment left">
 	    				<div class="txt-name-comment">{{ comment.first_name }} {{ comment.last_name }}</div>
-	    				<div class="txt-place-comment">{{ comment.city }}, {{ comment.region }}</div>
+	    				<div class="txt-place-comment">
+                            {% if comment.city == None %}
+
+                            {{ comment.city }}, {{ comment.region }}
+
+                            {% endif %}
+
+                        </div>
 	    				<div class="txt-title-comment">Excelente Evento deportivo</div>
 	    			</div>
 	    			<div class="left">
