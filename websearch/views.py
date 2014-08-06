@@ -132,8 +132,8 @@ def SepecificEvent(request, id, year, month, day):
     comments_arg=[]
 
     for co in com2:
-        usr_of= User.objects.filter(id=co.id_user_admin)
-        usr_aux= users.objects.filter(id_user_admin=co.id_user_admin)
+        usr_of= User.objects.get(id=co.id_user_admin)
+        usr_aux= users.objects.get(id_user_admin=co.id_user_admin)
         comments_arg.append({'id_facebook':usr_aux.id_facebook, 'pic_url':usr_aux.pic_url, 'city':usr_aux.city, 'region':usr_aux.region, 'country':usr_aux.country, 'first_name':usr_of.first_name, 'last_name':usr_of.last_name, 'comment':co })
 
 
