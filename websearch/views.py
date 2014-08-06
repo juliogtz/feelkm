@@ -12,6 +12,7 @@ import cloudinary.api
 from FeelKm.Bing.bing_search import bing_search
 import random
 import urllib
+from decimal import *
 
 
 cloudinary.config(
@@ -183,8 +184,8 @@ def SepecificEvent(request, id, year, month, day):
     calif_4 = comments_events.objects.filter(calif=4, id_event=id)
     calif_4_count= calif_4.count()
     if(number_comments>0):
-        calif_4_count_p=(float(calif_4_count)/float(number_comments))*100
-        calif_4_count_p=(70*float(calif_4_count_p))/100
+        calif_4_count_p=(Decimal(calif_4_count)/Decimal(number_comments))*100
+        calif_4_count_p=(70*Decimal(calif_4_count_p))/100
 
 
     else:
