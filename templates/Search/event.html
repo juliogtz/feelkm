@@ -586,14 +586,22 @@ function favorite(stf){
 	    		<div class="item-comment">
 
 	    			<div class="left">
-                        <!--https://graph.facebook.com/535886628/picture?width=200&height=200-->
 
+                    {% if comment.id_facebook %}
+                    <img src="https://graph.facebook.com/{{ comment.id_facebook }}/picture?width=200&height=200" width="60" height="60" class="img-profile-comment">
+                    {% else %}
+
+                        {% if comment.pic_url %}
                         <img src="/{{ STATIC_URL }}imgs/perfil-b.png" width="60" height="60" class="img-profile-comment">
+                        {% else %}
+                        <img src="/{{ STATIC_URL }}imgs/perfil-b.png" width="60" height="60" class="img-profile-comment">
+                        {% endif %}
 
+                    {% endif %}
                     </div>
 	    			<div class="txt-titles-comment left">
 	    				<div class="txt-name-comment">{{ comment.first_name }} {{ comment.last_name }}</div>
-	    				<div class="txt-place-comment">Guadalajara, Jalisco</div>
+	    				<div class="txt-place-comment">{{ comment.city }}, {{ comment.region }}</div>
 	    				<div class="txt-title-comment">Excelente Evento deportivo</div>
 	    			</div>
 	    			<div class="left">
