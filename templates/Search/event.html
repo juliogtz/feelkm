@@ -621,24 +621,84 @@ function favorite(stf){
 
                         </div>
 
-                        {{ comment.comment.title_comment }}
-	    				<div class="txt-title-comment">Excelente Evento deportivo</div>
+
+	    				<div class="txt-title-comment">{{ comment.comment.title_comment }}</div>
 	    			</div>
 	    			<div class="left">
-	    				<div class="txt-date-comment">6 de Junio 2014</div>
+	    				<div class="txt-date-comment">{{ comment.comment.date }}</div>
 	    				<div class="txt-calif-comment">
-		    				<div class="FirtsFull-C left"></div>
+
+
+                            {% if comment.comment.calif == 0 %}
+
+                            <div class="FirtsNoFull left"></div>
+							<div class="NextNoFull-C left"></div>
+							<div class="NextNoFull-C left"></div>
+							<div class="NextNoFull-C left"></div>
+							<div class="NextNoFull-C left"></div>
+
+                            {% endif %}
+
+                            {% if comment.comment.calif == 1 %}
+
+                            <div class="FirtsFull-C left"></div>
+							<div class="NextNoFull-C left"></div>
+							<div class="NextNoFull-C left"></div>
+							<div class="NextNoFull-C left"></div>
+							<div class="NextNoFull-C left"></div>
+
+                            {% endif %}
+
+                             {% if comment.comment.calif == 2 %}
+
+                            <div class="FirtsFull-C left"></div>
+							<div class="NextFull-C left"></div>
+							<div class="NextNoFull-C left"></div>
+							<div class="NextNoFull-C left"></div>
+							<div class="NextNoFull-C left"></div>
+
+                            {% endif %}
+
+
+                            {% if comment.comment.calif == 3 %}
+
+                            <div class="FirtsFull-C left"></div>
 							<div class="NextFull-C left"></div>
 							<div class="NextFull-C left"></div>
 							<div class="NextNoFull-C left"></div>
 							<div class="NextNoFull-C left"></div>
+
+                            {% endif %}
+
+                            {% if comment.comment.calif == 4 %}
+
+                            <div class="FirtsFull-C left"></div>
+							<div class="NextFull-C left"></div>
+							<div class="NextFull-C left"></div>
+							<div class="NextFull-C left"></div>
+							<div class="NextNoFull-C left"></div>
+
+                            {% endif %}
+
+                            {% if comment.comment.calif == 5 %}
+
+                            <div class="FirtsFull-C left"></div>
+							<div class="NextFull-C left"></div>
+							<div class="NextFull-C left"></div>
+							<div class="NextFull-C left"></div>
+							<div class="NextFull-C left"></div>
+
+                            {% endif %}
+
+
+
 							<div class="clear"></div>
 	    				</div>
 	    			</div>
 	    			<div class="clear"></div>
 
 	    			<div class="txt-comment-txt">
-	    				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dolor purus, tempus ut tortor vel, malesuada tincidunt sem. Sed egestas laoreet nisl ut egestas. Morbi ante turpis, auctor et metus non, porta lobortis mi. Nulla facilisi. Cras faucibus velit ac augue scelerisque egestas. Morbi nulla velit, rutrum vel volutpat accumsan, vulputate vel odio. Nunc vitae massa odio. Mauris in magna et nunc ullamcorper feugiat vel a mauris.
+	    				{{ comment.comment.comment }}
 	    			</div>
 
 
