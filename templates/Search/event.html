@@ -591,7 +591,7 @@ function favorite(stf){
                     <img src="https://graph.facebook.com/{{ comment.id_facebook }}/picture?width=200&height=200" width="60" height="60" class="img-profile-comment">
                     {% else %}
 
-                        {% if comment.pic_url %}
+                        {% if comment.pic_url != "" or comment.pic_url != None  %}
                         <img src="/{{ STATIC_URL }}imgs/perfil-b.png" width="60" height="60" class="img-profile-comment">
                         {% else %}
                         <img src="/{{ STATIC_URL }}imgs/perfil-b.png" width="60" height="60" class="img-profile-comment">
