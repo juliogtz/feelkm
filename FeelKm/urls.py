@@ -47,7 +47,7 @@ urlpatterns = patterns('',
     # Register Ajax Facebook Validate
     url(r'^facebook-register/$','usrs.views.Facebook_Register'),
     # Specific Event
-    url(r'^[^/]+/(?P<year>[0-9]{4})/(?P<month>[0-9]{1,2})/(?P<day>[0-9]{2})/[^/]+/[^/]+/(?P<id>\d+)/$','websearch.views.SepecificEvent'),
+    url(r'^[^/]+/(?P<year>[0-9]{4})/(?P<month>[0-9]{2})/(?P<day>[0-9]{2})/[^/]+/[^/]+/(?P<id>\d+)/$','websearch.views.SepecificEvent'),
     # Example: http://www.feelkm.com/Pais/2014/04/21/Running/Nevent/2322.html replacestr
     # New Comment Event
     url(r'^[^/]+/(?P<year>[0-9]{4})/(?P<month>[0-9]{2})/(?P<day>[0-9]{2})/[^/]+/[^/]+/(?P<id>\d+)/New-Comment/$','websearch.views.NewCommentEvent'),
