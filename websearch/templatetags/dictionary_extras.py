@@ -35,7 +35,7 @@ def replacedigit(n):
 
     c = len(n)
     if(c==1):
-        n="0"+n
+        n='0'+n
 
     return n
 
