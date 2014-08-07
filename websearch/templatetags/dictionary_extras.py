@@ -84,6 +84,7 @@ def shuffle(arg):
 
 
 @register.filter(name='truncatechars_v')
+@stringfilter
 def truncatechars_v(s, num):
     """
     Truncates a word after a given number of chars

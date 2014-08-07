@@ -134,7 +134,7 @@ $(function() {
                         <a  class="PlaceItem-link" href="/search/?q={{ arg.city }}">
 
 
-                            {{ arg.city | truncatechars_v:30 }}
+                            {{ arg.city | truncatechars_v:20 }}
 
                         </a>
                         <a class="PlaceItem-link" href="/search/?q={{ arg.region }}"> {{ arg.region | truncatechars:20 }}</a>, <a class="PlaceItem-link" href="/search/?q={{ arg.country }}"> {{ arg.country | truncatechars:30 }}</a></div>
