@@ -83,7 +83,7 @@ def shuffle(arg):
     return file.file
 
 
-@register.filter(name='truncatechars_v')
+@register.filter(name='truncatecharsv')
 @stringfilter
 def truncatechars_v(s, num):
     """
@@ -94,7 +94,7 @@ def truncatechars_v(s, num):
     string = []
     for word in s.split():
         if len(word) > length:
-            string.append(word[:length]+'')
+            string.append(word[:length]+'.')
         else:
             string.append(word)
     return u' '.join(string)
