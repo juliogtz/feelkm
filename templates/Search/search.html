@@ -128,13 +128,13 @@ $(function() {
 				    </div>
 
 				<div id="item_1_content" class="left leftTxtItem">
-					<div class="TitleItem"><a  class="TitleItem_Link" href="/{{ arg.country | strip }}/{{ arg.year_event }}/{{ arg.month_event | replacedigit}}/{{ arg.day_event | replacedigit }}/running/{{arg.name_event | replacestr }}/{{ arg.id }}/">{{ arg.name_event | truncatechars:50 }}</a></div>
+					<div class="TitleItem"><a  class="TitleItem_Link" href="/{{ arg.country | strip }}/{{ arg.year_event }}/{{ arg.month_event | replacedigit }}/{{ arg.day_event | replacedigit }}/running/{{arg.name_event | replacestr }}/{{ arg.id }}/">{{ arg.name_event | truncatechars:50 }}</a></div>
 
                     <div class="PlaceItem">
                         <a  class="PlaceItem-link" href="/search/?q={{ arg.city }}">
 
 
-                            {{ arg.city | truncatechars:20 }}
+                            {{ arg.city | truncatechars_v:30 }}
 
                         </a>
                         <a class="PlaceItem-link" href="/search/?q={{ arg.region }}"> {{ arg.region | truncatechars:20 }}</a>, <a class="PlaceItem-link" href="/search/?q={{ arg.country }}"> {{ arg.country | truncatechars:30 }}</a></div>
