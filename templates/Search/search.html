@@ -130,7 +130,7 @@ $(function() {
 				<div id="item_1_content" class="left leftTxtItem">
 					<div class="TitleItem"><a  class="TitleItem_Link" href="/{{ arg.country | strip }}/{{ arg.year_event }}/{{ arg.month_event | replacedigit}}/{{ arg.day_event | replacedigit }}/running/{{arg.name_event | replacestr }}/{{ arg.id }}/">{{ arg.name_event | truncatechars:50 }}</a></div>
 
-                    <div class="PlaceItem"><a  class="PlaceItem-link" href="/search/?q={{ arg.city }}">{{ arg.city }}</a> <a class="PlaceItem-link" href="/search/?q={{ arg.region }}"> {{ arg.region }}</a>, <a class="PlaceItem-link" href="/search/?q={{ arg.country }}"> {{ arg.country }}</a></div>
+                    <div class="PlaceItem"><a  class="PlaceItem-link" href="/search/?q={{ arg.city }}">{{ arg.city | truncatechars:20 }}</a> <a class="PlaceItem-link" href="/search/?q={{ arg.region }}"> {{ arg.region | truncatechars:20 }}</a>, <a class="PlaceItem-link" href="/search/?q={{ arg.country }}"> {{ arg.country | truncatechars:30 }}</a></div>
 					<div class="dateItem">
 						<div class="left"> <img src="/{{ STATIC_URL }}imgs/fecha.png" width="17" height="15"></div>
 						<div class="left dateItemTxt">
