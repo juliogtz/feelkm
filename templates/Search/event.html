@@ -273,7 +273,7 @@ function favorite(stf){
 	</div>
 
 	<div class="title-place">
-		{{ arg.city  | truncatewords_by_chars:25}}, {{ arg.region | truncatewords_by_chars:25 }} {{ arg.country }}
+		{{ arg.city  | truncatewords_by_chars:20}}, {{ arg.region | truncatewords_by_chars:20 }} {{ arg.country }}
 
 
 	</div>
@@ -487,7 +487,7 @@ function favorite(stf){
 
 					<div class="item-box-left top-item-box">
 						<div class="item-box-left-txt left">Lugar</div>
-						<div class="item-box-right-txt left">{{ arg.city | truncatewords_by_chars:25 }}, {{ arg.region | truncatewords_by_chars:25 }} {{ arg.country }}</div>
+						<div class="item-box-right-txt left">{{ arg.city | truncatewords_by_chars:20 }}, {{ arg.region | truncatewords_by_chars:20 }} {{ arg.country }}</div>
 						<div class="clear"></div>
 						<div class="line-b-box"></div>
 					</div>
