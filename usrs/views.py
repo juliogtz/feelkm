@@ -114,25 +114,25 @@ def MyProfile(request, username):
         return HttpResponseRedirect("/")
     else:
 
-
         if request.user.is_active:
                 if request.user.is_authenticated:
                     DATALOGIN_ID=request.user.id
                     DATALOGIN = users.objects.get(id_user_admin_id=DATALOGIN_ID)
+                    return render(request, 'User/myprofile.html', {
+                            'poll': 1,
+                            'error_message': "You didn't select a choice.",
+                            'data': data,
+                            'usr':username,
+                            'DATALOGIN':DATALOGIN
+
+                        })
                 else:
                      DATALOGIN="0"
+                     return HttpResponseRedirect("/")
         else:
             DATALOGIN = "0"
+            return HttpResponseRedirect("/")
 
-
-        return render(request, 'User/myprofile.html', {
-            'poll': 1,
-            'error_message': "You didn't select a choice.",
-            'data': data,
-            'usr':username,
-            'DATALOGIN':DATALOGIN
-
-        })
 
 
 def Privacy(request):
