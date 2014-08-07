@@ -101,8 +101,8 @@ def truncatewords_by_chars(value, arg):
 
     if len(value) > length:
         if value[length:length + 1].isspace():
-            return value[:length].rstrip() + '...'
+            return value[:length].rstrip() + ''
         else:
-            return value[:length].rsplit(' ', 1)[0].rstrip() + '...'
+            return value[:length].rsplit(' ', 1)[0].rstrip() + ''
     else:
         return value
