@@ -985,6 +985,14 @@ src: url("../fonts/Roboto-Bold.ttf");
     margin-left: 10px;
 }
 
+.txt-btnleft-hea-pro-link{
+
+    font-family: Helvetica;
+    font-size: 14px;
+    color: #4c4d4e;
+    text-decoration: none;
+}
+
 
 .member-section-from
 {

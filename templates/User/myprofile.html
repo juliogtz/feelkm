@@ -5,8 +5,8 @@
 <title>FeelKm</title>
 <link rel="stylesheet" href="/{{ STATIC_URL }}css/header.css" type="text/css" />
 <link rel="stylesheet" href="/{{ STATIC_URL }}/css/myprofile.css" type="text/css" />
-<script src="/{{ STATIC_URL }}scripts/header.js"></script>
 {% include "Scripts/scripts.html" %}
+<script src="/{{ STATIC_URL }}scripts/header.js"></script>
 <script type="text/javascript">
 
 $(function() {
@@ -94,7 +94,7 @@ $(function() {
 
     <div class="left close-pro-section-from">
         <div class="left"><img src="/{{ STATIC_URL }}imgs/cerrar-sesion.png" border="0" width="16" height="16"></div>
-        <div class="left txt-btnleft-hea-pro">Cerrar sesi&oacute;n</div>
+        <div class="left txt-btnleft-hea-pro"><a  class="txt-btnleft-hea-pro-link" href="/logout/">Cerrar sesi&oacute;n</a></div>
         <div class="clear"></div>
 
     </div>
