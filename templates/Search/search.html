@@ -137,7 +137,7 @@ $(function() {
                             {{ arg.city | truncatechars_v:20 }}
 
                         </a>
-                        <a class="PlaceItem-link" href="/search/?q={{ arg.region }}"> {{ arg.region | truncatechars:20 }}</a>, <a class="PlaceItem-link" href="/search/?q={{ arg.country }}"> {{ arg.country | truncatechars:30 }}</a></div>
+                        <a class="PlaceItem-link" href="/search/?q={{ arg.region }}"> {{ arg.region | truncatechars_v:20}}</a>, <a class="PlaceItem-link" href="/search/?q={{ arg.country }}"> {{ arg.country | truncatechars_v:20 }}</a></div>
 					<div class="dateItem">
 						<div class="left"> <img src="/{{ STATIC_URL }}imgs/fecha.png" width="17" height="15"></div>
 						<div class="left dateItemTxt">
