@@ -955,6 +955,16 @@ src: url("../fonts/Roboto-Bold.ttf");
     margin-left: 31px;
 }
 
+.img-profile-circle-img{
+    width: 142px;
+    height: 142px;
+    -webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	border-radius: 100px;
+    margin-top: 99px;
+    margin-left: 31px;
+}
+
 .txt-data-profile-header{
     margin-left: 30px;
     margin-top: 135px;

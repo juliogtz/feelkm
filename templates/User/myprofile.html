@@ -78,10 +78,11 @@ $(function() {
 
 
     {% if user_aux.id_facebook == "" or  user_aux.id_facebook == None %}
-            <div class="left img-profile-circle"><a href="javascript:void(0)"><img   src="/{{ STATIC_URL }}imgs/perfil-b.png" width="142" height="142"></a></div>
+            <div class="left img-profile-circle"><a href="javascript:void(0)"><img   src="/{{ STATIC_URL }}imgs/perfil-b.png" width="142" height="142" class="img-profile-circle-img"></a></div>
             {% else %}
-            <div class="left img-profile-circle"><a href="javascript:void(0)" ><img src="{{ DATALOGIN.firtsFacebookPic }}" width="142" height="142" ></a></div>
+            <div class="left img-profile-circle"><a href="javascript:void(0)" ><img src="{{ DATALOGIN.firtsFacebookPic }}" width="142" height="142" class="img-profile-circle-img" ></a></div>
    {% endif %}
+
 
 
     <div class="left txt-data-profile-header">
