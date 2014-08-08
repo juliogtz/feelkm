@@ -116,7 +116,7 @@ def MyProfile(request, username):
         if request.user.is_active:
                 if request.user.is_authenticated:
 
-                    user_aux = users.objects.get(id_user_admin=data.id)
+                    user_aux = users.objects.get(id_user_admin=data)
                     DATALOGIN_ID=request.user.id
                     DATALOGIN = users.objects.get(id_user_admin_id=DATALOGIN_ID)
                     return render(request, 'User/myprofile.html', {
