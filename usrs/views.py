@@ -110,6 +110,7 @@ def RecoveryPassword(request):
 def MyProfile(request, username):
 
     data = User.objects.filter(username=username)
+
     if(str(data)=="[]"):
         return HttpResponseRedirect("/")
     else:
