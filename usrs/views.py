@@ -110,6 +110,7 @@ def RecoveryPassword(request):
 def MyProfile(request, username):
 
     data = User.objects.filter(username=username)
+    user_aux = users.objects.filter(id_user_admin=data)
 
     if(str(data)=="[]"):
         return HttpResponseRedirect("/")
@@ -124,7 +125,8 @@ def MyProfile(request, username):
                             'error_message': "You didn't select a choice.",
                             'data': data,
                             'usr':username,
-                            'DATALOGIN':DATALOGIN
+                            'DATALOGIN':DATALOGIN,
+                            'user_aux':user_aux,
 
                         })
                 else:
