@@ -108,15 +108,15 @@ def RecoveryPassword(request):
 
 
 def MyProfile(request, username):
-
+    data = User.objects.filter(username=username)
     if(str(data)=="[]"):
         return HttpResponseRedirect("/")
     else:
 
         if request.user.is_active:
                 if request.user.is_authenticated:
-                    data = User.objects.filter(username=username)
-                    user_aux = users.objects.filter(id_user_admin=data.id)
+
+                    user_aux = users.objects.get(id_user_admin=data.id)
                     DATALOGIN_ID=request.user.id
                     DATALOGIN = users.objects.get(id_user_admin_id=DATALOGIN_ID)
                     return render(request, 'User/myprofile.html', {
