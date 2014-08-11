@@ -7,7 +7,7 @@ from django.shortcuts import get_object_or_404, render
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.hashers import make_password
 
-from api.models import users, events, comments_events
+from api.models import users, events, comments_events, events_favorites, photos
 
 
 
@@ -119,6 +119,61 @@ def MyProfile(request, username):
                     user_aux = users.objects.get(id_user_admin=data)
                     DATALOGIN_ID=request.user.id
                     DATALOGIN = users.objects.get(id_user_admin_id=DATALOGIN_ID)
+
+                    #Eventos favoritos:
+                    eventsf = events_favorites.objects.filter(id_user_admin=request.user.id)
+                    count_eventsf= eventsf.count()
+
+                    #Pics of favorites events
+                    list_pic_favorites = []
+                    if(count_eventsf>0):
+                        for envd in eventsf:
+                            pics = photos.objects.filter(id_event=envd.id_event)
+                            #print envd.id_event.id
+                            contp=pics.count()
+                            if(contp>0):
+                                list_pic_favorites.append({envd.id_event.id:pics})
+                            else:
+                                list_pic_favorites.append({envd.id_event.id:0})
+
+                    #print list_pic_favorites
+
+                    #Pics add by the user login:
+                    pics_add = photos.objects.filter(id_user_admin=request.user.id)
+                    count_pics_add = pics_add.count()
+
+
+                    #Comments of different events:
+                    comments_add = comments_events.objects.filter(id_user_admin=request.user.id)
+                    count_comments_add = comments_add.count()
+
+                    list_comments_event =[]
+                    for comn in comments_add:
+                        print comn.title_comment
+                        print comn.comment
+                        print comn.date
+                        print comn.id_event.name_event
+                        print comn.id_event.city
+                        print comn.id_event.region
+                        print comn.id_event.country
+                        print "\n"
+                        pics_of_event = photos.objects.filter(id_event=comn.id_event.id)
+                        count_pics_of_event= pics_of_event.count()
+                        if(count_pics_of_event<=0):
+                            list_comments_event.append({"comments":comn, "imgs":0})
+                        else:
+                            list_comments_event.append({"comments":comn, "imgs":pics_of_event})
+
+                    print list_comments_event
+
+
+
+
+
+
+
+
+
                     return render(request, 'User/myprofile.html', {
                             'poll': 1,
                             'error_message': "You didn't select a choice.",
@@ -126,6 +181,14 @@ def MyProfile(request, username):
                             'usr':username,
                             'DATALOGIN':DATALOGIN,
                             'user_aux':user_aux,
+                            'count_eventsf':count_eventsf,
+                            'list_event_favorites':eventsf,
+                            'list_pic_favorites':list_pic_favorites,
+                            'count_pics_add':count_pics_add,
+                            'list_pics_adds_user':pics_add,
+                            'count_comments_add':count_comments_add,
+                            'list_comments_event':list_comments_event,
+
 
                         })
                 else:

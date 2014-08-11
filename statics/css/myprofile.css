@@ -1019,7 +1019,7 @@ src: url("../fonts/Roboto-Bold.ttf");
 
 .close-pro-section-from
 {
-    margin-left: 325px;
+    margin-left: 450px;
     margin-top: -10px;
 
 }
@@ -1063,4 +1063,226 @@ src: url("../fonts/Roboto-Bold.ttf");
 
 .box-content-profile-sec-favorites{
     height: 171px;
+    overflow: auto;
+
+}
+
+
+.box-content-profile-sec-favorites-pics{
+    height: 137px;
+
+
+}
+
+
+
+.txt-no-add-event-data{
+
+    font-family: Helvetica;
+	font-size: 20px;
+	color:#dbdbdb;
+    font-weight: lighter;
+
+    padding-top: 80px;
+    text-align: center;
+
+}
+
+.elements-list-data-profile{
+
+    margin-left: 20px;
+}
+
+.element-list-data-prof{
+    padding-top: 18px;
+}
+
+
+
+.left-ele-data-pro{
+    margin-left: 15px;
+    margin-top: 5px;
+    width: 457px;
+}
+
+
+.title-el-event{
+    font-family: "Helvetica Neue";
+    font-size: 15px;
+    color: #616161;
+    font-weight: bold;
+}
+.title-el-event-city{
+    margin-top: 5px;
+    font-family: "Helvetica Neue";
+    font-size: 13px;
+    color: #fd5b45;
+    font-weight: normal;
+}
+
+.line-element-list-pro{
+    width: 615px;
+    height: 1px;
+    background-color: #dbdbdb;
+    margin-top: 15px;
+}
+
+.calendar-f{
+    background-image: url("../imgs/calendario.png"); /* all icons in a single file */
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 31px;
+    text-align: center;
+    font-size: 16px;
+    font-family: "Helvetica Neue";
+    font-weight: bold;
+    color:#616161;
+    padding-top: 5px;
+}
+
+.calendar-txt{
+    width: 50px;
+    height: 20px;
+    text-align: right;
+    font-size: 13px;
+    font-family: "Helvetica Neue";
+    font-weight: normal;
+    color:#616161;
+    padding-top: 8px;
+    margin-left: -20px;
+
+
+
+}
+
+.date-favor{
+    margin-left:53px ;
+}
+
+.pics-adds{
+
+    overflow-y: hidden;
+    overflow-x:auto;
+
+}
+
+.img-add-prof-first{
+    width: 150px;
+    height: 100px;
+
+
+}
+
+.img-add-prof-div{
+
+    margin-left: 6px;
+    padding-top: 20px;
+}
+
+.img-add-prof{
+    width: 150px;
+    height: 100px;
+
+
+}
+
+.left-div-imgs-adds{
+    margin-left: 14px;
+}
+
+.FirtsNoFull
+{
+	width: 8px;
+	height: 8px;
+	border-color: #e8cb56;
+	background-color: #ffffff;
+	border-style: solid;
+	border-width: 2px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius:10px;
+	border-radius: 10px;
+}
+.img-comment-adf{
+    width: 50px;
+    height: 50px;
+    border-color: #e8e8e8;
+    border-style: solid;
+    border-width: 1px;
+}
+.item-my-comments{
+    margin-left: 22px;
+    padding-top: 21px;
+}
+
+.title-event-ad-c{
+    font-family: "Helvetica Neue";
+    font-size: 15px;
+    color:#536b97;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.title-1-comen-a
+{
+    margin-left: 14px;
+    margin-top: 5px;
+    width: 440px;
+}
+
+.txt-place-evt-add
+{
+    font-family: "Helvetica Neue";
+    font-size: 15px;
+    color:#4c4d4e;
+    margin-top: 5px;
+}
+
+.date-comm-add{
+color:#4c4d4e;
+text-align: right;
+font-family: "Helvetica Neue";
+font-size: 13px;
+
+
+}
+
+.califs-comment-adds{
+    margin-top: 8px;
+}
+
+.left-data-comment-add{
+    margin-left: 1px;
+}
+
+.txt-title-event-c-add
+{
+
+color:#4c4d4e;
+font-family: "Helvetica Neue";
+font-size: 17px;
+font-weight: bold;
+    margin-left: 66px;
+    margin-top: 8px;
+    width: 450px;
+
+}
+
+.txt-title-event-compl-add
+{
+
+color:#4c4d4e;
+font-family: "Helvetica Neue";
+font-size: 15px;
+font-weight:normal;
+    margin-left: 66px;
+    margin-top: 20px;
+    width: 450px;
+
+}
+
+.line-bottom-comment-add{
+    width: 610px;
+    height: 1px;
+    background-color: #dbdbdb;
+    margin-top: 28px;
 }

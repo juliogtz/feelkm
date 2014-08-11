@@ -86,7 +86,7 @@ $(function() {
 
 
     <div class="left txt-data-profile-header">
-        <div class="txt-name-profile">{{ request.user.first_name }}, {{ request.user.last_name }}</div>
+        <div class="txt-name-profile">{{ request.user.first_name }} {{ request.user.last_name }}</div>
         <div class="txt-name-place">Guadalajara, Jalisco </div>
     </div>
     <div class="clear"></div>
@@ -104,7 +104,7 @@ $(function() {
     </div>-->
 
     <div class="left close-pro-section-from">
-        <div class="left"><img src="/{{ STATIC_URL }}imgs/cerrar-sesion.png" border="0" width="16" height="16"></div>
+        <div class="left"><a href="/logout/"><img src="/{{ STATIC_URL }}imgs/cerrar-sesion.png" border="0" width="16" height="16"></a></div>
         <div class="left txt-btnleft-hea-pro"><a  class="txt-btnleft-hea-pro-link" href="/logout/">Cerrar sesi&oacute;n</a></div>
         <div class="clear"></div>
 
@@ -123,7 +123,7 @@ $(function() {
 				<div class="box-into-txt-prof">
 
 				    <div class="left"><img src="/{{ STATIC_URL }}imgs/favoritos.png" width="14" height="12"></div>
-                    <div class="left txt-title-profile-box">2 eventos favoritos</div>
+                    <div class="left txt-title-profile-box">{{ count_eventsf }} eventos favoritos</div>
                     <div class="clear"></div>
 
 				</div>
@@ -131,6 +131,83 @@ $(function() {
 			</div>
 
             <div class="box-content-profile-sec box-content-profile-sec-favorites">
+
+
+                {% if count_eventsf <= 0  %}
+
+                <div class="txt-no-add-event-data">Ning&uacute;n evento se ha agregado a favoritos.</div>
+
+                {% else %}
+
+                {% for list_events_f in  list_event_favorites %}
+
+                <div class="elements-list-data-profile">
+
+                    <div class="element-list-data-prof">
+                        <div class="left">
+
+                            <!--{{ list_events_f.id_event.id }}-->
+
+                            {% for pics in list_pic_favorites %}
+
+                                 {% for key,value in pics.items %}
+
+
+
+                                        {% if key == list_events_f.id_event.id %}
+
+                                         {% if value == 0 %}
+
+                                            <a href="/{{ list_events_f.id_event.country | strip }}/{{ list_events_f.id_event.year_event }}/{{ list_events_f.id_event.month_event | replacedigit }}/{{ list_events_f.id_event.day_event | replacedigit }}/running/{{list_events_f.id_event.name_event | replacestr }}/{{ list_events_f.id_event.id }}/" target="_blank"><img src="/img/{{ key }}/" width="50" height="50" border="0" >
+
+                                         {% else %}
+
+
+
+                                           <a href="/{{ list_events_f.id_event.country | strip }}/{{ list_events_f.id_event.year_event }}/{{ list_events_f.id_event.month_event | replacedigit }}/{{ list_events_f.id_event.day_event | replacedigit }}/running/{{list_events_f.id_event.name_event | replacestr }}/{{ list_events_f.id_event.id }}/" target="_blank"><img src="http://res.cloudinary.com/htyoqtggc/image/upload/h_130,w_200/{{ value | shuffle }}.jpg" width="50" height="50"></a>
+
+
+                                         {% endif %}
+
+
+                                        {% endif %}
+
+
+                                 {% endfor %}
+
+                            {% endfor %}
+
+
+
+                            </a></div>
+                        <div class="left left-ele-data-pro">
+                            <div class="title-el-event">{{ list_events_f.id_event.name_event }}</div>
+                            <div class="title-el-event-city">{{ list_events_f.id_event.city | truncatewords_by_chars:20 }}, {{ list_events_f.id_event.region | truncatewords_by_chars:20 }}, {{ list_events_f.id_event.country }}</div>
+                        </div>
+
+                        <div class="left date-favor">
+                            <div class="calendar-f">{{list_events_f.date | date:"d" }}</div>
+                            <div class="calendar-txt">{{list_events_f.date | date:"M"}}</div>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="line-element-list-pro"></div>
+                    </div>
+
+
+
+
+                </div>
+                {% endfor %}
+
+                {% endif %}
+
+                    <!--{% for list_events_f in  list_event_favorites %}
+
+
+                        {{ list_events_f.id_event.name_event }}
+
+
+                    {% endfor %}-->
 
             </div>
 
@@ -142,14 +219,50 @@ $(function() {
 				<div class="box-into-txt-prof">
 
 				    <div class="left"><img src="/{{ STATIC_URL }}imgs/fotos.png" width="16" height="13"></div>
-                    <div class="left txt-title-profile-box">22 fotos</div>
+                    <div class="left txt-title-profile-box">{{ count_pics_add }} fotos agregadas.</div>
                     <div class="clear"></div>
 
 				</div>
 
 			</div>
 
-            <div class="box-content-profile-sec box-content-profile-sec-favorites">
+            <div class="box-content-profile-sec box-content-profile-sec-favorites-pics pics-adds">
+
+                {% if count_pics_add <= 0 %}
+
+                     <div class="txt-no-add-event-data">Ning&uacute;na fotograf&iacute;a se ha agregado.</div>
+
+                {% else %}
+                <div class="left-div-imgs-adds">
+                {% for pics_adss  in list_pics_adds_user %}
+
+
+
+
+                 <div class="left img-add-prof-div">
+                 <a href="http://res.cloudinary.com/htyoqtggc/image/upload/h_100,w_150/{{ pics_adss.file}}.jpg" target="_blank"><img src="http://res.cloudinary.com/htyoqtggc/image/upload/h_100,w_150/{{ pics_adss.file}}.jpg" class="img-add-prof"></a>
+                 </div>
+
+
+
+
+                {% endfor %}
+
+
+
+
+
+
+
+
+
+          <div class="clear"></div>
+
+                 </div>
+
+                 {% endif %}
+
+
 
             </div>
 
@@ -161,7 +274,7 @@ $(function() {
 				<div class="box-into-txt-prof">
 
 				    <div class="left"><img src="/{{ STATIC_URL }}imgs/comentarios.png" width="16" height="16"></div>
-                    <div class="left txt-title-profile-box">5 comentarios</div>
+                    <div class="left txt-title-profile-box">{{ count_comments_add }} comentarios</div>
                     <div class="clear"></div>
 
 				</div>
@@ -169,6 +282,111 @@ $(function() {
 			</div>
 
             <div class="box-content-profile-sec box-content-profile-sec-favorites">
+
+                {% if count_comments_add == 0 %}
+
+                 <div class="txt-no-add-event-data">Ning&uacute;na comentario se ha agregado.</div>
+
+                {% else %}
+
+                    {% for list_comments in list_comments_event %}
+
+
+                        <div class="item-my-comments">
+
+
+                            {% if list_comments.imgs == 0 %}
+
+                            <div class="left"><img src="/img/{{ list_comments.comments.id_event.id}}/" class="img-comment-adf"></div>
+
+                            {% else %}
+
+                            <div class="left"><img src="http://res.cloudinary.com/htyoqtggc/image/upload/h_100,w_150/{{ list_comments.imgs | shuffle }}.jpg" class="img-comment-adf"></div>
+
+                            {% endif %}
+
+
+
+                            <div class="left title-1-comen-a">
+
+                                <div class=""> <a href="" class="title-event-ad-c"> {{ list_comments.comments.id_event.name_event }}</a></div>
+                                <div class="txt-place-evt-add">{{ list_comments.comments.id_event.city  | truncatewords_by_chars:20 }} {{ list_comments.comments.id_event.region | truncatewords_by_chars:20 }} {{ list_comments.comments.id_event.country }}</div>
+
+                            </div>
+                            <div class="left left-data-comment-add">
+                                <div class="date-comm-add">{{ list_comments.comments.date }}</div>
+                                <div class="califs-comment-adds">
+
+
+                        {% if list_comments.comments.calif == 0 %}
+                        <div class="FirtsNoFull left"></div>
+						<div class="NextNoFull  left"></div>
+						<div class="NextNoFull  left"></div>
+						<div class="NextNoFull  left"></div>
+						<div class="NextNoFull  left"></div>
+                        {% endif %}
+
+
+                        {% if list_comments.comments.calif  == 1 %}
+                        <div class="FirtsFull left"></div>
+						<div class="NextNoFull  left"></div>
+						<div class="NextNoFull  left"></div>
+						<div class="NextNoFull  left"></div>
+						<div class="NextNoFull  left"></div>
+                        {% endif %}
+
+
+                        {% if list_comments.comments.calif  == 2 %}
+                        <div class="FirtsFull left"></div>
+						<div class="NextFull  left"></div>
+						<div class="NextNoFull  left"></div>
+						<div class="NextNoFull  left"></div>
+						<div class="NextNoFull  left"></div>
+                        {% endif %}
+
+                        {% if list_comments.comments.calif  == 3 %}
+                        <div class="FirtsFull left"></div>
+						<div class="NextFull  left"></div>
+						<div class="NextFull  left"></div>
+						<div class="NextNoFull  left"></div>
+						<div class="NextNoFull  left"></div>
+                        {% endif %}
+
+                        {% if list_comments.comments.calif  == 4 %}
+                        <div class="FirtsFull left"></div>
+						<div class="NextFull  left"></div>
+						<div class="NextFull  left"></div>
+						<div class="NextFull  left"></div>
+						<div class="NextNoFull  left"></div>
+                        {% endif %}
+
+
+                        {% if list_comments.comments.calif  == 5 %}
+                        <div class="FirtsFull left"></div>
+						<div class="NextFull  left"></div>
+						<div class="NextFull  left"></div>
+						<div class="NextFull  left"></div>
+						<div class="NextFull  left"></div>
+                        {% endif %}
+
+
+
+
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+
+                            <div class="txt-title-event-c-add"> {{ list_comments.comments.title_comment }} </div>
+                            <div class="txt-title-event-compl-add"> {{ list_comments.comments.comment }} </div>
+
+                            <div class="line-bottom-comment-add"></div>
+
+                        </div>
+
+
+                    {% endfor %}
+
+                {% endif %}
 
             </div>
 
