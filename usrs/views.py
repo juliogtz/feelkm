@@ -149,14 +149,14 @@ def MyProfile(request, username):
 
                     list_comments_event =[]
                     for comn in comments_add:
-                        print comn.title_comment
-                        print comn.comment
-                        print comn.date
-                        print comn.id_event.name_event
-                        print comn.id_event.city
-                        print comn.id_event.region
-                        print comn.id_event.country
-                        print "\n"
+                        #print comn.title_comment
+                        #print comn.comment
+                        #print comn.date
+                        #print comn.id_event.name_event
+                        #print comn.id_event.city
+                        #print comn.id_event.region
+                        #print comn.id_event.country
+                        #print "\n"
                         pics_of_event = photos.objects.filter(id_event=comn.id_event.id)
                         count_pics_of_event= pics_of_event.count()
                         if(count_pics_of_event<=0):
