@@ -61,7 +61,7 @@ CACHES = {
         'LOCATION':'pub-redis-15253.us-east-1-3.3.ec2.garantiadata.com:15253',
         'OPTIONS':{
             'DB':0,
-            # 'PASSWORD': 'yadayada',
+            'PASSWORD': 'LwZocBtGEco153g3',
             'PARSER_CLASS': 'redis.connection.HiredisParser',
         }
     }
