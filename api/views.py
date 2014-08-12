@@ -27,7 +27,7 @@ SocketServer.BaseServer.handle_error = lambda *args, **kwargs: None
 handlers.BaseHandler.log_exception = lambda *args, **kwargs: None
 
 import json
-
+from django.views.decorators.cache import cache_page
 
 # Views from api.
 #@api_view(['GET'])
@@ -53,6 +53,7 @@ import json
 
 
 #Views Search api:
+@cache_page(60)
 def autocomplete(request):
     #print query
     if request.method == 'GET':
@@ -80,7 +81,7 @@ def autocomplete(request):
         #return Response(serializer.data)
     return HttpResponse(js,content_type="application/json")
 
-
+@cache_page(60)
 def autocomplete_second(request):
     #print query
     if request.method == 'GET':
