@@ -107,7 +107,39 @@
 
 <!--<div style="margin-top:285px;"></div>-->
 
-<div class="footer" style="margin-top: -150px;">
+<div class="footer" style="margin-top: -180px;">
+
+    <div>
+
+            <!-- Begin MailChimp Signup Form -->
+            <div id="mc_embed_signup" class="mail-list">
+            <form action="//feelkm.us8.list-manage.com/subscribe/post?u=38a761cdf1c2adea6796a3123&amp;id=b8eb11d270" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                <label for="mce-EMAIL" class="txt-title-mail-list">Conoce m&aacute;s sobre FeelKm</label>
+                <br>
+                <br>
+
+                <div class="left input-email-list">
+                <input type="email" value="" name="EMAIL" class="email input-mail-mail-list" id="mce-EMAIL" placeholder="Correo Electr&oacute;nico" required>
+                </div>
+
+                <div class="left">
+                <div class="top-btn-mail-list"><input type="submit" value="Suscribir" name="subscribe" id="mc-embedded-subscribe" class="button btn-new-mail-list"></div>
+
+                </div>
+
+                <div class="clear"></div>
+
+
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;"><input type="text" name="b_38a761cdf1c2adea6796a3123_b8eb11d270" tabindex="-1" value=""></div>
+
+            </form>
+            </div>
+
+<!--End mc_embed_signup-->
+
+    </div>
+    <div class="top-f-x"></div>
 
 	<div class="left btnContact"><img src="/{{ STATIC_URL }}imgs/email.png"></div>
 	<div class="textContact left"><a href="mailto:hello@feelkm.com?Subject=FeelKm%20Contact" target="_top" class="txt-footer-contact">Contacto</a></div>
@@ -118,6 +150,9 @@
 	<div class="clear"></div>
 	<div class="txtFooter">&copy; FeelKm 2014. Algunos Derechos Reservados</div>
 </div>
+
+
+{% include "Google/analytics.html" %}
 
 </body>
 </html>

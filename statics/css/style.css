@@ -297,7 +297,7 @@ body{
 }
 
 .footer{
-	margin-top: -150px;
+	margin-top: -200px;
 	width: 1128px;
 	margin: 0 auto;
 	height: 80px;
@@ -396,3 +396,61 @@ body{
 
 
 
+.mail-list{
+    text-align: center;
+}
+
+.txt-title-mail-list{
+    color: #616161;
+	font-size: 16px;
+	font-family: Helvetica;
+    font-weight: bold;
+    margin-left: -85px;
+}
+
+.top-btn-mail-list{
+    margin-top: 10px;
+}
+
+.input-mail-mail-list
+{
+
+    background-color: #ffffff;
+    -webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 4px;
+    border-color: #dcdcdc;
+    border-width: 1px;
+    border-style: solid;
+    width: 200px;
+    height: 38px;
+    padding-left: 10px;
+    font-size: 16px;
+}
+
+.btn-new-mail-list{
+    width: 100px;
+    height: 40px;
+	border-width: 0px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+    background-color: #fd5b45;
+    margin-left: 27px;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    margin-top: -10px;
+    margin-left: 5px;
+}
+
+.input-email-list{
+    margin-left: 360px;
+
+}
+
+.top-f-x{
+    margin-top: 20px;
+}
