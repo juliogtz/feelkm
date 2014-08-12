@@ -8,7 +8,7 @@ from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.hashers import make_password
 
 from api.models import users, events, comments_events, events_favorites, photos
-
+from django.views.decorators.cache import cache_page
 
 
 """
@@ -106,7 +106,7 @@ def RecoveryPassword(request):
         else:
             return HttpResponseRedirect("/")
 
-
+@cache_page(60)
 def MyProfile(request, username):
     data = User.objects.filter(username=username)
     if(str(data)=="[]"):

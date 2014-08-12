@@ -239,7 +239,7 @@ def SepecificEvent(request, id, year, month, day):
                 'comments_arg':comments_arg,
             })
 
-
+@cache_page(60)
 def NewCommentEvent(request, id, month, day, year):
     if request.user.is_active:
             if request.user.is_authenticated:
@@ -399,7 +399,7 @@ def CreateCommentSend(request):
 
         return HttpResponseRedirect("/")
 
-
+@cache_page(60)
 def return_image(request, id):
 
     data = events.objects.get(id=id)
