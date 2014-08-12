@@ -1444,3 +1444,8 @@ margin-top: 15px;
 .fileDiv{
     opacity: 0;
 }
+
+.input-you-run-check{
+    width: 20px;
+    height: 20px;
+}

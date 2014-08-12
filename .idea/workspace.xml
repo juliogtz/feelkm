@@ -43,21 +43,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="new_comment.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="new_comment.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/Search/new_comment.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33333334" vertical-offset="30496" max-vertical-offset="36555">
-              <caret line="2039" column="50" selection-start-line="2039" selection-start-column="50" selection-end-line="2039" selection-end-column="50" />
+            <state vertical-scroll-proportion="-1.48" vertical-offset="30496" max-vertical-offset="36555">
+              <caret line="2038" column="156" selection-start-line="2038" selection-start-column="156" selection-end-line="2038" selection-end-column="156" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="new_comment.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="new_comment.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/statics/css/new_comment.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.923077" vertical-offset="18581" max-vertical-offset="21765">
-              <caret line="1249" column="1" selection-start-line="1249" selection-start-column="1" selection-end-line="1249" selection-end-column="22" />
+            <state vertical-scroll-proportion="0.80263156" vertical-offset="21461" max-vertical-offset="21840">
+              <caret line="1447" column="21" selection-start-line="1447" selection-start-column="21" selection-end-line="1447" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -107,8 +107,8 @@
         <option value="$PROJECT_DIR$/api/views.py" />
         <option value="$PROJECT_DIR$/usrs/views.py" />
         <option value="$PROJECT_DIR$/statics/scripts/header.js" />
-        <option value="$PROJECT_DIR$/statics/css/new_comment.css" />
         <option value="$PROJECT_DIR$/templates/Search/new_comment.html" />
+        <option value="$PROJECT_DIR$/statics/css/new_comment.css" />
       </list>
     </option>
   </component>
@@ -844,18 +844,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/statics/css/new_comment.css">
+    <entry file="file://$PROJECT_DIR$/templates/Search/new_comment.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.923077" vertical-offset="18581" max-vertical-offset="21765">
-          <caret line="1249" column="1" selection-start-line="1249" selection-start-column="1" selection-end-line="1249" selection-end-column="22" />
+        <state vertical-scroll-proportion="-1.48" vertical-offset="30496" max-vertical-offset="36555">
+          <caret line="2038" column="156" selection-start-line="2038" selection-start-column="156" selection-end-line="2038" selection-end-column="156" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/Search/new_comment.html">
+    <entry file="file://$PROJECT_DIR$/statics/css/new_comment.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334" vertical-offset="30496" max-vertical-offset="36555">
-          <caret line="2039" column="50" selection-start-line="2039" selection-start-column="50" selection-end-line="2039" selection-end-column="50" />
+        <state vertical-scroll-proportion="0.80263156" vertical-offset="21461" max-vertical-offset="21840">
+          <caret line="1447" column="21" selection-start-line="1447" selection-start-column="21" selection-end-line="1447" selection-end-column="21" />
           <folding />
         </state>
       </provider>
