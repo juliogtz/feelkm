@@ -400,7 +400,7 @@ def CreateCommentSend(request):
 
         return HttpResponseRedirect("/")
 
-@cache_page(60)
+
 def return_image(request, id):
 
     data = events.objects.get(id=id)
