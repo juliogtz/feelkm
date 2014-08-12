@@ -13,8 +13,8 @@ from FeelKm.Bing.bing_search import bing_search
 import random
 import urllib
 from decimal import *
-
-
+from django.core.cache import cache
+from django.views.decorators.cache import cache_page
 cloudinary.config(
   cloud_name = "htyoqtggc",
   api_key = "961935933259211",
@@ -22,7 +22,7 @@ cloudinary.config(
 )
 
 # Create your views here.
-
+@cache_page(20)
 def LandingWeb(request):
     if request.user.is_active:
         if request.user.is_authenticated:
@@ -41,6 +41,7 @@ def LandingWeb(request):
         })
 
 
+@cache_page(60)
 def SearchWeb(request):
 
         query= request.GET.get('q','')
@@ -116,7 +117,7 @@ def SearchWeb(request):
 
             })
 
-
+@cache_page(60)
 def SepecificEvent(request, id, year, month, day):
 
     data = events.objects.filter(id=id)
@@ -239,7 +240,7 @@ def SepecificEvent(request, id, year, month, day):
             })
 
 
-
+@cache_page(60)
 def NewCommentEvent(request, id, month, day, year):
     if request.user.is_active:
             if request.user.is_authenticated:
@@ -399,7 +400,7 @@ def CreateCommentSend(request):
 
         return HttpResponseRedirect("/")
 
-
+@cache_page(60)
 def return_image(request, id):
 
     data = events.objects.get(id=id)
@@ -443,7 +444,7 @@ def return_image(request, id):
         #image_data = open(os.path.join(settings.STATIC_ROOT, 'carrera-a.png', 'rb').read()
         return HttpResponse(image_data, mimetype="image/png")
 
-
+@cache_page(60)
 def favorites(request):
 
     if request.method == 'POST':
