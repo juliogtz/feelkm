@@ -53,7 +53,6 @@ from django.views.decorators.cache import cache_page
 
 
 #Views Search api:
-@cache_page(60)
 def autocomplete(request):
     #print query
     if request.method == 'GET':
@@ -81,7 +80,6 @@ def autocomplete(request):
         #return Response(serializer.data)
     return HttpResponse(js,content_type="application/json")
 
-@cache_page(60)
 def autocomplete_second(request):
     #print query
     if request.method == 'GET':
