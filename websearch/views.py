@@ -117,7 +117,7 @@ def SearchWeb(request):
 
             })
 
-@cache_page(60)
+
 def SepecificEvent(request, id, year, month, day):
 
     data = events.objects.filter(id=id)
@@ -240,7 +240,6 @@ def SepecificEvent(request, id, year, month, day):
             })
 
 
-@cache_page(60)
 def NewCommentEvent(request, id, month, day, year):
     if request.user.is_active:
             if request.user.is_authenticated:
