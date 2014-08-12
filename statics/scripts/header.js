@@ -337,7 +337,7 @@ function getCookie(name) {
 
 
              data: {
-                    user_user: $("#user_user").val(),
+                     user_user: $("#user_user").val(),
                      name_user: $("#name_user").val(),
                      last_user: $("#last_user").val(),
                      email_user: $("#email_user").val(),

@@ -1247,6 +1247,17 @@ margin-top: 15px;
     text-align: justify;
 }
 
+.txt-ace-c-participate{
+
+    color: #52504e;
+    font-family: Helvetica;
+    font-size: 16px;
+    margin-left: 8px;
+    margin-top: 25px;
+    text-align: justify;
+    font-weight: bold;
+}
+
 
 .btn-send-comment
 {
