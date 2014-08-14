@@ -1005,6 +1005,13 @@ src: url("../fonts/Roboto-Bold.ttf");
     text-decoration: none;
 }
 
+a.txt-btnleft-hea-pro-link:hover{
+
+
+    color: #a1a1a1;
+
+}
+
 
 .member-section-from
 {
