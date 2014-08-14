@@ -81,9 +81,16 @@ a.linkE:hover {
 
    font-family: "Helvetica";
 	font-size: 14px;
-	color: #f96450;
+	color: #fb5f3e;
 	font-style: normal;
 	text-decoration: none;
+
+}
+
+
+a.linkELR:hover{
+
+	color: #fb9587;
 
 }
 
@@ -852,7 +859,7 @@ a.footer-txt-login-link:hover{
 .title-footer-txt-x{
      font-family: Helvetica;
     font-size: 24px;
-    color: #fd6854;
+    color: #fb5f3e;
     font-weight: lighter;
     text-align: left;
 
