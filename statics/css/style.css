@@ -321,7 +321,7 @@ body{
 	width: 1128px;
 	margin: 0 auto;
 	height: 80px;
-    padding-left: 74px;
+    padding-left: 120px;
 
 }
 
@@ -499,8 +499,8 @@ body{
 
 
 .btn-submit-s{
-    width: 38px;
-    height: 28px;
+    width: 34px;
+    height: 27px;
     background-color: #7eb292;
     -webkit-border-radius: 2px;
 	-moz-border-radius: 2px;
