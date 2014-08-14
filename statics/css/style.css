@@ -438,16 +438,19 @@ body{
 {
 
     background-color: #ffffff;
-    -webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 4px;
+    -webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
     border-color: #dcdcdc;
     border-width: 1px;
     border-style: solid;
-    width: 200px;
-    height: 38px;
+    width: 230px;
+    height: 34px;
+    font-size: 12px;
+    font-family: Helvetica;
+    color: #616161;
     padding-left: 10px;
-    font-size: 16px;
+    font-weight: lighter;
 }
 
 .btn-new-mail-list{
@@ -468,10 +471,7 @@ body{
     margin-left: 5px;
 }
 
-.input-email-list{
-    margin-left: 360px;
 
-}
 
 .top-f-x{
     margin-top: 20px;
@@ -493,3 +493,6 @@ body{
 }
 
 
+.input-div-email-sc{
+    margin-top: 5px;
+}
