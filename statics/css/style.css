@@ -321,7 +321,7 @@ body{
 	width: 1128px;
 	margin: 0 auto;
 	height: 80px;
-    padding-left: 172px;
+    padding-left: 157px;
 
 }
 
@@ -354,8 +354,9 @@ body{
 	font-size: 14px;
 	font-family: Helvetica;
 	font-weight: lighter;
-	margin-left: 350px;
-	margin-top: 37px;
+	margin-left: 345px;
+    margin-top: 126px;
+
 
 }
 
@@ -519,4 +520,9 @@ body{
     background-color: #8bcfb5;
 
 
+}
+
+
+.footer-b-d{
+    margin-top: 126px;
 }
