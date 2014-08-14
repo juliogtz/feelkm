@@ -501,7 +501,7 @@ body{
 .btn-submit-s{
     width: 34px;
     height: 27px;
-    background-color: #7eb292;
+    background-color: #55be96;
     -webkit-border-radius: 2px;
 	-moz-border-radius: 2px;
 	border-radius: 2px;
@@ -516,7 +516,7 @@ body{
 
 .btn-submit-s:hover{
 
-    background-color: #a2cbb2;
+    background-color: #8bcfb5;
 
 
 }
