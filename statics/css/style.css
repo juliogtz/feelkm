@@ -376,6 +376,13 @@ body{
 
 }
 
+
+a.link-facebook-footer:hover{
+
+    color: #a1a1a1;
+
+}
+
 .txt-footer-contact{
     color: #fb5f3e;
 	font-size: 16px;
