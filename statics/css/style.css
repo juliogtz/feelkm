@@ -321,7 +321,7 @@ body{
 	width: 1128px;
 	margin: 0 auto;
 	height: 80px;
-    padding-left: 157px;
+    padding-left: 141px;
 
 }
 
@@ -524,5 +524,6 @@ body{
 
 
 .footer-b-d{
-    margin-top: 126px;
+    margin-top: 111px;
+    margin-left: -8px;
 }
