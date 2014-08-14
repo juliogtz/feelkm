@@ -4,14 +4,21 @@ body{
 	margin-top: 0px;
 	margin-right: 0px;
 }
+
+
+
 /* Aux Styles */
+
 .left{
 	float: left;
 }
 
+
+
 .clear{
 	clear: both;
 }
+
 
 
 /* Header Results */
