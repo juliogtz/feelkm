@@ -27,7 +27,7 @@ width: 97px;
 
 	background-image: url("../imgs/iconSearchW.png"); /* all icons in a single file */
     background-repeat: no-repeat;
-    background-position: 10px 11px; /* position of the right icon */
+    background-position: 10px 9px; /* position of the right icon */
     font-weight: lighter;
 
 
@@ -70,6 +70,12 @@ margin: 0 auto;
 	text-decoration: none;
 	font-weight: lighter;
 }
+
+a.linkE:hover {
+  color:#a1a1a1;
+}
+
+
 
 .linkELR{
 
@@ -141,7 +147,7 @@ margin: 0 auto;
     display: none;
     background-color: #ffffff;
     width: 382px;
-    height: 262px;
+    height: 260px;
     -webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
@@ -158,6 +164,7 @@ margin: 0 auto;
     color: #575656;
     margin-left: 115px;
     padding-top: 33px;
+    font-weight: lighter;
 }
 
 
@@ -171,7 +178,7 @@ margin: 0 auto;
 .box-btn-register-feacebook{
     margin-left: 40px;
     height: 80px;
-    margin-top: 35px;
+    margin-top: 32px;
 }
 
 .line-register-s{
@@ -179,7 +186,7 @@ margin: 0 auto;
     height: 1px;
     width: 260px;
     margin-left: 60px;
-    margin-top: -10px;
+    margin-top: -13px;
 
 
 }
@@ -203,13 +210,20 @@ margin: 0 auto;
      color: #52504e;
 }
 
+a.sub-title-register-link:hover{
+
+
+     color: #a1a1a1;
+}
+
 
 .footer-txt-register{
-    margin-top: 20px;
+    margin-top: 23px;
     margin-left: 50px;
     color: #52504e;
     font-family: Helvetica;
     font-size: 14px;
+    font-weight: lighter;
 }
 
 .footer-txt-register-link
@@ -217,6 +231,14 @@ margin: 0 auto;
     color: #fd5b45;
     text-decoration: none;
 }
+
+a.footer-txt-register-link:hover
+{
+    color: #fb9486;
+
+}
+
+
 
 .box-register-form-wait
 {
@@ -264,7 +286,7 @@ margin: 0 auto;
     width: 280px;
     height: 45px;
     border-color: #cdcdcd;
-    border-width: 2px;
+    border-width: 1px;
     border-style: solid;
      -webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
@@ -277,7 +299,29 @@ margin: 0 auto;
 
     background-image: url("../imgs/nombre.png"); /* all icons in a single file */
     background-repeat: no-repeat;
-    background-position: 270px 11px; /* position of the right icon */
+    background-position: 267px 13px; /* position of the right icon */
+
+}
+
+.input-form-register-name-last{
+
+    width: 280px;
+    height: 45px;
+    border-color: #cdcdcd;
+    border-width: 1px;
+    border-style: solid;
+     -webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+    font-family: Helvetica;
+    color: #b5b5b5;
+    font-size: 16px;
+    font-weight: lighter;
+    padding-left: 15px;
+
+    background-image: url("../imgs/nombre-apellido.png"); /* all icons in a single file */
+    background-repeat: no-repeat;
+    background-position: 265px 14px; /* position of the right icon */
 
 }
 
@@ -287,7 +331,7 @@ margin: 0 auto;
     width: 280px;
     height: 45px;
     border-color: #cdcdcd;
-    border-width: 2px;
+    border-width: 1px;
     border-style: solid;
      -webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
@@ -300,7 +344,7 @@ margin: 0 auto;
 
     background-image: url("../imgs/correo.png"); /* all icons in a single file */
     background-repeat: no-repeat;
-    background-position: 270px 11px; /* position of the right icon */
+    background-position: 267px 13px; /* position of the right icon */
 
 }
 
@@ -310,7 +354,7 @@ margin: 0 auto;
     width: 280px;
     height: 45px;
     border-color: #cdcdcd;
-    border-width: 2px;
+    border-width: 1px;
     border-style: solid;
      -webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
@@ -323,7 +367,7 @@ margin: 0 auto;
 
     background-image: url("../imgs/contrasena.png"); /* all icons in a single file */
     background-repeat: no-repeat;
-    background-position: 270px 11px; /* position of the right icon */
+    background-position: 267px 11px; /* position of the right icon */
 
 }
 
@@ -331,7 +375,9 @@ margin: 0 auto;
 {
 
     margin-left: 40px;
-    margin-top: 46px;
+    margin-top: 42px;
+    cursor: pointer;
+
 }
 
 .btn-register-normal-img{
@@ -343,12 +389,17 @@ margin: 0 auto;
     font-size: 14px;
     color:#52504e;
     margin-left: 43px;
-    margin-top: 15px;
+    margin-top: 17px;
 }
 
 .form-register-footer-link{
     color:#fd5b45;
     text-decoration: none;
+}
+
+a.form-register-footer-link:hover{
+    color:#fb9587;
+
 }
 
 .header-header{
@@ -365,7 +416,7 @@ margin: 0 auto;
     display: none;
     background-color: #ffffff;
     width: 382px;
-    height: 455px;
+    height: 470px;
     -webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
@@ -404,6 +455,11 @@ margin: 0 auto;
     font-weight: lighter;
     text-decoration: none;
 
+}
+
+a.recovery-password-link:hover{
+
+    color: #fb9587;
 
 }
 
@@ -420,7 +476,7 @@ margin: 0 auto;
     font-size: 14px;
     color: #52504e;
     font-weight: lighter;
-    margin-top: 23px;
+    margin-top: 19px;
     margin-left: 16px;
 
 }
@@ -432,6 +488,14 @@ margin: 0 auto;
     font-size: 14px;
     color: #fd5b45;
     text-decoration: none;
+
+}
+
+a.footer-txt-login-link:hover{
+
+
+    color: #fb9587;
+
 
 }
 
@@ -454,7 +518,7 @@ margin: 0 auto;
 }
 
 .txt-header-name-user{
-    margin-left: 180px;
+    margin-left:300px;
     margin-top: 20px;
     font-weight:  normal;
     font-size: 14px;
@@ -464,15 +528,16 @@ margin: 0 auto;
 
 .txt-header-name-use-link{
 
-    color: #504e4e;
+    color: #616161;
     text-decoration: none;
+    font-weight: lighter;
 }
 
 .img-profile-header-no{
 
 
     margin-left: 18px;
-    margin-top: 13px;
+    margin-top: 11px;
 
 }
 
@@ -496,7 +561,7 @@ margin: 0 auto;
 
 .img-profile-header-yes-d{
         margin-left: 18px;
-        margin-top: 13px;
+        margin-top: 11px;
 
 }
 

@@ -3,6 +3,7 @@ body{
 	margin-top: 0px;
 	margin-left: 0px;
 	margin-right: 0px;
+    -webkit-font-smoothing:antialiased;
 }
 /* Aux Styles */
 .left{
@@ -85,20 +86,20 @@ body{
 	font-family: 'Roboto';
 	text-align: center;
 	color: #ffffff;
-    font-weight: 100;
-    font-size: 3.3125e;
-
+    font-size:50px;
+    letter-spacing: 0px;
+    -webkit-font-smoothing:antialiased;
 
 
 }
 
 .txtSearchC_TitleSub
 {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Roboto-Light';
 	text-align: center;
 	color: #ffffff;
 	font-size: 18px;
-	font-weight: lighter;
+	font-weight: 200;
 
 }
 
@@ -114,18 +115,19 @@ body{
 	background-color: #ffffff;
 	opacity: 1;
 	width: 750px;
-	height: 52px;
+	height: 50px;
 	border-color: #dcc9c7;
 	border-style: solid;
 	border-width: 4px;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
-	font-family: "Helvetica";
+	font-family: Helvetica;
 	color: #868383;
 	padding-left: 20px;
 	font-size: 16px;
 	font-weight: lighter;
+    text-decoration: none;
 }
 
 
@@ -133,7 +135,7 @@ body{
 {
 
 	width: 88px;
-	height: 44px;
+	height: 40px;
 	background-color: #fd5e48;
 	-webkit-border-radius: 3px;
 	-moz-border-radius:3px;
@@ -144,9 +146,18 @@ body{
 	font-size: 16px;	
 	text-align: center;
 	position: relative;
-	top: -53px;
-	left: 858px;
+	top: -50px;
+	left: 856px;
 	cursor: pointer;
+
+
+}
+
+
+.btnSearch:hover
+{
+
+	background-color: #fd6d57;
 
 
 }
@@ -154,10 +165,11 @@ body{
 .Link-Search{
 	text-decoration: none;
 	color: #ffffff;
+    font-weight: bold;
 }
 
 .SearchTxtB{
-	padding-top: 14px;
+	padding-top: 12px;
 
 }
 
@@ -303,6 +315,7 @@ body{
 	width: 1128px;
 	margin: 0 auto;
 	height: 80px;
+
 }
 
 
@@ -456,3 +469,20 @@ body{
 .top-f-x{
     margin-top: 20px;
 }
+
+
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 100;
+  src: url("Roboto-Thin.ttf");
+
+}
+
+
+@font-face {
+  font-family: 'Roboto-Light';
+  src: url("Roboto-Light.ttf");
+
+}
+
+

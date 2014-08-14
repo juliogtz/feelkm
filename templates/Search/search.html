@@ -100,14 +100,14 @@ $(function() {
                                             <!--El random: {{ value | shuffle }}-->
 
 
-                                         <img src="http://res.cloudinary.com/htyoqtggc/image/upload/h_130,w_200/{{ value | shuffle }}.jpg" width="200" height="130">
+                                         <img src="http://res.cloudinary.com/htyoqtggc/image/upload/h_130,w_200/{{ value | shuffle }}.jpg" width="140" height="90">
 
 
 
                                         {% else %}
 
 
-                                         <img src="/img/{{ arg.id }}/" width="200" height="130">
+                                         <img src="/img/{{ arg.id }}/" width="140" height="90">
 
 
                                         {% endif %}
@@ -162,8 +162,6 @@ $(function() {
 
 
                                             <br>
-
-
 
                                                     	<div class="Points_Item">
 
@@ -220,14 +218,14 @@ $(function() {
                                                             <div class="NumberOPItem left">{{ value.2 }} Opiniones</div>
                                                             <div class="clear"></div>
                                                         </div>
-                                                        <div class="CommentItem">
+                                                       <!-- <div class="CommentItem">
 
                                                             {% if value.1 != "" %}
 
                                                                 "{{ value.1 }}"
 
                                                             {% endif %}
-                                                        </div>
+                                                        </div>-->
 
 
                                                         </div>

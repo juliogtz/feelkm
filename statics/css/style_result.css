@@ -42,7 +42,7 @@ background-color: #ffffff;
 
 .inputSearchHi{
 	width: 250px;
-	height: 32px;
+	height: 28px;
 	background-color: #ffffff;
 	color: #9a9a9a;
 	font-family: "Helvetica";
@@ -57,7 +57,7 @@ background-color: #ffffff;
 
 	background-image: url("../imgs/iconSearchW.png"); /* all icons in a single file */
     background-repeat: no-repeat;
-    background-position: 10px 11px; /* position of the right icon */
+    background-position: 10px 9px; /* position of the right icon */
     font-weight: lighter;
 
 }
@@ -84,6 +84,13 @@ background-color: #ffffff;
 	font-weight: lighter;
 }
 
+.linkE:hover{
+
+
+	color: #858585;
+
+}
+
 .linkELR{
 
    font-family: "Helvetica";
@@ -98,6 +105,7 @@ background-color: #ffffff;
 	margin-left: 30px;
 	margin-top: 20px;
 }
+
 
 .linkHalf{
 	margin-left: 42px;
@@ -292,7 +300,7 @@ background-color: #ffffff;
 	font-family: Helvetica;
 	font-weight: bold;
 	color: #616161;
-	font-size: 16px;
+	font-size: 15px;
 	
 }
 
@@ -305,7 +313,7 @@ background-color: #ffffff;
 }
 
 .PlaceItem{
-	margin-top: 10px;
+	margin-top: 8px;
 	font-family: Helvetica;
 	font-weight: lighter;
 	color: #fd5b45;
@@ -321,7 +329,7 @@ background-color: #ffffff;
 }
 
 .dateItem{
-	margin-top: 15px;
+	margin-top: 8px;
 }
 
 .dateItemTxt{
@@ -333,12 +341,12 @@ background-color: #ffffff;
 }
 
 .Points_Item{
-	margin-top: 10px;
+	margin-top: -9px;
 }
 
 .FirtsFull{
-	width: 16px;
-	height: 16px;
+	width: 13px;
+	height: 13px;
 	background-color: #e8cb56;
 	-webkit-border-radius: 10px;
 	-moz-border-radius:10px;
@@ -346,8 +354,8 @@ background-color: #ffffff;
 }
 
 .FirstNoFull{
-    width: 14px;
-	height: 14px;
+    width: 9px;
+	height: 9px;
 	border-color: #e8cb56;
 	background-color: #ffffff;
 	border-style: solid;
@@ -358,18 +366,18 @@ background-color: #ffffff;
 }
 
 .NextFull{
-	width: 16px;
-	height: 16px;
+	width: 13px;
+	height: 13px;
 	background-color: #e8cb56;
 	-webkit-border-radius: 10px;
 	-moz-border-radius:10px;
 	border-radius: 10px;
-	margin-left: 10px;
+	margin-left: 5px;
 }
 
 .NextNoFull{
-	width: 14px;
-	height: 14px;
+	width: 9px;
+	height: 9px;
 	border-color: #e8cb56;
 	background-color: #ffffff;
 	border-style: solid;
@@ -377,7 +385,7 @@ background-color: #ffffff;
 	-webkit-border-radius: 10px;
 	-moz-border-radius:10px;
 	border-radius: 10px;
-	margin-left: 10px;
+	margin-left: 5px;
 }
 
 .NumberOPItem{
