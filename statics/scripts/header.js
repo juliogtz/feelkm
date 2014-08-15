@@ -248,6 +248,15 @@ $(function() {
         }});
 
 
+     $(document).click(function(){
+
+         if(STATUS_MENU_TOP_USER==1){
+
+                MenuTopUser();
+            }
+    });
+
+
 function getCookie(name) {
             var cookieValue = null;
             if (document.cookie && document.cookie != '') {
@@ -831,14 +840,7 @@ function getCookie(name) {
 
 
 
-    /*$(document).click(function(){
 
-         if(STATUS_MENU_TOP_USER==1){
-
-                MenuTopUser();
-            }
-
-    });*/
 
 
 
