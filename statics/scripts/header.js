@@ -843,8 +843,8 @@ function getCookie(name) {
 
        $("#box-access").click(function(){
 
-        $("#box-access").fadeOut("slow");
-        $("#box-register").fadeOut("slow");
+         $("#box-access").fadeOut("slow");
+         $("#box-register").fadeOut("slow");
          $("#box-register-form-wait").fadeOut("slow");
          $("#box-register-form").fadeOut("slow");
          $("#box-login-form-wait").fadeOut("slow");
