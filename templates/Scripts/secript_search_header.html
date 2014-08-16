@@ -21,7 +21,10 @@ function GoSearch()
 
 $("#menu-perfil-profile").click(function(){
 
+        alert("Hola");
 
+location.href="/km/{{ request.user.username  }}/"
 
-        location.href="/km/{{ request.user.username  }}/"
 });
+
+/* $(function() { */
