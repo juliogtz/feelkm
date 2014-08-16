@@ -831,10 +831,9 @@ function getCookie(name) {
        $(document).click(function(){
 
 
-
-       if(STATUS_MENU_TOP_USER==0){
+       if(STATUS_MENU_TOP_USER==1){
            $("#menu-top-header-options").fadeIn("slow");
-            STATUS_MENU_TOP_USER=1;
+            STATUS_MENU_TOP_USER=0;
        }
 
 
