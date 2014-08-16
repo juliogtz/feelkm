@@ -597,6 +597,7 @@ a.footer-txt-login-link:hover{
     height: 36px;
     margin-left: 0px;
     margin-top: 0px;
+    cursor: pointer;
 }
 
 .txt-box-menu-left{
@@ -908,7 +909,3 @@ a.footer-txt-login-link:hover{
 
 }
 
-.menu-perfil-profile{
-
-    cursor: pointer;
-}
