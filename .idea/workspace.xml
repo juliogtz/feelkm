@@ -23,12 +23,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="header.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="header.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/Home/header.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.26" vertical-offset="257" max-vertical-offset="1020">
-              <caret line="28" column="37" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="58" />
-              <folding />
+            <state vertical-scroll-proportion="0.4789644" vertical-offset="257" max-vertical-offset="1020">
+              <caret line="27" column="206" selection-start-line="27" selection-start-column="206" selection-end-line="27" selection-end-column="206" />
+              <folding>
+                <element signature="n#style#0;n#a#1;n#div#0;n#div#0;n#div#10;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -43,10 +45,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="header.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/statics/css/header.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.46242774" vertical-offset="9275" max-vertical-offset="13710">
+            <state vertical-scroll-proportion="-6.1538463" vertical-offset="9275" max-vertical-offset="13710">
               <caret line="629" column="19" selection-start-line="629" selection-start-column="19" selection-end-line="629" selection-end-column="19" />
               <folding />
             </state>
@@ -160,8 +162,8 @@
         <option value="$PROJECT_DIR$/statics/css/myprofile.css" />
         <option value="$PROJECT_DIR$/FeelKm/settings.py" />
         <option value="$PROJECT_DIR$/statics/scripts/header.js" />
-        <option value="$PROJECT_DIR$/templates/Home/header.html" />
         <option value="$PROJECT_DIR$/statics/css/header.css" />
+        <option value="$PROJECT_DIR$/templates/Home/header.html" />
       </list>
     </option>
   </component>
@@ -984,19 +986,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/Home/header.html">
+    <entry file="file://$PROJECT_DIR$/statics/css/header.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.26" vertical-offset="257" max-vertical-offset="1020">
-          <caret line="28" column="37" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="58" />
+        <state vertical-scroll-proportion="-6.1538463" vertical-offset="9275" max-vertical-offset="13710">
+          <caret line="629" column="19" selection-start-line="629" selection-start-column="19" selection-end-line="629" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/statics/css/header.css">
+    <entry file="file://$PROJECT_DIR$/templates/Home/header.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46242774" vertical-offset="9275" max-vertical-offset="13710">
-          <caret line="629" column="19" selection-start-line="629" selection-start-column="19" selection-end-line="629" selection-end-column="19" />
-          <folding />
+        <state vertical-scroll-proportion="0.4789644" vertical-offset="257" max-vertical-offset="1020">
+          <caret line="27" column="206" selection-start-line="27" selection-start-column="206" selection-end-line="27" selection-end-column="206" />
+          <folding>
+            <element signature="n#style#0;n#a#1;n#div#0;n#div#0;n#div#10;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
