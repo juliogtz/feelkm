@@ -235,26 +235,25 @@ $(function() {
             document.getElementById("user_user_login").value="";
             document.getElementById("password_user_login").value="";
 
-            //Close Menu
-
-            if(STATUS_MENU_TOP_USER==1){
-
-                MenuTopUser();
-            }
-
-
 
 
         }});
 
 
-     $(document).click(function(){
+
+
+     /*$(document).click(function(){
+
+
 
          if(STATUS_MENU_TOP_USER==1){
 
-                MenuTopUser();
+                $("#menu-top-header-options").fadeOut("slow");
             }
-    });
+
+
+    });*/
+
 
 
 function getCookie(name) {
@@ -811,6 +810,7 @@ function getCookie(name) {
         if(STATUS_MENU_TOP_USER==0){
            $("#menu-top-header-options").fadeIn("slow");
             STATUS_MENU_TOP_USER=1;
+
         }else{
 
              $("#menu-top-header-options").fadeOut("slow");
