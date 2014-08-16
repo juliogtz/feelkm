@@ -810,34 +810,25 @@ function getCookie(name) {
 
     }
 
-    $("#txt-header-name-user").click(function(){
+    $("#txt-header-name-user").mouseover(function(){
 
-        MenuTopUser();
+         $("#menu-top-header-options").fadeIn("slow");
+
 
     });
 
 
-     $("#img-profile-header-yes-d").click(function(){
+    $("#img-profile-header-no-div").mouseover(function(){
 
-        MenuTopUser();
-    });
-
-    $("#img-profile-header-no-div").click(function(){
-
-     MenuTopUser();
+     $("#menu-top-header-options").fadeIn("slow");
 
     });
 
        $(document).click(function(){
 
+       $("#menu-top-header-options").fadeOut("slow");
 
-       if(STATUS_MENU_TOP_USER==1){
-           $("#menu-top-header-options").fadeIn("slow");
-            STATUS_MENU_TOP_USER=0;
-       }
-
-
-    });
+       });
 
 
 
