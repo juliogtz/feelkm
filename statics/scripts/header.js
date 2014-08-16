@@ -832,7 +832,10 @@ function getCookie(name) {
 
 
 
-       alert(STATUS_MENU_TOP_USER);
+       if(STATUS_MENU_TOP_USER==0){
+           $("#menu-top-header-options").fadeIn("slow");
+            STATUS_MENU_TOP_USER=1;
+       }
 
 
     });
