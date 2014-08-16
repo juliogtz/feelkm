@@ -841,7 +841,7 @@ function getCookie(name) {
        });
 
 
-       $("box-access").click(function(){
+       $("#box-access").click(function(){
 
        alert("hey");
 
