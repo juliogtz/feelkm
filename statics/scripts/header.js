@@ -841,7 +841,10 @@ function getCookie(name) {
        });
 
 
-       $("#box-access").click(function(){
+
+
+
+       $('#box-access').on('click', function(e) {
 
          $("#box-access").fadeOut("slow");
          $("#box-register").fadeOut("slow");
@@ -853,7 +856,11 @@ function getCookie(name) {
          $("#box-recovery-form-wait-su").fadeOut("slow");
          $("#box-recovery-password").fadeOut("slow");
 
-       });
+
+        }).on('click', 'div', function(e) {
+            // clicked on descendant div
+            e.stopPropagation();
+        });
 
 
 
