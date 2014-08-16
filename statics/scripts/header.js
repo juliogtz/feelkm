@@ -841,6 +841,13 @@ function getCookie(name) {
        });
 
 
+       $("box-access").click(function(){
+
+       alert("hey");
+
+       });
+
+
 
 
 });
