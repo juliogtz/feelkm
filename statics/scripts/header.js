@@ -824,6 +824,16 @@ function getCookie(name) {
 
     });
 
+
+    $("#img-profile-header-yes").mouseover(function(){
+
+     $("#menu-top-header-options").fadeIn("slow");
+
+    });
+
+
+
+
        $(document).click(function(){
 
        $("#menu-top-header-options").fadeOut("slow");
