@@ -831,7 +831,8 @@ function getCookie(name) {
        $(document).click(function(){
 
 
-        MenuTopUser();
+
+       alert(STATUS_MENU_TOP_USER);
 
 
     });
