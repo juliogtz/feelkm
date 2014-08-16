@@ -818,7 +818,7 @@ function getCookie(name) {
     });
 
 
-    $("#img-profile-header-no-div").mouseover(function(){
+    $("#img-profile-header-yes-d").mouseover(function(){
 
      $("#menu-top-header-options").fadeIn("slow");
 
