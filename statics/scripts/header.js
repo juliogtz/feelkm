@@ -846,6 +846,8 @@ function getCookie(name) {
 
         $("#menu-perfil-profile").click(function(){
 
+        alert("/km/{{ request.user.username  }}/");
+
         location.href="/km/{{ request.user.username  }}/"
 
         });
