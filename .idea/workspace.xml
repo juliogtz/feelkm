@@ -23,11 +23,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="header.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="header.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/Home/header.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.16" vertical-offset="227" max-vertical-offset="1050">
-              <caret line="29" column="44" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
+            <state vertical-scroll-proportion="0.81877023" vertical-offset="227" max-vertical-offset="1050">
+              <caret line="32" column="22" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -43,10 +43,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="header.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/statics/css/header.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.46242774" vertical-offset="9275" max-vertical-offset="13710">
+            <state vertical-scroll-proportion="-6.1538463" vertical-offset="9275" max-vertical-offset="13710">
               <caret line="629" column="26" selection-start-line="629" selection-start-column="26" selection-end-line="629" selection-end-column="26" />
               <folding />
             </state>
@@ -160,8 +160,8 @@
         <option value="$PROJECT_DIR$/statics/css/myprofile.css" />
         <option value="$PROJECT_DIR$/FeelKm/settings.py" />
         <option value="$PROJECT_DIR$/statics/scripts/header.js" />
-        <option value="$PROJECT_DIR$/templates/Home/header.html" />
         <option value="$PROJECT_DIR$/statics/css/header.css" />
+        <option value="$PROJECT_DIR$/templates/Home/header.html" />
       </list>
     </option>
   </component>
@@ -984,18 +984,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/Home/header.html">
+    <entry file="file://$PROJECT_DIR$/statics/css/header.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.16" vertical-offset="227" max-vertical-offset="1050">
-          <caret line="29" column="44" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
+        <state vertical-scroll-proportion="-6.1538463" vertical-offset="9275" max-vertical-offset="13710">
+          <caret line="629" column="26" selection-start-line="629" selection-start-column="26" selection-end-line="629" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/statics/css/header.css">
+    <entry file="file://$PROJECT_DIR$/templates/Home/header.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46242774" vertical-offset="9275" max-vertical-offset="13710">
-          <caret line="629" column="26" selection-start-line="629" selection-start-column="26" selection-end-line="629" selection-end-column="26" />
+        <state vertical-scroll-proportion="0.81877023" vertical-offset="227" max-vertical-offset="1050">
+          <caret line="32" column="22" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
           <folding />
         </state>
       </provider>
