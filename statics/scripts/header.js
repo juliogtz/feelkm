@@ -841,6 +841,15 @@ function getCookie(name) {
        });
 
 
+        /* Click aux btn profile */
+
+
+        $("#menu-perfil-profile").click(function(){
+
+        location.href="/km/{{ request.user.username  }}/"
+
+        });
+
 
 
 
