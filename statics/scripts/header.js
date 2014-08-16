@@ -843,7 +843,15 @@ function getCookie(name) {
 
        $("#box-access").click(function(){
 
-       alert("hey");
+        $("#box-access").fadeOut("slow");
+        $("#box-register").fadeOut("slow");
+         $("#box-register-form-wait").fadeOut("slow");
+         $("#box-register-form").fadeOut("slow");
+         $("#box-login-form-wait").fadeOut("slow");
+         $("#box-login-form").fadeOut("slow");
+         $("#box-recovery-form-wait").fadeOut("slow");
+         $("#box-recovery-form-wait-su").fadeOut("slow");
+         $("#box-recovery-password"").fadeOut("slow");
 
        });
 
