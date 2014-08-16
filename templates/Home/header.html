@@ -23,13 +23,15 @@
             <div class="clear"></div>
             <div class="menu-top-header-options" id="menu-top-header-options">
 
+                <a href="/km/{{ request.user.username  }}/" class="txt-box-menu-left-link">
                 <div class="box-menu-profile" id="menu-perfil-profile">
 
-                    <div class="left txt-box-menu-left"><a href="/km/{{ request.user.username  }}/" class="txt-box-menu-left-link">Perfil</a><a href="/km/{{ request.user.username  }}/" style="color:#ffffff;">...........</a></div>
+                    <div class="left txt-box-menu-left"><a href="/km/{{ request.user.username  }}/" class="txt-box-menu-left-link">Perfil</a></div>
                     <div class="left img-box-menu-right-di"><a href="/km/{{ request.user.username  }}/" class="img-box-menu-right"><img src="/{{ STATIC_URL }}imgs/perfil.png" class="img-box-menu-right-img" border="0"></a></div>
                     <div class="clear"></div>
 
                 </div>
+                    </a>
 
                 <div class="line-box-menu-profile"></div>
 
