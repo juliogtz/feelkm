@@ -242,17 +242,7 @@ $(function() {
 
 
 
-     $(document).click(function(){
 
-
-          alert(STATUS_MENU_TOP_USER);
-         if(STATUS_MENU_TOP_USER==1){
-
-                $("#menu-top-header-options").fadeOut("slow");
-            }
-
-
-    });
 
 
 
@@ -834,10 +824,17 @@ function getCookie(name) {
 
     $("#img-profile-header-no-div").click(function(){
 
-        MenuTopUser();
+     MenuTopUser();
+
     });
 
+       $(document).click(function(){
 
+
+        MenuTopUser();
+
+
+    });
 
 
 
