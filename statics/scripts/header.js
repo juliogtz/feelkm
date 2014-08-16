@@ -242,17 +242,17 @@ $(function() {
 
 
 
-     /*$(document).click(function(){
+     $(document).click(function(){
 
 
-
+          alert(STATUS_MENU_TOP_USER);
          if(STATUS_MENU_TOP_USER==1){
 
                 $("#menu-top-header-options").fadeOut("slow");
             }
 
 
-    });*/
+    });
 
 
 
