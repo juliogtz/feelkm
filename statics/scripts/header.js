@@ -851,7 +851,7 @@ function getCookie(name) {
          $("#box-login-form").fadeOut("slow");
          $("#box-recovery-form-wait").fadeOut("slow");
          $("#box-recovery-form-wait-su").fadeOut("slow");
-         $("#box-recovery-password"").fadeOut("slow");
+         $("#box-recovery-password").fadeOut("slow");
 
        });
 
