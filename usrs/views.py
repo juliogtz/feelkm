@@ -101,7 +101,10 @@ def RecoveryPassword(request):
             if(str(email_exist)=="[]"):
                 return HttpResponse("0")
             else:
+                # Enviar mail:
+
                 return HttpResponse("1")
+
 
         else:
             return HttpResponseRedirect("/")

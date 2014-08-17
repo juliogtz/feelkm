@@ -841,9 +841,6 @@ function getCookie(name) {
        });
 
 
-
-
-
        $('#box-access').on('click', function(e) {
 
          $("#box-access").fadeOut("slow");
