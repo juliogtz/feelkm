@@ -104,11 +104,10 @@ def RecoveryPassword(request):
             else:
                 # Enviar mail:
                 try:
-                    send_mail("Recuperación de Contraseña", "Recuperar Msg","noreply@feelkm.com", [email_user])
-
+                    send_mail("Recuperaci&oacute;n de Contrasena", "Recuperar Msg","noreply@feelkm.com", [email_user])
 
                 except BadHeaderError:
-                    HttpResponse('Invalid header found.')
+                    HttpResponse('0')
 
                 return HttpResponse("1")
 
