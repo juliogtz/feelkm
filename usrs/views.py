@@ -9,6 +9,7 @@ from django.contrib.auth.hashers import make_password
 
 from api.models import users, events, comments_events, events_favorites, photos
 from django.views.decorators.cache import cache_page
+from django.core.mail import send_mail, BadHeaderError
 
 
 """
@@ -102,6 +103,12 @@ def RecoveryPassword(request):
                 return HttpResponse("0")
             else:
                 # Enviar mail:
+                try:
+                    send_mail("Recuperación de Contraseña", "Recuperar Msg","noreply@feelkm.com", [email_user])
+
+
+                except BadHeaderError:
+                    HttpResponse('Invalid header found.')
 
                 return HttpResponse("1")
 
