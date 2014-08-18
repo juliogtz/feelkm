@@ -103,12 +103,13 @@ def RecoveryPassword(request):
                 return HttpResponse("0")
             else:
                 # Enviar mail:
-                try:
+                return HttpResponse("1")
+                """try:
                     send_mail("Recuperar", "Recuperar Msg", "noreply@feelkm.com",email_user)
                     return HttpResponse("1")
 
                 except BadHeaderError:
-                    HttpResponse('0')
+                    HttpResponse('0')"""
 
         else:
             return HttpResponseRedirect("/")
