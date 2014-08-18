@@ -104,7 +104,7 @@ def RecoveryPassword(request):
             else:
                 # Enviar mail:
                 try:
-                    send_mail("Recuperaci&oacute;n de Contrasena", "Recuperar Msg", "noreply@feelkm.com", [email_user])
+                    send_mail("Recuperar", "Recuperar Msg", "noreply@feelkm.com",email_user)
                     return HttpResponse("1")
 
                 except BadHeaderError:
