@@ -22,7 +22,7 @@ cloudinary.config(
 )
 
 # Create your views here.
-
+@cache_page(60)
 def LandingWeb(request):
     if request.user.is_active:
         if request.user.is_authenticated:

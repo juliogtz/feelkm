@@ -356,7 +356,8 @@ function getCookie(name) {
             if(msg=="1"){
 
                  $("#txt-alert-box" ).html("");
-                 window.location.href = document.URL;
+                 /*window.location.href = document.URL;*/
+                 document.location.reload(true);
              }
 
              if(msg=="0"){
@@ -494,7 +495,8 @@ function getCookie(name) {
 
             if(msg=="1"){
 
-                 window.location.href = document.URL;
+                 //window.location.href = document.URL;
+                 document.location.reload(true)
              }
 
              if(msg=="0"){
