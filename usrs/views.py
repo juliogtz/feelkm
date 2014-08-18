@@ -103,6 +103,7 @@ def RecoveryPassword(request):
                 return HttpResponse("0")
             else:
                 # Enviar mail:
+                send_mail("Recuperar", "Recuperar Msg", "noreply@feelkm.com", email_user)
                 return HttpResponse("1")
                 """try:
                     send_mail("Recuperar", "Recuperar Msg", "noreply@feelkm.com",email_user)
