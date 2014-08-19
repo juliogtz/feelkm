@@ -67,7 +67,7 @@ urlpatterns = patterns('',
 
     #Control de Favorites Events:
     url(r'favorites/','websearch.views.favorites'),
-    url(r'^fav-delete/(?P<id_event>.*)/$','usrs.views.delFavorites'),
+    url(r'^fav-delete/(?P<id>\d+)/$','usrs.views.delFavorites'),
 
 
 
