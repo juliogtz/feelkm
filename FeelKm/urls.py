@@ -69,6 +69,9 @@ urlpatterns = patterns('',
     url(r'favorites/','websearch.views.favorites'),
     url(r'^fav-delete/(?P<id>\d+)/$','usrs.views.delFavorites'),
 
+    #Control Comments:
+    url(r'^comment-delete/(?P<id>\d+)/$','usrs.views.delComment'),
+
 
 
 

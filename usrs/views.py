@@ -287,3 +287,26 @@ def delFavorites(request, id):
             return HttpResponseRedirect("/")
     else:
         return HttpResponseRedirect("/")
+
+
+def delComment(request, id):
+
+    if request.user.is_active:
+        if request.user.is_authenticated:
+
+            #id_event = events.objects.get(id=int(id))
+            id_user_instance = User.objects.get(id=request.user.id)
+
+            try:
+                comment=comments_events.objects.get(id=id, id_user_admin=id_user_instance)
+                comment.delete()
+
+                return HttpResponseRedirect("/km/"+request.user.username+"/")
+
+            except:
+                return HttpResponseRedirect("/km/"+request.user.username+"/")
+
+        else:
+            return HttpResponseRedirect("/")
+    else:
+        return HttpResponseRedirect("/")
