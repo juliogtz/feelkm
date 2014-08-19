@@ -1296,3 +1296,20 @@ font-weight:normal;
     background-color: #dbdbdb;
     margin-top: 28px;
 }
+
+.del-favorites-element
+{
+    margin-top: 14px;
+    font-family: "Helvetica Neue";
+    color:#a4a4a4;
+    font-size: 13px;
+
+}
+
+
+.del-favorites-element-a{
+    text-decoration: none;
+    color:#a4a4a4;
+
+}
+

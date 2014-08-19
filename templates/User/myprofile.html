@@ -183,6 +183,10 @@ $(function() {
                         <div class="left left-ele-data-pro">
                             <div class="title-el-event">{{ list_events_f.id_event.name_event }}</div>
                             <div class="title-el-event-city">{{ list_events_f.id_event.city | truncatewords_by_chars:20 }}, {{ list_events_f.id_event.region | truncatewords_by_chars:20 }}, {{ list_events_f.id_event.country }}</div>
+                            <div class="del-favorites-element">
+                                <a href="" class="del-favorites-element-a"><img src="/{{ STATIC_URL }}imgs/icon_del.png"> Eliminar</a>
+                            </div>
+
                         </div>
 
                         <div class="left date-favor">
