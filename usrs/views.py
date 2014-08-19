@@ -314,4 +314,15 @@ def delComment(request, id):
 
 def EditMyProfile(request,):
 
-    return HttpResponse("Edit")
+        if request.user.is_active:
+                if request.user.is_authenticated:
+
+                    return render(request, 'User/editProfile.html', {
+
+                        })
+                else:
+                     DATALOGIN="0"
+                     return HttpResponseRedirect("/")
+        else:
+            DATALOGIN = "0"
+            return HttpResponseRedirect("/")
