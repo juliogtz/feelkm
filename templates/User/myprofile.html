@@ -386,8 +386,8 @@ $(function() {
                             <div class="txt-title-event-compl-add"> {{ list_comments.comments.comment }} </div>
 
                            <div class="del-favorites-element">
-                                <div class="left del-favorites-element_1"><a href="/fav-delete/{{ list_events_f.id_event.id }}/" class="del-favorites-element-a"><img src="/{{ STATIC_URL }}imgs/icon_del.png"></a></div>
-                                <div class="left del-favorites-element_2"><a href="/fav-delete/{{ list_events_f.id_event.id }}/" class="del-favorites-element-a">Eliminar de Favoritos</a></div>
+                                <div class="left del-favorites-element_1"><a href="/comment-delete/{{ list_comments.comments.id }}/" class="del-favorites-element-a"><img src="/{{ STATIC_URL }}imgs/icon_del.png"></a></div>
+                                <div class="left del-favorites-element_2"><a href="/comment-delete/{{ list_comments.comments.id }}/" class="del-favorites-element-a">Eliminar de Favoritos</a></div>
                                 <div class="clear"></div>
                            </div>
 
