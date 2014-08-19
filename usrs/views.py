@@ -268,5 +268,22 @@ def LogoutUser(request):
 
 def delFavorites(request, id):
 
+    if request.user.is_active:
+        if request.user.is_authenticated:
 
-    return HttpResponse(str(id))
+            id_event = events.objects.get(id=int(id))
+            id_user_instance = User.objects.get(id=request.user.id)
+
+            try:
+                favorite=events_favorites.objects.get(id_event=id_event, id_user_admin=id_user_instance)
+                favorite.delete()
+
+                return HttpResponseRedirect("/km/"+request.user.username+"/")
+
+            except:
+                return HttpResponseRedirect("/km/"+request.user.username+"/")
+
+        else:
+            return HttpResponseRedirect("/")
+    else:
+        return HttpResponseRedirect("/")
