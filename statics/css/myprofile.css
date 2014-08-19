@@ -1306,6 +1306,16 @@ font-weight:normal;
 
 }
 
+.del-comments-element
+{
+    margin-top: 14px;
+    font-family: "Helvetica Neue";
+    color:#a4a4a4;
+    font-size: 13px;
+    margin-left: 66px;
+
+}
+
 
 .del-favorites-element-a{
     text-decoration: none;
