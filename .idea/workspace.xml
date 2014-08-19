@@ -23,21 +23,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="myprofile.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="myprofile.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/User/myprofile.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.74" vertical-offset="2703" max-vertical-offset="6885">
-              <caret line="186" column="50" selection-start-line="186" selection-start-column="50" selection-end-line="186" selection-end-column="73" />
+            <state vertical-scroll-proportion="0.44486693" vertical-offset="2688" max-vertical-offset="6915">
+              <caret line="187" column="100" selection-start-line="187" selection-start-column="100" selection-end-line="187" selection-end-column="100" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="myprofile.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="myprofile.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/statics/css/myprofile.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4" vertical-offset="19515" max-vertical-offset="19860">
-              <caret line="1309" column="20" selection-start-line="1309" selection-start-column="20" selection-end-line="1309" selection-end-column="20" />
+            <state vertical-scroll-proportion="-9.807693" vertical-offset="19545" max-vertical-offset="19920">
+              <caret line="1320" column="25" selection-start-line="1320" selection-start-column="25" selection-end-line="1320" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -91,8 +91,8 @@
         <option value="$PROJECT_DIR$/FeelKm/settings.py" />
         <option value="$PROJECT_DIR$/websearch/views.py" />
         <option value="$PROJECT_DIR$/statics/scripts/header.js" />
-        <option value="$PROJECT_DIR$/templates/User/myprofile.html" />
         <option value="$PROJECT_DIR$/statics/css/myprofile.css" />
+        <option value="$PROJECT_DIR$/templates/User/myprofile.html" />
       </list>
     </option>
   </component>
@@ -818,18 +818,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/User/myprofile.html">
+    <entry file="file://$PROJECT_DIR$/statics/css/myprofile.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.74" vertical-offset="2703" max-vertical-offset="6885">
-          <caret line="186" column="50" selection-start-line="186" selection-start-column="50" selection-end-line="186" selection-end-column="73" />
+        <state vertical-scroll-proportion="-9.807693" vertical-offset="19545" max-vertical-offset="19920">
+          <caret line="1320" column="25" selection-start-line="1320" selection-start-column="25" selection-end-line="1320" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/statics/css/myprofile.css">
+    <entry file="file://$PROJECT_DIR$/templates/User/myprofile.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4" vertical-offset="19515" max-vertical-offset="19860">
-          <caret line="1309" column="20" selection-start-line="1309" selection-start-column="20" selection-end-line="1309" selection-end-column="20" />
+        <state vertical-scroll-proportion="0.44486693" vertical-offset="2688" max-vertical-offset="6915">
+          <caret line="187" column="100" selection-start-line="187" selection-start-column="100" selection-end-line="187" selection-end-column="100" />
           <folding />
         </state>
       </provider>
