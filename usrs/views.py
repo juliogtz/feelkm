@@ -310,3 +310,8 @@ def delComment(request, id):
             return HttpResponseRedirect("/")
     else:
         return HttpResponseRedirect("/")
+
+
+def EditMyProfile(request, username):
+
+    return HttpResponse("editar")

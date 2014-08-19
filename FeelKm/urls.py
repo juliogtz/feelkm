@@ -57,6 +57,7 @@ urlpatterns = patterns('',
 
     #Profile User:
     url(r'^km/(?P<username>.*)/$','usrs.views.MyProfile'),
+    url(r'^km/(?P<username>.*)/edit/$','usrs.views.EditMyProfile'),
 
 
     #Privacy and Legal Information
