@@ -266,7 +266,7 @@ def LogoutUser(request):
     return HttpResponseRedirect("/")
 
 
-def delFavorites(request, id_event):
+def delFavorites(request, id):
 
 
-    return HttpResponseRedirect(str(id_event))
+    return HttpResponseRedirect(str(id))
