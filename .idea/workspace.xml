@@ -23,11 +23,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="myprofile.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="myprofile.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/User/myprofile.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5625" vertical-offset="5685" max-vertical-offset="7005">
-              <caret line="388" column="79" selection-start-line="388" selection-start-column="79" selection-end-line="388" selection-end-column="79" />
+            <state vertical-scroll-proportion="-3.1" vertical-offset="1420" max-vertical-offset="7005">
+              <caret line="105" column="21" selection-start-line="105" selection-start-column="21" selection-end-line="105" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -85,11 +85,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="myprofile.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="myprofile.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/statics/css/myprofile.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.4615383" vertical-offset="19478" max-vertical-offset="20070">
-              <caret line="1308" column="1" selection-start-line="1308" selection-start-column="1" selection-end-line="1308" selection-end-column="21" />
+            <state vertical-scroll-proportion="0.1696751" vertical-offset="15328" max-vertical-offset="20070">
+              <caret line="1025" column="19" selection-start-line="1025" selection-start-column="19" selection-end-line="1025" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -141,10 +141,10 @@
         <option value="$PROJECT_DIR$/websearch/views.py" />
         <option value="$PROJECT_DIR$/statics/scripts/header.js" />
         <option value="$PROJECT_DIR$/FeelKm/settings.py" />
-        <option value="$PROJECT_DIR$/statics/css/myprofile.css" />
-        <option value="$PROJECT_DIR$/templates/User/myprofile.html" />
         <option value="$PROJECT_DIR$/FeelKm/urls.py" />
         <option value="$PROJECT_DIR$/usrs/views.py" />
+        <option value="$PROJECT_DIR$/templates/User/myprofile.html" />
+        <option value="$PROJECT_DIR$/statics/css/myprofile.css" />
       </list>
     </option>
   </component>
@@ -823,14 +823,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/statics/css/myprofile.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.4615383" vertical-offset="19478" max-vertical-offset="20070">
-          <caret line="1308" column="1" selection-start-line="1308" selection-start-column="1" selection-end-line="1308" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/websearch/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.5384617" vertical-offset="6790" max-vertical-offset="7215">
@@ -855,14 +847,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/usrs/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="4165" max-vertical-offset="4605">
-          <caret line="301" column="32" selection-start-line="301" selection-start-column="32" selection-end-line="301" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/FeelKm/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-8.423077" vertical-offset="861" max-vertical-offset="1335">
@@ -873,10 +857,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/usrs/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="4165" max-vertical-offset="4605">
+          <caret line="301" column="32" selection-start-line="301" selection-start-column="32" selection-end-line="301" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/User/myprofile.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5625" vertical-offset="5685" max-vertical-offset="7005">
-          <caret line="388" column="79" selection-start-line="388" selection-start-column="79" selection-end-line="388" selection-end-column="79" />
+        <state vertical-scroll-proportion="-3.1" vertical-offset="1420" max-vertical-offset="7005">
+          <caret line="105" column="21" selection-start-line="105" selection-start-column="21" selection-end-line="105" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/statics/css/myprofile.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1696751" vertical-offset="15328" max-vertical-offset="20070">
+          <caret line="1025" column="19" selection-start-line="1025" selection-start-column="19" selection-end-line="1025" selection-end-column="19" />
           <folding />
         </state>
       </provider>
