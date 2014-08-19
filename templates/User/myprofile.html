@@ -184,7 +184,7 @@ $(function() {
                             <div class="title-el-event">{{ list_events_f.id_event.name_event }}</div>
                             <div class="title-el-event-city">{{ list_events_f.id_event.city | truncatewords_by_chars:20 }}, {{ list_events_f.id_event.region | truncatewords_by_chars:20 }}, {{ list_events_f.id_event.country }}</div>
                             <div class="del-favorites-element">
-                                <div class="left del-favorites-element_1"><a href="/favorites-delete/{{ list_events_f.id_event.id }}/" class="del-favorites-element-a"><img src="/{{ STATIC_URL }}imgs/icon_del.png"></a></div>
+                                <div class="left del-favorites-element_1"><a href="/fav-delete/{{ list_events_f.id_event.id }}/" class="del-favorites-element-a"><img src="/{{ STATIC_URL }}imgs/icon_del.png"></a></div>
                                 <div class="left del-favorites-element_2"><a href="" class="del-favorites-element-a">Eliminar de Favoritos</a></div>
                                 <div class="clear"></div>
                             </div>
