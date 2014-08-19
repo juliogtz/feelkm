@@ -269,4 +269,4 @@ def LogoutUser(request):
 def delFavorites(request, id):
 
 
-    return HttpResponseRedirect(str(id))
+    return HttpResponse(str(id))
