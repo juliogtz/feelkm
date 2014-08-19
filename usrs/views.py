@@ -312,6 +312,6 @@ def delComment(request, id):
         return HttpResponseRedirect("/")
 
 
-def EditMyProfile(request, username):
+def EditMyProfile(request,):
 
-    return HttpResponseRedirect("http://www.google.com")
+    return HttpResponse("Edit")
