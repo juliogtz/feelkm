@@ -314,4 +314,4 @@ def delComment(request, id):
 
 def EditMyProfile(request, username):
 
-    return HttpResponse("editar")
+    return HttpResponseRedirect("http://www.google.com")
