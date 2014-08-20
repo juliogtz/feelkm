@@ -1536,7 +1536,7 @@ font-weight:normal;
 
 .move-back-profile-btn{
 
-    padding-left: 18px;
+    padding-left: 16px;
     padding-top: 16px;
 }
 
@@ -1550,4 +1550,8 @@ font-weight:normal;
     color:#ffffff;
     text-decoration: none;
 
+}
+
+.move-link-back-x{
+    margin-left: 15px;
 }
