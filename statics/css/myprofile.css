@@ -1354,6 +1354,7 @@ font-weight:normal;
     border-width: 1px;
     border-bottom-width: 0px;
     background-color: #ffffff;
+    margin-top: 0px;
 }
 
 .line-edit-pro-btn{
@@ -1403,7 +1404,7 @@ font-weight:normal;
 }
 
 
-.link-left-btn-edi-pro
+.link-left-btn-edi-pro-active
 {
     font-family: "Helvetica Neue";
     font-size: 14px;
@@ -1411,3 +1412,13 @@ font-weight:normal;
     text-decoration: none;
 
 }
+
+.link-left-btn-edi-pro-no-active{
+
+    font-family: "Helvetica Neue";
+    font-size: 14px;
+    color: #4c4c4c;
+    text-decoration: none;
+
+}
+
