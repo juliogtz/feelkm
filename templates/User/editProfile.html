@@ -427,7 +427,7 @@ $("#btn-change-password-action").click(function(){
 
             <div class="content-info-change-password" id="content-info-change-password">
 
-
+            <form method="post">{% csrf_token %}
                 <div class="info-gen-form-change">
 
                     <div class="left info-gen-form-part1">
@@ -462,7 +462,7 @@ $("#btn-change-password-action").click(function(){
 
 
                 </div>
-
+            </form>
 
             </div>
 
