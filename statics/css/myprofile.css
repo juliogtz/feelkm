@@ -1448,7 +1448,7 @@ font-weight:normal;
 .content-info-general{
 
     width: 655px;
-    height: 563px;
+    height: 650px;
     background-color: #ffffff;
     margin-top: 0px;
     border-width: 1px;
@@ -1741,4 +1741,28 @@ width: 212px;
     color: #4c4c4c;
     font-weight: normal;
 
+}
+
+
+.btn-change-data-b{
+
+        width: 153px;
+        height: 35px;
+        background-color: #ff5b42;
+        border-radius:4px ;
+        -webkit-border-radius: 4px;
+	    -moz-border-radius: 4px;
+        margin-top: 22px;
+}
+
+.txt-btn-cc-link{
+    font-family: "Helvetica Neue";
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.txt-btn-cc{
+    padding-top: 11px;
+    padding-left: 19px;
 }
