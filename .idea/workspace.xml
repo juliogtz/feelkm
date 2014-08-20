@@ -33,21 +33,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="myprofile.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="myprofile.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/statics/css/myprofile.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.1538463" vertical-offset="25220" max-vertical-offset="25560">
-              <caret line="1692" column="0" selection-start-line="1692" selection-start-column="0" selection-end-line="1692" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.65" vertical-offset="25305" max-vertical-offset="25605">
+              <caret line="1700" column="13" selection-start-line="1700" selection-start-column="13" selection-end-line="1700" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="editProfile.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="editProfile.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/User/editProfile.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8333333" vertical-offset="4005" max-vertical-offset="5025">
-              <caret line="280" column="30" selection-start-line="280" selection-start-column="30" selection-end-line="280" selection-end-column="30" />
+            <state vertical-scroll-proportion="-1.8987342" vertical-offset="4110" max-vertical-offset="5145">
+              <caret line="284" column="59" selection-start-line="284" selection-start-column="59" selection-end-line="284" selection-end-column="82" />
               <folding />
             </state>
           </provider>
@@ -122,8 +122,8 @@
         <option value="$PROJECT_DIR$/templates/User/myprofile.html" />
         <option value="$PROJECT_DIR$/usrs/views.py" />
         <option value="$PROJECT_DIR$/FeelKm/settings.py" />
-        <option value="$PROJECT_DIR$/statics/css/myprofile.css" />
         <option value="$PROJECT_DIR$/templates/User/editProfile.html" />
+        <option value="$PROJECT_DIR$/statics/css/myprofile.css" />
       </list>
     </option>
   </component>
@@ -904,18 +904,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/statics/css/myprofile.css">
+    <entry file="file://$PROJECT_DIR$/templates/User/editProfile.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.1538463" vertical-offset="25220" max-vertical-offset="25560">
-          <caret line="1692" column="0" selection-start-line="1692" selection-start-column="0" selection-end-line="1692" selection-end-column="0" />
+        <state vertical-scroll-proportion="-1.8987342" vertical-offset="4110" max-vertical-offset="5145">
+          <caret line="284" column="59" selection-start-line="284" selection-start-column="59" selection-end-line="284" selection-end-column="82" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/User/editProfile.html">
+    <entry file="file://$PROJECT_DIR$/statics/css/myprofile.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8333333" vertical-offset="4005" max-vertical-offset="5025">
-          <caret line="280" column="30" selection-start-line="280" selection-start-column="30" selection-end-line="280" selection-end-column="30" />
+        <state vertical-scroll-proportion="0.65" vertical-offset="25305" max-vertical-offset="25605">
+          <caret line="1700" column="13" selection-start-line="1700" selection-start-column="13" selection-end-line="1700" selection-end-column="13" />
           <folding />
         </state>
       </provider>
