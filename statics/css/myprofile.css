@@ -1400,6 +1400,11 @@ font-weight:normal;
 }
 
 .link-txt-left-edit-pro{
+    margin-left: 13px;
+    margin-top: 15px;
+}
+
+.link-txt-left-edit-pro2{
     margin-left: 15px;
     margin-top: 15px;
 }
