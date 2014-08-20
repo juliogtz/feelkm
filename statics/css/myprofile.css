@@ -1454,6 +1454,20 @@ font-weight:normal;
 
 }
 
+.content-info-change-password{
+
+    width: 655px;
+    height: 563px;
+    background-color: #ffffff;
+    margin-top: 0px;
+    border-width: 1px;
+    border-color: #dbdbdb;
+    border-style: solid;
+    border-bottom-width: 0px;
+    border-top-width: 0px;
+
+}
+
 
 .bottom-edit-data
 {
