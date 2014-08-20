@@ -1678,3 +1678,8 @@ width: 132px;
 .input-select-op-day{
    width: 60px;
 }
+
+.left-day-select
+{
+    margin-left: 14px;
+}
