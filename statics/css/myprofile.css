@@ -1530,10 +1530,16 @@ font-weight:normal;
     border-bottom-width: 0px;
     background-color: #bebfc4;
     margin-top: 15px;
-     padding-left: 20px;
-    padding-top: 16px;
 
 }
+
+
+.move-back-profile-btn{
+
+    padding-left: 20px;
+    padding-top: 16px;
+}
+
 
 .link-back-profile
 {
