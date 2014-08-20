@@ -1659,7 +1659,7 @@ font-weight:normal;
 	-moz-border-radius: 4px;
     border-style: solid;
     border-width: 1px;
-    background-color: #f2f2f2;
+    background-color: #ffffff;
     font-family: "Helvetica Neue";
     padding-left: 13px;
     font-size: 14px;
@@ -1683,3 +1683,16 @@ width: 132px;
 {
     margin-left: 14px;
 }
+
+
+
+.top-select-year
+{
+    margin-top: 45px;
+}
+
+
+.input-select-op-year{
+    width: 80px;
+}
+
