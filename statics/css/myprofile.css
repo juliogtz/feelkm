@@ -1381,6 +1381,7 @@ font-weight:normal;
     width: 3px;
     background-color:#fb5f3e;
     height: 47px;
+    border-top-left-radius: 4px;
 }
 
 .left-btn-bar-status-no-active{
