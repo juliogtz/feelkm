@@ -1698,5 +1698,9 @@ width: 132px;
 
 
 .input-select-op-country{
-width: 210px;
+width: 212px;
+}
+
+.top-country-form{
+    margin-top:13px ;
 }
