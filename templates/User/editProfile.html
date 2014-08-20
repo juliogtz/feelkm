@@ -128,6 +128,67 @@ $(function() {
 
     });
 
+
+$("#link-change-pic-txt").click(function(){
+
+      function getCookie(name) {
+            var cookieValue = null;
+            if (document.cookie && document.cookie != '') {
+                var cookies = document.cookie.split(';');
+                for (var i = 0; i < cookies.length; i++) {
+                    var cookie = jQuery.trim(cookies[i]);
+                    // Does this cookie string begin with the name we want?
+                    if (cookie.substring(0, name.length + 1) == (name + '=')) {
+                        cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                        break;
+                    }
+                }
+            }
+            return cookieValue;
+        }
+
+            var csrftoken = getCookie('csrftoken');
+
+
+                        $.ajaxSetup({
+                            beforeSend: function(xhr, settings) {
+                                if (!csrfSafeMethod(settings.type) && !this.crossDomain) {
+                                    xhr.setRequestHeader("X-CSRFToken", csrftoken);
+                                }
+                            }
+
+
+       $.ajax({
+             type: "POST", url: "/change-password/",
+             data: {
+                     currentpassword: $("#current-password").val(),
+                     newpassword:$("#new-password").val()
+
+                    }
+
+         }) .done(function( msg ) {
+
+            alert(msg);
+
+            if(msg=="1"){
+
+
+             }
+
+             if(msg=="0"){
+                 //alert("Error login")
+
+                  $("#txt-alert-box-login" ).html("Error, intente otra vez.");t
+                  $("#box-login-form-wait").fadeOut("fast");
+                  $("#box-login-form").fadeIn( "fast");
+             }
+
+         });
+
+      });
+
+
+
 });
 
 {% include "Scripts/secript_search_header.html" %}
@@ -206,7 +267,7 @@ $(function() {
                 <div class="left info-gen-pic">
 
                     <img src="/{{ STATIC_URL }}imgs/perfil-b.png" class="img-profile-style">
-                    <div class="div-btn-change-pic"><a href="#" class="link-change-pic-txt">Cambiar</a></div>
+                    <div class="div-btn-change-pic"><a href="javascript:void(0)" class="link-change-pic-txt">Cambiar</a></div>
 
                 </div>
                 <div class="left info-gen-line"></div>
@@ -371,7 +432,7 @@ $(function() {
 
                         <div class="title-form-field">Contrase&ntilde;a actual</div>
                         <div class="top-field-form-1">
-                            <input type="text" class="input-text-form-e">
+                            <input type="password" class="input-text-form-e" name="current-password" id="current-password">
                         </div>
 
 
@@ -381,7 +442,7 @@ $(function() {
                     <div class="left info-gen-form-part2">
                         <div class="title-form-field">Nueva Contrase&ntilde;a</div>
                         <div class="top-field-form-1">
-                            <input type="text" class="input-text-form-e">
+                            <input type="password" class="input-text-form-e" name="new-password" id="new-password">
                         </div>
 
 
@@ -392,7 +453,7 @@ $(function() {
 
                     <div class="btn-change-data-p">
 
-                         <div class="txt-btn-cc"><a href="#" class="txt-btn-cc-link">Cambiar</a></div>
+                         <div class="txt-btn-cc"><a href="#" class="txt-btn-cc-link" id="btn-change-password-action">Cambiar</a></div>
 
                     </div>
 
@@ -404,9 +465,13 @@ $(function() {
             </div>
 
             <div class="bottom-edit-data">
+
                 <div class="bottom-alert-status-perfil">
                     <div class="left"><img src="/{{ STATIC_URL }}imgs/cambios-enviados.png" width="20" height="20"></div>
-                    <div class="left txt-alert-status-b">Cambios guardados satisfacoriamente</div>
+
+
+                    <div class="left txt-alert-status-b" id="status-content-operation">Cambios guardados satisfacoriamente</div>
+
                     <div class="clear"></div>
                 </div>
 

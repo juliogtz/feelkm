@@ -331,3 +331,30 @@ def EditMyProfile(request,):
         else:
             DATALOGIN = "0"
             return HttpResponseRedirect("/")
+
+
+def ChangePassword(request):
+
+     if request.user.is_active:
+                if request.user.is_authenticated:
+                    if request.method == 'GET':
+                        return HttpResponseRedirect("/")
+                    else:
+
+                        #DATALOGIN_ID=request.user.id
+                        #DATALOGIN = users.objects.get(id_user_admin_id=DATALOGIN_ID)
+
+                        current_password=request.POST['currentpassword']
+                        newpassword=request.POST['newpassword']
+
+                        if(current_password == "" or newpassword == "" or current_password == None or newpassword == None ):
+                            HttpResponse("0")
+                        else:
+                            HttpResponse("1" +current_password + " - "+newpassword)
+
+                else:
+
+                     return HttpResponseRedirect("/")
+     else:
+
+            return HttpResponseRedirect("/")

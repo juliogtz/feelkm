@@ -44,6 +44,8 @@ urlpatterns = patterns('',
     url(r'^logout/$','usrs.views.LogoutUser'),
     # Recovery Ajax
     url(r'^recovery/$','usrs.views.RecoveryPassword'),
+    # Change Password
+    url(r'^change-password/$','usrs.views.ChangePassword'),
     # Register Ajax Facebook Validate
     url(r'^facebook-register/$','usrs.views.Facebook_Register'),
     # Specific Event

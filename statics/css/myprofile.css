@@ -1520,6 +1520,7 @@ font-weight:normal;
 .bottom-alert-status-perfil{
     padding-left: 20px;
     padding-top: 16px;
+    display: none;
 }
 
 
