@@ -46,8 +46,8 @@
       <file leaf-file-name="editProfile.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/User/editProfile.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.54372627" vertical-offset="2647" max-vertical-offset="3450">
-              <caret line="186" column="36" selection-start-line="186" selection-start-column="36" selection-end-line="186" selection-end-column="36" />
+            <state vertical-scroll-proportion="0.31558937" vertical-offset="2692" max-vertical-offset="3450">
+              <caret line="185" column="70" selection-start-line="185" selection-start-column="70" selection-end-line="185" selection-end-column="70" />
               <folding />
             </state>
           </provider>
@@ -56,8 +56,8 @@
       <file leaf-file-name="myprofile.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/User/myprofile.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="675" max-vertical-offset="7005">
-              <caret line="82" column="58" selection-start-line="82" selection-start-column="58" selection-end-line="82" selection-end-column="76" />
+            <state vertical-scroll-proportion="-1.74" vertical-offset="1233" max-vertical-offset="7005">
+              <caret line="88" column="38" selection-start-line="88" selection-start-column="38" selection-end-line="88" selection-end-column="67" />
               <folding />
             </state>
           </provider>
@@ -122,8 +122,8 @@
         <option value="$PROJECT_DIR$/templates/User/myprofile.html" />
         <option value="$PROJECT_DIR$/usrs/views.py" />
         <option value="$PROJECT_DIR$/FeelKm/settings.py" />
-        <option value="$PROJECT_DIR$/templates/User/editProfile.html" />
         <option value="$PROJECT_DIR$/statics/css/myprofile.css" />
+        <option value="$PROJECT_DIR$/templates/User/editProfile.html" />
       </list>
     </option>
   </component>
@@ -880,14 +880,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/User/myprofile.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="675" max-vertical-offset="7005">
-          <caret line="82" column="58" selection-start-line="82" selection-start-column="58" selection-end-line="82" selection-end-column="76" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/FeelKm/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1861" max-vertical-offset="2415">
@@ -912,10 +904,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/User/myprofile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.74" vertical-offset="1233" max-vertical-offset="7005">
+          <caret line="88" column="38" selection-start-line="88" selection-start-column="38" selection-end-line="88" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/User/editProfile.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.54372627" vertical-offset="2647" max-vertical-offset="3450">
-          <caret line="186" column="36" selection-start-line="186" selection-start-column="36" selection-end-line="186" selection-end-column="36" />
+        <state vertical-scroll-proportion="0.31558937" vertical-offset="2692" max-vertical-offset="3450">
+          <caret line="185" column="70" selection-start-line="185" selection-start-column="70" selection-end-line="185" selection-end-column="70" />
           <folding />
         </state>
       </provider>
