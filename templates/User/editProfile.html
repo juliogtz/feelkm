@@ -40,6 +40,61 @@ $(function() {
 
     });
 
+
+    $("#link-btn-info-general").click(function() {
+
+            $("#link-btn-info-general").addClass("link-left-btn-edi-pro-active");
+            $("#link-btn-info-general").removeClass("link-left-btn-edi-pro-no-active");
+
+            $("#icon-edit-profile-left-gen-img).attr('src', '/{{ STATIC_URL }}imgs/informacion-general-on.png');
+
+            $("#bar-left-general").addClass("left-btn-bar-status-active");
+            $("#bar-left-general").removeClass("left-btn-bar-status-no-active");
+
+
+
+            /* Next btns conf */
+
+             $("#link-btn-change-password").addClass("link-left-btn-edi-pro-no-active");
+             $("#link-btn-change-password").removeClass("link-left-btn-edi-pro-active");
+
+
+             $("#icon-edit-profile-left-change-pass").attr('src', '/{{ STATIC_URL }}imgs/cambiar-contrasena-off.png');
+             $("#bar-left-password").addClass("left-btn-bar-status-no-active");
+             $("#bar-left-password").removeClass("left-btn-bar-status-active");
+
+
+    });
+
+
+    $("#link-btn-change-password").click(function() {
+
+
+    $("#link-btn-info-general").addClass("link-left-btn-edi-pro-active");
+
+            $("#link-btn-change-password").addClass("link-left-btn-edi-pro-active");
+            $("#link-btn-change-password").removeClass(" link-left-btn-edi-pro-no-active");
+
+
+            $("#icon-edit-profile-left-change-pass").attr('src', '/{{ STATIC_URL }}imgs/cambiar-contrasena-on.png');
+            $("#bar-left-password").addClass("left-btn-bar-status-active");
+            $("#bar-left-password").removeClass("left-btn-bar-status-no-active");
+
+
+
+            /* Next btns conf */
+
+            $("#link-btn-info-general").addClass("link-left-btn-edi-pro-no-active");
+            $("#link-btn-info-general").removeClass("link-left-btn-edi-pro-active");
+
+            $("#icon-edit-profile-left-gen-img).attr('src', '/{{ STATIC_URL }}imgs/informacion-general-off.png');
+
+            $("#bar-left-general").addClass("left-btn-bar-status-no-active");
+            $("#bar-left-general").removeClass("left-btn-bar-status-active");
+
+
+    });
+
 });
 
 {% include "Scripts/secript_search_header.html" %}
@@ -76,9 +131,9 @@ $(function() {
     <div class="left edit-profile-box-left">
 
         <div class="edit-profile-first-btn">
-            <div class="left-btn-bar-status-active left"></div>
-            <div class="icon-edit-profile-left left"><img src="/{{ STATIC_URL }}imgs/informacion-general-on.png" width="18" height="13"></div>
-            <div class="link-txt-left-edit-pro left"><a href="#" class="link-left-btn-edi-pro-active">Informaci&oacute;n General</a></div>
+            <div class="left-btn-bar-status-active left" id="bar-left-general"></div>
+            <div class="icon-edit-profile-left left"><img src="/{{ STATIC_URL }}imgs/informacion-general-on.png" width="18" height="13" id="icon-edit-profile-left-gen-img"></div>
+            <div class="link-txt-left-edit-pro left"><a href="javascript:void(0)" class="link-left-btn-edi-pro-active" id="link-btn-info-general">Informaci&oacute;n General</a></div>
             <div class="clear"></div>
         </div>
 
@@ -86,9 +141,9 @@ $(function() {
 
         <div class="edit-profile-last-btn">
 
-            <div class="left-btn-bar-status-no-active left"></div>
-            <div class="icon-edit-profile-left left"><img src="/{{ STATIC_URL }}imgs/cambiar-contrasena-off.png" width="12" height="16"></div>
-            <div class="link-txt-left-edit-pro left"><a href="#" class="link-left-btn-edi-pro-no-active">Cambiar Contrase&ntilde;a</a></div>
+            <div class="left-btn-bar-status-no-active left" id="bar-left-password"></div>
+            <div class="icon-edit-profile-left left"><img src="/{{ STATIC_URL }}imgs/cambiar-contrasena-off.png" width="12" height="16" id="icon-edit-profile-left-change-pass"></div>
+            <div class="link-txt-left-edit-pro left"><a href="javascript:void(0)" class="link-left-btn-edi-pro-no-active" id="link-btn-change-password">Cambiar Contrase&ntilde;a</a></div>
             <div class="clear"></div>
 
         </div>
