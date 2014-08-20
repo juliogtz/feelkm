@@ -1557,6 +1557,46 @@ font-weight:normal;
 
 }
 
+
+
 .move-link-back-x{
     margin-left: 15px;
+}
+
+
+
+.img-profile-style
+{
+    width: 101px;
+    height: 102px;
+    border-radius:100px ;
+    -webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+}
+
+
+.info-gen-pic{
+    margin-top: 29px;
+    margin-left: 29px;
+}
+
+.link-change-pic-txt
+{
+    font-family: "Helvetica Neue";
+    font-size: 13px;
+    color:#4c4c4c;
+    font-weight: normal;
+}
+
+.div-btn-change-pic{
+    text-align: center;
+}
+
+.info-gen-line
+{
+    margin-left: 29px;
+    margin-top: 29px;
+    height: 514px;
+    width: 1px;
+    background-color: #dbdbdb;
 }
