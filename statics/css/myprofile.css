@@ -1530,6 +1530,8 @@ font-weight:normal;
     border-bottom-width: 0px;
     background-color: #bebfc4;
     margin-top: 15px;
+     padding-left: 20px;
+    padding-top: 16px;
 
 }
 
@@ -1540,8 +1542,6 @@ font-weight:normal;
     font-size: 14px;
     font-weight: bold;
     color:#ffffff;
-    padding-left: 20px;
-    padding-top: 16px;
     text-decoration: none;
 
 }
