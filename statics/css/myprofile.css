@@ -1662,7 +1662,7 @@ font-weight:normal;
 .top-label-title-2
 {
     margin-top: 25px;
-    margin-left: 50px;
+    margin-left: 100px;
 }
 
 
@@ -1728,7 +1728,7 @@ width: 212px;
 
 .text-area-desc
 {
-    width: 430px;
+    width: 433px;
     height: 100px;
     border-radius:4px ;
     -webkit-border-radius: 4px;
