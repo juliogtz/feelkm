@@ -160,9 +160,10 @@ $("#link-change-pic-txt").click(function(){
 
        $.ajax({
              type: "POST", url: "/change-password/",
+
              data: {
                      currentpassword: $("#current-password").val(),
-                     newpassword:$("#new-password").val()
+                     newpassword:     $("#new-password").val()
 
                     }
 
