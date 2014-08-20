@@ -1436,6 +1436,8 @@ font-weight:normal;
     border-color: #dbdbdb;
     border-style: solid;
     border-bottom-width: 0px;
+    padding-left: 20px;
+    padding-top: 18px;
 
 }
 
@@ -1467,4 +1469,26 @@ font-weight:normal;
     border-style: solid;
     border-top-width: 0px;
 
+}
+
+.title-txt-f-info
+{
+    font-family: "Helvetica Neue";
+    font-size: 14px;
+    color: #4c4c4c;
+    font-weight: bold;
+}
+
+.title-info-change-password{
+    display: none;
+}
+
+
+.txt-alert-status-b
+{
+    font-family: "Helvetica Neue";
+    color: #575656;
+    font-size: 14px;
+    font-weight: normal;
+    margin-left: 11px;
 }

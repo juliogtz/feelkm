@@ -96,12 +96,20 @@ $(function() {
     </div>
     <div class="left edit-profile-box-right">
 
-            <div class="top-title-edit-data">Informaci&oacute;n General</div>
+            <div class="top-title-edit-data">
+
+                <div class="title-txt-f-info" id="title-info-general">Informaci&oacute;n General</div>
+                <div class="title-txt-f-info" id="title-info-change-password">Informaci&oacute;n General</div>
+
+            </div>
             <div class="content-info-general"></div>
             <div class="bottom-edit-data">
-                <div class="left"><img src="/{{ STATIC_URL }}imgs/cambios-enviados.png" width="20" height="20"></div>
-                <div class="left">Cambios guardados satisfacoriamente</div>
-                <div class="clear"></div>
+                <div class="bottom-alert-status-perfil">
+                    <div class="left"><img src="/{{ STATIC_URL }}imgs/cambios-enviados.png" width="20" height="20"></div>
+                    <div class="left txt-alert-status-b">Cambios guardados satisfacoriamente</div>
+                    <div class="clear"></div>
+                </div>
+
             </div>
 
     </div>
