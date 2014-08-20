@@ -1621,6 +1621,15 @@ font-weight:normal;
     text-align: left;
 }
 
+.title-form-field-2
+{
+    font-size: 13px;
+    font-family: "Helvetica Neue";
+    color: #7a7b7d;
+    font-weight: normal;
+    text-align: left;
+}
+
 .top-field-form-1{
     margin-top: 13px;
 }
@@ -1649,6 +1658,12 @@ font-weight:normal;
     margin-top: 25px;
 }
 
+
+.top-label-title-2
+{
+    margin-top: 25px;
+    margin-left: 50px;
+}
 
 
 .input-select-op
