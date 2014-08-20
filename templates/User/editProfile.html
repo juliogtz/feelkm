@@ -43,7 +43,7 @@ $(function() {
 
     $("#link-btn-info-general").click(function() {
 
-    alert("hey");
+
 
             $("#link-btn-info-general").addClass("link-left-btn-edi-pro-active");
             $("#link-btn-info-general").removeClass("link-left-btn-edi-pro-no-active");
@@ -62,6 +62,22 @@ $(function() {
              $("#icon-edit-profile-left-change-pass").attr('src', '/{{ STATIC_URL }}imgs/cambiar-contrasena-off.png');
              $("#bar-left-password").addClass("left-btn-bar-status-no-active");
              $("#bar-left-password").removeClass("left-btn-bar-status-active");
+
+
+             /* Change right */
+
+             $("title-info-change-password").fadeOut("fast",function(){
+
+                $("title-info-general").fadeIn();
+
+             });
+
+
+             $("content-info-change-password").fadeOut("fast",function(){
+
+                $("content-info-general").fadeIn();
+
+             });
 
 
     });
@@ -91,6 +107,23 @@ $(function() {
 
             $("#bar-left-general").addClass("left-btn-bar-status-no-active");
             $("#bar-left-general").removeClass("left-btn-bar-status-active");
+
+             /* Change right */
+
+
+             $("title-info-general").fadeOut("fast",function(){
+
+                $("title-info-change-password").fadeIn();
+
+             });
+
+
+
+             $("content-info-general").fadeOut("fast",function(){
+
+                $("content-info-change-password").fadeIn();
+
+             });
 
 
     });
@@ -155,13 +188,16 @@ $(function() {
 
 
                     <div class="title-txt-f-info" id="title-info-general">Informaci&oacute;n General</div>
-                    <div class="title-txt-f-info" id="title-info-change-password">Informaci&oacute;n General</div>
+                    <div class="title-txt-f-info" id="title-info-change-password">Cambiar contrase&ntilde;a</div>
 
 
             </div>
 
             <div class="content-info-general">Cambiar datos</div>
             <div class="content-info-change-password">Cambiar contraseña</div>
+
+
+
 
             <div class="bottom-edit-data">
                 <div class="bottom-alert-status-perfil">
