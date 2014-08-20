@@ -1725,3 +1725,16 @@ width: 212px;
 .top-select{
     margin-top: 24px;
 }
+
+.text-area-desc
+{
+    width: 440px;
+    height: 117px;
+    border-radius:4px ;
+    -webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+    background-color: #ffffff;
+    border-color: #dcdcdc;
+    border-style: solid;
+    border-width: 1px;
+}
