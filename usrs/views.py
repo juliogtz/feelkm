@@ -348,9 +348,9 @@ def ChangePassword(request):
                         newpassword=request.POST['newpassword']
 
                         if(current_password == "" or newpassword == "" or current_password == None or newpassword == None ):
-                            HttpResponse("0")
+                           return  HttpResponse("0")
                         else:
-                            HttpResponse("1" +current_password + " - "+newpassword)
+                           return HttpResponse("1" +current_password + " - "+newpassword)
 
                 else:
 
