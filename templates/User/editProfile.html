@@ -167,6 +167,28 @@ function csrfSafeMethod(method) {
        $.ajax({
              type: "POST", url: "/change-password/",
 
+             error:function(){
+
+
+
+                  $("#bottom-alert-status-perfil").fadeIn("fast");
+                  $("#img-send-op").fadeOut("fast");
+                  $("#status-content-operation" ).html("Favor de intentar m&acute;s tarde.");
+
+
+             },
+
+             statusCode: {
+                  404: function() {
+
+                  $("#bottom-alert-status-perfil").fadeIn("fast");
+                  $("#img-send-op").fadeOut("fast");
+                  $("#status-content-operation" ).html("Favor de intentar m&acute;s tarde.");
+
+
+              }
+             },
+
              data: {
                      currentpassword: $("#current-password").val(),
                      newpassword:     $("#new-password").val()
@@ -175,11 +197,11 @@ function csrfSafeMethod(method) {
 
          }) .done(function( msg ) {
 
-            alert(msg);
+           // alert(msg);
 
             if(msg=="1"){
 
-                 $("#bottom-alert-status-perfil").fadeIn("fast");
+                  $("#bottom-alert-status-perfil").fadeIn("fast");
                   $("#img-send-op").fadeIn("fast");
                   $("#status-content-operation" ).html("Cambios fueron guardados satisfactoriamente.");
 
@@ -200,6 +222,14 @@ function csrfSafeMethod(method) {
                   $("#bottom-alert-status-perfil").fadeIn("fast");
                   $("#img-send-op").fadeOut("fast");
                   $("#status-content-operation" ).html("La Contrase&ntilde;a actual proporcionada es incorrecta.");
+
+             }
+
+             if(msg=="-2"){
+
+                  $("#bottom-alert-status-perfil").fadeIn("fast");
+                  $("#img-send-op").fadeOut("fast");
+                  $("#status-content-operation" ).html("Favor de intentar m&acute;s tarde.");
 
              }
 
