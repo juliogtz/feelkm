@@ -389,7 +389,7 @@ def UpdateMyProfile(request):
                                 if(file_txt[1]=="jpeg"  or file_txt[1]=="jpg" or file_txt[1]=="png" or file_txt[1]=="gif"):
 
                                     try:
-                                          filesend = file_txt[0]+""+str(random.randrange(9999999999999999999999999))+""
+                                          filesend = ""+file_txt[0]+""+str(random.randrange(9999999999999999999999999))+""
                                           json=cloudinary.uploader.upload(
                                           request.FILES["file1"],
                                           public_id = filesend,
@@ -430,6 +430,7 @@ def UpdateMyProfile(request):
                                     t.prefer_km = user_favorite_distance  # change field
                                     t.gender = user_sex  # change field
                                     t.birth = newDateBirth # change field
+                                    t.pic_url=filesend
                                     t.save() # this will update only
 
                                     return HttpResponseRedirect("/edit-profile/?edit=true")
