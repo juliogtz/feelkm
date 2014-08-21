@@ -60,6 +60,7 @@ urlpatterns = patterns('',
     #Profile User:
     url(r'^km/(?P<username>.*)/$','usrs.views.MyProfile'),
     url(r'^edit-profile/','usrs.views.EditMyProfile'),
+    url(r'^update-profile/','usrs.views.EditMyProfile'),
 
 
     #Privacy and Legal Information

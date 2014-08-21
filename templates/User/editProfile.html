@@ -234,7 +234,6 @@ function csrfSafeMethod(method) {
              }
 
 
-
          });
 
       });
@@ -316,9 +315,36 @@ function csrfSafeMethod(method) {
             </div>
 
             <div class="content-info-general" id="content-info-general">
+
+                <form action="/update-profile/" method="post" enctype="multipart/form-data" name="form-data-general" id="form-data-general">
+
                 <div class="left info-gen-pic">
 
-                    <img src="/{{ STATIC_URL }}imgs/perfil-b.png" class="img-profile-style">
+
+
+                    {% if DATALOGIN.pic_url == ""  or DATALOGIN.pic_url == None %}
+
+
+                        {% if DATALOGIN.firtsFacebookPic == ""  or DATALOGIN.firtsFacebookPic == None %}
+
+                            <img src="/{{ STATIC_URL }}imgs/perfil-b.png" class="img-profile-style">
+
+                        {% else %}
+
+                            <img src="{{ DATALOGIN.firtsFacebookPic }}" class="img-profile-style">
+
+                        {% endif %}
+
+
+
+                    {% else %}
+
+                     <img src="http://res.cloudinary.com/htyoqtggc/image/upload/h_200,w_200/{{ DATALOGIN.pic_url }}.jpg" class="img-profile-style">
+
+
+                    {% endif %}
+
+
                     <div class="div-btn-change-pic"><a href="javascript:void(0)" class="link-change-pic-txt">Cambiar</a></div>
 
                 </div>
@@ -464,7 +490,7 @@ function csrfSafeMethod(method) {
 
                              <div class="btn-change-data-b">
 
-                            <div class="txt-btn-cc"><a href="#" class="txt-btn-cc-link">Guardar Cambios</a></div>
+                            <div class="txt-btn-cc"><a href="javascript:this.form.submit()" class="txt-btn-cc-link" id="send-update-profile"> Guardar Cambios </a></div>
 
                         </div>
 
@@ -472,6 +498,7 @@ function csrfSafeMethod(method) {
 
                 </div>
                 <div class="clear"></div>
+                </form>
             </div>
 
 

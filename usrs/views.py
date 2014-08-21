@@ -321,8 +321,12 @@ def EditMyProfile(request,):
                     DATALOGIN = users.objects.get(id_user_admin_id=DATALOGIN_ID)
 
                     return render(request, 'User/editProfile.html', {
+
                         'usr':request.user.username,
                         'DATALOGIN':DATALOGIN,
+
+
+
                         })
 
                 else:
