@@ -348,9 +348,16 @@ def ChangePassword(request):
                         newpassword=request.POST['newpassword']
 
                         if(current_password == "" or newpassword == "" or current_password == None or newpassword == None ):
+
                            return  HttpResponse("0")
+
                         else:
-                           return HttpResponse("1" +current_password + " - "+newpassword)
+
+                            try:
+                                return HttpResponse("1")
+                            except:
+                                return HttpResponse("-1")
+
 
                 else:
 

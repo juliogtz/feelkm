@@ -1523,6 +1523,11 @@ font-weight:normal;
     display: none;
 }
 
+#img-send-op{
+display: none;
+}
+
+
 
 .back-profile-btn{
     width: 300px;

@@ -179,15 +179,22 @@ function csrfSafeMethod(method) {
 
             if(msg=="1"){
 
+                 $("#bottom-alert-status-perfil").fadeIn("fast");
+                  $("#img-send-op).fadeIn("fast");
+                  $("#status-content-operation" ).html("Cambios fueron guardados satisfactoriamente.");t
+
+
+
 
              }
 
              if(msg=="0"){
-                 //alert("Error login")
 
-                  $("#txt-alert-box-login" ).html("Error, intente otra vez.");t
-                  $("#box-login-form-wait").fadeOut("fast");
-                  $("#box-login-form").fadeIn( "fast");
+                  $("#bottom-alert-status-perfil").fadeIn("fast");
+                  $("#img-send-op).fadeOut("fast");
+                  $("#status-content-operation" ).html("Ning&uacute;n campo puede permanecer vac&iacute;o");t
+
+
              }
 
          });
@@ -474,10 +481,12 @@ function csrfSafeMethod(method) {
             <div class="bottom-edit-data">
 
                 <div class="bottom-alert-status-perfil">
-                    <div class="left"><img src="/{{ STATIC_URL }}imgs/cambios-enviados.png" width="20" height="20"></div>
+                    <div class="left" id="img-send-op"><img src="/{{ STATIC_URL }}imgs/cambios-enviados.png" width="20" height="20"></div>
 
 
-                    <div class="left txt-alert-status-b" id="status-content-operation">Cambios guardados satisfacoriamente</div>
+                    <div class="left txt-alert-status-b" id="status-content-operation"></div>
+
+
 
                     <div class="clear"></div>
                 </div>
