@@ -205,6 +205,13 @@
                       $("#img-send-op").fadeIn("fast");
                       $("#status-content-operation" ).html("Cambios fueron guardados satisfactoriamente.");
 
+                      $("#current-password").removeClass("border-color-error");
+                      $("#new-password").removeClass("border-color-error");
+
+                      $("#current-password").val() = "";
+
+                      $("#new-password").val() = "";
+
 
                  }
 
@@ -213,6 +220,22 @@
                       $("#bottom-alert-status-perfil").fadeIn("fast");
                       $("#img-send-op").fadeOut("fast");
                       $("#status-content-operation" ).html("Ning&uacute;n campo puede permanecer vac&iacute;o");
+
+
+
+                      if($("#current-password").val() == "")
+                      {
+
+                        $("#current-password").addClass("border-color-error");
+
+                      }
+
+                      if($("#new-password").val() == "")
+                      {
+                        $("#new-password").addClass("border-color-error");
+                      }
+
+
 
 
                  }
