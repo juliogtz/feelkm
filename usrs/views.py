@@ -358,6 +358,7 @@ def UpdateMyProfile(request):
                     if request.method == 'GET':
 
                         return HttpResponseRedirect("/")
+                        #return HttpResponse("1")
 
                     else:
 
@@ -377,6 +378,7 @@ def UpdateMyProfile(request):
                         if(user_name == "" or user_birth_month == "0" or user_birth_day == "0" or user_birth_country =="0" or user_sex == "0" or user_lastname == "" or user_birth_year == "0" or user_city == "" or user_favorite_distance == "0"):
 
                             return HttpResponseRedirect("/")
+                            #return HttpResponse("1")
 
                         else:
 
@@ -430,14 +432,12 @@ def UpdateMyProfile(request):
                                     t.birth = newDateBirth # change field
                                     t.save() # this will update only
 
-                                    HttpResponseRedirect("/edit-profile/?edit=true")
+                                    return HttpResponseRedirect("/edit-profile/?edit=true")
+
 
                             except:
                                 return HttpResponseRedirect("/edit-profile/")
 
-
-
-                       #return HttpResponse("1")
 
                 else:
 
