@@ -347,7 +347,7 @@ def UpdateMyProfile(request):
                         return HttpResponseRedirect("/")
 
                     else:
-                        HttpResponse("1")
+                       return HttpResponse("1")
 
                 else:
 
