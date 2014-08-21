@@ -344,7 +344,7 @@ def ChangePassword(request):
                         #DATALOGIN_ID=request.user.id
                         #DATALOGIN = users.objects.get(id_user_admin_id=DATALOGIN_ID)
 
-                        make_password(request.POST['password_user'], None, 'pbkdf2_sha256')
+                        #make_password(request.POST['password_user'], None, 'pbkdf2_sha256')
 
                         current_password=request.POST['currentpassword']
                         newpassword=request.POST['newpassword']

@@ -23,11 +23,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="header.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="header.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/statics/scripts/header.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6443515" vertical-offset="7406" max-vertical-offset="13080">
-              <caret line="504" column="78" selection-start-line="504" selection-start-column="78" selection-end-line="504" selection-end-column="78" />
+            <state vertical-scroll-proportion="-3.3137255" vertical-offset="7406" max-vertical-offset="13080">
+              <caret line="505" column="48" selection-start-line="505" selection-start-column="48" selection-end-line="505" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -83,11 +83,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/usrs/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.5384617" vertical-offset="5256" max-vertical-offset="5745">
-              <caret line="360" column="63" selection-start-line="360" selection-start-column="63" selection-end-line="360" selection-end-column="63" />
+            <state vertical-scroll-proportion="0.56060606" vertical-offset="5192" max-vertical-offset="5745">
+              <caret line="356" column="29" selection-start-line="356" selection-start-column="29" selection-end-line="356" selection-end-column="29" />
               <folding>
                 <element signature="e#0#58#0" expanded="true" />
               </folding>
@@ -144,8 +144,8 @@
         <option value="$PROJECT_DIR$/FeelKm/urls.py" />
         <option value="$PROJECT_DIR$/statics/css/myprofile.css" />
         <option value="$PROJECT_DIR$/templates/User/editProfile.html" />
-        <option value="$PROJECT_DIR$/usrs/views.py" />
         <option value="$PROJECT_DIR$/statics/scripts/header.js" />
+        <option value="$PROJECT_DIR$/usrs/views.py" />
       </list>
     </option>
   </component>
@@ -930,21 +930,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/usrs/views.py">
+    <entry file="file://$PROJECT_DIR$/statics/scripts/header.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.5384617" vertical-offset="5256" max-vertical-offset="5745">
-          <caret line="360" column="63" selection-start-line="360" selection-start-column="63" selection-end-line="360" selection-end-column="63" />
-          <folding>
-            <element signature="e#0#58#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="-3.3137255" vertical-offset="7406" max-vertical-offset="13080">
+          <caret line="505" column="48" selection-start-line="505" selection-start-column="48" selection-end-line="505" selection-end-column="48" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/statics/scripts/header.js">
+    <entry file="file://$PROJECT_DIR$/usrs/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6443515" vertical-offset="7406" max-vertical-offset="13080">
-          <caret line="504" column="78" selection-start-line="504" selection-start-column="78" selection-end-line="504" selection-end-column="78" />
-          <folding />
+        <state vertical-scroll-proportion="0.56060606" vertical-offset="5192" max-vertical-offset="5745">
+          <caret line="356" column="29" selection-start-line="356" selection-start-column="29" selection-end-line="356" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#58#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
