@@ -1790,3 +1790,7 @@ width: 212px;
     padding-top: 9px;
     padding-left: 19px;
 }
+
+.fileDiv{
+    opacity: 0;
+}

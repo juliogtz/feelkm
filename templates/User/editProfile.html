@@ -238,6 +238,31 @@ function csrfSafeMethod(method) {
 
       });
 
+function readURL(input, divimg) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                $('#img-src-profile-image').attr('src', e.target.result);
+            }
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+
+$('#link-change-pic-txt').click(function(event) {
+
+  $('#file1').click();
+
+});
+
+
+$('#file1').change(function(click) {
+
+    readURL(this, "img-profile-src");
+
+});
 
 
 });
@@ -318,7 +343,7 @@ function csrfSafeMethod(method) {
 
                 <form action="/update-profile/" method="post" enctype="multipart/form-data" name="form-data-general" id="form-data-general">{% csrf_token %}
 
-                <div class="left info-gen-pic">
+                <div class="left info-gen-pic" id="img-profile-src">
 
 
 
@@ -327,11 +352,11 @@ function csrfSafeMethod(method) {
 
                         {% if DATALOGIN.firtsFacebookPic == ""  or DATALOGIN.firtsFacebookPic == None %}
 
-                            <img src="/{{ STATIC_URL }}imgs/perfil-b.png" class="img-profile-style">
+                            <img src="/{{ STATIC_URL }}imgs/perfil-b.png" class="img-profile-style" id="img-src-profile-image">
 
                         {% else %}
 
-                            <img src="{{ DATALOGIN.firtsFacebookPic }}" class="img-profile-style">
+                            <img src="{{ DATALOGIN.firtsFacebookPic }}" class="img-profile-style" id="img-src-profile-image">
 
                         {% endif %}
 
@@ -339,13 +364,20 @@ function csrfSafeMethod(method) {
 
                     {% else %}
 
-                     <img src="http://res.cloudinary.com/htyoqtggc/image/upload/h_200,w_200/{{ DATALOGIN.pic_url }}.jpg" class="img-profile-style">
+                     <img src="http://res.cloudinary.com/htyoqtggc/image/upload/h_200,w_200/{{ DATALOGIN.pic_url }}.jpg" class="img-profile-style" id="img-src-profile-image" >
 
 
                     {% endif %}
 
 
-                    <div class="div-btn-change-pic"><a href="javascript:void(0)" class="link-change-pic-txt">Cambiar</a></div>
+                    <div class="div-btn-change-pic">
+                        <a href="javascript:void(0)" class="link-change-pic-txt">Cambiar</a>
+                     <div class="fileDiv">
+                        <input type="file" id="file1" name="file1">
+                    </div>
+
+                    </div>
+
 
                 </div>
                 <div class="left info-gen-line"></div>
