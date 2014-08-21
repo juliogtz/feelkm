@@ -1,603 +1,708 @@
-{% load dictionary_extras %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8" />
-<title>FeelKm</title>
-<link rel="stylesheet" href="/{{ STATIC_URL }}css/header.css" type="text/css" />
-<link rel="stylesheet" href="/{{ STATIC_URL }}/css/myprofile.css" type="text/css" />
-{% include "Scripts/scripts.html" %}
-<script src="/{{ STATIC_URL }}scripts/header.js"></script>
-<script type="text/javascript">
+    {% load dictionary_extras %}
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="utf-8" />
+    <title>FeelKm</title>
+    <link rel="stylesheet" href="/{{ STATIC_URL }}css/header.css" type="text/css" />
+    <link rel="stylesheet" href="/{{ STATIC_URL }}/css/myprofile.css" type="text/css" />
+    {% include "Scripts/scripts.html" %}
+    <script src="/{{ STATIC_URL }}scripts/header.js"></script>
+    <script type="text/javascript">
 
-$(function() {
+    $(function() {
 
-      $('form').each(function() {
+          $('form').each(function() {
 
-        $(this).find('input').keypress(function(e) {
-            // Enter pressed?
-            if(e.which == 10 || e.which == 13) {
+            $(this).find('input').keypress(function(e) {
+                // Enter pressed?
+                if(e.which == 10 || e.which == 13) {
 
-                if(this.form.id=="search-form-top"){
+                    if(this.form.id=="search-form-top"){
 
-                  this.form.action="/search/?q="+$("#inputSearchHi").val()+"";
+                      this.form.action="/search/?q="+$("#inputSearchHi").val()+"";
+
+                    }
+
+
+                    if(this.form.id=="search-form"){
+
+                      this.form.action="/search/?q="+$("#q").val()+"";
+                    }
+
+
+                    this.form.submit();
+
 
                 }
+            });
 
 
-                if(this.form.id=="search-form"){
-
-                  this.form.action="/search/?q="+$("#q").val()+"";
-                }
-
-
-                this.form.submit();
-
-
-            }
         });
 
 
-    });
-
-
-    $("#link-btn-info-general").click(function() {
+        $("#link-btn-info-general").click(function() {
 
 
 
-            $("#link-btn-info-general").addClass("link-left-btn-edi-pro-active");
-            $("#link-btn-info-general").removeClass("link-left-btn-edi-pro-no-active");
+                $("#link-btn-info-general").addClass("link-left-btn-edi-pro-active");
+                $("#link-btn-info-general").removeClass("link-left-btn-edi-pro-no-active");
 
-            $("#icon-edit-profile-left-gen-img").attr('src', '/{{ STATIC_URL }}imgs/informacion-general-on.png');
+                $("#icon-edit-profile-left-gen-img").attr('src', '/{{ STATIC_URL }}imgs/informacion-general-on.png');
 
-            $("#bar-left-general").addClass("left-btn-bar-status-active");
-            $("#bar-left-general").removeClass("left-btn-bar-status-no-active");
+                $("#bar-left-general").addClass("left-btn-bar-status-active");
+                $("#bar-left-general").removeClass("left-btn-bar-status-no-active");
 
-            /* Next btns conf */
+                /* Next btns conf */
 
-             $("#link-btn-change-password").addClass("link-left-btn-edi-pro-no-active");
-             $("#link-btn-change-password").removeClass("link-left-btn-edi-pro-active");
-
-
-             $("#icon-edit-profile-left-change-pass").attr('src', '/{{ STATIC_URL }}imgs/cambiar-contrasena-off.png');
-             $("#bar-left-password").addClass("left-btn-bar-status-no-active");
-             $("#bar-left-password").removeClass("left-btn-bar-status-active");
+                 $("#link-btn-change-password").addClass("link-left-btn-edi-pro-no-active");
+                 $("#link-btn-change-password").removeClass("link-left-btn-edi-pro-active");
 
 
-             /* Change right */
-
-             $("#title-info-change-password").fadeOut("fast",function(){
-
-                $("#title-info-general").fadeIn();
-
-             });
+                 $("#icon-edit-profile-left-change-pass").attr('src', '/{{ STATIC_URL }}imgs/cambiar-contrasena-off.png');
+                 $("#bar-left-password").addClass("left-btn-bar-status-no-active");
+                 $("#bar-left-password").removeClass("left-btn-bar-status-active");
 
 
-             $("#content-info-change-password").fadeOut("fast",function(){
+                 /* Change right */
 
-                $("#content-info-general").fadeIn();
+                 $("#title-info-change-password").fadeOut("fast",function(){
 
-             });
+                    $("#title-info-general").fadeIn();
 
-
-    });
-
-
-    $("#link-btn-change-password").click(function() {
+                 });
 
 
-            $("#link-btn-info-general").addClass("link-left-btn-edi-pro-active");
+                 $("#content-info-change-password").fadeOut("fast",function(){
 
-            $("#link-btn-change-password").addClass("link-left-btn-edi-pro-active");
-            $("#link-btn-change-password").removeClass(" link-left-btn-edi-pro-no-active");
+                    $("#content-info-general").fadeIn();
 
-
-            $("#icon-edit-profile-left-change-pass").attr('src', '/{{ STATIC_URL }}imgs/cambiar-contrasena-on.png');
-            $("#bar-left-password").addClass("left-btn-bar-status-active");
-            $("#bar-left-password").removeClass("left-btn-bar-status-no-active");
+                 });
 
 
-
-            /* Next btns conf */
-
-            $("#link-btn-info-general").addClass("link-left-btn-edi-pro-no-active");
-            $("#link-btn-info-general").removeClass("link-left-btn-edi-pro-active");
-
-            $("#icon-edit-profile-left-gen-img").attr('src', '/{{ STATIC_URL }}imgs/informacion-general-off.png');
-
-            $("#bar-left-general").addClass("left-btn-bar-status-no-active");
-            $("#bar-left-general").removeClass("left-btn-bar-status-active");
-
-             /* Change right */
+        });
 
 
-             $("#title-info-general").fadeOut("fast",function(){
+        $("#link-btn-change-password").click(function() {
 
-                $("#title-info-change-password").fadeIn();
 
-             });
+                $("#link-btn-info-general").addClass("link-left-btn-edi-pro-active");
+
+                $("#link-btn-change-password").addClass("link-left-btn-edi-pro-active");
+                $("#link-btn-change-password").removeClass(" link-left-btn-edi-pro-no-active");
+
+
+                $("#icon-edit-profile-left-change-pass").attr('src', '/{{ STATIC_URL }}imgs/cambiar-contrasena-on.png');
+                $("#bar-left-password").addClass("left-btn-bar-status-active");
+                $("#bar-left-password").removeClass("left-btn-bar-status-no-active");
 
 
 
-             $("#content-info-general").fadeOut("fast",function(){
+                /* Next btns conf */
 
-                $("#content-info-change-password").fadeIn();
+                $("#link-btn-info-general").addClass("link-left-btn-edi-pro-no-active");
+                $("#link-btn-info-general").removeClass("link-left-btn-edi-pro-active");
 
-             });
+                $("#icon-edit-profile-left-gen-img").attr('src', '/{{ STATIC_URL }}imgs/informacion-general-off.png');
+
+                $("#bar-left-general").addClass("left-btn-bar-status-no-active");
+                $("#bar-left-general").removeClass("left-btn-bar-status-active");
+
+                 /* Change right */
 
 
-    });
+                 $("#title-info-general").fadeOut("fast",function(){
+
+                    $("#title-info-change-password").fadeIn();
+
+                 });
 
 
-$("#btn-change-password-action").click(function(){
 
-function csrfSafeMethod(method) {
-                            // these HTTP methods do not require CSRF protection
-                            return (/^(GET|HEAD|OPTIONS|TRACE)$/.test(method));
+                 $("#content-info-general").fadeOut("fast",function(){
+
+                    $("#content-info-change-password").fadeIn();
+
+                 });
+
+
+        });
+
+
+    $("#btn-change-password-action").click(function(){
+
+    function csrfSafeMethod(method) {
+                                // these HTTP methods do not require CSRF protection
+                                return (/^(GET|HEAD|OPTIONS|TRACE)$/.test(method));
+                            }
+
+          function getCookie(name) {
+                var cookieValue = null;
+                if (document.cookie && document.cookie != '') {
+                    var cookies = document.cookie.split(';');
+                    for (var i = 0; i < cookies.length; i++) {
+                        var cookie = jQuery.trim(cookies[i]);
+                        // Does this cookie string begin with the name we want?
+                        if (cookie.substring(0, name.length + 1) == (name + '=')) {
+                            cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                            break;
                         }
-
-      function getCookie(name) {
-            var cookieValue = null;
-            if (document.cookie && document.cookie != '') {
-                var cookies = document.cookie.split(';');
-                for (var i = 0; i < cookies.length; i++) {
-                    var cookie = jQuery.trim(cookies[i]);
-                    // Does this cookie string begin with the name we want?
-                    if (cookie.substring(0, name.length + 1) == (name + '=')) {
-                        cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
-                        break;
                     }
                 }
+                return cookieValue;
             }
-            return cookieValue;
-        }
 
-            var csrftoken = getCookie('csrftoken');
+                var csrftoken = getCookie('csrftoken');
 
 
-                        $.ajaxSetup({
-                            beforeSend: function(xhr, settings) {
-                                if (!csrfSafeMethod(settings.type) && !this.crossDomain) {
-                                    xhr.setRequestHeader("X-CSRFToken", csrftoken);
+                            $.ajaxSetup({
+                                beforeSend: function(xhr, settings) {
+                                    if (!csrfSafeMethod(settings.type) && !this.crossDomain) {
+                                        xhr.setRequestHeader("X-CSRFToken", csrftoken);
+                                    }
                                 }
-                            }
-                             });
+                                 });
 
 
-       $.ajax({
-             type: "POST", url: "/change-password/",
+           $.ajax({
+                 type: "POST", url: "/change-password/",
 
-             error:function(){
-
-
-
-                  $("#bottom-alert-status-perfil").fadeIn("fast");
-                  $("#img-send-op").fadeOut("fast");
-                  $("#status-content-operation" ).html("Favor de intentar m&acute;s tarde.");
+                 error:function(){
 
 
-             },
 
-             statusCode: {
-                  404: function() {
-
-                  $("#bottom-alert-status-perfil").fadeIn("fast");
-                  $("#img-send-op").fadeOut("fast");
-                  $("#status-content-operation" ).html("Favor de intentar m&acute;s tarde.");
+                      $("#bottom-alert-status-perfil").fadeIn("fast");
+                      $("#img-send-op").fadeOut("fast");
+                      $("#status-content-operation" ).html("Favor de intentar m&acute;s tarde.");
 
 
-              }
-             },
+                 },
 
-             data: {
-                     currentpassword: $("#current-password").val(),
-                     newpassword:     $("#new-password").val()
+                 statusCode: {
+                      404: function() {
 
-                    }
-
-         }) .done(function( msg ) {
-
-           // alert(msg);
-
-            if(msg=="1"){
-
-                  $("#bottom-alert-status-perfil").fadeIn("fast");
-                  $("#img-send-op").fadeIn("fast");
-                  $("#status-content-operation" ).html("Cambios fueron guardados satisfactoriamente.");
+                      $("#bottom-alert-status-perfil").fadeIn("fast");
+                      $("#img-send-op").fadeOut("fast");
+                      $("#status-content-operation" ).html("Favor de intentar m&acute;s tarde.");
 
 
-             }
+                  }
+                 },
 
-             if(msg=="0"){
+                 data: {
+                         currentpassword: $("#current-password").val(),
+                         newpassword:     $("#new-password").val()
 
-                  $("#bottom-alert-status-perfil").fadeIn("fast");
-                  $("#img-send-op").fadeOut("fast");
-                  $("#status-content-operation" ).html("Ning&uacute;n campo puede permanecer vac&iacute;o");
+                        }
 
+             }) .done(function( msg ) {
 
-             }
+               // alert(msg);
 
-             if(msg=="-1"){
+                if(msg=="1"){
 
-                  $("#bottom-alert-status-perfil").fadeIn("fast");
-                  $("#img-send-op").fadeOut("fast");
-                  $("#status-content-operation" ).html("La Contrase&ntilde;a actual proporcionada es incorrecta.");
-
-             }
-
-             if(msg=="-2"){
-
-                  $("#bottom-alert-status-perfil").fadeIn("fast");
-                  $("#img-send-op").fadeOut("fast");
-                  $("#status-content-operation" ).html("Favor de intentar m&acute;s tarde.");
-
-             }
+                      $("#bottom-alert-status-perfil").fadeIn("fast");
+                      $("#img-send-op").fadeIn("fast");
+                      $("#status-content-operation" ).html("Cambios fueron guardados satisfactoriamente.");
 
 
-         });
+                 }
 
-      });
+                 if(msg=="0"){
 
-function readURL(input, divimg) {
-        if (input.files && input.files[0]) {
-            var reader = new FileReader();
+                      $("#bottom-alert-status-perfil").fadeIn("fast");
+                      $("#img-send-op").fadeOut("fast");
+                      $("#status-content-operation" ).html("Ning&uacute;n campo puede permanecer vac&iacute;o");
 
-            reader.onload = function (e) {
-                $('#img-src-profile-image').attr('src', e.target.result);
+
+                 }
+
+                 if(msg=="-1"){
+
+                      $("#bottom-alert-status-perfil").fadeIn("fast");
+                      $("#img-send-op").fadeOut("fast");
+                      $("#status-content-operation" ).html("La Contrase&ntilde;a actual proporcionada es incorrecta.");
+
+                 }
+
+                 if(msg=="-2"){
+
+                      $("#bottom-alert-status-perfil").fadeIn("fast");
+                      $("#img-send-op").fadeOut("fast");
+                      $("#status-content-operation" ).html("Favor de intentar m&acute;s tarde.");
+
+                 }
+
+
+             });
+
+          });
+
+    function readURL(input, divimg) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    $('#img-src-profile-image').attr('src', e.target.result);
+                }
+
+                reader.readAsDataURL(input.files[0]);
             }
-
-            reader.readAsDataURL(input.files[0]);
         }
-    }
 
 
-$('#link-change-pic-txt').click(function(event) {
+    $('#link-change-pic-txt').click(function(event) {
 
-  $('#file1').click();
+      $('#file1').click();
 
-});
-
-
-$('#file1').change(function(click) {
-
-    readURL(this, "img-profile-src");
-
-});
+    });
 
 
-});
+    $('#file1').change(function(click) {
 
-{% include "Scripts/secript_search_header.html" %}
+        readURL(this, "img-profile-src");
+
+    });
 
 
+    });
 
-</script>
-
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-
-</head>
-<body>
-<div id="fb-root"></div>
-
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&appId=222474031234173&version=v2.0";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-<div class="header-header">
-<header>
-
-{% include "Home/header.html" %}
-
-</header>
-</div>
+    {% include "Scripts/secript_search_header.html" %}
 
 
 
-<div class="content_info">
+    </script>
 
-    <div class="left edit-profile-box-left">
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
-        <div class="edit-profile-first-btn">
-            <div class="left-btn-bar-status-active left" id="bar-left-general"></div>
-            <div class="icon-edit-profile-left left"><img src="/{{ STATIC_URL }}imgs/informacion-general-on.png" width="18" height="13" id="icon-edit-profile-left-gen-img"></div>
-            <div class="link-txt-left-edit-pro left"><a href="javascript:void(0)" class="link-left-btn-edi-pro-active" id="link-btn-info-general">Informaci&oacute;n General</a></div>
-            <div class="clear"></div>
-        </div>
+    </head>
+    <body>
+    <div id="fb-root"></div>
 
-        <div class="line-edit-pro-btn"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&appId=222474031234173&version=v2.0";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    <div class="header-header">
+    <header>
 
-        <div class="edit-profile-last-btn">
+    {% include "Home/header.html" %}
 
-            <div class="left-btn-bar-status-no-active left" id="bar-left-password"></div>
-            <div class="icon-edit-profile-left left"><img src="/{{ STATIC_URL }}imgs/cambiar-contrasena-off.png" width="12" height="16" id="icon-edit-profile-left-change-pass"></div>
-            <div class="link-txt-left-edit-pro2 left"><a href="javascript:void(0)" class="link-left-btn-edi-pro-no-active" id="link-btn-change-password">Cambiar Contrase&ntilde;a</a></div>
-            <div class="clear"></div>
+    </header>
+    </div>
 
-        </div>
 
-        <div class="back-profile-btn">
-            <div class="move-back-profile-btn">
-                <div class="left"><img src="/{{ STATIC_URL }}imgs/perfil.png" width="14" height="16"></div>
-                <div class="left move-link-back-x"><a href="/km/{{ request.user.username }}/" class="link-back-profile">Volver a Perfil</a></div>
+
+    <div class="content_info">
+
+        <div class="left edit-profile-box-left">
+
+            <div class="edit-profile-first-btn">
+                <div class="left-btn-bar-status-active left" id="bar-left-general"></div>
+                <div class="icon-edit-profile-left left"><img src="/{{ STATIC_URL }}imgs/informacion-general-on.png" width="18" height="13" id="icon-edit-profile-left-gen-img"></div>
+                <div class="link-txt-left-edit-pro left"><a href="javascript:void(0)" class="link-left-btn-edi-pro-active" id="link-btn-info-general">Informaci&oacute;n General</a></div>
                 <div class="clear"></div>
             </div>
 
-        </div>
+            <div class="line-edit-pro-btn"></div>
 
-    </div>
-    <div class="left edit-profile-box-right">
+            <div class="edit-profile-last-btn">
 
-            <div class="top-title-edit-data">
-
-
-                    <div class="title-txt-f-info" id="title-info-general">Informaci&oacute;n General</div>
-                    <div class="title-txt-f-info" id="title-info-change-password">Cambiar contrase&ntilde;a</div>
-
+                <div class="left-btn-bar-status-no-active left" id="bar-left-password"></div>
+                <div class="icon-edit-profile-left left"><img src="/{{ STATIC_URL }}imgs/cambiar-contrasena-off.png" width="12" height="16" id="icon-edit-profile-left-change-pass"></div>
+                <div class="link-txt-left-edit-pro2 left"><a href="javascript:void(0)" class="link-left-btn-edi-pro-no-active" id="link-btn-change-password">Cambiar Contrase&ntilde;a</a></div>
+                <div class="clear"></div>
 
             </div>
 
-            <div class="content-info-general" id="content-info-general">
+            <div class="back-profile-btn">
+                <div class="move-back-profile-btn">
+                    <div class="left"><img src="/{{ STATIC_URL }}imgs/perfil.png" width="14" height="16"></div>
+                    <div class="left move-link-back-x"><a href="/km/{{ request.user.username }}/" class="link-back-profile">Volver a Perfil</a></div>
+                    <div class="clear"></div>
+                </div>
 
-                <form action="/update-profile/" method="post" enctype="multipart/form-data" name="form-data-general" id="form-data-general">{% csrf_token %}
+            </div>
 
-                <div class="left info-gen-pic" id="img-profile-src">
+        </div>
+        <div class="left edit-profile-box-right">
+
+                <div class="top-title-edit-data">
+
+
+                        <div class="title-txt-f-info" id="title-info-general">Informaci&oacute;n General</div>
+                        <div class="title-txt-f-info" id="title-info-change-password">Cambiar contrase&ntilde;a</div>
+
+
+                </div>
+
+                <div class="content-info-general" id="content-info-general">
+
+                    <form action="/update-profile/" method="post" enctype="multipart/form-data" name="form-data-general" id="form-data-general">{% csrf_token %}
+
+                    <div class="left info-gen-pic" id="img-profile-src">
 
 
 
-                    {% if DATALOGIN.pic_url == ""  or DATALOGIN.pic_url == None %}
+                        {% if DATALOGIN.pic_url == ""  or DATALOGIN.pic_url == None %}
 
 
-                        {% if DATALOGIN.firtsFacebookPic == ""  or DATALOGIN.firtsFacebookPic == None %}
+                            {% if DATALOGIN.firtsFacebookPic == ""  or DATALOGIN.firtsFacebookPic == None %}
 
-                            <img src="/{{ STATIC_URL }}imgs/perfil-b.png" class="img-profile-style" id="img-src-profile-image">
+                                <img src="/{{ STATIC_URL }}imgs/perfil-b.png" class="img-profile-style" id="img-src-profile-image">
+
+                            {% else %}
+
+                                <img src="{{ DATALOGIN.firtsFacebookPic }}" class="img-profile-style" id="img-src-profile-image">
+
+                            {% endif %}
+
+
 
                         {% else %}
 
-                            <img src="{{ DATALOGIN.firtsFacebookPic }}" class="img-profile-style" id="img-src-profile-image">
+                         <img src="http://res.cloudinary.com/htyoqtggc/image/upload/h_200,w_200/{{ DATALOGIN.pic_url }}.jpg" class="img-profile-style" id="img-src-profile-image" >
+
 
                         {% endif %}
 
 
+                        <div class="div-btn-change-pic">
 
-                    {% else %}
-
-                     <img src="http://res.cloudinary.com/htyoqtggc/image/upload/h_200,w_200/{{ DATALOGIN.pic_url }}.jpg" class="img-profile-style" id="img-src-profile-image" >
-
-
-                    {% endif %}
+                            <a href="javascript:void(0)" class="link-change-pic-txt" id="link-change-pic-txt">Cambiar</a>
 
 
-                    <div class="div-btn-change-pic">
-
-                        <a href="javascript:void(0)" class="link-change-pic-txt" id="link-change-pic-txt">Cambiar</a>
 
 
+                        </div>
 
 
                     </div>
+                    <div class="left info-gen-line"></div>
+                    <div class="left info-gen-form">
 
-
-                </div>
-                <div class="left info-gen-line"></div>
-                <div class="left info-gen-form">
-
-                    <div class="left info-gen-form-part1">
-                        <div class="title-form-field">Nombre</div>
-                        <div class="top-field-form-1">
-                            <input type="text" class="input-text-form-e">
-                        </div>
-                        <div class="title-form-field top-label-title">Fecha de Nacimiento</div>
-
-                        <div class="top-field-form-1 ">
-
-                            <div class="left">
-                             <select class="input-select-op input-select-op-month">
-                                 <option value="0">Mes</option>
-                                 <option value="1">Enero</option>
-                                 <option value="2">Febrero</option>
-                                 <option value="3">Marzo</option>
-                                 <option value="4">Abril</option>
-                                 <option value="5">Mayo</option>
-                                 <option value="6">Junio</option>
-                                 <option value="7">Julio</option>
-                                 <option value="8">Agosto</option>
-                                 <option value="9">Septiembre</option>
-                                 <option value="10">Octubre</option>
-                                 <option value="11">Noviembre</option>
-                                 <option value="12">Diciembre</option>
-                             </select>
-                            </div>
-
-                            <div class="left left-day-select">
-                            <select class="input-select-op input-select-op-day">
-                                 <option value="0">D&iacute;a</option>
-                                 <option value="1">1</option>
-                                 <option value="2">2</option>
-                                 <option value="3">3</option>
-                                 <option value="4">4</option>
-                                 <option value="5">5</option>
-                                 <option value="6">6</option>
-                                 <option value="7">7</option>
-                                 <option value="8">8</option>
-                                 <option value="9">9</option>
-                                 <option value="10">10</option>
-                                 <option value="11">11</option>
-                                 <option value="12">12</option>
-                                 <option value="13">13</option>
-                                <option value="14">14</option>
-                                <option value="15">15</option>
-                                 <option value="16">16</option>
-                                <option value="17">17</option>
-                                <option value="18">18</option>
-                                <option value="19">19</option>
-                                <option value="20">20</option>
-                                <option value="21">21</option>
-                                <option value="22">22</option>
-                                <option value="23">23</option>
-                                <option value="24">24</option>
-                                <option value="25">25</option>
-                                <option value="26">26</option>
-                                <option value="27">27</option>
-                                <option value="28">28</option>
-                                <option value="29">29</option>
-                                <option value="30">30</option>
-                                <option value="31">31</option>
-                            </select>
-                            </div>
-
-                            <div class="clear"></div>
-
-                            <div class="title-form-field top-label-title">Pa&iacute;s</div>
-
+                        <div class="left info-gen-form-part1">
+                            <div class="title-form-field">Nombre</div>
                             <div class="top-field-form-1">
+                                <input type="text" class="input-text-form-e" name="user_name" name="user_name">
+                            </div>
+                            <div class="title-form-field top-label-title">Fecha de Nacimiento</div>
 
-                            <select class="input-select-op input-select-op-country">
-                                 <option value="0">Pa&iacute;s</option>
-                                 <option value="Mexico">Mexico</option>
-                                 <option value="USA">Estados Unidos</option>
-                            </select>
+                            <div class="top-field-form-1 ">
+
+                                <div class="left">
+                                 <select class="input-select-op input-select-op-month" name="user_birth_month">
+                                     <option value="0">Mes</option>
+                                     <option value="1">Enero</option>
+                                     <option value="2">Febrero</option>
+                                     <option value="3">Marzo</option>
+                                     <option value="4">Abril</option>
+                                     <option value="5">Mayo</option>
+                                     <option value="6">Junio</option>
+                                     <option value="7">Julio</option>
+                                     <option value="8">Agosto</option>
+                                     <option value="9">Septiembre</option>
+                                     <option value="10">Octubre</option>
+                                     <option value="11">Noviembre</option>
+                                     <option value="12">Diciembre</option>
+                                 </select>
+                                </div>
+
+                                <div class="left left-day-select">
+                                <select class="input-select-op input-select-op-day" name="user_birth_day">
+                                     <option value="0">D&iacute;a</option>
+                                     <option value="1">1</option>
+                                     <option value="2">2</option>
+                                     <option value="3">3</option>
+                                     <option value="4">4</option>
+                                     <option value="5">5</option>
+                                     <option value="6">6</option>
+                                     <option value="7">7</option>
+                                     <option value="8">8</option>
+                                     <option value="9">9</option>
+                                     <option value="10">10</option>
+                                     <option value="11">11</option>
+                                     <option value="12">12</option>
+                                     <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                     <option value="16">16</option>
+                                    <option value="17">17</option>
+                                    <option value="18">18</option>
+                                    <option value="19">19</option>
+                                    <option value="20">20</option>
+                                    <option value="21">21</option>
+                                    <option value="22">22</option>
+                                    <option value="23">23</option>
+                                    <option value="24">24</option>
+                                    <option value="25">25</option>
+                                    <option value="26">26</option>
+                                    <option value="27">27</option>
+                                    <option value="28">28</option>
+                                    <option value="29">29</option>
+                                    <option value="30">30</option>
+                                    <option value="31">31</option>
+                                </select>
+                                </div>
+
+                                <div class="clear"></div>
+
+                                <div class="title-form-field top-label-title">Pa&iacute;s</div>
+
+                                <div class="top-field-form-1">
+
+                                <select class="input-select-op input-select-op-country" name="user_birth_country">
+                                     <option value="0">Pa&iacute;s</option>
+                                     <option value="Mexico">Mexico</option>
+                                     <option value="USA">Estados Unidos</option>
+                                </select>
+                                </div>
+
+                                <div class="title-form-field top-label-title">Nivel</div>
+
+                                <div class="top-field-form-1">
+
+                                <select class="input-select-op input-select-op-x" name="user_level">
+
+                                     <option value="0">Nivel</option>
+                                     <option value="1">Avanzado</option>
+
+                                </select>
+                                </div>
+
+                                 <div class="title-form-field top-label-title">Acerca de</div>
+
                             </div>
 
-                            <div class="title-form-field top-label-title">Nivel</div>
+                        </div>
 
+
+                        <div class="left info-gen-form-part2">
+                            <div class="title-form-field">Apellidos</div>
                             <div class="top-field-form-1">
-
-                            <select class="input-select-op input-select-op-x">
-
-                                 <option value="0">Nivel</option>
-                                 <option value="1">Avanzado</option>
-
-                            </select>
+                                <input type="text" class="input-text-form-e" name="user_lastname">
                             </div>
 
-                             <div class="title-form-field top-label-title">Acerca de</div>
+                            <div class="top-select-year">
+                                <select class="input-select-op input-select-op-year" name="user_birth_year">
+                                     <option value="0">A&ntilde;o</option>
+                                          <option value="	1910	">	1910	</option>
+    <option value="	1911	">	1911	</option>
+    <option value="	1912	">	1912	</option>
+    <option value="	1913	">	1913	</option>
+    <option value="	1914	">	1914	</option>
+    <option value="	1915	">	1915	</option>
+    <option value="	1916	">	1916	</option>
+    <option value="	1917	">	1917	</option>
+    <option value="	1918	">	1918	</option>
+    <option value="	1919	">	1919	</option>
+    <option value="	1920	">	1920	</option>
+    <option value="	1921	">	1921	</option>
+    <option value="	1922	">	1922	</option>
+    <option value="	1923	">	1923	</option>
+    <option value="	1924	">	1924	</option>
+    <option value="	1925	">	1925	</option>
+    <option value="	1926	">	1926	</option>
+    <option value="	1927	">	1927	</option>
+    <option value="	1928	">	1928	</option>
+    <option value="	1929	">	1929	</option>
+    <option value="	1930	">	1930	</option>
+    <option value="	1931	">	1931	</option>
+    <option value="	1932	">	1932	</option>
+    <option value="	1933	">	1933	</option>
+    <option value="	1934	">	1934	</option>
+    <option value="	1935	">	1935	</option>
+    <option value="	1936	">	1936	</option>
+    <option value="	1937	">	1937	</option>
+    <option value="	1938	">	1938	</option>
+    <option value="	1939	">	1939	</option>
+    <option value="	1940	">	1940	</option>
+    <option value="	1941	">	1941	</option>
+    <option value="	1942	">	1942	</option>
+    <option value="	1943	">	1943	</option>
+    <option value="	1944	">	1944	</option>
+    <option value="	1945	">	1945	</option>
+    <option value="	1946	">	1946	</option>
+    <option value="	1947	">	1947	</option>
+    <option value="	1948	">	1948	</option>
+    <option value="	1949	">	1949	</option>
+    <option value="	1950	">	1950	</option>
+    <option value="	1951	">	1951	</option>
+    <option value="	1952	">	1952	</option>
+    <option value="	1953	">	1953	</option>
+    <option value="	1954	">	1954	</option>
+    <option value="	1955	">	1955	</option>
+    <option value="	1956	">	1956	</option>
+    <option value="	1957	">	1957	</option>
+    <option value="	1958	">	1958	</option>
+    <option value="	1959	">	1959	</option>
+    <option value="	1960	">	1960	</option>
+    <option value="	1961	">	1961	</option>
+    <option value="	1962	">	1962	</option>
+    <option value="	1963	">	1963	</option>
+    <option value="	1964	">	1964	</option>
+    <option value="	1965	">	1965	</option>
+    <option value="	1966	">	1966	</option>
+    <option value="	1967	">	1967	</option>
+    <option value="	1968	">	1968	</option>
+    <option value="	1969	">	1969	</option>
+    <option value="	1970	">	1970	</option>
+    <option value="	1971	">	1971	</option>
+    <option value="	1972	">	1972	</option>
+    <option value="	1973	">	1973	</option>
+    <option value="	1974	">	1974	</option>
+    <option value="	1975	">	1975	</option>
+    <option value="	1976	">	1976	</option>
+    <option value="	1977	">	1977	</option>
+    <option value="	1978	">	1978	</option>
+    <option value="	1979	">	1979	</option>
+    <option value="	1980	">	1980	</option>
+    <option value="	1981	">	1981	</option>
+    <option value="	1982	">	1982	</option>
+    <option value="	1983	">	1983	</option>
+    <option value="	1984	">	1984	</option>
+    <option value="	1985	">	1985	</option>
+    <option value="	1986	">	1986	</option>
+    <option value="	1987	">	1987	</option>
+    <option value="	1988	">	1988	</option>
+    <option value="	1989	">	1989	</option>
+    <option value="	1990	">	1990	</option>
+    <option value="	1991	">	1991	</option>
+    <option value="	1992	">	1992	</option>
+    <option value="	1993	">	1993	</option>
+    <option value="	1994	">	1994	</option>
+    <option value="	1995	">	1995	</option>
+    <option value="	1996	">	1996	</option>
+    <option value="	1997	">	1997	</option>
+    <option value="	1998	">	1998	</option>
+    <option value="	1999	">	1999	</option>
+    <option value="	2000	">	2000	</option>
+    <option value="	2001	">	2001	</option>
+    <option value="	2002	">	2002	</option>
+    <option value="	2003	">	2003	</option>
+    <option value="	2004	">	2004	</option>
+    <option value="	2005	">	2005	</option>
+    <option value="	2006	">	2006	</option>
+    <option value="	2007	">	2007	</option>
+    <option value="	2008	">	2008	</option>
+    <option value="	2009	">	2009	</option>
+    <option value="	2010	">	2010	</option>
+    <option value="	2011	">	2011	</option>
+    <option value="	2012	">	2012	</option>
+    <option value="	2013	">	2013	</option>
+    <option value="	2014	">	2014	</option>
+                                </select>
+                            </div>
 
-                        </div>
-
-                    </div>
-
-
-                    <div class="left info-gen-form-part2">
-                        <div class="title-form-field">Apellidos</div>
-                        <div class="top-field-form-1">
-                            <input type="text" class="input-text-form-e">
-                        </div>
-
-                        <div class="top-select-year">
-                            <select class="input-select-op input-select-op-year">
-                                 <option value="0">A&ntilde;o</option>
-                            </select>
-                        </div>
-
-                       <div class="title-form-field top-select">Ciudad</div>
-                        <div class="top-field-form-1">
-                            <input type="text" class="input-text-form-e">
-                        </div>
-
-                        <div class="title-form-field top-label-title">Distancia Favorita</div>
-
+                           <div class="title-form-field top-select">Ciudad</div>
                             <div class="top-field-form-1">
-
-                            <select class="input-select-op input-select-op-x">
-
-                                 <option value="0">Distancia</option>
-                                 <option value="1">5km</option>
-
-                            </select>
+                                <input type="text" class="input-text-form-e" name="user_city">
                             </div>
 
-                        <div class="title-form-field-2 top-label-title-2">Max 450 caracteres</div>
+                            <div class="title-form-field top-label-title">Distancia Favorita</div>
 
+                                <div class="top-field-form-1">
+
+                                <select class="input-select-op input-select-op-x" name="user_favorite_distance">
+
+                                     <option value="0">Distancia</option>
+                                     <option value="1">5km</option>
+
+                                </select>
+                                </div>
+
+                            <div class="title-form-field-2 top-label-title-2">Max 450 caracteres</div>
+
+
+
+
+                        </div>
+                        <div class="clear"></div>
+
+                        <div class="top-field-form-1">
+                            <textarea class="text-area-desc" name="user_about"></textarea>
+                        </div>
+
+                                 <div class="btn-change-data-b">
+
+                                <div class="txt-btn-cc"><a href="javascript:void(0)" class="txt-btn-cc-link" id="send-update-profile" onclick="document.getElementById('form-data-general').submit();"> Guardar Cambios </a></div>
+
+                            </div>
 
 
 
                     </div>
                     <div class="clear"></div>
+                    <input type="file" id="file1" name="file1" class="fileDiv">
+                    </form>
+                </div>
 
-                    <div class="top-field-form-1">
-                        <textarea class="text-area-desc"></textarea>
-                    </div>
 
-                             <div class="btn-change-data-b">
+                <div class="content-info-change-password" id="content-info-change-password">
 
-                            <div class="txt-btn-cc"><a href="javascript:void(0)" class="txt-btn-cc-link" id="send-update-profile" onclick="document.getElementById('form-data-general').submit();"> Guardar Cambios </a></div>
+                <form method="post">{% csrf_token %}
+                    <div class="info-gen-form-change">
+
+                        <div class="left info-gen-form-part1">
+
+                            <div class="title-form-field">Contrase&ntilde;a actual</div>
+                            <div class="top-field-form-1">
+                                <input type="password" class="input-text-form-e" name="current-password" id="current-password">
+                            </div>
+
+
+                        </div>
+
+
+                        <div class="left info-gen-form-part2">
+                            <div class="title-form-field">Nueva Contrase&ntilde;a</div>
+                            <div class="top-field-form-1">
+                                <input type="password" class="input-text-form-e" name="new-password" id="new-password">
+                            </div>
+
+
+                        </div>
+                        <div class="clear"></div>
+
+
+
+                        <div class="btn-change-data-p">
+
+                             <div class="txt-btn-cc"><a href="javascript:void(0)" class="txt-btn-cc-link" id="btn-change-password-action">Cambiar</a></div>
 
                         </div>
 
 
 
-                </div>
-                <div class="clear"></div>
-                <input type="file" id="file1" name="file1" class="fileDiv">
+                    </div>
                 </form>
-            </div>
-
-
-            <div class="content-info-change-password" id="content-info-change-password">
-
-            <form method="post">{% csrf_token %}
-                <div class="info-gen-form-change">
-
-                    <div class="left info-gen-form-part1">
-
-                        <div class="title-form-field">Contrase&ntilde;a actual</div>
-                        <div class="top-field-form-1">
-                            <input type="password" class="input-text-form-e" name="current-password" id="current-password">
-                        </div>
-
-
-                    </div>
-
-
-                    <div class="left info-gen-form-part2">
-                        <div class="title-form-field">Nueva Contrase&ntilde;a</div>
-                        <div class="top-field-form-1">
-                            <input type="password" class="input-text-form-e" name="new-password" id="new-password">
-                        </div>
-
-
-                    </div>
-                    <div class="clear"></div>
-
-
-
-                    <div class="btn-change-data-p">
-
-                         <div class="txt-btn-cc"><a href="javascript:void(0)" class="txt-btn-cc-link" id="btn-change-password-action">Cambiar</a></div>
-
-                    </div>
-
-
 
                 </div>
-            </form>
 
-            </div>
+                <div class="bottom-edit-data">
 
-            <div class="bottom-edit-data">
-
-                <div class="bottom-alert-status-perfil" id="bottom-alert-status-perfil">
-                    <div class="left" id="img-send-op"><img src="/{{ STATIC_URL }}imgs/cambios-enviados.png" width="20" height="20"></div>
+                    <div class="bottom-alert-status-perfil" id="bottom-alert-status-perfil">
+                        <div class="left" id="img-send-op"><img src="/{{ STATIC_URL }}imgs/cambios-enviados.png" width="20" height="20"></div>
 
 
-                    <div class="left txt-alert-status-b" id="status-content-operation"></div>
+                        <div class="left txt-alert-status-b" id="status-content-operation"></div>
 
 
 
-                    <div class="clear"></div>
+                        <div class="clear"></div>
+                    </div>
+
                 </div>
 
-            </div>
+        </div>
+
+        <div class="clear"></div>
 
     </div>
 
-    <div class="clear"></div>
-
-</div>
-
-{% include "Google/analytics.html" %}
-</body>
-</html>
+    {% include "Google/analytics.html" %}
+    </body>
+    </html>
