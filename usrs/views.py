@@ -333,10 +333,13 @@ def EditMyProfile(request,):
                     DATALOGIN_ID=request.user.id
                     DATALOGIN = users.objects.get(id_user_admin_id=DATALOGIN_ID)
 
+
+
                     return render(request, 'User/editProfile.html', {
 
                         'usr':request.user.username,
                         'DATALOGIN':DATALOGIN,
+
 
 
 
@@ -433,7 +436,7 @@ def UpdateMyProfile(request):
                                     t.pic_url=filesend
                                     t.save() # this will update only
 
-                                    return HttpResponseRedirect("/edit-profile/?edit=true")
+                                    return HttpResponseRedirect("/edit-profile/?edit=true#status-content-operation")
 
 
                             except:
