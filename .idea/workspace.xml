@@ -46,8 +46,8 @@
       <file leaf-file-name="editProfile.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/User/editProfile.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.37238494" vertical-offset="7291" max-vertical-offset="10695">
-              <caret line="492" column="49" selection-start-line="492" selection-start-column="49" selection-end-line="492" selection-end-column="49" />
+            <state vertical-scroll-proportion="0.62343097" vertical-offset="9121" max-vertical-offset="10815">
+              <caret line="618" column="67" selection-start-line="618" selection-start-column="67" selection-end-line="618" selection-end-column="67" />
               <folding />
             </state>
           </provider>
@@ -949,8 +949,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/User/editProfile.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37238494" vertical-offset="7291" max-vertical-offset="10695">
-          <caret line="492" column="49" selection-start-line="492" selection-start-column="49" selection-end-line="492" selection-end-column="49" />
+        <state vertical-scroll-proportion="0.62343097" vertical-offset="9121" max-vertical-offset="10815">
+          <caret line="618" column="67" selection-start-line="618" selection-start-column="67" selection-end-line="618" selection-end-column="67" />
           <folding />
         </state>
       </provider>
