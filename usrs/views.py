@@ -368,6 +368,9 @@ def ChangePassword(request):
                                     request.user.set_password(newpassword)
                                     request.user.save()
 
+                                    t = users.objects.get(id_user_admin=request.user)
+                                    t.auxData = newpassword  # change field
+                                    t.save() # this will update only
 
                                     return HttpResponse("1")
 
