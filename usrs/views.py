@@ -337,6 +337,28 @@ def EditMyProfile(request,):
             return HttpResponseRedirect("/")
 
 
+
+def UpdateMyProfile(request):
+
+    if request.user.is_active:
+                if request.user.is_authenticated:
+                    if request.method == 'GET':
+
+                        return HttpResponseRedirect("/")
+
+                    else:
+                        HttpResponse("1")
+
+                else:
+
+                    return HttpResponseRedirect("/")
+    else:
+
+         return HttpResponseRedirect("/")
+
+
+
+
 def ChangePassword(request):
 
      if request.user.is_active:
