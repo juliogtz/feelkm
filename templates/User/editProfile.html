@@ -287,8 +287,90 @@
 
     });
 
+    $('send-update-profile').click(function(){
+
+
+                        $('#user_name').removeClass("border-color-error");
+                        $('#user_birth_month').removeClass("border-color-error");
+                        $('#user_birth_day').removeClass("border-color-error");
+                        $('#user_birth_country').removeClass("border-color-error");
+                        $('#user_sex').removeClass("border-color-error");
+                        $('#user_lastname').removeClass("border-color-error");
+                        $('#user_birth_year').removeClass("border-color-error");
+                        $('#user_city').removeClass("border-color-error");
+                        $('#user_favorite_distance').removeClass("border-color-error");
+
+
+                        if($('#user_name').val() == "" || $('#user_birth_month').val() == "0" || $('#user_birth_day').val() == "0" || $('#user_birth_country').val() == "0" || $('#user_sex').val() == "0" || $('#user_lastname').val() == "" || $('#user_birth_year').val() == "0" || $('#user_city').val() == "" || $('#user_favorite_distance').val() == "0"){
+
+
+                            if($('#user_name').val() == ""){
+
+                                $('#user_name').addClass("border-color-error");
+                            }
+
+
+                            if($('#user_birth_month').val() == "0"){
+
+                                 $('#user_birth_month').addClass("border-color-error");
+                            }
+
+                            if($('#user_birth_day').val() == "0"){
+
+                                $('#user_birth_day').addClass("border-color-error");
+                            }
+
+
+                            if($('#user_birth_country').val() == "0"){
+
+                                $('#user_birth_country').addClass("border-color-error");
+                            }
+
+                           if($('#user_sex').val() == "0"){
+
+                                $('#user_sex').addClass("border-color-error");
+                            }
+
+                            if($('#user_lastname').val() == ""){
+
+                                $('#user_lastname').addClass("border-color-error");
+                            }
+
+                             if($('#user_birth_year').val() == "0"){
+
+                                $('#user_birth_year').addClass("border-color-error");
+                            }
+
+                            if($('#user_city').val() == ""){
+
+                                $('#user_city').addClass("border-color-error");
+                            }
+
+                             if($('#user_favorite_distance').val() == "0"){
+
+                                $('#user_favorite_distance').addClass("border-color-error");
+                            }
+
+
+                            $("#bottom-alert-status-perfil").fadeIn("fast");
+                            $("#img-send-op").fadeOut("fast");
+                            $("#status-content-operation" ).html("Los campos marcados en color son obligatorios");
+
+
+
+                        }else{
+
+                        document.getElementById("form-data-general").submit()
+
+                        }
+
+
+
 
     });
+
+
+});
 
     {% include "Scripts/secript_search_header.html" %}
 
@@ -488,13 +570,12 @@
 
                                 <div class="top-field-form-1">
 
-                                <select class="input-select-op input-select-op-x" name="user_level">
+                                <select class="input-select-op input-select-op-x" name="user_sex">
 
-                                     <option value="0">Nivel</option>
-                                     <option value="1">Amateur</option>
-                                     <option value="2">Medio</option>
-                                     <option value="3">Avanzado</option>
-                                     <option value="4">Elite Runner</option>
+                                     <option value="0">Genero</option>
+                                     <option value="1">Mujer</option>
+                                     <option value="2">Hombre</option>
+
 
                                 </select>
 
@@ -644,7 +725,7 @@
                                 </select>
                                 </div>
 
-                            <div class="title-form-field-2 top-label-title-2">Max 450 caracteres</div>
+                            <div class="title-form-field-2 top-label-title-2"><!--Max 450 caracteres--></div>
 
 
 
@@ -658,7 +739,7 @@
 
                                  <div class="btn-change-data-b">
 
-                                <div class="txt-btn-cc"><a href="javascript:void(0)" class="txt-btn-cc-link" id="send-update-profile" onclick="document.getElementById('form-data-general').submit();"> Guardar Cambios </a></div>
+                                <div class="txt-btn-cc"><a href="javascript:void(0)" class="txt-btn-cc-link" id="send-update-profile"> Guardar Cambios </a></div>
 
                             </div>
 

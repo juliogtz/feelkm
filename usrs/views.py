@@ -11,6 +11,19 @@ from api.models import users, events, comments_events, events_favorites, photos
 from django.views.decorators.cache import cache_page
 from django.core.mail import send_mail, BadHeaderError
 
+import cloudinary
+import cloudinary.uploader
+import cloudinary.api
+import random
+
+import datetime
+
+cloudinary.config(
+  cloud_name = "htyoqtggc",
+  api_key = "961935933259211",
+  api_secret = "COwH0OL6qwHv5fhjD0ey2TjSdTo"
+)
+
 
 """
 # Register() - Return:
@@ -352,30 +365,32 @@ def UpdateMyProfile(request):
                         user_birth_month = request.POST["user_birth_month"]
                         user_birth_day = request.POST["user_birth_day"]
                         user_birth_country = request.POST["user_birth_country"]
-                        user_level = request.POST["user_level"]
+                        user_sex = request.POST["user_sex"]
                         user_lastname = request.POST["user_lastname"]
                         user_birth_year = request.POST["user_birth_year"]
                         user_city = request.POST["user_city"]
                         user_favorite_distance = request.POST["user_favorite_distance"]
+
                         user_about = request.POST["user_about"]
-                        file1 = request.FILES["file1"].name
+                        filesend = ""
 
-                        return HttpResponse(user_name+" "+user_birth_month+" "+user_birth_day+" "+user_birth_country+" "+user_level+" "+user_lastname+" "+user_birth_year+" "+user_city+" "+user_favorite_distance+" "+user_about+" "+file1)
+                        if(user_name == "" or user_birth_month == "0" or user_birth_day == "0" or user_birth_country =="0" or user_sex == "0" or user_lastname == "" or user_birth_year == "0" or user_city == "" or user_favorite_distance == "0"):
 
+                            return HttpResponseRedirect("/")
 
+                        else:
 
+                            if(request.FILES["file1"].name != "" and request.FILES["file1"].name != None ):
 
+                                file_txt=request.FILES["file1"].name
+                                file_txt=file_txt.split(".")
+                                if(file_txt[1]=="jpeg"  or file_txt[1]=="jpg" or file_txt[1]=="png" or file_txt[1]=="gif"):
 
-                        """ for filename, file in request.FILES.iteritems():
-
-                           file_txt=request.FILES[filename].name
-                           file_txt=file_txt.split(".")
-                           if(file_txt[1]=="jpeg"  or file_txt[1]=="jpg" or file_txt[1]=="png" or file_txt[1]=="gif"):
-
-                                #try:
-                                    json=cloudinary.uploader.upload(
-                                          request.FILES[filename],
-                                          public_id = file_txt[0],
+                                    try:
+                                          filesend = file_txt[0]+""+str(random.randrange(9999999999999999999999999))+""
+                                          json=cloudinary.uploader.upload(
+                                          request.FILES["file1"],
+                                          public_id = filesend,
                                           crop = 'limit',
                                           #width = 2000,
                                           #height = 2000,
@@ -389,7 +404,36 @@ def UpdateMyProfile(request):
                                           tags = ['']
                                           )
 
-                                    photos.objects.create(id_event=id_event_instance, id_user_admin=id_user_instance, file=file_txt[0], title=file_txt[0], date=today, status=1, json = json)"""
+                                    except:
+                                        filesend = ""
+                                else:
+                                    filesend = ""
+                            else:
+                                filesend = ""
+
+
+                            try:
+
+                                    #Update first table
+                                    request.user.first_name=user_name
+                                    request.user.last_name=user_lastname
+                                    request.user.save()
+
+                                    newDateBirth = datetime.date(int(user_birth_year), int(user_birth_month), int(user_birth_day))
+
+                                    #Update second table
+                                    t = users.objects.get(id_user_admin=request.user)
+                                    t.country = user_birth_country # change field
+                                    t.city = user_city # change field
+                                    t.prefer_km = user_favorite_distance  # change field
+                                    t.gender = user_sex  # change field
+                                    t.birth = newDateBirth # change field
+                                    t.save() # this will update only
+
+                                    HttpResponseRedirect("/edit-profile/?edit=true")
+
+                            except:
+                                return HttpResponseRedirect("/edit-profile/")
 
 
 

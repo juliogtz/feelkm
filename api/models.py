@@ -62,6 +62,8 @@ class users(models.Model):
 
 
 
+
+
 class photos(models.Model):
     id_event = models.ForeignKey(events)
     id_user_admin = models.ForeignKey(User)
