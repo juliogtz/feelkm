@@ -357,8 +357,12 @@ def ChangePassword(request):
                         else:
 
                             checkpass = check_password(current_password, request.user.password)
+                            if(checkpass == False or checkpass == 0 ):
+                                return HttpResponse("-1")
+                            if(checkpass == True or checkpass == 1 ):
+                                return HttpResponse("1")
 
-                            return HttpResponse(str(checkpass))
+
 
                             """try:
 

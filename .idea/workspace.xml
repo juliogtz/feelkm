@@ -46,8 +46,8 @@
       <file leaf-file-name="editProfile.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/User/editProfile.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.4" vertical-offset="2785" max-vertical-offset="7635">
-              <caret line="197" column="0" selection-start-line="197" selection-start-column="0" selection-end-line="197" selection-end-column="0" />
+            <state vertical-scroll-proportion="-3.1" vertical-offset="2890" max-vertical-offset="7755">
+              <caret line="203" column="14" selection-start-line="203" selection-start-column="14" selection-end-line="203" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -86,8 +86,8 @@
       <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/usrs/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.60227275" vertical-offset="5256" max-vertical-offset="5745">
-              <caret line="361" column="0" selection-start-line="361" selection-start-column="0" selection-end-line="361" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.71590906" vertical-offset="5211" max-vertical-offset="5805">
+              <caret line="360" column="57" selection-start-line="360" selection-start-column="57" selection-end-line="360" selection-end-column="57" />
               <folding>
                 <element signature="e#0#58#0" expanded="true" />
               </folding>
@@ -143,9 +143,9 @@
         <option value="$PROJECT_DIR$/FeelKm/settings.py" />
         <option value="$PROJECT_DIR$/FeelKm/urls.py" />
         <option value="$PROJECT_DIR$/statics/css/myprofile.css" />
-        <option value="$PROJECT_DIR$/templates/User/editProfile.html" />
         <option value="$PROJECT_DIR$/statics/scripts/header.js" />
         <option value="$PROJECT_DIR$/usrs/views.py" />
+        <option value="$PROJECT_DIR$/templates/User/editProfile.html" />
       </list>
     </option>
   </component>
@@ -922,14 +922,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/User/editProfile.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.4" vertical-offset="2785" max-vertical-offset="7635">
-          <caret line="197" column="0" selection-start-line="197" selection-start-column="0" selection-end-line="197" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/statics/scripts/header.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.3137255" vertical-offset="7406" max-vertical-offset="13080">
@@ -938,10 +930,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/User/editProfile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.1" vertical-offset="2890" max-vertical-offset="7755">
+          <caret line="203" column="14" selection-start-line="203" selection-start-column="14" selection-end-line="203" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/usrs/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.60227275" vertical-offset="5256" max-vertical-offset="5745">
-          <caret line="361" column="0" selection-start-line="361" selection-start-column="0" selection-end-line="361" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.71590906" vertical-offset="5211" max-vertical-offset="5805">
+          <caret line="360" column="57" selection-start-line="360" selection-start-column="57" selection-end-line="360" selection-end-column="57" />
           <folding>
             <element signature="e#0#58#0" expanded="true" />
           </folding>
