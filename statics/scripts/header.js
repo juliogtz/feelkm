@@ -502,7 +502,7 @@ function getCookie(name) {
              if(msg=="0"){
                  //alert("Error login")
 
-                  $("#txt-alert-box-login" ).html("Error, intente otra vez.");t
+                  $("#txt-alert-box-login" ).html("Error, intente otra vez.");
                   $("#box-login-form-wait").fadeOut("fast");
                   $("#box-login-form").fadeIn( "fast");
              }

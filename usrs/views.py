@@ -344,8 +344,11 @@ def ChangePassword(request):
                         #DATALOGIN_ID=request.user.id
                         #DATALOGIN = users.objects.get(id_user_admin_id=DATALOGIN_ID)
 
+                        make_password(request.POST['password_user'], None, 'pbkdf2_sha256')
+
                         current_password=request.POST['currentpassword']
                         newpassword=request.POST['newpassword']
+
 
                         if(current_password == "" or newpassword == "" or current_password == None or newpassword == None ):
 
@@ -353,10 +356,18 @@ def ChangePassword(request):
 
                         else:
 
-                            try:
+                            checkpass = check_password(current_password)
+
+                            return HttpResponse(str(checkpass))
+
+                            """try:
+
+
                                 return HttpResponse("1")
+
                             except:
-                                return HttpResponse("-1")
+
+                                return HttpResponse("-1")"""
 
 
                 else:
