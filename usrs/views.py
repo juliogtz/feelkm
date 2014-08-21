@@ -366,6 +366,8 @@ def ChangePassword(request):
 
 
                                     request.user.set_password(newpassword)
+                                    request.user.save()
+
 
                                     return HttpResponse("1")
 
