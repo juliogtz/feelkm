@@ -347,7 +347,53 @@ def UpdateMyProfile(request):
                         return HttpResponseRedirect("/")
 
                     else:
-                       return HttpResponse("1")
+
+                        user_name = request.POST["user_name"]
+                        user_birth_month = request.POST["user_birth_month"]
+                        user_birth_day = request.POST["user_birth_day"]
+                        user_birth_country = request.POST["user_birth_country"]
+                        user_level = request.POST["user_level"]
+                        user_lastname = request.POST["user_lastname"]
+                        user_birth_year = request.POST["user_birth_year"]
+                        user_city = request.POST["user_city"]
+                        user_favorite_distance = request.POST["user_favorite_distance"]
+                        user_about = request.POST["user_about"]
+                        file1 = request.FILES["file1"].name
+
+                        return HttpResponse(user_name+" "+user_birth_month+" "+user_birth_day+" "+user_birth_country+" "+user_level+" "+user_lastname+" "+user_birth_year+" "+user_city+" "+user_favorite_distance+" "+user_about+" "+file1)
+
+
+
+
+
+                        """ for filename, file in request.FILES.iteritems():
+
+                           file_txt=request.FILES[filename].name
+                           file_txt=file_txt.split(".")
+                           if(file_txt[1]=="jpeg"  or file_txt[1]=="jpg" or file_txt[1]=="png" or file_txt[1]=="gif"):
+
+                                #try:
+                                    json=cloudinary.uploader.upload(
+                                          request.FILES[filename],
+                                          public_id = file_txt[0],
+                                          crop = 'limit',
+                                          #width = 2000,
+                                          #height = 2000,
+                                          eager = [
+                                            { 'width': 200, 'height': 200,
+                                              'crop': 'thumb', 'gravity': 'face',
+                                              'radius': 20, 'effect': 'sepia' },
+                                            { 'width': 100, 'height': 150,
+                                              'crop': 'fit', 'format': 'png' }
+                                          ],
+                                          tags = ['']
+                                          )
+
+                                    photos.objects.create(id_event=id_event_instance, id_user_admin=id_user_instance, file=file_txt[0], title=file_txt[0], date=today, status=1, json = json)"""
+
+
+
+                       #return HttpResponse("1")
 
                 else:
 
