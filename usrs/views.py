@@ -356,7 +356,7 @@ def ChangePassword(request):
 
                         else:
 
-                            checkpass = check_password(current_password)
+                            checkpass = check_password(current_password, 'pbkdf2_sha256')
 
                             return HttpResponse(str(checkpass))
 
