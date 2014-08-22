@@ -473,7 +473,7 @@ def UpdateMyProfile(request):
                                     t.prefer_km = user_favorite_distance  # change field
                                     t.gender = user_sex  # change field
                                     t.birth = newDateBirth # change field
-                                    if(request.FILES["file1"]):
+                                    if(request.FILES['file1']):
                                         t.pic_url=filesend
 
                                     t.about=user_about
