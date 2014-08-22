@@ -4,10 +4,7 @@ body{
 	margin-left: 0px;
 	margin-right: 0px;
     -webkit-font-smoothing:antialiased;
-    -moz-font-smoothing:antialiased;
-    font-smoothing:antialiased;
-    o-font-smoothing:antialiased;
-    ms-font-smoothing:antialiased;
+
 
 
 }
@@ -95,11 +92,11 @@ body{
     font-size:50px;
     letter-spacing: 0px;
     /*-webkit-font-smoothing:antialiased;*/
-    -webkit-font-smoothing: antialiased;
-    -moz-font-smoothing:antialiased;
+    /*-webkit-font-smoothing: antialiased;*/
+    /*-moz-font-smoothing:antialiased;
     font-smoothing:antialiased;
     o-font-smoothing:antialiased;
-    ms-font-smoothing:antialiased;
+    ms-font-smoothing:antialiased;*/
 
 
 
