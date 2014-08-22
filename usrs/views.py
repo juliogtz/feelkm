@@ -434,6 +434,7 @@ def UpdateMyProfile(request):
 
                                     try:
                                           filesend = ""+file_txt[0]+""+str(random.randrange(9999999999999999999999999))+""
+                                          fileaux = filesend
                                           json=cloudinary.uploader.upload(
                                           request.FILES[filename],
                                           public_id = filesend,
@@ -472,8 +473,9 @@ def UpdateMyProfile(request):
                                     t.prefer_km = user_favorite_distance  # change field
                                     t.gender = user_sex  # change field
                                     t.birth = newDateBirth # change field
-                                    t.about=user_about
-                                    if(request.FILES['file1']):
+                                    t.about = user_about
+
+                                    if(filesend != ""):
                                         t.pic_url=filesend
 
                                     t.save() # this will update only
