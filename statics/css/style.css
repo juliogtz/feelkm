@@ -5,7 +5,11 @@ body{
 	margin-right: 0px;
     -webkit-font-smoothing:antialiased;
     -moz-font-smoothing:antialiased;
-    font-weight: lighter;
+
+    font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+    font-smooth:always;
+
 
 
 
