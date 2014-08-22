@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
 <meta charset="utf-8" />
+{% load dictionary_extras %}
+{% for arg in data %}
 <title>FeelKm</title>
 <link rel="stylesheet" href="/{{ STATIC_URL }}css/header.css" type="text/css" />
 <link rel="stylesheet" href="/{{ STATIC_URL }}css/style_info.css" type="text/css" />
@@ -257,8 +259,7 @@ function favorite(stf){
 
 
 <div class="content_info">
-    {% load dictionary_extras %}
-    {% for arg in data %}
+
 	<div class="infoGlobal left">
 
 	<div class="face-like">
