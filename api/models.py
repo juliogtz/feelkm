@@ -59,6 +59,7 @@ class users(models.Model):
     city=models.TextField(blank=True)
     region=models.TextField(blank=True)
     country=models.TextField(blank=True)
+    about=models.TextField(blank=True)
 
 
 
