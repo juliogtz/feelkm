@@ -15,11 +15,37 @@
 
             <div class="txt-header-name-user left"><a href="javascript:void(0)" id="txt-header-name-user" class="txt-header-name-use-link">{{ request.user.first_name }}</a></div>
 
-            {% if DATALOGIN.firtsFacebookPic == ""  %}
+            <!--{% if DATALOGIN.firtsFacebookPic == ""  %}
             <div class="left img-profile-header-no"><a href="javascript:void(0)"><img id="img-profile-header-no-div"  src="/{{ STATIC_URL }}imgs/perfil-b.png" width="34" height="34" class="img-profile-header-no-image"></a></div>
             {% else %}
             <div class="left img-profile-header-yes-d"><a href="javascript:void(0)" id="img-profile-header-yes-d"><img src="{{ DATALOGIN.firtsFacebookPic }}" class="img-profile-header-yes"></a></div>
-            {% endif %}
+            {% endif %}-->
+
+            {% if DATALOGIN.pic_url == ""  or DATALOGIN.pic_url == None %}
+
+
+                        {% if DATALOGIN.firtsFacebookPic == ""  or DATALOGIN.firtsFacebookPic == None %}
+
+            <div class="left img-profile-header-no"><a href="javascript:void(0)"><img id="img-profile-header-no-div"  src="/{{ STATIC_URL }}imgs/perfil-b.png" width="34" height="34" class="img-profile-header-no-image"></a></div>
+
+                            {% else %}
+
+            <div class="left img-profile-header-yes-d"><a href="javascript:void(0)" id="img-profile-header-yes-d"><img src="{{ DATALOGIN.firtsFacebookPic }}" class="img-profile-header-yes"></a></div>
+
+                            {% endif %}
+
+
+
+                        {% else %}
+
+
+                    <div class="left img-profile-header-yes-d"><a href="javascript:void(0)" id="img-profile-header-yes-d"><img src="http://res.cloudinary.com/htyoqtggc/image/upload/h_200,w_200/{{ DATALOGIN.pic_url }}.jpg" class="img-profile-header-yes"></a></div>
+
+
+                        {% endif %}
+
+
+
             <div class="clear"></div>
             <div class="menu-top-header-options" id="menu-top-header-options">
 
