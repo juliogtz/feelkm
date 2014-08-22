@@ -417,6 +417,7 @@ def UpdateMyProfile(request):
 
                         user_about = request.POST["user_about"]
                         filesend = ""
+                        fileaux=""
 
                         if(user_name == "" or user_birth_month == "0" or user_birth_day == "0" or user_birth_country =="0" or user_sex == "0" or user_lastname == "" or user_birth_year == "0" or user_city == "" or user_favorite_distance == "0"):
 
@@ -425,16 +426,16 @@ def UpdateMyProfile(request):
 
                         else:
 
-                            if(request.FILES["file1"] != ''):
+                            for filename, file in request.FILES.iteritems():
 
-                                file_txt=request.FILES["file1"].name
+                                file_txt=request.FILES[filename].name
                                 file_txt=file_txt.split(".")
                                 if(file_txt[1]=="jpeg"  or file_txt[1]=="jpg" or file_txt[1]=="png" or file_txt[1]=="gif"):
 
                                     try:
                                           filesend = ""+file_txt[0]+""+str(random.randrange(9999999999999999999999999))+""
                                           json=cloudinary.uploader.upload(
-                                          request.FILES["file1"],
+                                          request.FILES[filename],
                                           public_id = filesend,
                                           crop = 'limit',
                                           #width = 2000,
@@ -453,8 +454,6 @@ def UpdateMyProfile(request):
                                         filesend = ""
                                 else:
                                     filesend = ""
-                            else:
-                                filesend = ""
 
 
                             try:
