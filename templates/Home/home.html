@@ -2,7 +2,10 @@
 <html lang="en">
 <head>
 <meta charset="utf-8" />
-<title>FeelKm</title>
+<title>FeelKm - Comunidad global de runners, opiniones y calificaciones 5k, 10k, Medio Marat&oacute;n 21k, 42k. Triatl&oacute;n - Ironman  </title>
+<meta name="keywords" content="running, runners, run, correr, maraton, medio maraton, 5k, 10k, 21k, 42k, triatlon, iroman"/>
+<meta name="description" content="Descubre tu pr&oacute;xima carrera, Todas las carreras alrededor del mundo, FeelKm es la primera plataforma que te permite encontrar la informaci&oacute;n más &uacute;til de tus eventos favoritos y conectarte con otros runners. Cu&eacute;ntanos tu experiencia en los eventos que has participado y califica la organizaci&oacute;n, hidrataci&oacute;n y m&acute;s aspectos de una carrera."/>
+
 <!--<link href='http://fonts.googleapis.com/css?family=Roboto:100' rel='stylesheet' type='text/css'>-->
 <link rel="stylesheet" href="{{ STATIC_URL }}css/header.css" type="text/css" />
 <link rel="stylesheet" href="{{ STATIC_URL }}css/style.css" type="text/css" />
@@ -24,7 +27,7 @@
 
 <div class="SearchContent">
     <form method="post" id="search-form" name="search-form">{% csrf_token %}
-	<div class="txtSearchC_Title">Descubre tu pr&oacute;xima carrera</div>
+	<div class="txtSearchC_Title"><h1 class="txtSearchC_Title">Descubre tu pr&oacute;xima carrera</h1></div>
 	<div class="txtSearchC_TitleSub">Todas las carreras alrededor del mundo.</div>
 	<div class="borderInput">
 	<input class="searchInputGo" name="q" id="q" type="text"  value="" style="font-weight: lighter;" placeholder="Busca carreras por nombre, ciudad, distancia etc...">
