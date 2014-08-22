@@ -472,10 +472,10 @@ def UpdateMyProfile(request):
                                     t.prefer_km = user_favorite_distance  # change field
                                     t.gender = user_sex  # change field
                                     t.birth = newDateBirth # change field
+                                    t.about=user_about
                                     if(request.FILES['file1']):
                                         t.pic_url=filesend
 
-                                    t.about=user_about
                                     t.save() # this will update only
 
                                     return HttpResponseRedirect("/edit-profile/?edit=true#status-content-operation")
