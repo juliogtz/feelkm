@@ -4,7 +4,10 @@
 <meta charset="utf-8" />
 {% load dictionary_extras %}
 {% for arg in data %}
-<title>FeelKm</title>
+<title>{{ arg.name_event }}</title>
+<meta name="keywords" content="{{ arg.name_event }}, running, runners, run, correr, maraton, medio maraton, 5k, 10k, 21k, 42k, triatlon, iroman"/>
+<meta name="description" content="{{ arg.city  | truncatewords_by_chars:20}}, {{ arg.region | truncatewords_by_chars:20 }} {{ arg.country }}"/>
+
 <link rel="stylesheet" href="/{{ STATIC_URL }}css/header.css" type="text/css" />
 <link rel="stylesheet" href="/{{ STATIC_URL }}css/style_info.css" type="text/css" />
 {% include "Scripts/scripts.html" %}
