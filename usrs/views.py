@@ -425,7 +425,7 @@ def UpdateMyProfile(request):
 
                         else:
 
-                            if(request.FILES["file1"].name != "" and request.FILES["file1"].name != None ):
+                            if(request.FILES["file1"]):
 
                                 file_txt=request.FILES["file1"].name
                                 file_txt=file_txt.split(".")
