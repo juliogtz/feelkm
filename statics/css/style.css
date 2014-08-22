@@ -100,9 +100,6 @@ body{
     o-font-smoothing:antialiased;
     ms-font-smoothing:antialiased;
 
-    -webkit-font-smoothing: antialiased;
-    -webkit-font-smoothing: subpixel-antialiased;
-    -moz-font-smoothing: subpixel-antialiased;
 
 
 }
