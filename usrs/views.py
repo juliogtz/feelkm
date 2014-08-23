@@ -336,39 +336,41 @@ def EditMyProfile(request,):
                     month=""
                     genero=""
 
-                    if(DATALOGIN.birth.month == 0):
-                        month="Mes"
-                    if(DATALOGIN.birth.month == 1):
-                        month="Enero"
-                    if(DATALOGIN.birth.month == 2):
-                        month="Febrero"
-                    if(DATALOGIN.birth.month == 3):
-                        month="Marzo"
-                    if(DATALOGIN.birth.month == 4):
-                        month="Abril"
-                    if(DATALOGIN.birth.month == 5):
-                        month="Mayo"
-                    if(DATALOGIN.birth.month == 6):
-                        month="Junio"
-                    if(DATALOGIN.birth.month == 7):
-                        month="Julio"
-                    if(DATALOGIN.birth.month == 8):
-                        month="Agosto"
-                    if(DATALOGIN.birth.month == 9):
-                        month="Septiembre"
-                    if(DATALOGIN.birth.month == 10):
-                        month="Octubre"
-                    if(DATALOGIN.birth.month == 11):
-                        month="Noviembre"
-                    if(DATALOGIN.birth.month == 12):
-                        month="Diciembre"
+                    if(DATALOGIN.birth):
 
-                    if(DATALOGIN.gender == ""):
-                        genero="Genero"
-                    if(DATALOGIN.gender == "F"):
-                        genero="Mujer"
-                    if(DATALOGIN.gender == "M"):
-                        genero="Hombre"
+                        if(DATALOGIN.birth.month == 0):
+                            month="Mes"
+                        if(DATALOGIN.birth.month == 1):
+                            month="Enero"
+                        if(DATALOGIN.birth.month == 2):
+                            month="Febrero"
+                        if(DATALOGIN.birth.month == 3):
+                            month="Marzo"
+                        if(DATALOGIN.birth.month == 4):
+                            month="Abril"
+                        if(DATALOGIN.birth.month == 5):
+                            month="Mayo"
+                        if(DATALOGIN.birth.month == 6):
+                            month="Junio"
+                        if(DATALOGIN.birth.month == 7):
+                            month="Julio"
+                        if(DATALOGIN.birth.month == 8):
+                            month="Agosto"
+                        if(DATALOGIN.birth.month == 9):
+                            month="Septiembre"
+                        if(DATALOGIN.birth.month == 10):
+                            month="Octubre"
+                        if(DATALOGIN.birth.month == 11):
+                            month="Noviembre"
+                        if(DATALOGIN.birth.month == 12):
+                            month="Diciembre"
+
+                        if(DATALOGIN.gender == ""):
+                            genero="Genero"
+                        if(DATALOGIN.gender == "F"):
+                            genero="Mujer"
+                        if(DATALOGIN.gender == "M"):
+                            genero="Hombre"
 
 
 
