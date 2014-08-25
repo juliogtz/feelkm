@@ -113,13 +113,15 @@ $(function() {
 
     <div class="left txt-data-profile-header">
         <div class="txt-name-profile">{{ request.user.first_name }} {{ request.user.last_name }}</div>
-        <div class="txt-name-place">{{ DATALOGIN.city  }}, {{ DATALOGIN.country }} </div>
+        <div class="txt-name-place">{{ request.user.username }} </div>
     </div>
     <div class="clear"></div>
 
+
+
     <div class="left member-section-from">
-        <div class="left"><img src="/{{ STATIC_URL }}imgs/joined.png" border="0" width="16" height="16"></div>
-        <div class="left txt-btnleft-hea-pro">Miembro desde {{ request.user.date_joined | date:"d M, Y" }}</div>
+        <div class="left"><img src="/{{ STATIC_URL }}imgs/pin.png" border="0" width="12" height="16"></div>
+        <div class="left txt-btnleft-hea-pro">{{ DATALOGIN.city  }}, {{ DATALOGIN.country }}</div>
         <div class="clear"></div>
     </div>
 
