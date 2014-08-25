@@ -610,6 +610,9 @@ function getCookie(name) {
          }) .done(function( msg ) {
 
 
+             alert(msg);
+
+
             if(msg=="1")
             {
 
