@@ -122,6 +122,8 @@ def RecoveryPassword(request):
                 # Enviar mail:
 
                 try:
+
+                    usr_recovery = User.objects.get(email = email_user )
                     mandrill_client = mandrill.Mandrill('GxVtwaebpEBKwF2bOSYvtw')
                     message = {
                      'auto_html': None,
@@ -130,7 +132,7 @@ def RecoveryPassword(request):
                      'from_name': 'FeelKm',
                      'global_merge_vars': [{'content': 'merge1 content', 'name': 'merge1'}],
                      'headers': {'Reply-To': 'message.reply@feelkm.com'},
-                     'html': '<html><head></head><body><div><img src="http://res.cloudinary.com/htyoqtggc/image/upload/v1408998865/logo-feelkm_b9mkca.png"></div><p style="font-family: Helvetica Neue; font-size: 14px; font-weight: normal; color:#4c4c4c; ">Recuperaci&oacute;n de contrase&ntilde;a FeelKm.</p><p style="font-family: Helvetica Neue; font-size: 13px; font-weight: normal; color:#4c4c4c;">Julio usted ha solicitado la recuperaci&oacute;n de su contrase&ntilde;a<br>Le recomendados entrar a la pltaforma lo antes posible y generar un nuevo cambio de contrase&ntilde;a.</p><p style="font-family: Helvetica Neue; font-size: 13px; font-weight: normal; color:#4c4c4c;">La contrase&ntilde;a actual: '+request.user.password+'</p></body></html>',
+                     'html': '<html><head></head><body><div><img src="http://res.cloudinary.com/htyoqtggc/image/upload/v1408998865/logo-feelkm_b9mkca.png"></div><p style="font-family: Helvetica Neue; font-size: 14px; font-weight: normal; color:#4c4c4c; ">Recuperaci&oacute;n de contrase&ntilde;a FeelKm.</p><p style="font-family: Helvetica Neue; font-size: 13px; font-weight: normal; color:#4c4c4c;">Julio usted ha solicitado la recuperaci&oacute;n de su contrase&ntilde;a<br>Le recomendados entrar a la pltaforma lo antes posible y generar un nuevo cambio de contrase&ntilde;a.</p><p style="font-family: Helvetica Neue; font-size: 13px; font-weight: normal; color:#4c4c4c;">La contrase&ntilde;a actual: '+usr_recovery.password+'</p></body></html>',
                      'important': False,
                      'inline_css': None,
                      'merge': True,
@@ -139,8 +141,8 @@ def RecoveryPassword(request):
                      'signing_domain': None,
                      'subject': 'Recuperación de Contraseña',
                      'text': 'Example text content',
-                     'to': [{'email': request.user.email,
-                             'name': request.user.first_name,
+                     'to': [{'email': usr_recovery.email,
+                             'name': usr_recovery.first_name,
                              'type': 'to'}],
                      'track_clicks': None,
                      'track_opens': None,
