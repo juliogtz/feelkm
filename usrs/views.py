@@ -116,7 +116,7 @@ def RecoveryPassword(request):
                 return HttpResponse("0")
             else:
                 # Enviar mail:
-                #send_mail('FeelKm', 'Here is the msg.', 'noreply@feelkm.com',['gutierrez.quezada@hotmail.com'], fail_silently=False)
+                send_mail('FeelKm', 'Here is the msg.', 'noreply@feelkm.com',['gutierrez.quezada@hotmail.com'], fail_silently=True)
                 return HttpResponse("1")
                 """try:
                     send_mail("Recuperar", "Recuperar Msg", "noreply@feelkm.com",email_user)
