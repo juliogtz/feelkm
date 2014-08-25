@@ -26,8 +26,8 @@
       <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/usrs/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.196319" vertical-offset="2040" max-vertical-offset="8940">
-              <caret line="162" column="87" selection-start-line="162" selection-start-column="87" selection-end-line="162" selection-end-column="87" />
+            <state vertical-scroll-proportion="0.79141104" vertical-offset="2142" max-vertical-offset="8940">
+              <caret line="160" column="56" selection-start-line="160" selection-start-column="56" selection-end-line="160" selection-end-column="56" />
               <folding>
                 <element signature="e#0#58#0" expanded="true" />
               </folding>
@@ -932,8 +932,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/usrs/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.196319" vertical-offset="2040" max-vertical-offset="8940">
-          <caret line="162" column="87" selection-start-line="162" selection-start-column="87" selection-end-line="162" selection-end-column="87" />
+        <state vertical-scroll-proportion="0.79141104" vertical-offset="2142" max-vertical-offset="8940">
+          <caret line="160" column="56" selection-start-line="160" selection-start-column="56" selection-end-line="160" selection-end-column="56" />
           <folding>
             <element signature="e#0#58#0" expanded="true" />
           </folding>

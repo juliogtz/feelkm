@@ -147,7 +147,7 @@ def RecoveryPassword(request):
                      'tracking_domain': None,
                      'url_strip_qs': None,
                      'view_content_link': None}
-                    result = mandrill_client.messages.send(message=message, async=False, ip_pool='Main Pool', send_at='example send_at')
+                    result = mandrill_client.messages.send(message=message, async=False, ip_pool='Main Pool')
                     '''
                     [{'_id': 'abc123abc123abc123abc123abc123',
                       'email': 'recipient.email@example.com',
