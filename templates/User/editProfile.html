@@ -370,7 +370,14 @@
     });
 
 
-        alert(location.href);
+        if(location.href=="http://www.feelkm.com/edit-profile/?edit=true#status-content-operation")
+        {
+
+                            $("#bottom-alert-status-perfil").fadeIn("fast");
+                            $("#img-send-op").fadeIn("fast");
+                            $("#status-content-operation").html("Los cambios fueron guardados satisfactoriamente.");
+
+        }
 
 });
 
