@@ -610,7 +610,7 @@ function getCookie(name) {
          }) .done(function( msg ) {
 
 
-             alert(msg);
+             //alert(msg);
 
 
             if(msg=="1")
@@ -629,6 +629,20 @@ function getCookie(name) {
                  //alert("Correo electronico no existe.")
 
                  $("#txt-alert-box-recovery").html("El correo electrónico no existe.");
+
+                 $("#box-recovery-form-wait").fadeOut("fast");
+                 $("#box-recovery-password").fadeIn("fast");
+
+                 $("#email_user_recovery").addClass("input-text-color-alert");
+
+             }
+
+
+                  if(msg=="-1")
+             {
+                 //alert("Correo electronico no existe.")
+
+                 $("#txt-alert-box-recovery").html("Error, intente en otro momento");
 
                  $("#box-recovery-form-wait").fadeOut("fast");
                  $("#box-recovery-password").fadeIn("fast");
