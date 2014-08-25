@@ -16,6 +16,9 @@ import cloudinary.uploader
 import cloudinary.api
 import random
 
+import mandrill
+
+
 import datetime
 
 cloudinary.config(
@@ -116,14 +119,49 @@ def RecoveryPassword(request):
                 return HttpResponse("0")
             else:
                 # Enviar mail:
-                send_mail('FeelKm', 'Here is the msg.', 'noreply@feelkm.com',['gutierrez.quezada@hotmail.com'], fail_silently=True)
-                return HttpResponse("1")
-                """try:
-                    send_mail("Recuperar", "Recuperar Msg", "noreply@feelkm.com",email_user)
+
+                try:
+                    mandrill_client = mandrill.Mandrill('GxVtwaebpEBKwF2bOSYvtw')
+                    message = {
+                     'auto_html': None,
+                     'auto_text': None,
+                     'bcc_address': 'gutierrez.quezada@hotmail.com',
+                     'from_email': 'info@feelkm.com',
+                     'from_name': 'FeelKm',
+                     'global_merge_vars': [{'content': 'merge1 content', 'name': 'merge1'}],
+                     'headers': {'Reply-To': 'message.reply@feelkm.com'},
+                     'html': '<p>Example HTML content</p>',
+                     'important': False,
+                     'inline_css': None,
+                     'merge': True,
+                     'preserve_recipients': None,
+                     'return_path_domain': None,
+                     'signing_domain': None,
+                     'subject': 'Recuperaci&oacute;n de Contrase&ntilde;a',
+                     'text': 'Example text content',
+                     'to': [{'email': 'jc.gutierrezq@gmail.com',
+                             'name': 'Julio',
+                             'type': 'to'}],
+                     'track_clicks': None,
+                     'track_opens': None,
+                     'tracking_domain': None,
+                     'url_strip_qs': None,
+                     'view_content_link': None}
+                    result = mandrill_client.messages.send(message=message, async=False, ip_pool='Main Pool', send_at='example send_at')
+                    '''
+                    [{'_id': 'abc123abc123abc123abc123abc123',
+                      'email': 'recipient.email@example.com',
+                      'reject_reason': 'hard-bounce',
+                      'status': 'sent'}]
+                    '''
                     return HttpResponse("1")
 
-                except BadHeaderError:
-                    HttpResponse('0')"""
+                except mandrill.Error, e:
+                    # Mandrill errors are thrown as exceptions
+                    print 'A mandrill error occurred: %s - %s' % (e.__class__, e)
+                    # A mandrill error occurred: <class 'mandrill.UnknownSubaccountError'> - No subaccount exists with the id 'customer-123'
+                    return HttpResponse("0")
+                    #raise
 
         else:
             return HttpResponseRedirect("/")
