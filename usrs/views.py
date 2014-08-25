@@ -130,14 +130,14 @@ def RecoveryPassword(request):
                      'from_name': 'FeelKm',
                      'global_merge_vars': [{'content': 'merge1 content', 'name': 'merge1'}],
                      'headers': {'Reply-To': 'message.reply@feelkm.com'},
-                     'html': '<p>Example HTML content</p>',
+                     'html': '<html><head></head><body><div><img src="http://res.cloudinary.com/htyoqtggc/image/upload/v1408998865/logo-feelkm_b9mkca.png"></div><p style="font-family: Helvetica Neue; font-size: 14px; font-weight: normal; color:#4c4c4c; ">Recuperaci&oacute;n de contrase&ntilde;a FeelKm.</p><p style="font-family: Helvetica Neue; font-size: 13px; font-weight: normal; color:#4c4c4c;">Julio usted ha solicitado la recuperaci&oacute;n de su contrase&ntilde;a<br>Le recomendados entrar a la pltaforma lo antes posible y generar un nuevo cambio de contrase&ntilde;a.</p><p style="font-family: Helvetica Neue; font-size: 13px; font-weight: normal; color:#4c4c4c;">La contrase&ntilde;a actual: x12sx</p></body></html>',
                      'important': False,
                      'inline_css': None,
                      'merge': True,
                      'preserve_recipients': None,
                      'return_path_domain': None,
                      'signing_domain': None,
-                     'subject': 'Recuperaci&oacute;n de Contrase&ntilde;a',
+                     'subject': 'Recuperación de Contraseña',
                      'text': 'Example text content',
                      'to': [{'email': 'jc.gutierrezq@gmail.com',
                              'name': 'Julio',
@@ -160,7 +160,7 @@ def RecoveryPassword(request):
                     # Mandrill errors are thrown as exceptions
                     print 'A mandrill error occurred: %s - %s' % (e.__class__, e)
                     # A mandrill error occurred: <class 'mandrill.UnknownSubaccountError'> - No subaccount exists with the id 'customer-123'
-                    return HttpResponse('A mandrill error occurred: %s - %s' % (e.__class__, e))
+                    return HttpResponse('-1')
                     #raise
 
         else:
