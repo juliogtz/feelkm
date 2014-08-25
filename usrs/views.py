@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from django.http import HttpResponse, HttpResponseRedirect
 from django.template import RequestContext
 from django.views.decorators.csrf import csrf_protect
