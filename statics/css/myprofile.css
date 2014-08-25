@@ -1290,6 +1290,10 @@ font-weight:normal;
 
 }
 
+.width-region{
+    width: 400px;
+}
+
 .line-bottom-comment-add{
     width: 610px;
     height: 1px;
