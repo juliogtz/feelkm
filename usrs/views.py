@@ -160,7 +160,7 @@ def RecoveryPassword(request):
                     # Mandrill errors are thrown as exceptions
                     print 'A mandrill error occurred: %s - %s' % (e.__class__, e)
                     # A mandrill error occurred: <class 'mandrill.UnknownSubaccountError'> - No subaccount exists with the id 'customer-123'
-                    return HttpResponse("0")
+                    return HttpResponse('A mandrill error occurred: %s - %s' % (e.__class__, e))
                     #raise
 
         else:
