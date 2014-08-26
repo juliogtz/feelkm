@@ -556,3 +556,57 @@ a.txt-footer-contact:hover{
     margin-left: 1px;
 
 }
+
+.title-error
+{
+    font-family: "RoboThin";
+    font-size: 50px;
+    font-weight: normal;
+    color:#fb5f3e
+    letter-spacing: 0px;
+    text-align: center;
+}
+
+.content-error{
+
+    font-family: "Helvetica Neue"
+    font-size: 16px;
+    font-weight: normal;
+    color:#4c4c4c;
+    text-align: center;
+
+}
+
+
+.bold-title-error
+{
+     font-family: "RoboBold";
+    font-size: 50px;
+    font-weight: normal;
+    color:#fb5f3e
+    letter-spacing: 0px;
+    text-align: center;
+}
+
+.link-options-er
+{
+    font-family: "Helvetica Neue";
+    font-size: 15px;
+    color:#fb5f3e;
+    text-decoration: none;
+
+
+}
+
+@font-face
+{
+font-family: "RoboThin";
+src: url("Roboto-Thin.ttf");
+}
+
+@font-face
+{
+font-family: "RoboBold";
+src: url("Roboto-Bold.ttf");
+}
+
