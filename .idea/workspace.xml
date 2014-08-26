@@ -27,7 +27,7 @@
         <entry file="file://$PROJECT_DIR$/templates/Error/404.html">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-5.25" vertical-offset="849" max-vertical-offset="1575">
-              <caret line="65" column="22" selection-start-line="65" selection-start-column="22" selection-end-line="65" selection-end-column="37" />
+              <caret line="65" column="13" selection-start-line="65" selection-start-column="13" selection-end-line="65" selection-end-column="21" />
               <folding>
                 <element signature="n#style#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#3;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -39,7 +39,7 @@
       <file leaf-file-name="error.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/statics/css/error.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.62025315" vertical-offset="8909" max-vertical-offset="9525">
+            <state vertical-scroll-proportion="0.28481013" vertical-offset="9015" max-vertical-offset="9525">
               <caret line="607" column="20" selection-start-line="607" selection-start-column="20" selection-end-line="607" selection-end-column="20" />
               <folding />
             </state>
@@ -965,7 +965,7 @@
     <entry file="file://$PROJECT_DIR$/templates/Error/404.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.25" vertical-offset="849" max-vertical-offset="1575">
-          <caret line="65" column="22" selection-start-line="65" selection-start-column="22" selection-end-line="65" selection-end-column="37" />
+          <caret line="65" column="13" selection-start-line="65" selection-start-column="13" selection-end-line="65" selection-end-column="21" />
           <folding>
             <element signature="n#style#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#3;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -975,7 +975,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/statics/css/error.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.62025315" vertical-offset="8909" max-vertical-offset="9525">
+        <state vertical-scroll-proportion="0.28481013" vertical-offset="9015" max-vertical-offset="9525">
           <caret line="607" column="20" selection-start-line="607" selection-start-column="20" selection-end-line="607" selection-end-column="20" />
           <folding />
         </state>
