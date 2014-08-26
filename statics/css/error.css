@@ -599,6 +599,12 @@ a.txt-footer-contact:hover{
     text-decoration: none;
 }
 
+a.link-options-er:hover{
+
+	color: #fb9587;
+
+}
+
 .left-link{
     margin-left: 30px;
 }
