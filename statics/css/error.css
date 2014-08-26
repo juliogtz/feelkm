@@ -20,8 +20,14 @@ body{
 
 /* Header Styles */
 
-header{
-    background-color: #ffffff;
+header
+{
+
+width: 1128px;
+height: 57px;
+margin: 0 auto;
+background-color: #ffffff;
+
 }
 
 
