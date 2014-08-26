@@ -566,17 +566,17 @@ a.txt-footer-contact:hover{
     letter-spacing: 0px;
     color: #fb5f3e;
     text-align: center;
-    margin-top: 301px;
+    margin-top: 250px;
 }
 
 .content-error{
 
-    font-family: "Helvetica Neue"
+    font-family: "Helvetica Neue";
     font-size: 16px;
     font-weight: normal;
     color:#4c4c4c;
     text-align: center;
-    margin-top: 35px;
+    margin-top: 30px;
 
 }
 
