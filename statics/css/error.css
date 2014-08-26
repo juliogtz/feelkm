@@ -608,12 +608,13 @@ a.txt-footer-contact:hover{
    width: 1128px;
 	margin: 0 auto;
     text-align: center;
+    padding-left: 290px;
 
 }
 
 .links-err
 {
-    text-align:center;
+
     margin-top: 40px;
 }
 
