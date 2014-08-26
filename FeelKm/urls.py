@@ -36,6 +36,7 @@ urlpatterns = patterns('',
     url(r'^auto-complete-big/$','api.views.autocomplete_second'),
 
 
+
     # Register Ajax
     url(r'^register-new-user/$','usrs.views.Register'),
     # Login Ajax
