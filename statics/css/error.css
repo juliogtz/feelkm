@@ -564,6 +564,7 @@ a.txt-footer-contact:hover{
     font-weight: normal;
     color:#fb5f3e
     letter-spacing: 0px;
+    color: #fb5f3e;
     text-align: center;
 }
 
@@ -583,7 +584,7 @@ a.txt-footer-contact:hover{
      font-family: "RoboBold";
     font-size: 50px;
     font-weight: normal;
-    color:#fb5f3e
+    color:#fb5f3e;
     letter-spacing: 0px;
     text-align: center;
 }
@@ -594,9 +595,14 @@ a.txt-footer-contact:hover{
     font-size: 15px;
     color:#fb5f3e;
     text-decoration: none;
-
-
 }
+
+
+
+.links-err{
+    text-align: center;
+}
+
 
 @font-face
 {
