@@ -23,10 +23,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="404.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="404.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/Error/404.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5409836" vertical-offset="1035" max-vertical-offset="1605">
+            <state vertical-scroll-proportion="-6.875" vertical-offset="1035" max-vertical-offset="1605">
               <caret line="80" column="37" selection-start-line="80" selection-start-column="37" selection-end-line="80" selection-end-column="37" />
               <folding>
                 <element signature="n#style#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -36,10 +36,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="error.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="error.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/statics/css/error.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.4615386" vertical-offset="9060" max-vertical-offset="9585">
+            <state vertical-scroll-proportion="0.28481013" vertical-offset="9060" max-vertical-offset="9585">
               <caret line="610" column="21" selection-start-line="610" selection-start-column="21" selection-end-line="610" selection-end-column="21" />
               <folding />
             </state>
@@ -165,8 +165,8 @@
         <option value="$PROJECT_DIR$/FeelKm/urls.py" />
         <option value="$PROJECT_DIR$/FeelKm/settings.py" />
         <option value="$PROJECT_DIR$/statics/css/style_result.css" />
-        <option value="$PROJECT_DIR$/statics/css/error.css" />
         <option value="$PROJECT_DIR$/templates/Error/404.html" />
+        <option value="$PROJECT_DIR$/statics/css/error.css" />
       </list>
     </option>
   </component>
@@ -913,14 +913,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/statics/css/error.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.4615386" vertical-offset="9060" max-vertical-offset="9585">
-          <caret line="610" column="21" selection-start-line="610" selection-start-column="21" selection-end-line="610" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/Home/home.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.86" vertical-offset="507" max-vertical-offset="3000">
@@ -933,12 +925,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/Error/404.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5409836" vertical-offset="1035" max-vertical-offset="1605">
+        <state vertical-scroll-proportion="-6.875" vertical-offset="1035" max-vertical-offset="1605">
           <caret line="80" column="37" selection-start-line="80" selection-start-column="37" selection-end-line="80" selection-end-column="37" />
           <folding>
             <element signature="n#style#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#3;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/statics/css/error.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.28481013" vertical-offset="9060" max-vertical-offset="9585">
+          <caret line="610" column="21" selection-start-line="610" selection-start-column="21" selection-end-line="610" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>
