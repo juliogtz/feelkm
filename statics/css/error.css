@@ -605,7 +605,10 @@ a.txt-footer-contact:hover{
 
 .left-list-links
 {
-    margin-left: 450px;
+   width: 1128px;
+	margin: 0 auto;
+    text-align: center;
+
 }
 
 .links-err
