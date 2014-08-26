@@ -607,8 +607,12 @@ a.txt-footer-contact:hover{
 {
    width: 1128px;
 	margin: 0 auto;
-    padding-left: 440px;
 
+
+}
+
+.left-link-f{
+    margin-left: 320px;
 }
 
 .links-err
