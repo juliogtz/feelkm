@@ -78,10 +78,11 @@ urlpatterns = patterns('',
 
 
 
-
-
-
-
 )
+
+#Custom Erros:
+
+handler404 = "error.views.e_404"
+
 
 #urlpatterns = format_suffix_patterns(urlpatterns)
