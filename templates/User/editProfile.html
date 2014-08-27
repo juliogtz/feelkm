@@ -855,7 +855,7 @@
 
                             <div class="title-form-field">Usuario</div>
                             <div class="top-field-form-1">
-                                <input type="password" class="input-text-form-e" name="current-user" id="current-user">
+                                <input type="text" class="input-text-form-e" name="current-user" id="current-user" value="{{ request.user.username }}">
                             </div>
 
 
@@ -865,7 +865,7 @@
                         <div class="left info-gen-form-part2">
                             <div class="title-form-field">Correo Electr&oacute;nico</div>
                             <div class="top-field-form-1">
-                                <input type="password" class="input-text-form-e" name="current-email" id="current-email">
+                                <input type="text" class="input-text-form-e" name="current-email" id="current-email" value="{{ request.user.email }}">
                             </div>
 
 
