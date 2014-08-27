@@ -1785,6 +1785,11 @@ width: 212px;
 
 .btn-change-data-p:hover
 {
+    background-color: #fd6d57;
+}
+
+.btn-change-data-p-add
+{
     background-color: #ff5b42;
 }
 
@@ -1805,6 +1810,16 @@ width: 212px;
      background-color: #8bcfb5;
 
 }
+
+
+
+.btn-change-data-a-add{
+
+     background-color: #58be92;
+
+}
+
+
 
 .txt-btn-cc-link{
     font-family: "Helvetica Neue";
