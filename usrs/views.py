@@ -604,8 +604,8 @@ def ChangeData(request):
                         currentuser=request.POST['currentuser']
                         currentemail=request.POST['currentemail']
 
-                        getUser = User.objects.get(username = currentuser)
-                        getEmail = User.objects.get(email = currentemail)
+                        getUser = User.objects.filter(username = currentuser)
+                        getEmail = User.objects.filter(email = currentemail)
 
 
 
