@@ -27,7 +27,7 @@ INSTALLED_APPS = (
     'api',
     'websearch',
     'usrs',
-    'cloudinary'
+    'cloudinary',
     'error',
 )
 
