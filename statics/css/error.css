@@ -583,7 +583,7 @@ a.txt-footer-contact:hover{
 
 .bold-title-error
 {
-     font-family: "RoboBold";
+    font-family: "RoboRegular";
     font-size: 50px;
     font-weight: normal;
     color:#fb5f3e;
@@ -638,5 +638,12 @@ src: url("Roboto-Thin.ttf");
 {
 font-family: "RoboBold";
 src: url("Roboto-Bold.ttf");
+}
+
+
+@font-face
+{
+font-family: "RoboRegular";
+src: url("Roboto-Regular.ttf");
 }
 
