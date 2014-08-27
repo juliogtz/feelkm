@@ -1,0 +1,102 @@
+{% load cloudinary %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Error 403 - FeelKm</title>
+<link rel="stylesheet" href="/{{ STATIC_URL }}css/header.css" type="text/css" />
+<link rel="stylesheet" href="/{{ STATIC_URL }}css/error.css" type="text/css" />
+<link rel="icon" href="/{{ STATIC_URL }}imgs/favicon.png" type="image/x-icon" />
+
+{% include "Scripts/scripts.html" %}
+<script src="/{{ STATIC_URL }}scripts/header.js"></script>
+<script type="text/javascript">
+$(function() {
+
+      $('form').each(function() {
+
+        $(this).find('input').keypress(function(e) {
+            // Enter pressed?
+            if(e.which == 10 || e.which == 13) {
+
+                if(this.form.id=="search-form-top"){
+
+                  this.form.action="/search/?q="+$("#inputSearchHi").val()+"";
+
+                }
+
+
+
+                if(this.form.id=="search-form"){
+
+                  this.form.action="/search/?q="+$("#q").val()+"";
+                }
+
+
+                this.form.submit();
+
+
+            }
+        });
+
+
+    });
+
+});
+
+{% include "Scripts/secript_search_header.html" %}
+
+</script>
+</head>
+
+<body>
+{% include "Scripts/fbsdk.html" %}
+{% include "Header/register-login.html" %}
+<div class="header-header">
+<header>
+
+    {% include "Home/header.html" %}
+
+</header>
+</div>
+
+
+<div class="title-error">Oops! <span class="bold-title-error">Error 4043</span></div>
+<div class="content-error">Lo sentimos, la página a la que quieres accesar no existe o se ha movido.<br>
+Puedes encontrar otras secciones de Feelkm a continuacion.</div>
+
+<div class="links-err left-list-links">
+    <div class="left left-link-f"><a class="link-options-er" href="/search/?q=Maraton">Maratones</a></div>
+    <div class="left left-link"><a class="link-options-er" href="/search/?q=Medio%20Maraton">Medio Maraton</a></div>
+    <div class="left left-link"><a class="link-options-er" href="/search/?q=10k">10k</a></div>
+    <div class="left left-link"><a class="link-options-er" href="/search/?q=5k">5k</a></div>
+    <div class="left left-link"><a class="link-options-er" href="mailto:hello@feelkm.com?Subject=FeelKm%20Contact">Contacto</a></div>
+    <div class="clear"></div>
+</div>
+
+<div class="footer" style="margin-top: 0px">
+
+
+    <div class="left footer-b-d">
+	<div class="left btnContact"><img src="/{{ STATIC_URL }}imgs/email.png"></div>
+	<div class="textContact left"><a href="mailto:hello@feelkm.com?Subject=FeelKm%20Contact" target="_top" class="txt-footer-contact">Contacto</a></div>
+	<div class="textFaceC left"><a class="link-facebook-footer" href="https://www.facebook.com/FeelKm" target="_blank">Facebook</a></div>
+	<div class="left facelike">
+		<div class="fb-like" data-href="https://www.facebook.com/FeelKm" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div>
+	</div>
+	<div class="clear"></div>
+
+    </div>
+
+
+
+	<div class="txtFooter left">&copy; FeelKm 2014. Algunos Derechos Reservados.</div>
+
+    <div class="clear"></div>
+    <div style="height:20px;"></div>
+
+</div>
+
+{% include "Google/analytics.html" %}
+</body>
+</html>

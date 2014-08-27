@@ -82,8 +82,9 @@ urlpatterns = patterns('',
 )
 
 #Custom Erros:
-
+handler403 = "error.views.e_403"
 handler404 = "error.views.e_404"
+handler500 = "error.views.e_405"
 
 
 #urlpatterns = format_suffix_patterns(urlpatterns)
