@@ -129,10 +129,7 @@
 
         });
 
-
-    $("#btn-change-password-action").click(function(){
-
-    function csrfSafeMethod(method) {
+         function csrfSafeMethod(method) {
                                 // these HTTP methods do not require CSRF protection
                                 return (/^(GET|HEAD|OPTIONS|TRACE)$/.test(method));
                             }
@@ -152,6 +149,11 @@
                 }
                 return cookieValue;
             }
+
+
+    $("#btn-change-password-action").click(function(){
+
+
 
                 var csrftoken = getCookie('csrftoken');
 
@@ -414,6 +416,120 @@
             $("#btn-change-data-a").removeClass("btn-change-data-a-add");
 
             $("#btn-change-data-p").addClass("btn-change-data-p-add");
+        });
+
+
+
+        $("#btn-change-data-a-action").click(function(){
+
+                var csrftoken = getCookie('csrftoken');
+
+
+                            $.ajaxSetup({
+                                beforeSend: function(xhr, settings) {
+                                    if (!csrfSafeMethod(settings.type) && !this.crossDomain) {
+                                        xhr.setRequestHeader("X-CSRFToken", csrftoken);
+                                    }
+                                }
+                                 });
+
+
+           $.ajax({
+                 type: "POST", url: "/change-data/",
+
+                 error:function(){
+
+
+
+                      $("#bottom-alert-status-perfil").fadeIn("fast");
+                      $("#img-send-op").fadeOut("fast");
+                      $("#img-send-fail").fadeIn("fast");
+                      $("#status-content-operation" ).html("Favor de intentar m&acute;s tarde.");
+
+
+                 },
+
+                 statusCode: {
+                      404: function() {
+
+                      $("#bottom-alert-status-perfil").fadeIn("fast");
+                      $("#img-send-op").fadeOut("fast");
+                      $("#img-send-fail").fadeIn("fast");
+                      $("#status-content-operation" ).html("Favor de intentar m&acute;s tarde.");
+
+
+                  }
+                 },
+
+                 data: {
+                         currentuser: $("#current-user").val(),
+                         currentemail: $("#current-email").val()
+
+                        }
+
+             }) .done(function( msg ) {
+
+                alert(msg);
+
+                if(msg=="1"){
+
+                      $("#bottom-alert-status-perfil").fadeIn("fast");
+                      $("#img-send-op").fadeIn("fast");
+                      $("#img-send-fail").fadeOut("fast");
+                      $("#status-content-operation" ).html("Cambios fueron guardados satisfactoriamente.");
+
+                      $("#current-user").removeClass("border-color-error");
+                      $("#current-email").removeClass("border-color-error");
+
+
+                 }
+
+                 if(msg=="0"){
+
+                      $("#bottom-alert-status-perfil").fadeIn("fast");
+                      $("#img-send-op").fadeOut("fast");
+                      $("#img-send-fail").fadeIn("fast");
+                      $("#status-content-operation" ).html("Ning&uacute;n campo puede permanecer vac&iacute;o");
+
+
+
+                      if($("#current-email").val() == "")
+                      {
+
+                        $("#current-email").addClass("border-color-error");
+
+                      }
+
+                      if($("#current-user").val() == "")
+                      {
+                        $("#current-user").addClass("border-color-error");
+                      }
+
+                 }
+
+
+                 if(msg=="-1"){
+
+                      $("#bottom-alert-status-perfil").fadeIn("fast");
+                      $("#img-send-op").fadeOut("fast");
+                      $("#img-send-fail").fadeIn("fast");
+                      $("#status-content-operation" ).html("La Correo elect&oacute;rnico ya existe");
+                 }
+
+
+                 if(msg=="-2"){
+
+                      $("#bottom-alert-status-perfil").fadeIn("fast");
+                      $("#img-send-op").fadeOut("fast");
+                      $("#img-send-fail").fadeIn("fast");
+                      $("#status-content-operation" ).html("El usuario que intenta usar ya existe");
+                 }
+
+
+             });
+
+
+
         });
 
 

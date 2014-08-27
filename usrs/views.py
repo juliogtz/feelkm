@@ -591,3 +591,24 @@ def ChangePassword(request):
      else:
 
             return HttpResponseRedirect("/")
+
+
+def ChangeData(request):
+
+     if request.user.is_active:
+                if request.user.is_authenticated:
+                    if request.method == 'GET':
+                        return HttpResponseRedirect("/")
+                    else:
+
+                        currentuser=request.POST['currentuser']
+                        currentemail=request.POST['currentemail']
+
+                        return HttpResponse("1"+currentuser+" "+currentemail)
+
+                else:
+
+                     return HttpResponseRedirect("/")
+     else:
+
+            return HttpResponseRedirect("/")

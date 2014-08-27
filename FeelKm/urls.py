@@ -47,6 +47,8 @@ urlpatterns = patterns('',
     url(r'^recovery/$','usrs.views.RecoveryPassword'),
     # Change Password
     url(r'^change-password/$','usrs.views.ChangePassword'),
+     # Change Data User
+    url(r'^change-data/$','usrs.views.ChangeData'),
     # Register Ajax Facebook Validate
     url(r'^facebook-register/$','usrs.views.Facebook_Register'),
     # Specific Event
@@ -62,7 +64,6 @@ urlpatterns = patterns('',
     url(r'^km/(?P<username>.*)/$','usrs.views.MyProfile'),
     url(r'^edit-profile/','usrs.views.EditMyProfile'),
     url(r'^update-profile/','usrs.views.UpdateMyProfile'),
-
 
     #Privacy and Legal Information
     url(r'^privacy/$','usrs.views.Privacy'),
