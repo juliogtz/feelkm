@@ -56,6 +56,7 @@ header
 width: 1128px;
 height: 57px;
 margin: 0 auto;
+    position: fixed;
 }
 
 
@@ -417,6 +418,7 @@ a.form-register-footer-link:hover{
     border-bottom-color: #e7e7e7;
     border-bottom-style: solid;
     border-bottom-width: 1px;
+    position: fixed;
 
 
 }
