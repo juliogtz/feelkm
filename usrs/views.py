@@ -611,9 +611,27 @@ def ChangeData(request):
                         getEmail = getEmail.count()
 
 
+                        if(currentuser == "" or currentemail == ""):
+                            return HttpResponse("0")
+                        else:
+                            if(getUser == 1 and getEmail == 1):
+                                return HttpResponse("-1")
+                            else:
+                                if(getUser == 0 or getEmail == 0):
+                                    try:
 
+                                        if(getUser == 0 ):
+                                             request.user.username = currentuser
+                                             request.user.save()
 
-                        return HttpResponse("1"+str(getUser)+" "+str(getEmail))
+                                        if(getEmail == 0 ):
+                                             request.user.email = currentemail
+                                             request.user.save()
+
+                                        return HttpResponse("1")
+
+                                    except:
+                                        return HttpResponse("-2")
 
                 else:
 
