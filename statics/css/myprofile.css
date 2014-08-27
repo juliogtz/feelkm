@@ -1783,6 +1783,12 @@ width: 212px;
 }
 
 
+.btn-change-data-p:hover
+{
+    background-color: #fd6d57;
+}
+
+
 .btn-change-data-a{
 
         width: 95px;
@@ -1792,6 +1798,12 @@ width: 212px;
         -webkit-border-radius: 4px;
 	    -moz-border-radius: 4px;
         margin-top: 22px;
+}
+
+.btn-change-data-a:hover{
+
+     background-color: #8bcfb5;
+
 }
 
 .txt-btn-cc-link{
