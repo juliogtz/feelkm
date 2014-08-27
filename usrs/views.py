@@ -604,7 +604,13 @@ def ChangeData(request):
                         currentuser=request.POST['currentuser']
                         currentemail=request.POST['currentemail']
 
-                        return HttpResponse("1"+str(currentuser)+" "+str(currentemail))
+                        getUser = User.objects.get(username = currentuser)
+                        getEmail = User.objects.get(email = currentemail)
+
+
+
+
+                        return HttpResponse("1"+str(getUser)+" "+str(getEmail))
 
                 else:
 
