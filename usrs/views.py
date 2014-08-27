@@ -607,6 +607,9 @@ def ChangeData(request):
                         getUser = User.objects.filter(username = currentuser)
                         getEmail = User.objects.filter(email = currentemail)
 
+                        getUser = getUser.count()
+                        getEmail = getEmail.count()
+
 
 
 
