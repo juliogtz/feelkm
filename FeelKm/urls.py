@@ -78,7 +78,6 @@ urlpatterns = patterns('',
     url(r'^comment-delete/(?P<id>\d+)/$','usrs.views.delComment'),
 
 
-
 )
 
 #Custom Erros:
