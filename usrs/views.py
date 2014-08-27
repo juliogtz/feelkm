@@ -604,7 +604,7 @@ def ChangeData(request):
                         currentuser=request.POST['currentuser']
                         currentemail=request.POST['currentemail']
 
-                        return HttpResponse("1"+currentuser+" "+currentemail)
+                        return HttpResponse("1"+str(currentuser)+" "+str(currentemail))
 
                 else:
 
