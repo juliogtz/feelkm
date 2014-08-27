@@ -395,9 +395,20 @@
 
         $( "#current-user, #current-email" ).focus(function() {
 
-                alert("hola");
+            $("#btn-change-data-a").addClass("btn-change-data-a-add");
 
+            $("#btn-change-data-p").removeClass("btn-change-data-p-add");
         });
+
+
+        $( "#current-password, #new-password" ).focus(function() {
+
+            $("#btn-change-data-a").removeClass("btn-change-data-a-add");
+
+            $("#btn-change-data-p").addClass("btn-change-data-p-add");
+        });
+
+
 
 });
 
@@ -863,7 +874,7 @@
 
 
 
-                        <div class="btn-change-data-a">
+                        <div class="btn-change-data-a" id="btn-change-data-a">
 
                              <div class="txt-btn-cc"><a href="javascript:void(0)" class="txt-btn-cc-link" id="btn-change-data-a-action">Cambiar</a></div>
 
