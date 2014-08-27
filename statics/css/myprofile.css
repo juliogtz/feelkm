@@ -1531,6 +1531,9 @@ font-weight:normal;
 display: none;
 }
 
+#img-send-fail{
+   display: none;
+}
 
 
 .back-profile-btn{
