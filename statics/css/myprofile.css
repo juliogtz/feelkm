@@ -1775,7 +1775,19 @@ width: 212px;
 
         width: 95px;
         height: 35px;
-        background-color: #ff5b42;
+        background-color: #ffada0;
+        border-radius:4px;
+        -webkit-border-radius: 4px;
+	    -moz-border-radius: 4px;
+        margin-top: 22px;
+}
+
+
+.btn-change-data-a{
+
+        width: 95px;
+        height: 35px;
+        background-color: #abdec8;
         border-radius:4px ;
         -webkit-border-radius: 4px;
 	    -moz-border-radius: 4px;
