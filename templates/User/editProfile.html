@@ -421,6 +421,7 @@
 
 
         $('#btn-change-data-action').click(function(){
+
             alert("hosdsds");
 
                 var csrftoken = getCookie('csrftoken');
@@ -439,8 +440,6 @@
                  type: "POST", url: "/change-data/",
 
                  error:function(){
-
-
 
                       $("#bottom-alert-status-perfil").fadeIn("fast");
                       $("#img-send-op").fadeOut("fast");
@@ -528,8 +527,6 @@
 
 
              });
-
-
 
         });
 
@@ -1001,7 +998,9 @@
 
                         <div class="btn-change-data-a" id="btn-change-data-a">
 
-                             <div class="txt-btn-cc" id="btn-change-data-action"><a href="javascript:void(0)" class="txt-btn-cc-link" >Cambiar</a></div>
+                             <div class="txt-btn-cc" ><a href="javascript:void(0)" class="txt-btn-cc-link" id="btn-change-data-action">Cambiar</a></div>
+
+
 
                         </div>
 
