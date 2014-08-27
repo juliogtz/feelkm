@@ -1803,3 +1803,10 @@ width: 212px;
 {
    border-color: #fd5b45;
 }
+
+.line-separate-form{
+    width: 597px;
+    height: 1px;
+    background-color: #dbdbdb;
+
+}
