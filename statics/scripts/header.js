@@ -282,7 +282,7 @@ function getCookie(name) {
             if(e.which == 10 || e.which == 13) {
 
 
-                $( "#btn-register-normal-img" ).trigger( "click" );
+                $( "#btn-register-normal-img" ).click();
 
 
             }
