@@ -23,21 +23,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="myprofile.css" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/statics/css/myprofile.css">
+      <file leaf-file-name="new_comment.css" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/statics/css/new_comment.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4660767" vertical-offset="1942" max-vertical-offset="27945">
-              <caret line="140" column="18" selection-start-line="140" selection-start-column="18" selection-end-line="140" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="myprofile.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/User/myprofile.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.625" vertical-offset="975" max-vertical-offset="7440">
-              <caret line="74" column="12" selection-start-line="74" selection-start-column="12" selection-end-line="74" selection-end-column="24" />
+            <state vertical-scroll-proportion="0.4328767" vertical-offset="2002" max-vertical-offset="21960">
+              <caret line="144" column="18" selection-start-line="144" selection-start-column="18" selection-end-line="144" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -98,8 +88,8 @@
         <option value="$PROJECT_DIR$/statics/css/style.css" />
         <option value="$PROJECT_DIR$/statics/css/style_result.css" />
         <option value="$PROJECT_DIR$/statics/css/style_info.css" />
-        <option value="$PROJECT_DIR$/statics/css/new_comment.css" />
         <option value="$PROJECT_DIR$/statics/css/myprofile.css" />
+        <option value="$PROJECT_DIR$/statics/css/new_comment.css" />
       </list>
     </option>
   </component>
@@ -845,14 +835,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/statics/css/new_comment.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334" vertical-offset="2002" max-vertical-offset="21960">
-          <caret line="141" column="13" selection-start-line="141" selection-start-column="1" selection-end-line="141" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/Search/new_comment.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.45731708" vertical-offset="30120" max-vertical-offset="36570">
@@ -861,18 +843,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/statics/css/myprofile.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4660767" vertical-offset="1942" max-vertical-offset="27945">
+          <caret line="140" column="18" selection-start-line="140" selection-start-column="18" selection-end-line="140" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/User/myprofile.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.625" vertical-offset="975" max-vertical-offset="7440">
+        <state vertical-scroll-proportion="0.41158536" vertical-offset="975" max-vertical-offset="7440">
           <caret line="74" column="12" selection-start-line="74" selection-start-column="12" selection-end-line="74" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/statics/css/myprofile.css">
+    <entry file="file://$PROJECT_DIR$/statics/css/new_comment.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4660767" vertical-offset="1942" max-vertical-offset="27945">
-          <caret line="140" column="18" selection-start-line="140" selection-start-column="18" selection-end-line="140" selection-end-column="18" />
+        <state vertical-scroll-proportion="0.4328767" vertical-offset="2002" max-vertical-offset="21960">
+          <caret line="144" column="18" selection-start-line="144" selection-start-column="18" selection-end-line="144" selection-end-column="18" />
           <folding />
         </state>
       </provider>
