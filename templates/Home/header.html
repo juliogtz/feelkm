@@ -13,7 +13,7 @@
 
     {% if request.user.is_authenticated %}
 
-            <div class="txt-header-name-user left"><a href="javascript:void(0)" id="txt-header-name-user" class="txt-header-name-use-link">{{ request.user.first_name }}</a></div>
+            <div class="txt-header-name-user left"><a href="javascript:void(0)" id="txt-header-name-user" class="txt-header-name-use-link">{{ request.user.first_name | truncatewords_by_chars:20}}</a></div>
 
 
 
