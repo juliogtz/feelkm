@@ -276,6 +276,18 @@ function getCookie(name) {
 
 
 
+
+      $("#user_user, #name_user, #last_user, #email_user, #password_user").keypress(function(e) {
+            // Enter pressed?
+            if(e.which == 10 || e.which == 13) {
+
+
+                $( "#btn-register-normal-img" ).trigger( "click" );
+
+
+            }
+        });
+
  $( "#btn-register-normal-img" ).click(function() {
 
       $("#box-register-form").fadeOut("fast");
