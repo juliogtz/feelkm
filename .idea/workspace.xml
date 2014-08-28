@@ -23,21 +23,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="editProfile.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="editProfile.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/User/editProfile.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.4" vertical-offset="4745" max-vertical-offset="16380">
-              <caret line="321" column="30" selection-start-line="321" selection-start-column="30" selection-end-line="321" selection-end-column="30" />
+            <state vertical-scroll-proportion="-0.06622516" vertical-offset="6035" max-vertical-offset="16590">
+              <caret line="401" column="103" selection-start-line="401" selection-start-column="103" selection-end-line="401" selection-end-column="103" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="myprofile.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="myprofile.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/statics/css/myprofile.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.0855458" vertical-offset="21907" max-vertical-offset="28185">
-              <caret line="1485" column="15" selection-start-line="1485" selection-start-column="15" selection-end-line="1485" selection-end-column="15" />
+            <state vertical-scroll-proportion="-6.076923" vertical-offset="21907" max-vertical-offset="28185">
+              <caret line="1471" column="22" selection-start-line="1471" selection-start-column="22" selection-end-line="1471" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -98,8 +98,8 @@
         <option value="$PROJECT_DIR$/statics/css/header.css" />
         <option value="$PROJECT_DIR$/templates/Home/header.html" />
         <option value="$PROJECT_DIR$/templates/User/myprofile.html" />
-        <option value="$PROJECT_DIR$/templates/User/editProfile.html" />
         <option value="$PROJECT_DIR$/statics/css/myprofile.css" />
+        <option value="$PROJECT_DIR$/templates/User/editProfile.html" />
       </list>
     </option>
   </component>
@@ -905,18 +905,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/User/editProfile.html">
+    <entry file="file://$PROJECT_DIR$/statics/css/myprofile.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.4" vertical-offset="4745" max-vertical-offset="16380">
-          <caret line="321" column="30" selection-start-line="321" selection-start-column="30" selection-end-line="321" selection-end-column="30" />
+        <state vertical-scroll-proportion="-6.076923" vertical-offset="21907" max-vertical-offset="28185">
+          <caret line="1471" column="22" selection-start-line="1471" selection-start-column="22" selection-end-line="1471" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/statics/css/myprofile.css">
+    <entry file="file://$PROJECT_DIR$/templates/User/editProfile.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.0855458" vertical-offset="21907" max-vertical-offset="28185">
-          <caret line="1485" column="15" selection-start-line="1485" selection-start-column="15" selection-end-line="1485" selection-end-column="15" />
+        <state vertical-scroll-proportion="-0.06622516" vertical-offset="6035" max-vertical-offset="16590">
+          <caret line="401" column="103" selection-start-line="401" selection-start-column="103" selection-end-line="401" selection-end-column="103" />
           <folding />
         </state>
       </provider>

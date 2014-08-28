@@ -292,6 +292,8 @@
                  error:function(){
 
 
+                         $("#bottom-edit-data").fadeIn("fast");
+                    $("#content-info-change-password").addClass("content-info-change-password-action");
 
                       $("#bottom-alert-status-perfil").fadeIn("fast");
                       $("#img-send-op").fadeOut("fast");
@@ -303,6 +305,9 @@
 
                  statusCode: {
                       404: function() {
+
+                           $("#bottom-edit-data").fadeIn("fast");
+                    $("#content-info-change-password").addClass("content-info-change-password-action");
 
                       $("#bottom-alert-status-perfil").fadeIn("fast");
                       $("#img-send-op").fadeOut("fast");
@@ -321,7 +326,7 @@
 
              }) .done(function( msg ) {
 
-                alert(msg);
+                //alert(msg);
 
                 if(msg=="1"){
 
@@ -352,6 +357,9 @@
 
                  if(msg=="0"){
 
+                      $("#bottom-edit-data").fadeIn("fast");
+                    $("#content-info-change-password").addClass("content-info-change-password-action");
+
                       $("#bottom-alert-status-perfil").fadeIn("fast");
                       $("#img-send-op").fadeOut("fast");
                       $("#img-send-fail").fadeIn("fast");
@@ -378,6 +386,9 @@
 
                  if(msg=="-1"){
 
+                      $("#bottom-edit-data").fadeIn("fast");
+                    $("#content-info-change-password").addClass("content-info-change-password-action");
+
                       $("#bottom-alert-status-perfil").fadeIn("fast");
                       $("#img-send-op").fadeOut("fast");
                       $("#img-send-fail").fadeIn("fast");
@@ -386,6 +397,9 @@
                  }
 
                  if(msg=="-2"){
+
+                      $("#bottom-edit-data").fadeIn("fast");
+                    $("#content-info-change-password").addClass("content-info-change-password-action");
 
                       $("#bottom-alert-status-perfil").fadeIn("fast");
                       $("#img-send-op").fadeOut("fast");
