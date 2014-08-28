@@ -19,6 +19,12 @@ $(function() {
                   this.form.action="/search/?q="+$("#q").val()+"";
                 }
 
+
+                if(this.form.id=="search-form"){
+
+                  this.form.action="/search/?q="+$("#q").val()+"";
+                }
+
                 this.form.submit();
 
 
@@ -434,6 +440,15 @@ function getCookie(name) {
 
 
     });
+
+       $("#user_user_login, #password_user_login ").keypress(function(e) {
+            // Enter pressed?
+            if(e.which == 10 || e.which == 13) {
+
+                alert("enter");
+
+            }
+        });
 
 
 
