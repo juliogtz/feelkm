@@ -73,11 +73,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="header.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/Home/header.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5030488" vertical-offset="75" max-vertical-offset="1395">
-              <caret line="16" column="193" selection-start-line="16" selection-start-column="193" selection-end-line="16" selection-end-column="193" />
+            <state vertical-scroll-proportion="-6.875" vertical-offset="75" max-vertical-offset="1395">
+              <caret line="16" column="166" selection-start-line="16" selection-start-column="166" selection-end-line="16" selection-end-column="193" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="myprofile.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/User/myprofile.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.33333334" vertical-offset="1962" max-vertical-offset="7440">
+              <caret line="137" column="33" selection-start-line="137" selection-start-column="33" selection-end-line="137" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -130,7 +140,6 @@
         <option value="$PROJECT_DIR$/templates/Search/event.html" />
         <option value="$PROJECT_DIR$/templates/Search/new_comment.html" />
         <option value="$PROJECT_DIR$/templates/Search/search.html" />
-        <option value="$PROJECT_DIR$/templates/User/myprofile.html" />
         <option value="$PROJECT_DIR$/templates/Error/404.html" />
         <option value="$PROJECT_DIR$/templates/Error/403.html" />
         <option value="$PROJECT_DIR$/error/views.py" />
@@ -150,6 +159,7 @@
         <option value="$PROJECT_DIR$/templates/Home/home.html" />
         <option value="$PROJECT_DIR$/statics/css/header.css" />
         <option value="$PROJECT_DIR$/templates/Home/header.html" />
+        <option value="$PROJECT_DIR$/templates/User/myprofile.html" />
       </list>
     </option>
   </component>
@@ -919,13 +929,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/User/myprofile.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41158536" vertical-offset="975" max-vertical-offset="7440">
-          <caret line="74" column="12" selection-start-line="74" selection-start-column="12" selection-end-line="74" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/statics/css/new_comment.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="2002" max-vertical-offset="21960">
@@ -1000,8 +1003,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/Home/header.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5030488" vertical-offset="75" max-vertical-offset="1395">
-          <caret line="16" column="193" selection-start-line="16" selection-start-column="193" selection-end-line="16" selection-end-column="193" />
+        <state vertical-scroll-proportion="-6.875" vertical-offset="75" max-vertical-offset="1395">
+          <caret line="16" column="166" selection-start-line="16" selection-start-column="166" selection-end-line="16" selection-end-column="193" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/User/myprofile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334" vertical-offset="1962" max-vertical-offset="7440">
+          <caret line="137" column="33" selection-start-line="137" selection-start-column="33" selection-end-line="137" selection-end-column="33" />
           <folding />
         </state>
       </provider>
