@@ -1477,7 +1477,7 @@ font-weight:normal;
     display: none;
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
-    
+
 
 }
 
@@ -1824,7 +1824,22 @@ width: 212px;
         -webkit-border-radius: 4px;
 	    -moz-border-radius: 4px;
         margin-top: 22px;
+        display: none;
 }
+
+.btn-change-data-a-2{
+
+     width: 95px;
+        height: 35px;
+        background-color: #abdec8;
+        border-radius:4px ;
+        -webkit-border-radius: 4px;
+	    -moz-border-radius: 4px;
+        margin-top: 22px;
+        display: none;
+
+}
+
 
 .btn-change-data-a:hover{
 

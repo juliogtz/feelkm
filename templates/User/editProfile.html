@@ -567,9 +567,17 @@
 
         $( "#current-user, #current-email" ).focus(function() {
 
+            $("btn-change-data-a-2").fadeOut("fast", function(){
+
+                $("btn-change-data-a").fadeIn("fast");
+
+            });
+
             $("#btn-change-data-a").addClass("btn-change-data-a-add");
 
             $("#btn-change-data-p").removeClass("btn-change-data-p-add");
+
+
         });
 
 
@@ -696,9 +704,6 @@
                         <div class="div-btn-change-pic">
 
                             <a href="javascript:void(0)" class="link-change-pic-txt" id="link-change-pic-txt">Cambiar</a>
-
-
-
 
                         </div>
 
@@ -1053,9 +1058,15 @@
                         <div class="btn-change-data-a" id="btn-change-data-a">
 
 
-                           <div class="txt-btn-cc"><a id="btnChangex" href="javascript:void(0)" class="txt-btn-cc-link">Cambiar</a></div>
+                           <div class="txt-btn-cc" ><a id="btnChangex" href="javascript:void(0)" class="txt-btn-cc-link">Cambiar</a></div>
+
+                        </div>
 
 
+                         <div class="btn-change-data-a-2" id="btn-change-data-a-2">
+
+
+                           <div class="txt-btn-cc" ><a id="btnChangex" href="javascript:void(0)" class="txt-btn-cc-link">Cambiar</a></div>
 
                         </div>
 
