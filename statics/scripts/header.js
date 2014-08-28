@@ -445,7 +445,9 @@ function getCookie(name) {
             // Enter pressed?
             if(e.which == 10 || e.which == 13) {
 
-                alert("enter");
+
+                $( "#btn-login-normal-img" ).trigger( "click" );
+
 
             }
         });
