@@ -533,12 +533,15 @@ a.footer-txt-login-link:hover{
 }
 
 .txt-header-name-user{
-    margin-left:295px;
+    /*margin-left:295px;*/
     margin-top: 20px;
     font-weight:  normal;
     font-size: 14px;
     color: #504e4e;
     font-family: Helvetica;
+    text-align: right;
+    width: 200px;
+    margin-left: 5px;
 }
 
 .txt-header-name-use-link{
