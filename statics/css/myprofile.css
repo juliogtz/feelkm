@@ -1481,6 +1481,19 @@ font-weight:normal;
 }
 
 
+.content-info-change-password-action{
+
+    height: 350px;
+    border-width: 1px;
+    border-color: #dbdbdb;
+    border-style: solid;
+    border-bottom-width: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+
+}
+
+
 .bottom-edit-data
 {
     margin-top: 0px;

@@ -207,6 +207,9 @@
 
                 if(msg=="1"){
 
+
+
+
                       $("#bottom-alert-status-perfil").fadeIn("fast");
                       $("#img-send-op").fadeIn("fast");
                       $("#img-send-fail").fadeOut("fast");
@@ -216,11 +219,7 @@
                       $("#current-email").removeClass("border-color-error");
 
 
-                         /*bottom-edit-data  47px
 
-               content-info-general 650px;
-
-               content-info-change-password 350px*/
 
                  }
 
@@ -325,6 +324,16 @@
                // alert(msg);
 
                 if(msg=="1"){
+
+                    $("#bottom-edit-data").fadeIn("fast");
+                    $("#content-info-change-password").addClass("content-info-change-password-action")
+
+
+                         /*bottom-edit-data  47px
+
+               content-info-general 650px;
+
+               content-info-change-password 350px*/
 
                       $("#bottom-alert-status-perfil").fadeIn("fast");
                       $("#img-send-op").fadeIn("fast");
@@ -1053,7 +1062,7 @@
 
                 </div>
 
-                <div class="bottom-edit-data">
+                <div class="bottom-edit-data" id="bottom-edit-data">
 
                     <div class="bottom-alert-status-perfil" id="bottom-alert-status-perfil">
 
