@@ -567,11 +567,12 @@
 
         $( "#current-user, #current-email" ).focus(function() {
 
-            $("btn-change-data-a-2").fadeOut("fast", function(){
+            $("#btn-change-data-a-2").fadeOut("fast", function(){
 
-                $("btn-change-data-a").fadeIn("fast");
+                $("#btn-change-data-a").fadeIn("fast");
 
             });
+
 
             $("#btn-change-data-a").addClass("btn-change-data-a-add");
 
@@ -1066,7 +1067,7 @@
                          <div class="btn-change-data-a-2" id="btn-change-data-a-2">
 
 
-                           <div class="txt-btn-cc" ><a id="btnChangex" href="javascript:void(0)" class="txt-btn-cc-link">Cambiar</a></div>
+                           <div class="txt-btn-cc"><span class="txt-btn-cc-link">Cambiar</span></div>
 
                         </div>
 
