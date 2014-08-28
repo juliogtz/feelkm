@@ -453,13 +453,13 @@ function getCookie(name) {
 
     });
 
+
        $("#user_user_login, #password_user_login ").keypress(function(e) {
             // Enter pressed?
             if(e.which == 10 || e.which == 13) {
 
 
                 $( "#btn-login-normal-img" ).trigger( "click" );
-
 
             }
         });
