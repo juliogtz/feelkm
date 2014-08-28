@@ -173,6 +173,9 @@
 
                  error:function(){
 
+                      $("#bottom-edit-data").fadeIn("fast");
+                    $("#content-info-change-password").addClass("content-info-change-password-action");
+
                       $("#bottom-alert-status-perfil").fadeIn("fast");
                       $("#img-send-op").fadeOut("fast");
                       $("#img-send-fail").fadeIn("fast");
@@ -183,6 +186,9 @@
 
                  statusCode: {
                       404: function() {
+
+                           $("#bottom-edit-data").fadeIn("fast");
+                    $("#content-info-change-password").addClass("content-info-change-password-action");
 
                       $("#bottom-alert-status-perfil").fadeIn("fast");
                       $("#img-send-op").fadeOut("fast");
@@ -208,7 +214,8 @@
                 if(msg=="1"){
 
 
-
+ $("#bottom-edit-data").fadeIn("fast");
+                    $("#content-info-change-password").addClass("content-info-change-password-action");
 
                       $("#bottom-alert-status-perfil").fadeIn("fast");
                       $("#img-send-op").fadeIn("fast");
@@ -224,6 +231,9 @@
                  }
 
                  if(msg=="0"){
+
+                      $("#bottom-edit-data").fadeIn("fast");
+                    $("#content-info-change-password").addClass("content-info-change-password-action");
 
                       $("#bottom-alert-status-perfil").fadeIn("fast");
                       $("#img-send-op").fadeOut("fast");
@@ -249,6 +259,9 @@
 
                  if(msg=="-1"){
 
+                      $("#bottom-edit-data").fadeIn("fast");
+                    $("#content-info-change-password").addClass("content-info-change-password-action");
+
                       $("#bottom-alert-status-perfil").fadeIn("fast");
                       $("#img-send-op").fadeOut("fast");
                       $("#img-send-fail").fadeIn("fast");
@@ -257,6 +270,9 @@
 
 
                  if(msg=="-2"){
+
+                      $("#bottom-edit-data").fadeIn("fast");
+                    $("#content-info-change-password").addClass("content-info-change-password-action");
 
                       $("#bottom-alert-status-perfil").fadeIn("fast");
                       $("#img-send-op").fadeOut("fast");
@@ -334,7 +350,12 @@
                     $("#content-info-change-password").addClass("content-info-change-password-action");
 
 
-                         /*bottom-edit-data  47px
+
+
+
+
+
+            /*bottom-edit-data  47px
 
                content-info-general 650px;
 
