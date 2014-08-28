@@ -1466,13 +1466,13 @@ font-weight:normal;
 .content-info-change-password{
 
     width: 655px;
-    height: 320px;
+    height: 350px;
     background-color: #ffffff;
     margin-top: 0px;
     border-width: 1px;
     border-color: #dbdbdb;
     border-style: solid;
-    border-bottom-width: 0px;
+    border-bottom-width: 1px;
     border-top-width: 0px;
     display: none;
     border-bottom-left-radius: 4px;
