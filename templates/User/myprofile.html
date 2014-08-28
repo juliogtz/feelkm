@@ -113,8 +113,8 @@ $(function() {
 
 
     <div class="left txt-data-profile-header">
-        <div class="txt-name-profile">{{ request.user.first_name  | truncatewords_by_chars:20}} {{ request.user.last_name | truncatewords_by_chars:20 }}</div>
-        <div class="txt-name-place">{{ request.user.username | truncatewords_by_chars:20 }} </div>
+        <div class="txt-name-profile">{{ request.user.first_name  | truncatewords_by_chars:10}} {{ request.user.last_name | truncatewords_by_chars:10 }}</div>
+        <div class="txt-name-place">{{ request.user.username | truncatewords_by_chars:10 }} </div>
     </div>
     <div class="clear"></div>
 
