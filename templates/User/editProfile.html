@@ -778,7 +778,7 @@
 
 
 
-            var user_birth_month_aux=
+            var user_birth_month_aux="";
             $("#user_birth_month option").each(function(index){
 
                console.log('opcion '+$(this).text()+' valor '+ $(this).attr('value'))
@@ -796,8 +796,26 @@
 
                }
 
+            });
 
 
+        var user_birth_day_aux="";
+            $("#user_birth_day option").each(function(index){
+
+               console.log('opcion '+$(this).text()+' valor '+ $(this).attr('value'))
+               console.log(index);
+               if(index == 0){
+
+                   user_birth_day_aux = $(this).attr('value');
+               }else{
+
+                   if(user_birth_day_aux == $(this).attr('value')){
+
+                       $(this).remove();
+
+                   }
+
+               }
 
             });
 
