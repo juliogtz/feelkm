@@ -779,10 +779,10 @@
 
 
 
-            $("#user_birth_month option").each(function(){
+            $("#user_birth_month option").each(function(index){
 
                console.log('opcion '+$(this).text()+' valor '+ $(this).attr('value'))
-               console.log($(this).selectedIndex);
+               console.log(index);
 
             });
 
