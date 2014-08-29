@@ -1361,6 +1361,10 @@ font-weight:normal;
     margin-top: 0px;
 }
 
+.edit-profile-first-btn:hover{
+    background-color: #f0f0f0;
+}
+
 .line-edit-pro-btn{
     width: 302px;
     height: 1px;
@@ -1380,6 +1384,12 @@ font-weight:normal;
     background-color: #ffffff;
     margin-top: 0px;
 }
+
+.edit-profile-last-btn:hover {
+
+    background-color: #f0f0f0;
+}
+
 
 .left-btn-bar-status-active{
     width: 3px;
