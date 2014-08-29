@@ -375,6 +375,15 @@ def EditMyProfile(request,):
 
                     list_countries = countries.objects.filter()
 
+                    if DATALOGIN.country != "":
+                        code_name_country = countries.objects.filter(country_id = DATALOGIN.country)
+                    else:
+                        code_name_country = ""
+
+
+
+
+
                     month=""
                     genero=""
 
@@ -424,6 +433,7 @@ def EditMyProfile(request,):
                         'month':month,
                         'genero':genero,
                         'list_countries':list_countries,
+                        'code_name_country':code_name_country,
 
 
 
