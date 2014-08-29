@@ -594,6 +594,24 @@
 
         $( "#current-password, #new-password" ).focus(function() {
 
+
+             $("#btn-change-data-p-2").fadeOut("fast", function(){
+
+                $("#btn-change-data-p").fadeIn("fast");
+
+            });
+
+
+
+              $("#btn-change-data-a").fadeOut("fast", function(){
+
+                $("#btn-change-data-a-2").fadeIn("fast");
+
+            });
+
+
+
+
             $("#btn-change-data-a").removeClass("btn-change-data-a-add");
 
             $("#btn-change-data-p").addClass("btn-change-data-p-add");
