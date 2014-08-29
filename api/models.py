@@ -110,6 +110,10 @@ class events_favorites(models.Model):
      date = models.DateField(blank=True)
 
 
+class countries(models.Model):
+
+        country_id = models.IntegerField(blank=True)
+        name_en = models.TextField(blank=True)
 
 class Meta:
     ordening = ('created',)

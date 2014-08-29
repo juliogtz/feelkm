@@ -8,7 +8,7 @@ from django.shortcuts import get_object_or_404, render
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.hashers import make_password
 
-from api.models import users, events, comments_events, events_favorites, photos
+from api.models import users, events, comments_events, events_favorites, photos, countries
 from django.views.decorators.cache import cache_page
 from django.core.mail import send_mail, BadHeaderError
 
@@ -373,6 +373,8 @@ def EditMyProfile(request,):
                     DATALOGIN_ID=request.user.id
                     DATALOGIN = users.objects.get(id_user_admin_id=DATALOGIN_ID)
 
+                    list_countries = countries.objects()
+
                     month=""
                     genero=""
 
@@ -421,6 +423,7 @@ def EditMyProfile(request,):
                         'DATALOGIN':DATALOGIN,
                         'month':month,
                         'genero':genero,
+                        'list_countries':list_countries,
 
 
 

@@ -1024,6 +1024,16 @@
                                      <option value="Mexico">M&eacute;xico</option>
                                      <option value="USA">USA</option>
                                 </select>
+
+                                    {% for contrie in list_countries %}
+
+                                            {{ contrie.country_id }}
+
+                                            {{ contrie.name_en }}
+
+                                    {% endfor %}
+
+
                                 </div>
 
                                 <div class="title-form-field top-label-title">Genero</div>
