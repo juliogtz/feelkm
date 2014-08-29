@@ -1021,17 +1021,18 @@
                                      </option>
                                      {% endif %}
 
-                                     <option value="Mexico">M&eacute;xico</option>
-                                     <option value="USA">USA</option>
-                                </select>
+                                     {% for contrie in list_countries %}
 
-                                    {% for contrie in list_countries %}
-
-                                            {{ contrie.country_id }}
-
-                                            {{ contrie.name_en }}
+                                    <option value="{{ contrie.country_id }}">
+                                        {{ contrie.name_en }}
+                                    </option>
 
                                     {% endfor %}
+
+
+                                </select>
+
+
 
 
                                 </div>
