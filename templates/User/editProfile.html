@@ -836,12 +836,10 @@
                }else{
                     console.log("VAL X : "+user_birth_year_aux);
                     console.log("VAL Y : "+$(this).attr('value'));
-                    var cox="";
-                   cox = $(this).attr('value');
-                   cox = cox.replace(/\s/g,'', "");
 
 
-                   if(user_birth_year_aux == cox){
+
+                   if(user_birth_year_aux == " "+$(this).attr('value')){
 
 
 
