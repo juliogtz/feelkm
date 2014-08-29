@@ -1801,6 +1801,30 @@ width: 212px;
         -webkit-border-radius: 4px;
 	    -moz-border-radius: 4px;
         margin-top: 22px;
+    display: none;
+}
+
+.btn-change-data-p-2{
+
+        width: 95px;
+        height: 35px;
+        background-color: #ffada0;
+        border-radius:4px;
+        -webkit-border-radius: 4px;
+	    -moz-border-radius: 4px;
+         margin-top: 22px;
+}
+
+
+.btn-change-data-p-2{
+
+        width: 95px;
+        height: 35px;
+        background-color: #ffada0;
+        border-radius:4px;
+        -webkit-border-radius: 4px;
+	    -moz-border-radius: 4px;
+        margin-top: 22px;
 }
 
 
