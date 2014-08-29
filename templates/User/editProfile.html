@@ -777,15 +777,13 @@
 
 
 
-var select_month = document.getElementById("user_birth_month");
 
-         for (i=0; opt=select_month.options[i];i++) {
 
-             console.log(opt.selected);
+            $("#user_birth_month option").each(function(){
 
-         }
-                 //if (opt.selected) num++;
+               console.log('opcion '+$(this).text()+' valor '+ $(this).attr('value'))
 
+            });
 
 });
 
