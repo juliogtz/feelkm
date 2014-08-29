@@ -53,6 +53,14 @@
         $("#link-btn-info-general").click(function() {
 
 
+                 $("#content-info-change-password").removeClass("content-info-change-password-action");
+
+                 $("#content-info-change-password").addClass("content-info-change-password");
+
+
+                     $("#bottom-edit-data").fadeOut("fast");
+
+
 
                 $("#link-btn-info-general").addClass("link-left-btn-edi-pro-active");
                 $("#link-btn-info-general").removeClass("link-left-btn-edi-pro-no-active");
@@ -93,6 +101,17 @@
 
 
         $("#link-btn-change-password").click(function() {
+
+
+                    $("#content-info-general").removeClass("content-info-general-action");
+
+                    $("#content-info-general").addClass("content-info-general");
+
+
+                    $("#bottom-edit-data").fadeOut("fast");
+
+
+
 
 
                 $("#link-btn-info-general").addClass("link-left-btn-edi-pro-active");
@@ -468,7 +487,18 @@
 
     });
 
+
+
     $('#send-update-profile').click(function(){
+
+
+        $("#content-info-general").removeClass("content-info-general");
+
+        $("#content-info-general").addClass("content-info-general-action");
+
+
+        $("#bottom-edit-data").fadeIn("fast");
+
 
 
                         $('#user_name').removeClass("border-color-error");
