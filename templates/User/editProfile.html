@@ -838,7 +838,9 @@
                     console.log("VAL Y : "+$(this).attr('value'));
 
 
-                   if(user_birth_year_aux == $(this).attr('value')){
+                   if(user_birth_year_aux == $(this).attr('value').replace(" ","")){
+
+
 
                        console.log("REMOVE AQUI");
 
