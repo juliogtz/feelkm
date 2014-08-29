@@ -821,7 +821,7 @@
 
 
 
-        var user_birth_year_aux="";
+        var user_birth_year_aux = "";
 
             $("#user_birth_year option").each(function(index){
 
@@ -831,9 +831,13 @@
                if(index == 0){
 
                    user_birth_year_aux = $(this).attr('value');
+
+                    console.log("INDEX  = 0");
                }else{
 
                    if(user_birth_year_aux == $(this).attr('value')){
+
+                       console.log("REMOVE AQUI");
 
                        $(this).remove();
 
