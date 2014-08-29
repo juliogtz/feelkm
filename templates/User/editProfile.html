@@ -663,15 +663,16 @@
 
 
 
-            if(STATUS_MENU != 1){
+            if(STATUS_MENU == 1){
+
+                 $("#bar-left-general").removeClass("edit-bar-aux-back");
 
 
 
-                 $("#bar-left-general").addClass("edit-bar-aux-back");
             }
             else{
 
-                $("#bar-left-general").removeClass("edit-bar-aux-back");
+               $("#bar-left-general").addClass("edit-bar-aux-back");
 
 
             }
@@ -685,13 +686,14 @@
 
             alert(STATUS_MENU);
 
-            if(STATUS_MENU != 2){
+            if(STATUS_MENU == 2){
 
-                $("#bar-left-password").addClass("edit-bar-aux-back");
+                 $("#bar-left-password").removeClass("edit-bar-aux-back");
+
 
             }else{
+                    $("#bar-left-password").addClass("edit-bar-aux-back");
 
-                $("#bar-left-password").removeClass("edit-bar-aux-back");
 
             }
 
