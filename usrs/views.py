@@ -373,7 +373,7 @@ def EditMyProfile(request,):
                     DATALOGIN_ID=request.user.id
                     DATALOGIN = users.objects.get(id_user_admin_id=DATALOGIN_ID)
 
-                    list_countries = countries.objects()
+                    list_countries = countries.objects.filter()
 
                     month=""
                     genero=""
