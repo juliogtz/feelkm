@@ -667,14 +667,16 @@
 
             if(STATUS_MENU == 1){
 
-                 $("#bar-left-general").removeClass("edit-bar-aux-back");
+
+                 document.getElementById("bar-left-password").style.backgroundColor="#ffffff";
 
                     console.log("A");
 
             }
             else{
 
-               $("#bar-left-general").addClass("edit-bar-aux-back");
+
+                document.getElementById("bar-left-password").style.backgroundColor="#f0f0f0";
 
                 console.log("B");
 
@@ -692,22 +694,40 @@
 
             if(STATUS_MENU == 2){
 
-                 $("#bar-left-password").removeClass("edit-bar-aux-back");
+                  document.getElementById("bar-left-password").style.backgroundColor="#ffffff";
                 console.log("C");
 
 
             }else{
 
                document.getElementById("bar-left-password").style.backgroundColor="#f0f0f0";
-                console.log("D");
-
-
-
-
+               console.log("D");
 
             }
 
         });
+
+
+        //
+
+        /* $("#edit-profile-first-btn").mouseout(function(){
+
+
+
+                 document.getElementById("bar-left-password").style.backgroundColor="#ffffff";
+
+
+        });
+
+
+        $("#edit-profile-last-btn").mouseout(function(){
+
+
+               document.getElementById("bar-left-password").style.backgroundColor="#f0f0f0";
+
+
+        });*/
+
 
 
 
