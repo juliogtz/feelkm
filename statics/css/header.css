@@ -138,13 +138,13 @@ a.linkELR:hover{
 .box-access
 {
 	/*background-color: #292929;*/
-	width: 100%;
-	height: 1000%
+	width: auto;
+	height: auto;
 	position:absolute;
 	z-index: 1000000;
 	margin-top: 0px;
     margin-bottom: 0px;
-    top:0px;
+    top:0;
     display: none;
     background-image:url('../imgs/pixel-back.png');
     background-repeat:repeat;
