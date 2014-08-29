@@ -583,13 +583,18 @@
 
 
         if(location.href=="http://www.feelkm.com/edit-profile/?edit=true#status-content-operation")
+
+
         {
+
+             $("#content-info-general").removeClass("content-info-general");
+             $("#content-info-general").addClass("content-info-general-action");
+             $("#bottom-edit-data").fadeIn("fast");
 
                             $("#bottom-alert-status-perfil").fadeIn("fast");
                             $("#img-send-op").fadeIn("fast");
                             $("#img-send-fail").fadeOut("fast");
                             $("#status-content-operation").html("Los cambios fueron guardados satisfactoriamente.");
-
         }
 
 
