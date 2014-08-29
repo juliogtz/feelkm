@@ -11,9 +11,9 @@
     <script src="/{{ STATIC_URL }}scripts/header.js"></script>
     <script type="text/javascript">
 
-
-
     $(function() {
+
+        var STATUS_MENU=1;
 
           $('form').each(function() {
 
@@ -51,6 +51,8 @@
 
 
         $("#link-btn-info-general").click(function() {
+
+            STATUS_MENU = 1;
 
 
                  $("#content-info-change-password").removeClass("content-info-change-password-action");
@@ -101,6 +103,8 @@
 
 
         $("#link-btn-change-password").click(function() {
+
+            STATUS_MENU = 2;
 
 
                     $("#content-info-general").removeClass("content-info-general-action");
@@ -651,6 +655,54 @@
 
             $("#btn-change-data-p").addClass("btn-change-data-p-add");
              });
+
+
+
+
+        $("#edit-profile-first-btn").mouseover(function(){
+
+            if(STATUS_MENU != 1){
+
+
+
+                 $("#bar-left-general").addClass("edit-bar-aux-back");
+            }
+            else{
+
+                $("#bar-left-general").removeClass("edit-bar-aux-back");
+
+
+            }
+
+
+
+        });
+
+
+        $("#edit-profile-last-btn").onmouseover(function(){
+
+
+
+            if(STATUS_MENU != 2){
+
+                $("#bar-left-password").addClass("edit-bar-aux-back");
+
+            }else{
+
+                $("#bar-left-password").removeClass("edit-bar-aux-back");
+
+            }
+
+        });
+
+
+
+
+
+
+
+
+
 
 
 

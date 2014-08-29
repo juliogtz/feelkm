@@ -1368,6 +1368,10 @@ font-weight:normal;
     background-color: #f0f0f0;
 }
 
+.edit-bar-aux-back{
+    background-color: #f0f0f0;
+}
+
 .line-edit-pro-btn{
     width: 302px;
     height: 1px;
