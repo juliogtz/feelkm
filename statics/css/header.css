@@ -144,7 +144,9 @@ a.linkELR:hover{
 	z-index: 1000000;
 	margin-top: 0px;
     margin-bottom: 0px;
+    margin-left: 0px;
     top:0;
+    bottom: 0;
     display: none;
     background-image:url('../imgs/pixel-back.png');
     background-repeat:repeat;
