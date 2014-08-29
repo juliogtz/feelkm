@@ -376,7 +376,7 @@ def EditMyProfile(request,):
                     list_countries = countries.objects.filter()
 
                     if DATALOGIN.country != "":
-                        code_name_country = countries.objects.filter(country_id = DATALOGIN.country)
+                        code_name_country = countries.objects.get(country_id = DATALOGIN.country)
                     else:
                         code_name_country = ""
 
