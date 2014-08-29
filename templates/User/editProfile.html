@@ -888,6 +888,39 @@
             });
 
 
+         var user_sex_aux = "";
+
+            $("#user_sex option").each(function(index){
+
+               console.log('opcion '+$(this).text()+' valor '+ $(this).attr('value'))
+               console.log(index);
+
+               if(index == 0){
+
+                   user_sex_aux = $(this).attr('value');
+
+                    console.log("INDEX  = 0");
+               }else{
+                    console.log("VAL X : "+user_sex_aux);
+                    console.log("VAL Y : "+$(this).attr('value'));
+
+
+
+                   if(user_sex_aux == $(this).attr('value')){
+
+
+
+                       console.log("REMOVE AQUI");
+
+                       $(this).remove();
+
+                   }
+
+               }
+
+            });
+
+
 
 
 });
