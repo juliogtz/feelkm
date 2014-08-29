@@ -1023,8 +1023,8 @@
 
                                      {% for contrie in list_countries %}
 
-                                    <option value="x">
-                                        x
+                                    <option value="{{ contrie.country_id }}">
+                                        {{ contrie.name_en }}
                                     </option>
 
                                     {% endfor %}
