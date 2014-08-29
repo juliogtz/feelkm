@@ -661,18 +661,22 @@
 
         $("#edit-profile-first-btn").mouseover(function(){
 
+           console.log(STATUS_MENU);
+
 
 
             if(STATUS_MENU == 1){
 
                  $("#bar-left-general").removeClass("edit-bar-aux-back");
 
-
+                    console.log("A");
 
             }
             else{
 
                $("#bar-left-general").addClass("edit-bar-aux-back");
+
+                console.log("B");
 
 
             }
@@ -684,15 +688,19 @@
 
         $("#edit-profile-last-btn").mouseover(function(){
 
-
+            console.log(STATUS_MENU);
 
             if(STATUS_MENU == 2){
 
                  $("#bar-left-password").removeClass("edit-bar-aux-back");
+                console.log("C");
 
 
             }else{
                     $("#bar-left-password").addClass("edit-bar-aux-back");
+                console.log("D");
+
+
 
 
             }
