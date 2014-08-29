@@ -668,7 +668,7 @@
             if(STATUS_MENU == 1){
 
 
-                 document.getElementById("bar-left-password").style.backgroundColor="#ffffff";
+                 document.getElementById("bar-left-general").style.backgroundColor="#ffffff";
 
                     console.log("A");
 
@@ -676,7 +676,7 @@
             else{
 
 
-                document.getElementById("bar-left-password").style.backgroundColor="#f0f0f0";
+                document.getElementById("bar-left-general").style.backgroundColor="#f0f0f0";
 
                 console.log("B");
 
@@ -708,25 +708,57 @@
         });
 
 
-        //
-
-        /* $("#edit-profile-first-btn").mouseout(function(){
+        //#fb5f3e;
 
 
+            $("#edit-profile-first-btn").mouseout(function(){
 
-                 document.getElementById("bar-left-password").style.backgroundColor="#ffffff";
+           console.log(STATUS_MENU);
+
+
+
+            if(STATUS_MENU == 1){
+
+
+                 document.getElementById("bar-left-general").style.backgroundColor="#fb5f3e";
+
+                    console.log("A");
+
+            }
+            else{
+
+
+                document.getElementById("bar-left-general").style.backgroundColor="#ffffff";
+
+                console.log("B");
+
+
+            }
+
 
 
         });
 
 
-        $("#edit-profile-last-btn").mouseout(function(){
+        $("#edit-profile-last-btn").mouseover(function(){
+
+            console.log(STATUS_MENU);
+
+            if(STATUS_MENU == 2){
+
+                  document.getElementById("bar-left-password").style.backgroundColor="#ffffff";
+                console.log("C");
 
 
-               document.getElementById("bar-left-password").style.backgroundColor="#f0f0f0";
+            }else{
 
+               document.getElementById("bar-left-password").style.backgroundColor="#fb5f3e";
+               console.log("D");
 
-        });*/
+            }
+
+        });
+
 
 
 
