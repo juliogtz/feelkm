@@ -838,7 +838,7 @@
                     console.log("VAL Y : "+$(this).attr('value'));
                     var cox="";
                    cox = $(this).attr('value');
-                   cox = cox.replace(" ", "");
+                   cox = cox.replace(/\s/g,'', "");
 
 
                    if(user_birth_year_aux == cox){
