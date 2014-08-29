@@ -26,8 +26,8 @@
       <file leaf-file-name="editProfile.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/User/editProfile.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.1" vertical-offset="10370" max-vertical-offset="18255">
-              <caret line="695" column="48" selection-start-line="695" selection-start-column="48" selection-end-line="695" selection-end-column="48" />
+            <state vertical-scroll-proportion="-2.6" vertical-offset="10340" max-vertical-offset="18255">
+              <caret line="698" column="44" selection-start-line="698" selection-start-column="44" selection-end-line="698" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -56,8 +56,8 @@
       <file leaf-file-name="myprofile.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/statics/css/myprofile.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33333334" vertical-offset="27232" max-vertical-offset="29385">
-              <caret line="1823" column="0" selection-start-line="1823" selection-start-column="0" selection-end-line="1823" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.6637168" vertical-offset="20985" max-vertical-offset="29535">
+              <caret line="1414" column="29" selection-start-line="1414" selection-start-column="29" selection-end-line="1414" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -947,16 +947,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/User/editProfile.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.1" vertical-offset="10370" max-vertical-offset="18255">
-          <caret line="695" column="48" selection-start-line="695" selection-start-column="48" selection-end-line="695" selection-end-column="48" />
+        <state vertical-scroll-proportion="-2.6" vertical-offset="10340" max-vertical-offset="18255">
+          <caret line="698" column="44" selection-start-line="698" selection-start-column="44" selection-end-line="698" selection-end-column="44" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/statics/css/myprofile.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334" vertical-offset="27232" max-vertical-offset="29385">
-          <caret line="1823" column="0" selection-start-line="1823" selection-start-column="0" selection-end-line="1823" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.6637168" vertical-offset="20985" max-vertical-offset="29535">
+          <caret line="1414" column="29" selection-start-line="1414" selection-start-column="29" selection-end-line="1414" selection-end-column="29" />
           <folding />
         </state>
       </provider>
