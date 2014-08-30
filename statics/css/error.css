@@ -336,7 +336,7 @@ background-color: #ffffff;
 	width: 1128px;
 	margin: 0 auto;
 	height: 80px;
-    padding-left: 141px;
+    padding-left: 60px;
 
 
 }
@@ -655,5 +655,7 @@ src: url("Roboto-Regular.ttf");
     border-top-color:#e7e7e7;
     border-top-style: solid;
     border-top-width: 1px;
+    background-color: #ffffff;
+    margin-top: 300px;
 
 }
