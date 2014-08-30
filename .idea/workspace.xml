@@ -66,8 +66,8 @@
       <file leaf-file-name="error.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/statics/css/error.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4862069" vertical-offset="9654" max-vertical-offset="9990">
-              <caret line="653" column="18" selection-start-line="653" selection-start-column="18" selection-end-line="653" selection-end-column="18" />
+            <state vertical-scroll-proportion="0.74482757" vertical-offset="9654" max-vertical-offset="9990">
+              <caret line="658" column="19" selection-start-line="658" selection-start-column="19" selection-end-line="658" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -1019,8 +1019,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/statics/css/error.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4862069" vertical-offset="9654" max-vertical-offset="9990">
-          <caret line="653" column="18" selection-start-line="653" selection-start-column="18" selection-end-line="653" selection-end-column="18" />
+        <state vertical-scroll-proportion="0.74482757" vertical-offset="9654" max-vertical-offset="9990">
+          <caret line="658" column="19" selection-start-line="658" selection-start-column="19" selection-end-line="658" selection-end-column="19" />
           <folding />
         </state>
       </provider>
