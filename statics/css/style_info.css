@@ -874,6 +874,11 @@ src: url("../fonts/Roboto-Bold.ttf");
 
 }
 
+
+.btn-add-favorite:hover{
+    background-color: #eeeeee;
+}
+
 .txt-btn-event-tool
 {
     font-family: Helvetica;
@@ -938,6 +943,11 @@ src: url("../fonts/Roboto-Bold.ttf");
 
 }
 
+.btn-share-pic:hover{
+    background-color:#eeeeee;
+
+}
+
 .btn-pay{
     width: 119px;
     height: 38px;
@@ -949,6 +959,11 @@ src: url("../fonts/Roboto-Bold.ttf");
 	border-radius: 5px;
     background-color: #f9f9f9;
     margin-left: 10px;
+
+}
+
+.btn-pay:hover{
+   background-color: #eeeeee;
 
 }
 
