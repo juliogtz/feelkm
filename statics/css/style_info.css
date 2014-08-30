@@ -979,6 +979,12 @@ src: url("../fonts/Roboto-Bold.ttf");
 
 }
 
+.btn-new-comment:hover
+{
+    background-color: #fd6d57;
+}
+
+
 
 .display_no{
     display: none;
