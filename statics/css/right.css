@@ -11,4 +11,20 @@
     -webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
+    border-color: #dbdbdb;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.separate-banner{
+    margin-top: 13px;
+}
+
+.banner-feedback
+{
+    background-image: url("../imgs/banner_feelkm.jpg"); /* all icons in a single file */
+    background-repeat: no-repeat;
+    border-color: #dbdbdb;
+    border-style: solid;
+    border-width: 1px;
 }
