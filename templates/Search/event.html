@@ -8,6 +8,7 @@
 <meta name="keywords" content="{{ arg.name_event }}, running, runners, run, correr, maraton, medio maraton, 5k, 10k, 21k, 42k, triatlon, iroman"/>
 <link rel="stylesheet" href="/{{ STATIC_URL }}css/header.css" type="text/css" />
 <link rel="stylesheet" href="/{{ STATIC_URL }}css/style_info.css" type="text/css" />
+<link rel="stylesheet" href="/{{ STATIC_URL }}css/right.css" type="text/css" />
 <link rel="icon" href="/{{ STATIC_URL }}imgs/favicon.png" type="image/x-icon" />
 {% include "Scripts/scripts.html" %}
 <script src="/{{ STATIC_URL }}scripts/header.js"></script>
@@ -720,7 +721,14 @@ function favorite(stf){
 	</div>
     {% endfor %}
 
-	<div class="ads left">
+        <div class="right-content">
+
+            <div class="banner-partner">
+                <img src="/{{ STATIC_URL }}imgs/BANNER-ATOMIKA.jpg" class="img-partner">
+            </div>
+
+        </div>
+	<!--<div class="ads left">
 		<div><img src="/{{ STATIC_URL }}imgs/ad1.png" width="300" height="301" class="imgad"></div>
 
 		<div class="ecommerceAds">
@@ -766,7 +774,7 @@ function favorite(stf){
 			</div>
 
 		</div>
-	</div>
+	</div>-->
 	<div class="clear"></div>
 </div>
 {% include "Google/analytics.html" %}
