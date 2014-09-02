@@ -231,6 +231,79 @@ function favorite(stf){
 
 }
 
+
+$("#img-send-feedback").click(function(){
+
+
+    if($("#input-feedback").val() !="") {
+
+
+        var csrftoken = getCookie('csrftoken');
+
+        $.ajaxSetup({
+            beforeSend: function (xhr, settings) {
+
+                if (!csrfSafeMethod(settings.type) && !this.crossDomain) {
+                    xhr.setRequestHeader("X-CSRFToken", csrftoken);
+                }
+            }
+
+        });
+
+
+        $.ajax({
+            type: "POST", url: "/feedback/",
+            success: function () {
+
+            },
+
+            error: function () {
+
+                alert("Error, vuelva a intentarlo");
+
+            },
+
+            statusCode: {
+                404: function () {
+
+                    alert("Error, vuelva a intentarlo");
+
+                }
+            },
+
+
+            data: {
+                msg: "" + $("#input-feedback").val()
+
+            }
+
+        }).done(function (msg) {
+
+            //alert(msg);
+
+            if(msg == "1"){
+                alert("Mensaje enviado, Gracias.");
+                $("#input-feedback").value = "";
+
+            }
+
+            if(msg == "2"){
+                alert("Error, intente mas tarde.");
+                $("#input-feedback").value = "";
+
+            }
+
+        });
+
+    }else{
+
+        alert("No se permite enviar mensaje en blanco.");
+
+    }
+
+
+});
+
 {% include "Scripts/secript_search_header.html" %}
 
 
@@ -723,20 +796,18 @@ function favorite(stf){
 
         <div class="right-content left">
 
-
             <div class="banner-feedback">
 
                 <div class="content-feedback-banner">
 
                     <div class="left">
-                        <input type="email" class="input-feedback" placeholder="Escribe tus comentarios"/>
+                        <input type="email" class="input-feedback" placeholder="Escribe tus comentarios" id="input-feedback" name="input-feedback"/>
                     </div>
 
                     <div class="left btn-send-comment-feedback">
 
-
                         <div class="btn-send-div">
-                          <a href="javascript:void(0)"><img src="/{{ STATIC_URL }}imgs/send.png" class="img-send-feedback"></a>
+                          <a href="javascript:void(0)"><img src="/{{ STATIC_URL }}imgs/send.png" class="img-send-feedback" id="img-send-feedback"></a>
                         </div>
 
                     </div>
