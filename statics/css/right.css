@@ -54,6 +54,8 @@
     height: 38px;
     margin-left: 5px;
     cursor: pointer;
+    padding-left: 10px;
+    padding-top: 13px;
 }
 
 .btn-send-comment-feedback:hover{
