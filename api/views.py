@@ -142,7 +142,7 @@ def SendFeedback(request):
                      'from_name': 'FeelKm',
                      'global_merge_vars': [{'content': 'merge1 content', 'name': 'merge1'}],
                      'headers': {'Reply-To': 'message.reply@feelkm.com'},
-                     'html': '<p>Mensaje: '+msg_user+'</p> <p>Mail: '+request.user.email+'</p> <p>'+request.user.first_name+'</p>',
+                     'html': '<p>Mensaje: '+msg_user+'</p> <p>Mail: '+request.user.email+'</p> <p>Nombre: '+request.user.first_name+'</p>',
                      'important': False,
                      'inline_css': None,
                      'merge': True,

@@ -230,101 +230,6 @@ function favorite(stf){
 }
 
 
-function feedback(){
-
-    function getCookie(name) {
-            var cookieValue = null;
-            if (document.cookie && document.cookie != '') {
-                var cookies = document.cookie.split(';');
-                for (var i = 0; i < cookies.length; i++) {
-                    var cookie = jQuery.trim(cookies[i]);
-                    // Does this cookie string begin with the name we want?
-                    if (cookie.substring(0, name.length + 1) == (name + '=')) {
-                        cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
-                        break;
-                    }
-                }
-            }
-            return cookieValue;
-        }
-
-
- function csrfSafeMethod(method) {
-                            // these HTTP methods do not require CSRF protection
-                            return (/^(GET|HEAD|OPTIONS|TRACE)$/.test(method));
-                        }
-
-    if($("#input-feedback").val() !="") {
-
-
-        var csrftoken = getCookie('csrftoken');
-
-        $.ajaxSetup({
-            beforeSend: function (xhr, settings) {
-
-                if (!csrfSafeMethod(settings.type) && !this.crossDomain) {
-                    xhr.setRequestHeader("X-CSRFToken", csrftoken);
-                }
-            }
-
-        });
-
-
-        $.ajax({
-            type: "POST", url: "/feedback/",
-            success: function () {
-
-            },
-
-            error: function () {
-
-                alert("Error, vuelva a intentarlo");
-
-            },
-
-            statusCode: {
-                404: function () {
-
-                    alert("Error, vuelva a intentarlo");
-
-                }
-            },
-
-
-            data: {
-                msg: "" + $("#input-feedback").val()
-
-            }
-
-        }).done(function (msg) {
-
-            //alert(msg);
-
-            if(msg == "1"){
-                alert("Mensaje enviado, Gracias.");
-                $("#input-feedback").value = "";
-
-            }
-
-            if(msg == "2"){
-                alert("Error, intente mas tarde.");
-                $("#input-feedback").value = "";
-
-            }
-
-        });
-
-    }else{
-
-        alert("No se permite enviar mensaje en blanco.");
-
-    }
-
-
-}
-
-
-
 {% include "Scripts/secript_search_header.html" %}
 
 
@@ -352,8 +257,6 @@ function feedback(){
 
 </header>
 </div>
-
-
 
 <div class="content_info">
 
@@ -815,34 +718,11 @@ function feedback(){
 	</div>
     {% endfor %}
 
-        <div class="right-content left">
 
-            <div class="banner-feedback">
+    <!-- Include Right Section -->
+    {% include "Right/1.html" %}
 
-                <div class="content-feedback-banner">
 
-                    <div class="left">
-                        <input type="email" class="input-feedback" placeholder="Escribe tus comentarios" id="input-feedback" name="input-feedback"/>
-                    </div>
-
-                    <div class="left btn-send-comment-feedback" id="img-send-feedback-div" onclick="feedback();">
-
-                        <div class="btn-send-div">
-                          <a href="javascript:void(0)"><img src="/{{ STATIC_URL }}imgs/send.png" class="img-send-feedback" id="img-send-feedback"></a>
-                        </div>
-
-                    </div>
-                    <div class="clear"></div>
-
-                </div>
-
-            </div>
-
-            <div class="banner-partner separate-banner">
-                <a href="https://www.atomika.mx/" target="_blank"> <img src="/{{ STATIC_URL }}imgs/BANNER-ATOMIKA.jpg" class="img-partner"></a>
-            </div>
-
-        </div>
 
 	<!--<div class="ads left">
 		<div><img src="/{{ STATIC_URL }}imgs/ad1.png" width="300" height="301" class="imgad"></div>
