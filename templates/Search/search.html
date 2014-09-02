@@ -6,6 +6,7 @@
 <title>Resultados en esta b&uacute;squeda: {{ query }} - FeelKm</title>
 <link rel="stylesheet" href="/{{ STATIC_URL }}css/header.css" type="text/css" />
 <link rel="stylesheet" href="/{{ STATIC_URL }}css/style_result.css" type="text/css" />
+<link rel="stylesheet" href="/{{ STATIC_URL }}css/right.css" type="text/css" />
 <link rel="icon" href="/{{ STATIC_URL }}imgs/favicon.png" type="image/x-icon" />
 {% include "Scripts/scripts.html" %}
 <script src="/{{ STATIC_URL }}scripts/header.js"></script>
@@ -281,53 +282,9 @@ $(function() {
 
 	</div>
 
-	<div class="ads left">
-		<div><img src="/{{ STATIC_URL }}imgs/ad1.png" width="300" height="301" class="imgad"></div>
-		
-		<div class="ecommerceAds">
+	 <!-- Include Right Section -->
+    {% include "Right/1.html" %}
 
-			<div class="TitleEcommerce">
-				<div class="left imgRunner"><img src="/{{ STATIC_URL }}imgs/runner.png" width="22" height="24"></div>
-				<div class="left titleCommer">EQU&Iacute;PATE</div>
-				<div class="clear"></div>
-			</div>
-
-			<div class="content_commerce">
-				
-				<div class="items_commerce">
-
-					<div id="item_commerce_1" class="Item-Top">
-						<div class="left img_commerce">
-							<img src="/{{ STATIC_URL }}imgs/iwat.png" width="106" height="64">
-						</div>
-						<div class="left item_right">
-							<div class="Title-Commerce-Item">TomTom</div>
-							<div class="SubTitle-Commerce-Item">Runner Cardio</div>
-							<div class="Btn-Item-Commerce"><div class="Txt-Button">Comprar</div></div>
-						</div>
-						<div class="clear"></div>
-						<div class="Line-Commerce-Item"></div>
-					</div>
-
-					<div id="item_commerce_2" class="Item-Top">
-						<div class="left img_commerce">
-							<img src="/{{ STATIC_URL }}imgs/iwat.png" width="106" height="64">
-						</div>
-						<div class="left item_right">
-							<div class="Title-Commerce-Item">TomTom</div>
-							<div class="SubTitle-Commerce-Item">Runner Cardio</div>
-							<div class="Btn-Item-Commerce"><div class="Txt-Button">Comprar</div></div>
-						</div>
-						<div class="clear"></div>
-						<div class="Line-Commerce-Item"></div>
-					</div>
-					
-				</div>
-
-			</div>
-
-		</div>
-	</div>
 	<div class="clear"></div>
 </div>
 {% include "Google/analytics.html" %}
