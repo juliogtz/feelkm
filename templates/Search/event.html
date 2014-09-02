@@ -227,16 +227,32 @@ function favorite(stf){
 
          });
 
-
-
 }
 
 
+function feedback(){
+
+    function getCookie(name) {
+            var cookieValue = null;
+            if (document.cookie && document.cookie != '') {
+                var cookies = document.cookie.split(';');
+                for (var i = 0; i < cookies.length; i++) {
+                    var cookie = jQuery.trim(cookies[i]);
+                    // Does this cookie string begin with the name we want?
+                    if (cookie.substring(0, name.length + 1) == (name + '=')) {
+                        cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                        break;
+                    }
+                }
+            }
+            return cookieValue;
+        }
 
 
-$("#img-send-feedback").click(function(){
-    alert("hey");
-
+ function csrfSafeMethod(method) {
+                            // these HTTP methods do not require CSRF protection
+                            return (/^(GET|HEAD|OPTIONS|TRACE)$/.test(method));
+                        }
 
     if($("#input-feedback").val() !="") {
 
@@ -305,11 +321,9 @@ $("#img-send-feedback").click(function(){
     }
 
 
-});
+}
 
-$("#img-send-feedback-div").click(function(){
-   alert("Hola");
-});
+
 
 {% include "Scripts/secript_search_header.html" %}
 
@@ -811,7 +825,7 @@ $("#img-send-feedback-div").click(function(){
                         <input type="email" class="input-feedback" placeholder="Escribe tus comentarios" id="input-feedback" name="input-feedback"/>
                     </div>
 
-                    <div class="left btn-send-comment-feedback" id="img-send-feedback-div" onclick="alert('hola');">
+                    <div class="left btn-send-comment-feedback" id="img-send-feedback-div" onclick="feedback();">
 
                         <div class="btn-send-div">
                           <a href="javascript:void(0)"><img src="/{{ STATIC_URL }}imgs/send.png" class="img-send-feedback" id="img-send-feedback"></a>
