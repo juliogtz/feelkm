@@ -48,8 +48,8 @@
       <file leaf-file-name="event.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/Search/event.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.45059288" vertical-offset="4521" max-vertical-offset="13335">
-              <caret line="309" column="20" selection-start-line="309" selection-start-column="20" selection-end-line="309" selection-end-column="20" />
+            <state vertical-scroll-proportion="0.3320158" vertical-offset="12111" max-vertical-offset="13335">
+              <caret line="813" column="114" selection-start-line="813" selection-start-column="114" selection-end-line="813" selection-end-column="114" />
               <folding />
             </state>
           </provider>
@@ -891,8 +891,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/Search/event.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45059288" vertical-offset="4521" max-vertical-offset="13335">
-          <caret line="309" column="20" selection-start-line="309" selection-start-column="20" selection-end-line="309" selection-end-column="20" />
+        <state vertical-scroll-proportion="0.3320158" vertical-offset="12111" max-vertical-offset="13335">
+          <caret line="813" column="114" selection-start-line="813" selection-start-column="114" selection-end-line="813" selection-end-column="114" />
           <folding />
         </state>
       </provider>
