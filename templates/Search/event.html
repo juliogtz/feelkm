@@ -231,6 +231,10 @@ function favorite(stf){
 
 }
 
+$("#img-send-feedback-div").click(function(){
+   alert("Hola");
+});
+
 
 $("#img-send-feedback").click(function(){
     alert("hey");
@@ -805,7 +809,7 @@ $("#img-send-feedback").click(function(){
                         <input type="email" class="input-feedback" placeholder="Escribe tus comentarios" id="input-feedback" name="input-feedback"/>
                     </div>
 
-                    <div class="left btn-send-comment-feedback">
+                    <div class="left btn-send-comment-feedback" id="img-send-feedback-div">
 
                         <div class="btn-send-div">
                           <a href="javascript:void(0)"><img src="/{{ STATIC_URL }}imgs/send.png" class="img-send-feedback" id="img-send-feedback"></a>
