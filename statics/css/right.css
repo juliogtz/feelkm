@@ -42,6 +42,9 @@
     font-size: 14px;
     color: #878787;
     padding-left: 13px;
+    -webkit-border-radius: 1px;
+	-moz-border-radius: 1px;
+	border-radius: 1px;
 }
 
 .btn-send-comment-feedback
