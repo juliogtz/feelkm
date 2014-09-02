@@ -78,6 +78,10 @@ urlpatterns = patterns('',
     #Control Comments:
     url(r'^comment-delete/(?P<id>\d+)/$','usrs.views.delComment'),
 
+    #Send Feedback about de App:
+    url(r'^feedback/$','api.views.SendFeedback'),
+
+
 
 )
 

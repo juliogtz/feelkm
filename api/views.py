@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.contrib.auth.models import User, Group
+from django.http import HttpResponseRedirect, HttpResponse
 #from rest_framework import viewsets, status
 #from api.serializers import UserSerializer, GroupSerializer
 
@@ -124,3 +125,16 @@ def autocomplete_second(request):
     "suggestions": ["United Arab Emirates", "United Kingdom", "United States"]
 }
 """
+
+def SendFeedback(request):
+     if request.method == 'POST':
+        if request.user.is_active:
+            if request.user.is_authenticated:
+                return HttpResponse("1")
+
+            else:
+                return HttpResponse("-1")
+        else:
+            return HttpResponse("-2")
+     else:
+        return HttpResponseRedirect("/")
