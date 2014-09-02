@@ -22,6 +22,8 @@ from django.db.models import Q
 from django.core import serializers
 from django.http import HttpResponse
 
+import mandrill
+
 import SocketServer
 from wsgiref import handlers
 SocketServer.BaseServer.handle_error = lambda *args, **kwargs: None
@@ -130,7 +132,48 @@ def SendFeedback(request):
      if request.method == 'POST':
         if request.user.is_active:
             if request.user.is_authenticated:
-                return HttpResponse("1")
+                try:
+                    msg_user=request.POST['msg']
+                    mandrill_client = mandrill.Mandrill('GxVtwaebpEBKwF2bOSYvtw')
+                    message = {
+                     'auto_html': None,
+                     'auto_text': None,
+                     'from_email': 'info@feelkm.com',
+                     'from_name': 'FeelKm',
+                     'global_merge_vars': [{'content': 'merge1 content', 'name': 'merge1'}],
+                     'headers': {'Reply-To': 'message.reply@feelkm.com'},
+                     'html': '<p>Mensaje: '+msg_user+'</p> <p>Mail: '+request.user.email+'</p> <p>'+request.user.first_name+'</p>',
+                     'important': False,
+                     'inline_css': None,
+                     'merge': True,
+                     'preserve_recipients': None,
+                     'return_path_domain': None,
+                     'signing_domain': None,
+                     'subject': 'Feedback FeelKm',
+                     'text': 'Example text content',
+                     'to': [{'email': 'jc.gutierrezq@gmail.com',
+                             'name': 'Jul',
+                             'type': 'to'}],
+                     'track_clicks': None,
+                     'track_opens': None,
+                     'tracking_domain': None,
+                     'url_strip_qs': None,
+                     'view_content_link': None}
+                    result = mandrill_client.messages.send(message=message, async=False, ip_pool='Main Pool')
+                    '''
+                    [{'_id': 'abc123abc123abc123abc123abc123',
+                      'email': 'recipient.email@example.com',
+                      'reject_reason': 'hard-bounce',
+                      'status': 'sent'}]
+                    '''
+                    return HttpResponse("1")
+
+                except mandrill.Error, e:
+                    # Mandrill errors are thrown as exceptions
+                    print 'A mandrill error occurred: %s - %s' % (e.__class__, e)
+                    # A mandrill error occurred: <class 'mandrill.UnknownSubaccountError'> - No subaccount exists with the id 'customer-123'
+                    return HttpResponse('2')
+                    #raise
 
             else:
                 return HttpResponse("-1")
