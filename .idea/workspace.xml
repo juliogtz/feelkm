@@ -23,21 +23,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="event.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="event.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/Search/event.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.16" vertical-offset="10777" max-vertical-offset="11910">
-              <caret line="729" column="24" selection-start-line="729" selection-start-column="24" selection-end-line="729" selection-end-column="39" />
+            <state vertical-scroll-proportion="0.8685259" vertical-offset="10942" max-vertical-offset="12045">
+              <caret line="744" column="14" selection-start-line="744" selection-start-column="14" selection-end-line="744" selection-end-column="14" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="right.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="right.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/statics/css/right.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.48958334" vertical-offset="234" max-vertical-offset="570">
-              <caret line="25" column="28" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
+            <state vertical-scroll-proportion="-3.6923077" vertical-offset="594" max-vertical-offset="1065">
+              <caret line="46" column="26" selection-start-line="46" selection-start-column="1" selection-end-line="46" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -119,8 +119,8 @@
         <option value="$PROJECT_DIR$/templates/User/editProfile.html" />
         <option value="$PROJECT_DIR$/statics/css/error.css" />
         <option value="$PROJECT_DIR$/statics/css/style_info.css" />
-        <option value="$PROJECT_DIR$/templates/Search/event.html" />
         <option value="$PROJECT_DIR$/statics/css/right.css" />
+        <option value="$PROJECT_DIR$/templates/Search/event.html" />
       </list>
     </option>
   </component>
@@ -908,18 +908,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/Search/event.html">
+    <entry file="file://$PROJECT_DIR$/statics/css/right.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.16" vertical-offset="10777" max-vertical-offset="11910">
-          <caret line="729" column="24" selection-start-line="729" selection-start-column="24" selection-end-line="729" selection-end-column="39" />
+        <state vertical-scroll-proportion="-3.6923077" vertical-offset="594" max-vertical-offset="1065">
+          <caret line="46" column="26" selection-start-line="46" selection-start-column="1" selection-end-line="46" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/statics/css/right.css">
+    <entry file="file://$PROJECT_DIR$/templates/Search/event.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.48958334" vertical-offset="234" max-vertical-offset="570">
-          <caret line="25" column="28" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
+        <state vertical-scroll-proportion="0.8685259" vertical-offset="10942" max-vertical-offset="12045">
+          <caret line="744" column="14" selection-start-line="744" selection-start-column="14" selection-end-line="744" selection-end-column="14" />
           <folding />
         </state>
       </provider>
