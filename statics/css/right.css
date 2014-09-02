@@ -33,7 +33,7 @@
 
 .input-feedback
 {
-    width: 220px;
+    width: 200px;
     height: 38px;
     border-color: #dbdbdb;
     border-style: solid;
@@ -60,7 +60,7 @@
 
 .img-send-feedback{
     width: 18px;
-    height: 12px;
+    height: 14px;
 }
 
 .btn-send-div{
