@@ -656,7 +656,7 @@ src: url("Roboto-Regular.ttf");
     border-top-style: solid;
     border-top-width: 1px;
     background-color: #ffffff;
-    margin-bottom: 1px;
+    position: absolute;
     bottom: 1px;
 
 
