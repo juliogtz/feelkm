@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="/{{ STATIC_URL }}css/header.css" type="text/css" />
 <link rel="stylesheet" href="/{{ STATIC_URL }}css/style_result.css" type="text/css" />
 <link rel="stylesheet" href="/{{ STATIC_URL }}css/right.css" type="text/css" />
+<link rel="stylesheet" href="/{{ STATIC_URL }}css/footer.css" type="text/css" />
 <link rel="icon" href="/{{ STATIC_URL }}imgs/favicon.png" type="image/x-icon" />
 {% include "Scripts/scripts.html" %}
 <script src="/{{ STATIC_URL }}scripts/header.js"></script>
@@ -287,6 +288,8 @@ $(function() {
 
 	<div class="clear"></div>
 </div>
+
+{% include "Footer/1.html" %}
 {% include "Google/analytics.html" %}
 </body>
 </html>
