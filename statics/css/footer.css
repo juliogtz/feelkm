@@ -1,4 +1,5 @@
-.footer-enter{
+.footer-enter
+{
 
     width: 100%;
     height: 184px;
@@ -6,8 +7,8 @@
     border-top-style: solid;
     border-top-width: 1px;
     background-color: #ffffff;
-
     bottom: 0;
+    margin-bottom: 0;
 
 }
 .separate-footer{
@@ -72,16 +73,12 @@ a.txt-footer-contact:hover{
 }
 
 
-
-
 .link-facebook-footer{
-
     color: #616161;
 	font-size: 16px;
 	font-family: Helvetica;
 	font-weight: lighter;
     text-decoration: none;
-
 }
 
 
