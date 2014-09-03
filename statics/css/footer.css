@@ -10,7 +10,9 @@
     bottom: 0;
 
 }
-
+.separate-footer{
+    height: 100px;
+}
 
 .footer{
 	width: 1128px;
