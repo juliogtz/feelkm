@@ -145,11 +145,16 @@ margin: 0 auto;
 
 /* Content results */
 
-.infoGlobal{
+.infoGlobal
+{
 
 	margin-left: 74px;
     margin-top: 24px;
+}
 
+.right-my-profile-a
+{
+    margin-top: 24px;
 }
 
 .Footer_Result{
