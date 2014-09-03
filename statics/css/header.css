@@ -141,7 +141,7 @@ a.linkELR:hover{
 	width: 100%;
     max-width:100%;
 	height: 120%;
-    min-height:auto;
+    min-height:120%;
 	position:absolute;
 	z-index: 10000;
     top:0;
