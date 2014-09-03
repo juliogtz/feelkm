@@ -76,8 +76,8 @@
       <file leaf-file-name="error.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/statics/css/error.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8020833" vertical-offset="9654" max-vertical-offset="10020">
-              <caret line="659" column="14" selection-start-line="659" selection-start-column="14" selection-end-line="659" selection-end-column="14" />
+            <state vertical-scroll-proportion="0.59375" vertical-offset="9654" max-vertical-offset="10020">
+              <caret line="655" column="28" selection-start-line="655" selection-start-column="28" selection-end-line="655" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -140,8 +140,8 @@
         <option value="$PROJECT_DIR$/templates/Search/search.html" />
         <option value="$PROJECT_DIR$/templates/User/editProfile.html" />
         <option value="$PROJECT_DIR$/templates/User/myprofile.html" />
-        <option value="$PROJECT_DIR$/statics/css/error.css" />
         <option value="$PROJECT_DIR$/templates/Error/404.html" />
+        <option value="$PROJECT_DIR$/statics/css/error.css" />
       </list>
     </option>
   </component>
@@ -951,8 +951,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/statics/css/error.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8020833" vertical-offset="9654" max-vertical-offset="10020">
-          <caret line="659" column="14" selection-start-line="659" selection-start-column="14" selection-end-line="659" selection-end-column="14" />
+        <state vertical-scroll-proportion="0.59375" vertical-offset="9654" max-vertical-offset="10020">
+          <caret line="655" column="28" selection-start-line="655" selection-start-column="28" selection-end-line="655" selection-end-column="28" />
           <folding />
         </state>
       </provider>
