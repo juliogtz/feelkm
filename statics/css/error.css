@@ -333,40 +333,6 @@ background-color: #ffffff;
 }
 
 
-
-
-
-
-
-
-.btnContact{
-
-}
-
-
-
-
-
-.link-facebook-footer{
-
-    color: #616161;
-	font-size: 16px;
-	font-family: Helvetica;
-	font-weight: lighter;
-    text-decoration: none;
-
-}
-
-
-a.link-facebook-footer:hover{
-
-    color: #a1a1a1;
-
-}
-
-
-
-
 .autocomplete-suggestions {
     font-family: Helvetica;
     font-weight: lighter;
