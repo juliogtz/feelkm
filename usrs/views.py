@@ -186,6 +186,11 @@ def MyProfile(request, username):
                     eventsf = events_favorites.objects.filter(id_user_admin=request.user.id)
                     count_eventsf= eventsf.count()
 
+                    #Get Country of user:
+                    Country_User = countries.objects.get(country_id=DATALOGIN.country)
+
+
+
                     #Pics of favorites events
                     list_pic_favorites = []
                     if(count_eventsf>0):
@@ -250,6 +255,7 @@ def MyProfile(request, username):
                             'list_pics_adds_user':pics_add,
                             'count_comments_add':count_comments_add,
                             'list_comments_event':list_comments_event,
+                            'Country_User':Country_User,
 
 
                         })
