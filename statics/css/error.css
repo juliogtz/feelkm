@@ -332,55 +332,20 @@ background-color: #ffffff;
 	margin-left: 95px;
 }
 
-.footer{
-	width: 1128px;
-	margin: 0 auto;
-	height: 80px;
-    padding-left: 150px;
 
 
-}
 
 
-.textContact{
 
-	color: #fd5e48;
-	font-size: 16px;
-	font-family: Helvetica;
-	font-weight: lighter;
-	margin-left: 15px;
-}
 
-.textFaceC{
-	color: #616161;
-	font-size: 16px;
-	font-family: Helvetica;
-	font-weight: lighter;
-	margin-left: 22px;
-
-}
 
 .btnContact{
 
 }
 
-.txtFooter{
-
-	color: #9d9d9d;
-	font-size: 14px;
-	font-family: Helvetica;
-	font-weight: lighter;
-	margin-left: 289px;
-    margin-top: 62px;
-
-    text-align: right;
 
 
-}
 
-.facelike{
-	margin-left: 26px;
-}
 
 .link-facebook-footer{
 
@@ -552,11 +517,7 @@ a.txt-footer-contact:hover{
 }
 
 
-.footer-b-d{
-    margin-top: 61px;
-    margin-left: 1px;
 
-}
 
 .title-error
 {
@@ -648,16 +609,3 @@ font-family: "RoboRegular";
 src: url("Roboto-Regular.ttf");
 }
 
-.footer-enter{
-
-    width: 100%;
-    height: 184px;
-    border-top-color:#e7e7e7;
-    border-top-style: solid;
-    border-top-width: 1px;
-    background-color: #ffffff;
-    position: absolute;
-    bottom: 1px;
-
-
-}
