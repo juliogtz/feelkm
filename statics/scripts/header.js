@@ -984,14 +984,25 @@ function feedback(){
             //alert(msg);
 
             if(msg == "1"){
-                alert("Mensaje enviado, Gracias.");
-                $("#input-feedback").value = "";
+                 //alert("Mensaje enviado, Gracias.");
+                 document.getElementById("input-feedback").value = "";
+
+
+                $("#content-feedback-banner").fadeOut(function(){
+
+
+                    $("#content-feedback-banner-response").fadeIn("fast");
+
+                });
+
+
+
 
             }
 
             if(msg == "2"){
                 alert("Error, intente mas tarde.");
-                $("#input-feedback").value = "";
+                document.getElementById("input-feedback").value = "";
 
             }
 

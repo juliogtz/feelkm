@@ -79,3 +79,24 @@
     margin-left: 18px;
     margin-top: 169px;
 }
+
+.content-feedback-banner-response
+{
+    margin-left: 18px;
+    margin-top: 169px;
+    display: none;
+}
+
+.txt-response-feedback{
+
+    font-size: 18px;
+    color: #ffffff;
+    font-family: "Roboto-Light";
+
+}
+
+@font-face {
+  font-family: 'Roboto-Light';
+  src: url("Roboto-Light.ttf");
+
+}
