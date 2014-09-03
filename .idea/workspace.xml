@@ -26,8 +26,8 @@
       <file leaf-file-name="footer.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/statics/css/footer.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5689655" vertical-offset="0" max-vertical-offset="1440">
-              <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+            <state vertical-scroll-proportion="0.51724136" vertical-offset="0" max-vertical-offset="1425">
+              <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -36,8 +36,28 @@
       <file leaf-file-name="404.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/Error/404.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.5" vertical-offset="615" max-vertical-offset="1305">
-              <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="34" />
+            <state vertical-scroll-proportion="-6.0" vertical-offset="1026" max-vertical-offset="1305">
+              <caret line="78" column="28" selection-start-line="78" selection-start-column="28" selection-end-line="78" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="search.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/Search/search.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-5.2916665" vertical-offset="833" max-vertical-offset="4500">
+              <caret line="64" column="12" selection-start-line="64" selection-start-column="12" selection-end-line="64" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style_result.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/statics/css/style_result.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.6923077" vertical-offset="1989" max-vertical-offset="8265">
+              <caret line="139" column="16" selection-start-line="139" selection-start-column="1" selection-end-line="139" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -48,16 +68,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-3.6923077" vertical-offset="4944" max-vertical-offset="8610">
               <caret line="336" column="6" selection-start-line="336" selection-start-column="4" selection-end-line="336" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="search.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/Search/search.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.125" vertical-offset="615" max-vertical-offset="4500">
-              <caret line="54" column="34" selection-start-line="54" selection-start-column="34" selection-end-line="54" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -131,8 +141,8 @@
         <option value="$PROJECT_DIR$/templates/Error/500.html" />
         <option value="$PROJECT_DIR$/templates/Footer/1.html" />
         <option value="$PROJECT_DIR$/statics/css/error.css" />
-        <option value="$PROJECT_DIR$/templates/Error/404.html" />
         <option value="$PROJECT_DIR$/templates/Search/search.html" />
+        <option value="$PROJECT_DIR$/templates/Error/404.html" />
         <option value="$PROJECT_DIR$/statics/css/footer.css" />
       </list>
     </option>
@@ -886,13 +896,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/statics/css/style_result.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3263889" vertical-offset="26" max-vertical-offset="8265">
-          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/statics/css/right.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3888889" vertical-offset="263" max-vertical-offset="1290">
@@ -923,6 +926,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/statics/css/style_result.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.6923077" vertical-offset="1989" max-vertical-offset="8265">
+          <caret line="139" column="16" selection-start-line="139" selection-start-column="1" selection-end-line="139" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/statics/css/error.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.6923077" vertical-offset="4944" max-vertical-offset="8610">
@@ -931,26 +942,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/Error/404.html">
+    <entry file="file://$PROJECT_DIR$/templates/Search/search.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.5" vertical-offset="615" max-vertical-offset="1305">
-          <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="34" />
+        <state vertical-scroll-proportion="-5.2916665" vertical-offset="833" max-vertical-offset="4500">
+          <caret line="64" column="12" selection-start-line="64" selection-start-column="12" selection-end-line="64" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/Search/search.html">
+    <entry file="file://$PROJECT_DIR$/templates/Error/404.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.125" vertical-offset="615" max-vertical-offset="4500">
-          <caret line="54" column="34" selection-start-line="54" selection-start-column="34" selection-end-line="54" selection-end-column="34" />
+        <state vertical-scroll-proportion="-6.0" vertical-offset="1026" max-vertical-offset="1305">
+          <caret line="78" column="28" selection-start-line="78" selection-start-column="28" selection-end-line="78" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/statics/css/footer.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5689655" vertical-offset="0" max-vertical-offset="1440">
-          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.51724136" vertical-offset="0" max-vertical-offset="1425">
+          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
           <folding />
         </state>
       </provider>
