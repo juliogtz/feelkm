@@ -56,3 +56,34 @@
     margin-top: 62px;
     text-align: right;
 }
+
+.txt-footer-contact{
+    color: #fb5f3e;
+	font-size: 16px;
+	font-family: Helvetica;
+    text-decoration: none;
+}
+
+a.txt-footer-contact:hover{
+    color: #fb9587;
+}
+
+
+
+
+.link-facebook-footer{
+
+    color: #616161;
+	font-size: 16px;
+	font-family: Helvetica;
+	font-weight: lighter;
+    text-decoration: none;
+
+}
+
+
+a.link-facebook-footer:hover{
+
+    color: #a1a1a1;
+
+}
