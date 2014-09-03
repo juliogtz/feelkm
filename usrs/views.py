@@ -187,7 +187,12 @@ def MyProfile(request, username):
                     count_eventsf= eventsf.count()
 
                     #Get Country of user:
-                    Country_User = countries.objects.get(country_id=DATALOGIN.country)
+                    try:
+
+                        Country_User = countries.objects.get(country_id=DATALOGIN.country)
+
+                    except:
+                        Country_User = ""
 
 
 

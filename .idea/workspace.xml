@@ -23,21 +23,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="myprofile.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="myprofile.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/User/myprofile.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.39130434" vertical-offset="1791" max-vertical-offset="6855">
+            <state vertical-scroll-proportion="-1.98" vertical-offset="1791" max-vertical-offset="6855">
               <caret line="126" column="137" selection-start-line="126" selection-start-column="137" selection-end-line="126" selection-end-column="137" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/usrs/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.5" vertical-offset="3608" max-vertical-offset="9975">
-              <caret line="257" column="56" selection-start-line="257" selection-start-column="56" selection-end-line="257" selection-end-column="56" />
+            <state vertical-scroll-proportion="0.7833935" vertical-offset="2678" max-vertical-offset="10050">
+              <caret line="193" column="27" selection-start-line="193" selection-start-column="27" selection-end-line="193" selection-end-column="27" />
               <folding>
                 <element signature="e#24#82#0" expanded="true" />
               </folding>
@@ -114,8 +114,8 @@
         <option value="$PROJECT_DIR$/templates/Right/1.html" />
         <option value="$PROJECT_DIR$/statics/scripts/header.js" />
         <option value="$PROJECT_DIR$/statics/css/header.css" />
-        <option value="$PROJECT_DIR$/usrs/views.py" />
         <option value="$PROJECT_DIR$/templates/User/myprofile.html" />
+        <option value="$PROJECT_DIR$/usrs/views.py" />
       </list>
     </option>
   </component>
@@ -815,16 +815,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/usrs/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.5" vertical-offset="3608" max-vertical-offset="9975">
-          <caret line="257" column="56" selection-start-line="257" selection-start-column="56" selection-end-line="257" selection-end-column="56" />
-          <folding>
-            <element signature="e#24#82#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1514" max-vertical-offset="1845">
@@ -835,9 +825,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/User/myprofile.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.39130434" vertical-offset="1791" max-vertical-offset="6855">
+        <state vertical-scroll-proportion="-1.98" vertical-offset="1791" max-vertical-offset="6855">
           <caret line="126" column="137" selection-start-line="126" selection-start-column="137" selection-end-line="126" selection-end-column="137" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/usrs/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7833935" vertical-offset="2678" max-vertical-offset="10050">
+          <caret line="193" column="27" selection-start-line="193" selection-start-column="27" selection-end-line="193" selection-end-column="27" />
+          <folding>
+            <element signature="e#24#82#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
