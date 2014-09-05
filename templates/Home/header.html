@@ -1,7 +1,7 @@
 {% load dictionary_extras %}
 <div class="logo left"><a href="/"> <img src="/{{ STATIC_URL }}imgs/logo-feelkm.png" width="74" height="19" border="0"></a></div>
 	<div class="inputSearchH left">
-        <form method="post" id="search-form-top" name="search-form-top"><!--{% csrf_token %}-->
+        <form method="post" id="search-form-top" name="search-form-top">{% csrf_token %}
         <input type="text" class="inputSearchHi" placeHolder="Carreras, ciudades, etc" id="inputSearchHi" >
         </form>
     </div>
