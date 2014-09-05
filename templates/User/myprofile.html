@@ -189,13 +189,13 @@ $(function() {
 
                                          {% if value == 0 %}
 
-                                            <a href="/{{ list_events_f.id_event.country | strip }}/{{ list_events_f.id_event.year_event }}/{{ list_events_f.id_event.month_event | replacedigit }}/{{ list_events_f.id_event.day_event | replacedigit }}/running/{{list_events_f.id_event.name_event | replacestr }}/{{ list_events_f.id_event.id }}/" target="_blank"><img src="/img/{{ key }}/" width="50" height="50" border="0" >
+                                            <a href="/{{ list_events_f.id_event.country | strip }}/{{ list_events_f.id_event.year_event }}/{{ list_events_f.id_event.month_event | replacedigit }}/{{ list_events_f.id_event.day_event | replacedigit }}/running/{{list_events_f.id_event.name_event | replacestr }}/{{ list_events_f.id_event.id }}/"><img src="/img/{{ key }}/" width="50" height="50" border="0" >
 
                                          {% else %}
 
 
 
-                                           <a href="/{{ list_events_f.id_event.country | strip }}/{{ list_events_f.id_event.year_event }}/{{ list_events_f.id_event.month_event | replacedigit }}/{{ list_events_f.id_event.day_event | replacedigit }}/running/{{list_events_f.id_event.name_event | replacestr }}/{{ list_events_f.id_event.id }}/" target="_blank"><img src="http://res.cloudinary.com/htyoqtggc/image/upload/h_130,w_200/{{ value | shuffle }}.jpg" width="50" height="50"></a>
+                                           <a href="/{{ list_events_f.id_event.country | strip }}/{{ list_events_f.id_event.year_event }}/{{ list_events_f.id_event.month_event | replacedigit }}/{{ list_events_f.id_event.day_event | replacedigit }}/running/{{list_events_f.id_event.name_event | replacestr }}/{{ list_events_f.id_event.id }}/"><img src="http://res.cloudinary.com/htyoqtggc/image/upload/h_130,w_200/{{ value | shuffle }}.jpg" width="50" height="50"></a>
 
 
                                          {% endif %}
@@ -223,8 +223,8 @@ $(function() {
                         </div>
 
                         <div class="left date-favor">
-                            <div class="calendar-f">{{list_events_f.date | date:"d" }}</div>
-                            <div class="calendar-txt">{{list_events_f.date | date:"M"}}</div>
+                            <div class="calendar-f">{{list_events_f.id_event.date_event | date:"d" }}</div>
+                            <div class="calendar-txt">{{list_events_f.id_event.date_event | date:"M"}}</div>
                         </div>
                         <div class="clear"></div>
                         <div class="line-element-list-pro"></div>
