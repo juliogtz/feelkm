@@ -45,11 +45,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="event.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="event.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/Search/event.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5391705" vertical-offset="9108" max-vertical-offset="11850">
-              <caret line="615" column="43" selection-start-line="615" selection-start-column="43" selection-end-line="615" selection-end-column="43" />
+            <state vertical-scroll-proportion="-1.44" vertical-offset="9378" max-vertical-offset="11865">
+              <caret line="630" column="36" selection-start-line="630" selection-start-column="36" selection-end-line="630" selection-end-column="53" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style_info.css" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/statics/css/style_info.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.4488189" vertical-offset="11871" max-vertical-offset="15120">
+              <caret line="799" column="19" selection-start-line="799" selection-start-column="19" selection-end-line="799" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -134,7 +144,6 @@
         <option value="$PROJECT_DIR$/templates/Header/register-login.html" />
         <option value="$PROJECT_DIR$/statics/css/style.css" />
         <option value="$PROJECT_DIR$/api/models.py" />
-        <option value="$PROJECT_DIR$/statics/css/style_info.css" />
         <option value="$PROJECT_DIR$/FeelKm/urls.py" />
         <option value="$PROJECT_DIR$/api/views.py" />
         <option value="$PROJECT_DIR$/templates/Error/403.html" />
@@ -158,6 +167,7 @@
         <option value="$PROJECT_DIR$/templates/User/myprofile.html" />
         <option value="$PROJECT_DIR$/FeelKm/settings.py" />
         <option value="$PROJECT_DIR$/templates/Search/event.html" />
+        <option value="$PROJECT_DIR$/statics/css/style_info.css" />
       </list>
     </option>
   </component>
@@ -253,6 +263,38 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Search" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FeelKm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FeelKm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="statics" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FeelKm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FeelKm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="statics" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -774,13 +816,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/statics/css/style_info.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.84827584" vertical-offset="14499" max-vertical-offset="15105">
-          <caret line="983" column="22" selection-start-line="983" selection-start-column="22" selection-end-line="983" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/statics/css/css.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33103448" vertical-offset="519" max-vertical-offset="1080">
@@ -883,14 +918,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/User/myprofile.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.5" vertical-offset="3760" max-vertical-offset="6810">
-          <caret line="259" column="0" selection-start-line="259" selection-start-column="0" selection-end-line="259" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/FeelKm/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="2140" max-vertical-offset="2430">
@@ -899,10 +926,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/User/myprofile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.5" vertical-offset="3760" max-vertical-offset="6810">
+          <caret line="259" column="0" selection-start-line="259" selection-start-column="0" selection-end-line="259" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/Search/event.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5391705" vertical-offset="9108" max-vertical-offset="11850">
-          <caret line="615" column="43" selection-start-line="615" selection-start-column="43" selection-end-line="615" selection-end-column="43" />
+        <state vertical-scroll-proportion="-1.44" vertical-offset="9378" max-vertical-offset="11865">
+          <caret line="630" column="36" selection-start-line="630" selection-start-column="36" selection-end-line="630" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/statics/css/style_info.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4488189" vertical-offset="11871" max-vertical-offset="15120">
+          <caret line="799" column="19" selection-start-line="799" selection-start-column="19" selection-end-line="799" selection-end-column="19" />
           <folding />
         </state>
       </provider>
