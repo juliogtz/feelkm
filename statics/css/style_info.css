@@ -787,13 +787,14 @@ margin: 0 auto;
 	margin-left: 23px;
 }
 
-.txt-date-comment{
+.txt-date-comment
+{
 	font-family: Helvetica;
 	font-size: 13px;
 	color: #4c4d4e;
 	font-weight: lighter;
 	text-align: right;
-	margin-left: 45px;
+	margin-left: 35px;
 }
 
 .txt-calif-comment{
