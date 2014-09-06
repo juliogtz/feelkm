@@ -45,21 +45,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="event.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="event.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/Search/event.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.40092167" vertical-offset="9153" max-vertical-offset="11955">
+            <state vertical-scroll-proportion="-1.74" vertical-offset="9153" max-vertical-offset="11955">
               <caret line="616" column="76" selection-start-line="616" selection-start-column="76" selection-end-line="616" selection-end-column="76" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style_info.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="style_info.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/statics/css/style_info.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.6923075" vertical-offset="11976" max-vertical-offset="15240">
-              <caret line="810" column="1" selection-start-line="810" selection-start-column="1" selection-end-line="810" selection-end-column="1" />
+            <state vertical-scroll-proportion="0.62598425" vertical-offset="11976" max-vertical-offset="15240">
+              <caret line="809" column="20" selection-start-line="809" selection-start-column="20" selection-end-line="809" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -166,8 +166,8 @@
         <option value="$PROJECT_DIR$/templates/Home/home.html" />
         <option value="$PROJECT_DIR$/templates/User/myprofile.html" />
         <option value="$PROJECT_DIR$/FeelKm/settings.py" />
-        <option value="$PROJECT_DIR$/statics/css/style_info.css" />
         <option value="$PROJECT_DIR$/templates/Search/event.html" />
+        <option value="$PROJECT_DIR$/statics/css/style_info.css" />
       </list>
     </option>
   </component>
@@ -934,18 +934,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/statics/css/style_info.css">
+    <entry file="file://$PROJECT_DIR$/templates/Search/event.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.6923075" vertical-offset="11976" max-vertical-offset="15240">
-          <caret line="810" column="1" selection-start-line="810" selection-start-column="1" selection-end-line="810" selection-end-column="1" />
+        <state vertical-scroll-proportion="-1.74" vertical-offset="9153" max-vertical-offset="11955">
+          <caret line="616" column="76" selection-start-line="616" selection-start-column="76" selection-end-line="616" selection-end-column="76" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/Search/event.html">
+    <entry file="file://$PROJECT_DIR$/statics/css/style_info.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.40092167" vertical-offset="9153" max-vertical-offset="11955">
-          <caret line="616" column="76" selection-start-line="616" selection-start-column="76" selection-end-line="616" selection-end-column="76" />
+        <state vertical-scroll-proportion="0.62598425" vertical-offset="11976" max-vertical-offset="15240">
+          <caret line="809" column="20" selection-start-line="809" selection-start-column="20" selection-end-line="809" selection-end-column="20" />
           <folding />
         </state>
       </provider>
