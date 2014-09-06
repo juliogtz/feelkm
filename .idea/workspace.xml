@@ -59,7 +59,7 @@
         <entry file="file://$PROJECT_DIR$/statics/css/style_info.css">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.62598425" vertical-offset="11976" max-vertical-offset="15240">
-              <caret line="809" column="22" selection-start-line="809" selection-start-column="22" selection-end-line="809" selection-end-column="22" />
+              <caret line="809" column="21" selection-start-line="809" selection-start-column="21" selection-end-line="809" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -945,7 +945,7 @@
     <entry file="file://$PROJECT_DIR$/statics/css/style_info.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.62598425" vertical-offset="11976" max-vertical-offset="15240">
-          <caret line="809" column="22" selection-start-line="809" selection-start-column="22" selection-end-line="809" selection-end-column="22" />
+          <caret line="809" column="21" selection-start-line="809" selection-start-column="21" selection-end-line="809" selection-end-column="21" />
           <folding />
         </state>
       </provider>
