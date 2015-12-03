@@ -16,9 +16,9 @@ from decimal import *
 from django.core.cache import cache
 from django.views.decorators.cache import cache_page
 cloudinary.config(
-  cloud_name = "htyoqtggc",
-  api_key = "961935933259211",
-  api_secret = "COwH0OL6qwHv5fhjD0ey2TjSdTo"
+  cloud_name = "",
+  api_key = "",
+  api_secret = ""
 )
 
 # Create your views here.

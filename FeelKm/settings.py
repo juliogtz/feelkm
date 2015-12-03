@@ -8,7 +8,7 @@ CONTENT_TYPES = ['application/pdf', 'image/jpeg', 'image/png']  # .pdf, .jpeg an
 # See https://docs.djangoproject.com/en/1.6/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '+ms(lk3*#5#s_lfsi(q*vz@*#mkfc1n&m)losu@yn%yy_vl4r!'
+SECRET_KEY = ''
 
 
 ALLOWED_HOSTS = ['*']
@@ -59,10 +59,10 @@ REST_FRAMEWORK = {
 CACHES = {
     'default':{
         'BACKEND':'redis_cache.RedisCache',
-        'LOCATION':'pub-redis-15253.us-east-1-3.3.ec2.garantiadata.com:15253',
+        'LOCATION':'',
         'OPTIONS':{
             'DB':0,
-            'PASSWORD': 'LwZocBtGEco153g3',
+            'PASSWORD': '',
             'PARSER_CLASS': 'redis.connection.HiredisParser',
         }
     }
@@ -104,7 +104,7 @@ ROOT_URLCONF = 'FeelKm.urls'
 
 
 
-DATABASES = {'default': dj_database_url.config(default='postgres://klbrlbsjwjqkmo:MUiKvbNBUX7dkWo5tgb-PUipOD@ec2-54-197-241-82.compute-1.amazonaws.com:5432/d16v6h2m8mmpu3')}
+DATABASES = {'default': dj_database_url.config(default='')}
 #DATABASES['default'] = dj_database_url.config()
 
 # Honor the 'X-Forwarded-Proto' header for request.is_secure()

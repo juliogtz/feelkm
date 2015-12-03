@@ -8,7 +8,7 @@ CONTENT_TYPES = ['application/pdf', 'image/jpeg', 'image/png']  # .pdf, .jpeg an
 # See https://docs.djangoproject.com/en/1.6/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '+ms(lk3*#5#s_lfsi(q*vz@*#mkfc1n&m)losu@yn%yy_vl4r!'
+SECRET_KEY = ''
 
 
 ALLOWED_HOSTS = ['*']
@@ -83,7 +83,7 @@ ROOT_URLCONF = 'FeelKm.urls'
 
 
 
-DATABASES = {'default': dj_database_url.config(default='postgres://lviqbnyffylarx:mSwShplq7isnfSHjhARNoIz45q@ec2-54-243-48-227.compute-1.amazonaws.com:5432/d5rn6km9c8lnvn')}
+DATABASES = {'default': dj_database_url.config(default='')}
 #DATABASES['default'] = dj_database_url.config()
 
 # Honor the 'X-Forwarded-Proto' header for request.is_secure()

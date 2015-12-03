@@ -4,13 +4,13 @@ import json
 
 def bing_search(query, search_type):
     #search_type: Web, Image, News, Video
-    key= 'OTmL1/vLGicHmR+3Lz3mdl/txlAd1oyhm0aDaUkUrPE'
+    key= ''
     query = urllib.quote(query)
     # create credential for authentication
     user_agent = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0; FDM; .NET CLR 2.0.50727; InfoPath.2; .NET CLR 1.1.4322)'
     credentials = (':%s' % key).encode('base64')[:-1]
     auth = 'Basic %s' % credentials
-    url = 'https://api.datamarket.azure.com/Data.ashx/Bing/Search/'+search_type+'?Query=%27'+query+'%27&$top=10&$format=json'
+    url = ''
     request = urllib2.Request(url)
     request.add_header('Authorization', auth)
     request.add_header('User-Agent', user_agent)
